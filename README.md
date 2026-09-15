@@ -53,7 +53,7 @@ Have the brokerage or qualified Florida counsel review the legal and advertising
 
 6. Open `http://localhost:3000`. The private dashboard is at `/admin`.
 
-The seed command requires a unique `ADMIN_EMAIL` and an `ADMIN_PASSWORD` of at least 12 characters. Remove those two seed variables from Render after the administrator is created; changing them later does not change the password unless the seed command is deliberately rerun.
+The seed command requires a unique `ADMIN_EMAIL` and an `ADMIN_PASSWORD` of at least 6 characters. A longer password remains safer. Remove those two seed variables from Render after the administrator is created; changing them later does not change the password unless the seed command is deliberately rerun.
 
 ## Gmail email setup
 
@@ -74,10 +74,28 @@ Create a Cloudinary account and set `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY
 
 ## Deploy to Render
 
+> **Required:** This application needs PostgreSQL. `DATABASE_URL` must exist on the web service before the first build. The easiest path is **New → Blueprint** using this repository; the included `render.yaml` creates the database and links its internal connection string automatically. If you create a regular Web Service instead, first create Render Postgres, then add its **Internal Database URL** to the web service as an environment variable named exactly `DATABASE_URL`.
+
 1. Create a new GitHub repository and push the contents of this folder.
 2. In Render, choose **New → Blueprint** and connect the repository. Render reads `render.yaml` and creates the web service and PostgreSQL database.
 3. Enter all values marked `sync: false`. Set `NEXT_PUBLIC_SITE_URL` to the final `https://...onrender.com` URL (or custom domain).
-4. For the first deployment only, add `ADMIN_EMAIL` and `ADMIN_PASSWORD`, open the service Shell, and run `npm run db:seed`. Then remove those two variables.
+4. For the first deployment only, create the administrator using either method below.
+
+   **Recommended Render method:** open the web service, select **Environment**, and add `ADMIN_EMAIL` and `ADMIN_PASSWORD`. The password must contain at least 6 characters. Save the changes, open the service **Shell**, and run:
+
+   ```bash
+   npm run db:seed
+   ```
+
+   A successful run prints `Admin ready:` followed by the email address. You can then remove `ADMIN_EMAIL` and `ADMIN_PASSWORD` from the service environment because the password is stored as a secure bcrypt hash in PostgreSQL.
+
+   **One-command Render Shell method:** replace the sample values below with the actual login email and desired password, retaining the quotation marks:
+
+   ```bash
+   ADMIN_EMAIL="your-email@example.com" ADMIN_PASSWORD="your-secure-password" npm run db:seed
+   ```
+
+   Do not enter the literal sample values. For example, if the chosen login is `name@example.com` and the password is `Home24`, run `ADMIN_EMAIL="name@example.com" ADMIN_PASSWORD="Home24" npm run db:seed`.
 5. Verify `/api/health` returns `{"status":"ok"}`.
 6. Sign in at `/admin`, complete every placeholder, upload images, and test both lead paths.
 
@@ -102,7 +120,7 @@ Enable Render Postgres point-in-time recovery or logical backups for the selecte
 ## Security notes
 
 - Put the service behind HTTPS (Render does this automatically).
-- Use a unique administrator password of at least 16 characters in production.
+- The application accepts administrator passwords with a minimum of 6 characters. A longer, unique password is strongly recommended in production.
 - Session tokens are random, stored only as SHA-256 hashes, use HTTP-only SameSite cookies, and expire after eight hours.
 - Mutation routes verify same-origin browser requests. Login and public submission routes are rate limited per running service instance.
 - For multi-instance or high-volume deployment, replace in-memory rate limiting with Redis/Upstash so limits are shared.

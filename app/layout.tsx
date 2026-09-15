@@ -5,7 +5,7 @@ import { getContent } from "@/lib/content";
 
 export async function generateMetadata(): Promise<Metadata> {
   const c = await getContent();
-  return { title:c.seoTitle, description:c.seoDescription, openGraph:{ title:c.seoTitle, description:c.seoDescription, images:c.socialImageUrl ? [c.socialImageUrl] : [] }, robots:{ index:true, follow:true } };
+  return { metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||"http://localhost:3000"), title:c.seoTitle, description:c.seoDescription, openGraph:{ title:c.seoTitle, description:c.seoDescription, images:c.socialImageUrl ? [c.socialImageUrl] : [] }, robots:{ index:true, follow:true } };
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

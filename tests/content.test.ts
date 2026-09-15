@@ -1,3 +1,4 @@
 import assert from "node:assert/strict";import test from "node:test";import { defaultContent } from "../lib/content";import { LEAD_STATUSES } from "../lib/constants";
 test("launch defaults preserve compliance placeholders",()=>{assert.match(defaultContent.brokerageName,/\[BROKERAGE NAME\]/);assert.match(defaultContent.licenseNumber,/\[LICENSE NUMBER\]/);assert.equal(defaultContent.primaryCta,"Make Your Move")});
 test("full lead pipeline statuses remain unique",()=>{assert.equal(new Set(LEAD_STATUSES).size,LEAD_STATUSES.length);assert.ok(LEAD_STATUSES.includes("Closed"));assert.ok(LEAD_STATUSES.includes("Seller – Active Listing"))});
+test("public biography and specialization use first-person voice",()=>{assert.match(defaultContent.aboutBio,/\bI\b/);assert.match(defaultContent.specialtyMessage,/\bI can help\b/);assert.doesNotMatch(defaultContent.aboutBio,/Amanda (brings|provides|understands)/)});
