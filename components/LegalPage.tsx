@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function LegalPage({title,children}:{title:string;children:React.ReactNode}){return <><header className="nav"><div className="container nav-inner"><Link className="brand" href="/">Amanda Alves <small>Realtor®</small></Link><Link className="button outline" href="/">Back home</Link></div></header><main id="main" className="container legal-page"><h1>{title}</h1>{children}</main></>}

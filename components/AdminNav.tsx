@@ -1,0 +1,2 @@
+"use client";import Link from "next/link";import { useRouter } from "next/navigation";
+export function AdminNav(){const r=useRouter();return <nav className="admin-nav"><strong>Amanda Alves · Lead Studio</strong><Link href="/admin">Overview</Link><Link href="/admin/leads">Leads</Link><Link href="/admin/content">Website</Link><a href="/api/admin/export">Export CSV</a><button className="link-button" onClick={async()=>{await fetch("/api/auth/logout",{method:"POST"});r.push("/admin/login");r.refresh()}}>Sign out</button></nav>}

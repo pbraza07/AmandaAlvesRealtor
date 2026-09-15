@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum LeadType {
+  BUYER
+  SELLER
+}
+
+enum Priority {
+  LOW
+  NORMAL
+  HIGH
+}
+
+model AdminUser {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  twoFactorKey String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  sessions     Session[]
+  resets       PasswordResetToken[]
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  tokenHash String    @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime  @default(now())
+  user      AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([expiresAt])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  tokenHash String    @unique
+  userId    String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([expiresAt])
+}
+
+model Lead {
+  id                String         @id @default(cuid())
+  idempotencyKey    String         @unique
+  type              LeadType
+  firstName         String
+  lastName          String
+  email             String
+  phone             String
+  preferredContact  String
+  bestTime          String?
+  language          String
+  source            String?
+  status            String         @default("New Inquiry")
+  priority          Priority       @default(NORMAL)
+  details           Json
+  linkedBuyerNeed   Json?
+  consentPrivacy    Boolean
+  consentCallsTexts Boolean         @default(false)
+  followUpAt        DateTime?
+  archivedAt        DateTime?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  activities        LeadActivity[]
+  notes             LeadNote[]
+  tasks             FollowUpTask[]
+  emails            EmailEvent[]
+  files             LeadFile[]
+  @@index([type, status])
+  @@index([createdAt])
+  @@index([followUpAt])
+}
+
+model LeadActivity {
+  id        String   @id @default(cuid())
+  leadId    String
+  action    String
+  detail    String?
+  createdAt DateTime @default(now())
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  @@index([leadId, createdAt])
+}
+
+model LeadNote {
+  id        String   @id @default(cuid())
+  leadId    String
+  body      String
+  createdAt DateTime @default(now())
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+}
+
+model FollowUpTask {
+  id          String    @id @default(cuid())
+  leadId      String
+  title       String
+  dueAt       DateTime?
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  lead        Lead      @relation(fields: [leadId], references: [id], onDelete: Cascade)
+}
+
+model EmailEvent {
+  id          String   @id @default(cuid())
+  leadId      String
+  kind        String
+  recipient   String
+  subject     String
+  status      String
+  providerId  String?
+  error       String?
+  createdAt   DateTime @default(now())
+  lead        Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+}
+
+model LeadFile {
+  id        String   @id @default(cuid())
+  leadId    String
+  url       String
+  publicId  String?
+  name      String
+  mimeType  String
+  size      Int
+  createdAt DateTime @default(now())
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+}
+
+model SiteContent {
+  id        String   @id @default("primary")
+  content   Json
+  updatedAt DateTime @updatedAt
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  quote     String
+  name      String
+  context   String?
+  published Boolean  @default(false)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

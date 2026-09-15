@@ -1,0 +1,1 @@
+import { ResetForm } from "@/components/PasswordResetForms";export default async function Reset({searchParams}:{searchParams:Promise<{token?:string}>}){const {token=""}=await searchParams;return <main className="login-page"><ResetForm token={token}/></main>}

@@ -1,0 +1,2 @@
+import { redirect } from "next/navigation";import { getAdmin } from "@/lib/security";import { AdminNav } from "@/components/AdminNav";import { LeadsTable } from "@/components/LeadsTable";
+export default async function Leads(){if(!await getAdmin())redirect("/admin/login");return <div className="admin-shell"><AdminNav/><main className="admin-main"><div className="admin-title"><div><span className="eyebrow">Contact pipeline</span><h1>Leads</h1></div><a className="button outline" href="/api/admin/export">Export CSV</a></div><LeadsTable/></main></div>}
