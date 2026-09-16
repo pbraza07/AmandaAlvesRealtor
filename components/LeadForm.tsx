@@ -8,7 +8,7 @@ function Field({label,name,data,setData,type="text",required=false,full=false,ch
 
 export function LeadForm({open,type:seed,onClose}:{open:boolean;type?:LeadType;onClose:()=>void}){
  const [step,setStep]=useState(seed?2:1),[leadType,setLeadType]=useState<LeadType|undefined>(seed),[data,setData]=useState<Data>(initial),[files,setFiles]=useState<File[]>([]),[busy,setBusy]=useState(false),[done,setDone]=useState(false),[error,setError]=useState("");
- useEffect(()=>{if(open){document.body.classList.add("modal-open");const saved=localStorage.getItem("amanda-lead-draft");if(saved)try{const parsed=JSON.parse(saved);setData({...initial,...parsed.data});setLeadType(seed||parsed.leadType);setStep(seed?2:parsed.step||1)}catch{} if(seed){setLeadType(seed);setStep(2)}}else document.body.classList.remove("modal-open");return()=>document.body.classList.remove("modal-open")},[open,seed]);
+ useEffect(()=>{if(open){document.body.classList.add("modal-open");setDone(false);setError("");const saved=localStorage.getItem("amanda-lead-draft");if(saved)try{const parsed=JSON.parse(saved);setData({...initial,...parsed.data})}catch{}if(seed){setLeadType(seed);setStep(2)}else{setLeadType(undefined);setStep(1)}}else document.body.classList.remove("modal-open");return()=>document.body.classList.remove("modal-open")},[open,seed]);
  useEffect(()=>{if(open&&!done)localStorage.setItem("amanda-lead-draft",JSON.stringify({data,leadType,step}))},[data,leadType,step,open,done]);
  if(!open)return null;
  const select=(t:LeadType)=>{setLeadType(t);setStep(2)};
