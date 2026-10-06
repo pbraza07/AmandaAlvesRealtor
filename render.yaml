@@ -2,41 +2,34 @@ services:
   - type: web
     name: amanda-alves-realtor
     runtime: node
-    plan: starter
-    buildCommand: npm ci && npx prisma migrate deploy && npm run build
+    plan: free
+    buildCommand: npm ci && npm run render:build
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: amanda-realtor-db
-          property: connectionString
       - key: NODE_VERSION
         value: 22.14.0
       - key: NEXT_PUBLIC_SITE_URL
         sync: false
-      - key: SMTP_HOST
-        value: smtp.gmail.com
-      - key: SMTP_PORT
-        value: "465"
-      - key: SMTP_SECURE
-        value: "true"
-      - key: SMTP_USER
+      - key: RESEND_API_KEY
         sync: false
-      - key: SMTP_PASS
+      - key: RESEND_FROM
         sync: false
       - key: EMAIL_FROM
         sync: false
       - key: LEAD_NOTIFICATION_EMAIL
         sync: false
-      - key: CLOUDINARY_CLOUD_NAME
+      - key: SITE_PHONE
         sync: false
-      - key: CLOUDINARY_API_KEY
+      - key: SITE_EMAIL
         sync: false
-      - key: CLOUDINARY_API_SECRET
+      - key: SITE_INSTAGRAM_URL
+        value: https://www.instagram.com/amandaalves.realestate/
+      - key: SITE_BROKERAGE_NAME
+        value: Agile Group Realty – Justin Noe Group
+      - key: SITE_BROKERAGE_CONTACT
         sync: false
-databases:
-  - name: amanda-realtor-db
-    plan: basic-256mb
-    databaseName: amanda_realtor
-    user: amanda_realtor
+      - key: SITE_LICENSE_NUMBER
+        value: SL3461857
+      - key: SITE_SERVICE_AREAS
+        value: Odessa, Lutz, Land O’ Lakes, Wesley Chapel, Dade City, San Antonio, and Brooksville

@@ -1,2 +1,2 @@
-import { NextResponse } from "next/server"; import { prisma } from "@/lib/prisma";
-export async function GET(){try{await prisma.$queryRaw`SELECT 1`;return NextResponse.json({status:"ok"})}catch{return NextResponse.json({status:"degraded"},{status:503})}}
+import { NextResponse } from "next/server"; import { hasDatabase } from "@/lib/database";
+export async function GET(){if(!hasDatabase())return NextResponse.json({status:"ok",mode:"email-only",database:"disabled"});try{const {prisma}=await import("@/lib/prisma");await prisma.$queryRaw`SELECT 1`;return NextResponse.json({status:"ok",mode:"database",database:"connected"})}catch{return NextResponse.json({status:"degraded",mode:"database",database:"unavailable"},{status:503})}}

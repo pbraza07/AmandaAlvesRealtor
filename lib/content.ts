@@ -26,10 +26,26 @@ export const defaultContent: SiteContentData = {
   disclosureText: "Licensed Florida real estate sales associate. Equal Housing Opportunity. Verify brokerage details and all required advertising disclosures before publication."
 };
 
+function environmentContent(): Partial<SiteContentData> {
+  const values: Partial<SiteContentData> = {
+    phone: process.env.SITE_PHONE,
+    email: process.env.SITE_EMAIL,
+    instagramUrl: process.env.SITE_INSTAGRAM_URL,
+    brokerageName: process.env.SITE_BROKERAGE_NAME,
+    brokerageContact: process.env.SITE_BROKERAGE_CONTACT,
+    licenseNumber: process.env.SITE_LICENSE_NUMBER,
+    serviceAreas: process.env.SITE_SERVICE_AREAS
+  };
+  return Object.fromEntries(Object.entries(values).filter(([,value]) => Boolean(value?.trim()))) as Partial<SiteContentData>;
+}
+
 export async function getContent(): Promise<SiteContentData> {
+  const { hasDatabase } = await import("./database");
+  const baseContent = { ...defaultContent, ...environmentContent() };
+  if (!hasDatabase()) return baseContent;
   try {
     const { prisma } = await import("./prisma");
     const row = await prisma.siteContent.findUnique({ where: { id: "primary" } });
-    return { ...defaultContent, ...(row?.content as Partial<SiteContentData> | undefined) };
-  } catch { return defaultContent; }
+    return { ...baseContent, ...(row?.content as Partial<SiteContentData> | undefined) };
+  } catch { return baseContent; }
 }
