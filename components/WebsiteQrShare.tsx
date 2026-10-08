@@ -7,9 +7,11 @@ export function WebsiteQrShare() {
   const [siteUrl, setSiteUrl] = useState("");
   const [qrDataUrl, setQrDataUrl] = useState("");
   const [copyLabel, setCopyLabel] = useState("Copy Website Link");
+  const [campaign, setCampaign] = useState("general");
+  const destinations:Record<string,string>={general:"/",seller:"/sell",acreage:"/acreage",openhouse:"/openhouse",buyer:"/buy",homevalue:"/home-value"};
 
   useEffect(() => {
-    const url = window.location.origin;
+    const url = `${window.location.origin}${destinations[campaign]}?utm_source=qr&utm_medium=print&utm_campaign=${encodeURIComponent(campaign)}`;
     setSiteUrl(url);
     QRCode.toDataURL(url, {
       width: 720,
@@ -17,7 +19,7 @@ export function WebsiteQrShare() {
       errorCorrectionLevel: "H",
       color: { dark: "#18352b", light: "#ffffff" },
     }).then(setQrDataUrl).catch(() => setQrDataUrl(""));
-  }, []);
+  }, [campaign]);
 
   async function copyLink() {
     if (!siteUrl) return;
@@ -43,7 +45,7 @@ export function WebsiteQrShare() {
     if (!qrDataUrl) return;
     const link = document.createElement("a");
     link.href = qrDataUrl;
-    link.download = "Amanda-Alves-Realtor-Website-QR.png";
+    link.download = `Amanda-Alves-${campaign}-QR.png`;
     link.click();
   }
 
@@ -56,7 +58,7 @@ export function WebsiteQrShare() {
     <div className="qr-share-copy">
       <span className="eyebrow">Keep my information close</span>
       <h2>Scan, save, and share.</h2>
-      <p>Open my website instantly or share it with someone who is thinking about buying or selling a home.</p>
+      <p>Select a campaign to create its own trackable QR code. You can download a different code for sellers, buyers, acreage, or open houses.</p><label htmlFor="qr-campaign">QR destination</label><select id="qr-campaign" value={campaign} onChange={e=>setCampaign(e.target.value)}>{Object.keys(destinations).map(key=><option key={key} value={key}>{({general:"General website",seller:"Seller inquiries",acreage:"Acreage living",openhouse:"Open houses",buyer:"Home buyers",homevalue:"Home value reviews"} as Record<string,string>)[key]}</option>)}</select>
       <div className="qr-actions">
         <button className="button dark" type="button" onClick={shareWebsite}>Share My Website</button>
         <button className="button outline" type="button" onClick={copyLink}>{copyLabel}</button>
