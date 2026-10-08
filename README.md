@@ -63,6 +63,8 @@ Email delivery is required in database-free mode because email is the inquiry re
 
 ## Optional PostgreSQL dashboard
 
+Version 2.10 exports every buyer/seller form field into its own labeled CSV column, including contact preferences and consent. Additional `Details:` columns retain original values and any historical/custom fields. Photo filenames are exported; image bytes remain in the private portal. Clicking a property thumbnail opens an in-page carousel with previous/next buttons, keyboard arrows, Escape to close, and photo downloads.
+
 To enable the private dashboard later:
 
 1. Create a Render PostgreSQL database.

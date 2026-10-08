@@ -1,0 +1,12 @@
+"use client";
+import { useEffect, useRef, useState } from 'react';
+type Photo={id:string;[key:string]:unknown};
+export function LeadPhotos({files}:{files:Photo[]}) {
+ const [index,setIndex]=useState<number|null>(null);const dialog=useRef<HTMLDialogElement>(null);
+ useEffect(()=>{if(index===null){dialog.current?.close();return;}if(!dialog.current?.open)dialog.current?.showModal();const overflow=document.body.style.overflow;document.body.style.overflow='hidden';return ()=>{document.body.style.overflow=overflow}},[index]);
+ const move=(delta:number)=>setIndex(current=>current===null?null:(current+delta+files.length)%files.length);const photo=index===null?null:files[index];
+ return <section className="panel"><h2>Property photos</h2>{files.length?<div className="lead-photo-gallery">{files.map((f,i)=><figure key={f.id}><button type="button" className="photo-thumbnail" onClick={()=>setIndex(i)} aria-label={`Open photo ${i+1}: ${String(f.name)}`}><img src={String(f.url)} alt={String(f.name)} loading="lazy"/></button><figcaption>{String(f.name)} · {Math.round(Number(f.size)/1024)} KB<br/><a href={String(f.url)} download={String(f.name)}>Download photo</a></figcaption></figure>)}</div>:<p>No photos were saved with this lead. Photos from earlier email-only submissions remain in Gmail.</p>}
+ <dialog ref={dialog} className="photo-dialog" aria-label="Property photo carousel" onCancel={()=>setIndex(null)} onClose={()=>setIndex(null)} onClick={e=>{if(e.target===e.currentTarget)setIndex(null)}} onKeyDown={e=>{if(e.key==='ArrowRight'){e.preventDefault();move(1)}if(e.key==='ArrowLeft'){e.preventDefault();move(-1)}}}>
+ {photo&&<div className="photo-viewer"><div className="photo-viewer-head"><span aria-live="polite">Photo {index!+1} of {files.length}</span><button type="button" className="close" onClick={()=>setIndex(null)} aria-label="Close photos" autoFocus>×</button></div><div className="photo-viewer-stage"><button type="button" className="photo-arrow" onClick={()=>move(-1)} disabled={files.length<2} aria-label="Previous photo">‹</button><img src={String(photo.url)} alt={String(photo.name)}/><button type="button" className="photo-arrow" onClick={()=>move(1)} disabled={files.length<2} aria-label="Next photo">›</button></div><div className="photo-viewer-caption">{String(photo.name)} · <a href={String(photo.url)} download={String(photo.name)}>Download photo</a></div></div>}
+ </dialog></section>;
+}
