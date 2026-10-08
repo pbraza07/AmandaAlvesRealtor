@@ -12,7 +12,7 @@ When `DATABASE_URL` is not set, the site automatically runs in **email-only mode
 - A branded QR-sharing card automatically links to the live website and lets visitors share the site, copy its link, or download a high-resolution QR code for print and social media.
 - Amanda and family photos and the farmhouse acreage hero image are served from the website itself.
 - `/api/health` returns a healthy email-only status, so Render can deploy the service normally.
-- Seller photo attachments are skipped. The form tells visitors Amanda will request photos separately.
+- Up to five seller photos are automatically resized and compressed to JPEG in the browser, reprocessed on the server to remove metadata, and attached to the owner notification through Gmail. Without a database, photos are retained in Gmail only. With PostgreSQL enabled, the compressed photos are also saved directly with the private lead record and displayed in its thumbnail gallery. No Cloudinary account or persistent Render disk is needed for seller photos. Database storage includes a base64 encoding overhead of approximately 33%; monitor your database storage allowance as leads accumulate.
 
 Email-only mode does not provide the private dashboard, saved lead history, online content editing, password login, database testimonials, or seller-photo storage. The `/admin` page explains this instead of producing an error.
 

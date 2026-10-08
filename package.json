@@ -1,6 +1,6 @@
 {
   "name": "amanda-alves-realtor",
-  "version": "2.7.0",
+  "version": "2.9.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -21,6 +21,7 @@
     "qrcode": "^1.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "sharp": "^0.35.5",
     "zod": "^4.1.8"
   },
   "devDependencies": {

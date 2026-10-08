@@ -31,10 +31,14 @@ test("Gmail API delivers the inquiry and personalized client confirmation", asyn
       return new Response(JSON.stringify({id:`message-${messages.length}`}),{status:200,headers:{"content-type":"application/json"}});
     };
 
-    const result=await sendLeadEmails({id:"lead-1",type:"BUYER",firstName:"Taylor",lastName:"Client",email:"taylor@example.com",phone:"813-555-0100",preferredContact:"Email",bestTime:null,language:"English",source:"Website",details:{timeline:"Three to six months"}});
+    const result=await sendLeadEmails({id:"lead-1",type:"BUYER",firstName:"Taylor",lastName:"Client",email:"taylor@example.com",phone:"813-555-0100",preferredContact:"Email",bestTime:null,language:"English",source:"Website",details:{timeline:"Three to six months"}},[{name:"property-photo-1.jpg",contentType:"image/jpeg",content:Buffer.from("test-photo")}]);
 
     assert.deepEqual(result,{adminSent:true,clientSent:true});
     assert.equal(messages.length,2);
+    assert.match(messages[0],/multipart\/mixed/);
+    assert.match(messages[0],/filename="property-photo-1.jpg"/);
+    assert.match(messages[0],/dGVzdC1waG90bw==/);
+    assert.doesNotMatch(messages[1],/multipart\/mixed/);
     assert.match(messages[0],/To: amandaborgesalves@gmail\.com/);
     assert.match(messages[0],/Reply-To: taylor@example\.com/);
     assert.match(messages[1],/To: taylor@example\.com/);

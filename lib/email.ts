@@ -1,12 +1,14 @@
 import { getContent } from "./content";
 import { hasDatabase } from "./database";
 
-type MailMessage = { to:string; subject:string; html:string; replyTo?:string };
+import { orderedLeadFields } from "./form-fields";
+export type PhotoAttachment={name:string;contentType:string;content:Buffer};
+type MailMessage = { to:string; subject:string; html:string; replyTo?:string; attachments?:PhotoAttachment[] };
 type GmailConfiguration = { clientId:string; clientSecret:string; refreshToken:string; senderEmail:string };
 
 const esc = (s: unknown) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]!));
 const validEmail = (value: string | undefined) => Boolean(value && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
-const rows = (obj: Record<string, unknown>) => Object.entries(obj).filter(([,v]) => v !== "" && v != null).map(([k,v]) => `<tr><th style="text-align:left;padding:7px;border-bottom:1px solid #ddd">${esc(k.replace(/([A-Z])/g," $1"))}</th><td style="padding:7px;border-bottom:1px solid #ddd">${esc(Array.isArray(v) ? v.join(", ") : v)}</td></tr>`).join("");
+const rows = (obj: Record<string, unknown>) => Object.entries(obj).map(([k,v]) => `<tr><th style="text-align:left;padding:7px;border-bottom:1px solid #ddd">${esc(k.replace(/([A-Z])/g," $1"))}</th><td style="padding:7px;border-bottom:1px solid #ddd">${esc(Array.isArray(v) ? v.join(", ") : v)}</td></tr>`).join("");
 
 function gmailConfiguration():GmailConfiguration {
   const configuration={
@@ -44,16 +46,19 @@ async function deliver(message:MailMessage) {
   const configuration=gmailConfiguration();
   const accessToken=await gmailAccessToken(configuration);
   const displayFrom=`Amanda Alves <${configuration.senderEmail}>`;
+  const boundary="amanda-photos-"+crypto.randomUUID();
   const mime=[
     `From: ${displayFrom}`,
     `To: ${message.to}`,
     ...(message.replyTo?[`Reply-To: ${message.replyTo}`]:[]),
     `Subject: ${encodedHeader(message.subject)}`,
     "MIME-Version: 1.0",
+    ...(message.attachments?.length ? [`Content-Type: multipart/mixed; boundary="${boundary}"`,"",`--${boundary}`] : []),
     "Content-Type: text/html; charset=UTF-8",
     "Content-Transfer-Encoding: base64",
     "",
-    wrappedBase64(message.html)
+    wrappedBase64(message.html),
+    ...(message.attachments?.length ? message.attachments.flatMap(a=>["",`--${boundary}`,`Content-Type: ${a.contentType}`,`Content-Disposition: attachment; filename="${a.name}"`,"Content-Transfer-Encoding: base64","",a.content.toString("base64").match(/.{1,76}/g)?.join("\r\n")||""]).concat(["",`--${boundary}--`]) : [])
   ].join("\r\n");
   const response=await fetch("https://gmail.googleapis.com/gmail/v1/users/me/messages/send",{
     method:"POST",
@@ -79,7 +84,7 @@ export async function sendPasswordReset(email:string, url:string) {
   await deliver({to:email,subject:"Reset your Amanda Alves Lead Studio password",html:`<div style="font:16px/1.6 Arial;color:#292d2a;max-width:620px"><h2>Password reset requested</h2><p>Use the secure link below within one hour to choose a new password.</p><p><a href="${esc(url)}">Reset my password</a></p><p>If you did not request this, you can ignore this email. The link can be used only once.</p></div>`});
 }
 
-export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; firstName:string; lastName:string; email:string; phone:string; preferredContact:string; bestTime:string|null; language:string; source:string|null; details:unknown }) {
+export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; firstName:string; lastName:string; email:string; phone:string; preferredContact:string; bestTime:string|null; language:string; source:string|null; details:unknown }, attachments:PhotoAttachment[] = []) {
   const configuration=gmailConfiguration();
   const content = await getContent();
   const details = lead.details as Record<string, unknown>;
@@ -95,7 +100,7 @@ export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; f
   let clientSent = false;
 
   try {
-    const info = await deliver({to:ownerRecipient,replyTo:lead.email,subject:adminSubject,html:`<h2>${esc(adminSubject)}</h2><table style="border-collapse:collapse"><tbody>${rows({ email:lead.email, phone:lead.phone, preferredContact:lead.preferredContact, bestTime:lead.bestTime, language:lead.language, source:lead.source, ...details })}</tbody></table>${dashboardBlock}`});
+    const info = await deliver({to:ownerRecipient,replyTo:lead.email,subject:adminSubject,attachments,html:`<h2>${esc(adminSubject)}</h2><table style="border-collapse:collapse"><tbody>${rows(Object.fromEntries(orderedLeadFields(lead)))}</tbody></table>${dashboardBlock}`});
     adminSent = true;
     await recordEmailEvent({leadId:lead.id,kind:"ADMIN_NOTIFICATION",recipient:ownerRecipient,subject:adminSubject,status:"SENT",providerId:info.messageId});
   } catch (error) {
