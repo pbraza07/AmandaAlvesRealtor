@@ -1,5 +1,7 @@
 # Amanda Alves Realtor Website
 
+Version 2.14: Open Admin → Bio page (or Website → Bio page section) to edit the intro label, heading, subtitle, full biography, photo, caption, accessible photo description, both button labels, and Bio SEO fields. Separate paragraphs with a blank line. New Bio photos compress automatically and save with your content in PostgreSQL, without Cloudinary. Click Save website changes after editing/uploading, then refresh `/bio`. Shared contact, navigation CTA, and footer settings remain in the existing Website editor. Existing database records automatically receive Bio defaults; no migration or reseeding is required.
+
 Version 2.13 adds a dedicated `/bio` page, a Bio link in desktop/mobile navigation, the supplied biography verbatim, and an optimized full-frame family photograph. It continues from GitHub version 2.12 and preserves the campaign landing pages, QR sharing, CSV exports, and admin photo carousel. The Bio page's Make Your Move button opens the buyer/seller choice; no additional environment variables or migrations are required.
 
 A mobile-first real estate website built with Next.js and ready for GitHub and Render. The public website works without a database. PostgreSQL is optional and only needed for the private lead-management dashboard.
