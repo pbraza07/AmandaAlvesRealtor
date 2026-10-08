@@ -11,18 +11,20 @@ services:
         value: 22.14.0
       - key: NEXT_PUBLIC_SITE_URL
         sync: false
-      - key: RESEND_API_KEY
+      - key: GMAIL_CLIENT_ID
         sync: false
-      - key: RESEND_FROM
+      - key: GMAIL_CLIENT_SECRET
         sync: false
-      - key: EMAIL_FROM
+      - key: GMAIL_REFRESH_TOKEN
         sync: false
+      - key: GMAIL_SENDER_EMAIL
+        value: amandaborgesalves@gmail.com
       - key: LEAD_NOTIFICATION_EMAIL
-        sync: false
+        value: amandaborgesalves@gmail.com
       - key: SITE_PHONE
         sync: false
       - key: SITE_EMAIL
-        sync: false
+        value: amandaborgesalves@gmail.com
       - key: SITE_INSTAGRAM_URL
         value: https://www.instagram.com/amandaalves.realestate/
       - key: SITE_BROKERAGE_NAME

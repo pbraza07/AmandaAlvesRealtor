@@ -79,7 +79,7 @@ export async function POST(req:NextRequest){
     return NextResponse.json({ok:true,id:lead.id,storageMode:"database"},{status:201});
   }catch(error){
     console.error("Lead submission failed",error);
-    const configurationError=String(error).includes("EMAIL_NOT_CONFIGURED")||String(error).includes("EMAIL_FROM_NOT_CONFIGURED")||String(error).includes("LEAD_NOTIFICATION_EMAIL_NOT_CONFIGURED");
+    const configurationError=String(error).includes("GMAIL_API_NOT_CONFIGURED")||String(error).includes("LEAD_NOTIFICATION_EMAIL_NOT_CONFIGURED");
     return NextResponse.json({error:configurationError?"Email delivery is not configured yet. Please contact me directly.":"We couldn’t send your request just now. Please try again or contact me directly."},{status:configurationError?503:500});
   }
 }

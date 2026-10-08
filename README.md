@@ -32,12 +32,13 @@ Email-only mode does not provide the private dashboard, saved lead history, onli
    | Variable | Value |
    |---|---|
    | `NEXT_PUBLIC_SITE_URL` | The final `https://...onrender.com` URL |
-   | `RESEND_API_KEY` | API key from Resend |
-   | `RESEND_FROM` | `Amanda Alves <inquiries@your-verified-domain.com>` |
-   | `EMAIL_FROM` | The same sender; retained as an SMTP-compatible fallback |
-   | `LEAD_NOTIFICATION_EMAIL` | Amanda's inbox for new inquiries |
+   | `GMAIL_CLIENT_ID` | Google Cloud OAuth client ID |
+   | `GMAIL_CLIENT_SECRET` | Google Cloud OAuth client secret |
+   | `GMAIL_REFRESH_TOKEN` | Offline OAuth refresh token for Amanda's Gmail |
+   | `GMAIL_SENDER_EMAIL` | `amandaborgesalves@gmail.com` |
+   | `LEAD_NOTIFICATION_EMAIL` | `amandaborgesalves@gmail.com` |
    | `SITE_PHONE` | Public business phone number |
-   | `SITE_EMAIL` | Public business email address |
+   | `SITE_EMAIL` | `amandaborgesalves@gmail.com` |
    | `SITE_BROKERAGE_CONTACT` | Brokerage contact information/disclosure |
 
    `render.yaml` already supplies the verified Instagram URL, brokerage name, license number, service areas, and Node.js version. Review every public detail for brokerage compliance before launch.
@@ -50,13 +51,13 @@ Email-only mode does not provide the private dashboard, saved lead history, onli
 
 6. Submit one Buy inquiry and one Sell inquiry. Confirm both the owner notification and visitor confirmation arrive.
 
-### Email setup for Render Free
+### Gmail API setup for Render Free
 
-Render Free blocks outbound SMTP ports, so Gmail SMTP and App Passwords cannot send from a free Render web service. Create a Resend account, verify a sending domain, create an API key, and set `RESEND_API_KEY` and `RESEND_FROM`. Resend uses HTTPS, which works on Render Free. Owner notifications use the visitor's address as `Reply-To`, so Amanda can reply directly from her inbox.
+Render Free blocks outbound SMTP ports, so Gmail SMTP and App Passwords cannot send from a free Render web service. This project sends through the Gmail API over HTTPS instead. In Google Cloud, enable the Gmail API, configure an OAuth consent screen, create a Web application OAuth client with `https://developers.google.com/oauthplayground` as an authorized redirect URI, and authorize only `https://www.googleapis.com/auth/gmail.send` with offline access. Use Google's OAuth 2.0 Playground with your own OAuth credentials to obtain the refresh token. Move an External OAuth app from **Testing** to **In production** before creating the final refresh token; Google expires Testing-mode authorizations for sensitive scopes after seven days.
 
-SMTP remains available as a fallback for local development or a different host that permits outbound SMTP. On Render Free, use Resend.
+Store `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, and `GMAIL_REFRESH_TOKEN` only as secret Render environment variables. Set `GMAIL_SENDER_EMAIL` and `LEAD_NOTIFICATION_EMAIL` to `amandaborgesalves@gmail.com`. Owner notifications use the visitor's address as `Reply-To`, and client confirmations use Amanda's address as `Reply-To`.
 
-Email delivery is required in database-free mode because email is the inquiry record. If SMTP is missing or delivery to Amanda fails, the visitor sees a clear message to contact Amanda directly; the form does not falsely report success.
+Email delivery is required in database-free mode because email is the inquiry record. If Gmail OAuth is missing or delivery to Amanda fails, the visitor sees a clear message to contact Amanda directly; the form does not falsely report success.
 
 ## Optional PostgreSQL dashboard
 
@@ -92,7 +93,7 @@ npm install
 npm run dev
 ```
 
-Fill in the Resend (or local SMTP) and `SITE_*` settings in `.env`, then open `http://localhost:3000`.
+Fill in the Gmail OAuth and `SITE_*` settings in `.env`, then open `http://localhost:3000`.
 
 For local dashboard development, also set `DATABASE_URL`, then run:
 
