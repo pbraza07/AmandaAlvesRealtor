@@ -19,6 +19,7 @@ const schema=z.object({
   generalDetails:z.string().max(5000).optional(),
   consentPrivacy:z.literal(true),
   consentCallsTexts:z.boolean().optional(),
+  attribution:z.object({campaign:z.string().max(120),medium:z.string().max(120),referrer:z.string().max(120),placement:z.string().max(120),landingPath:z.string().max(200)}).optional(),
   website:z.string().max(0).optional()
 }).passthrough();
 
@@ -36,10 +37,10 @@ export async function POST(req:NextRequest){
     if(!parsed.success)return NextResponse.json({error:"Please review the required fields.",fields:parsed.error.flatten().fieldErrors},{status:400});
     const d=parsed.data;
     if(d.website)return NextResponse.json({ok:true,id:"accepted",storageMode:"email-only"});
-    const shared=["type","idempotencyKey","firstName","lastName","email","phone","preferredContact","bestTime","language","source","consentPrivacy","consentCallsTexts","website"];
+    const shared=["type","idempotencyKey","firstName","lastName","email","phone","preferredContact","bestTime","language","source","consentPrivacy","consentCallsTexts","attribution","website"];
     const details=Object.fromEntries(Object.entries(d).filter(([k])=>!shared.includes(k)).map(([k,v])=>[clean(k,80),typeof v==="boolean"?v:clean(v,5000)]));
     if(d.type!=="SELLER"&&attachments.length)return NextResponse.json({error:"Photos are only accepted with seller inquiries."},{status:400});
-    details.photoNames=attachments.map(a=>a.name).join(", ");
+    details.photoNames=attachments.map(a=>a.name).join(", ");if(d.attribution){details.attribution=Object.fromEntries(Object.entries(d.attribution).map(([key,value])=>[key,clean(value,200)]));}
     details.consentPrivacy=d.consentPrivacy;details.consentCallsTexts=Boolean(d.consentCallsTexts);
     const needed=d.type==="SELLER"&&String(details.needsBuyerHelp)==="Yes"?{areas:"To discuss",timeline:String(details.timeline||"To discuss"),source:"Linked to seller inquiry"}:undefined;
     const baseLead={
@@ -52,7 +53,7 @@ export async function POST(req:NextRequest){
       preferredContact:d.preferredContact,
       bestTime:clean(d.bestTime,120)||null,
       language:clean(d.language,50),
-      source:clean(d.source,120)||null,
+      source:clean(d.attribution?.campaign||d.attribution?.placement||d.attribution?.referrer||d.source,120)||null,
       details
     };
 
