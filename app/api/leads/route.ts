@@ -40,7 +40,7 @@ export async function POST(req:NextRequest){
     const shared=["type","idempotencyKey","firstName","lastName","email","phone","preferredContact","bestTime","language","source","consentPrivacy","consentCallsTexts","attribution","website"];
     const details=Object.fromEntries(Object.entries(d).filter(([k])=>!shared.includes(k)).map(([k,v])=>[clean(k,80),typeof v==="boolean"?v:clean(v,5000)]));
     if(d.type!=="SELLER"&&attachments.length)return NextResponse.json({error:"Photos are only accepted with seller inquiries."},{status:400});
-    details.photoNames=attachments.map(a=>a.name).join(", ");if(d.attribution){details.attribution=Object.fromEntries(Object.entries(d.attribution).map(([key,value])=>[key,clean(value,200)]));}
+    details.photoNames=attachments.map(a=>a.name).join(", ");if(d.attribution){for(const [key,value] of Object.entries(d.attribution)){details[`attribution_${key}`]=clean(value,200);}}
     details.consentPrivacy=d.consentPrivacy;details.consentCallsTexts=Boolean(d.consentCallsTexts);
     const needed=d.type==="SELLER"&&String(details.needsBuyerHelp)==="Yes"?{areas:"To discuss",timeline:String(details.timeline||"To discuss"),source:"Linked to seller inquiry"}:undefined;
     const baseLead={
