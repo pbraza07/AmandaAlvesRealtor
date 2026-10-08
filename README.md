@@ -9,6 +9,7 @@ When `DATABASE_URL` is not set, the site automatically runs in **email-only mode
 - The public site and all first-person copy remain available.
 - **Make Your Move** asks visitors to choose **Buy** or **Sell**, then opens the matching form.
 - Successful inquiries are emailed to Amanda and the visitor receives an automatic confirmation.
+- A branded QR-sharing card automatically links to the live website and lets visitors share the site, copy its link, or download a high-resolution QR code for print and social media.
 - Amanda and family photos and the farmhouse acreage hero image are served from the website itself.
 - `/api/health` returns a healthy email-only status, so Render can deploy the service normally.
 - Seller photo attachments are skipped. The form tells visitors Amanda will request photos separately.
@@ -50,6 +51,7 @@ Email-only mode does not provide the private dashboard, saved lead history, onli
    ```
 
 6. Submit one Buy inquiry and one Sell inquiry. Confirm both the owner notification and visitor confirmation arrive.
+7. Scroll to the contact section and test **Share My Website**, **Copy Website Link**, and **Download QR Code**. The QR code uses the live browser domain automatically.
 
 ### Gmail API setup for Render Free
 
