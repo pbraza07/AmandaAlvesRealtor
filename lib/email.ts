@@ -88,7 +88,8 @@ export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; f
   const configuration=gmailConfiguration();
   const content = await getContent();
   const details = lead.details as Record<string, unknown>;
-  const type = lead.type === "BUYER" ? "Buyer" : "Seller";
+  const consultation = details.inquiryPurpose === "Lifestyle consultation";
+  const type = consultation ? "Lifestyle Consultation" : lead.type === "BUYER" ? "Buyer" : "Seller";
   const ownerRecipient = validEmail(process.env.LEAD_NOTIFICATION_EMAIL) ? process.env.LEAD_NOTIFICATION_EMAIL! : content.email;
   if (!validEmail(ownerRecipient)) throw new Error("LEAD_NOTIFICATION_EMAIL_NOT_CONFIGURED");
   const replyAddress = validEmail(content.email) ? content.email : configuration.senderEmail;
@@ -110,8 +111,8 @@ export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; f
   if (!adminSent) return { adminSent, clientSent };
 
   const address = String(details.propertyAddress || "").trim();
-  const subject = lead.type === "BUYER" ? "Thank You — I Received Your Home Search Request" : "Thank You — I Received Your Home-Selling Request";
-  const intro = lead.type === "BUYER" ? content.buyerEmailTemplate : content.sellerEmailTemplate.replace("{{property_reference}}", address ? `about selling your property at ${address}` : "about your plans to sell your home");
+  const subject = consultation ? "Thank You — I Received Your Consultation Request" : lead.type === "BUYER" ? "Thank You — I Received Your Home Search Request" : "Thank You — I Received Your Home-Selling Request";
+  const intro = consultation ? "Thank you for sharing your lifestyle real estate plans. I received your consultation request and will contact you to arrange a time to talk. Your appointment will be confirmed once we agree on a time." : lead.type === "BUYER" ? content.buyerEmailTemplate : content.sellerEmailTemplate.replace("{{property_reference}}", address ? `about selling your property at ${address}` : "about your plans to sell your home");
   try {
     const info = await deliver({to:lead.email,replyTo:replyAddress,subject,html:`<div style="font:16px/1.65 Arial,sans-serif;color:#292d2a;max-width:620px;margin:auto"><div style="border-top:5px solid #18352b;padding:28px 6px"><p>Hi ${esc(lead.firstName)},</p><p>${esc(intro)}</p><p>${lead.type === "BUYER" ? "I know buying a home is both an important decision and an exciting new chapter. My goal is to make the process feel clear, manageable, and personal from our first conversation through closing." : "I know selling a home can bring a lot of questions. My goal is to help you understand your options, prepare strategically, and move forward with clarity and confidence."}</p><p>If you think of anything else in the meantime, simply reply to this email. I look forward to speaking with you soon.</p><p>Warmly,<br><strong>Amanda Alves</strong><br>Realtor®<br>${esc(content.phone)}<br>${esc(replyAddress)}</p></div></div>`});
     clientSent = true;

@@ -15,3 +15,9 @@ test('buyer notification has state and date fields in form order', () => {
  assert.ok(labels.indexOf('State') > labels.indexOf('Areas or cities of interest'));
  assert.ok(labels.indexOf('Preferred move-in date') < labels.indexOf('Current status'));
 });
+
+test('lifestyle consultation details reach notifications and lead exports', () => {
+ const rows=orderedLeadFields({type:'BUYER',details:{inquiryPurpose:'Lifestyle consultation',destination:'Portugal',lifestyleGoal:'Second home',consultationDate:'2026-12-01',consultationTime:'10am Eastern'}});
+ for(const [label,value] of [['Destination','Portugal'],['Property lifestyle goal','Second home'],['Preferred consultation date','2026-12-01'],['Preferred consultation time and time zone','10am Eastern']]) assert.equal(rows.find(r=>r[0]===label)?.[1],value);
+ assert.equal(orderedLeadFields({type:'SELLER'}).some(r=>r[0]==='Destination'),false);
+});

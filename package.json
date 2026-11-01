@@ -1,9 +1,9 @@
 {
   "name": "amanda-alves-realtor",
-  "version": "2.14.0",
+  "version": "2.15.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
     "render:build": "node scripts/render-build.mjs",
     "start": "next start -p ${PORT:-3000}",
