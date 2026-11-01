@@ -8,7 +8,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
   const [qrDataUrl, setQrDataUrl] = useState("");
   const [copyLabel, setCopyLabel] = useState("Copy Website Link");
   const [campaign, setCampaign] = useState(defaultCampaign);
-  const destinations:Record<string,string>={lifestyle:"/lifestyle",florida:"/lifestyle/florida",spain:"/lifestyle/spain",portugal:"/lifestyle/portugal","costa-rica":"/lifestyle/costa-rica",general:"/",seller:"/sell",acreage:"/acreage",openhouse:"/openhouse",buyer:"/buy",homevalue:"/home-value"};
+  const destinations:Record<string,string>={lifestyle:"/",florida:"/lifestyle/florida",spain:"/lifestyle/spain",portugal:"/lifestyle/portugal","costa-rica":"/lifestyle/costa-rica",general:"/",seller:"/sell",openhouse:"/openhouse",buyer:"/buy",homevalue:"/home-value"};
 
   useEffect(() => {
     const url = `${window.location.origin}${destinations[campaign]}?utm_source=qr&utm_medium=print&utm_campaign=${encodeURIComponent(campaign)}`;
@@ -58,7 +58,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
     <div className="qr-share-copy">
       <span className="eyebrow">Keep my information close</span>
       <h2>Scan, save, and share.</h2>
-      <p>Select a campaign to create its own trackable QR code. You can download a different code for lifestyle destinations, sellers, buyers, acreage, or open houses.</p><label htmlFor="qr-campaign">QR destination</label><select id="qr-campaign" value={campaign} onChange={e=>setCampaign(e.target.value)}>{Object.keys(destinations).map(key=><option key={key} value={key}>{({lifestyle:"Lifestyle destinations",florida:"Florida",spain:"Spain",portugal:"Portugal","costa-rica":"Costa Rica",general:"General website",seller:"Seller inquiries",acreage:"Acreage living",openhouse:"Open houses",buyer:"Home buyers",homevalue:"Home value reviews"} as Record<string,string>)[key]}</option>)}</select>
+      <p>Select a campaign to create its own trackable QR code. You can download a different code for lifestyle destinations, sellers, buyers, or open houses.</p><label htmlFor="qr-campaign">QR destination</label><select id="qr-campaign" value={campaign} onChange={e=>setCampaign(e.target.value)}>{Object.keys(destinations).map(key=><option key={key} value={key}>{({lifestyle:"Lifestyle destinations",florida:"Florida",spain:"Spain",portugal:"Portugal","costa-rica":"Costa Rica",general:"General website",seller:"Seller inquiries",openhouse:"Open houses",buyer:"Home buyers",homevalue:"Home value reviews"} as Record<string,string>)[key]}</option>)}</select>
       <div className="qr-actions">
         <button className="button dark" type="button" onClick={shareWebsite}>Share My Website</button>
         <button className="button outline" type="button" onClick={copyLink}>{copyLabel}</button>

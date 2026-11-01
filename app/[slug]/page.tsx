@@ -1,3 +1,4 @@
+import { permanentRedirect } from "next/navigation";
 import { notFound } from "next/navigation";
 import { CampaignLanding, type CampaignSlug } from "@/components/CampaignLanding";
 import { getContent } from "@/lib/content";
@@ -11,6 +12,7 @@ export function generateStaticParams() {
 }
 export default async function CampaignPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug==="acreage") permanentRedirect("/lifestyle/florida");
   if (!campaignSlugs.some((candidate) => candidate === slug)) notFound();
   const content = await getContent();
   return <CampaignLanding slug={slug as CampaignSlug} content={content} />;

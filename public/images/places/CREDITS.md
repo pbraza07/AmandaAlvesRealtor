@@ -1,0 +1,55 @@
+# Destination photo credits
+Resized and cropped for display. Full original and license terms are linked below.
+
+- **lutz** — Bleau420. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Lutz-Train-Depot.jpg).
+- **odessa** — Jec8992. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Lake_Rogers_in_Odessa_Florida.jpg).
+- **dade-city** — Jacobalexander89. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Downtown_Dade_City,_Florida.jpg).
+- **san-antonio** — Ebyabe. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:San_Antonio_FL_city_hall04.jpg).
+- **wesley-chapel** — LittleT889. CC0. [Original and license](https://commons.wikimedia.org/wiki/File:Wesley_Chapel,_Florida.jpg).
+- **brooksville** — Ebyabe. CC BY 2.5. [Original and license](https://commons.wikimedia.org/wiki/File:Hernando_Cty_Crths_Brooksville05.jpg).
+- **ocala** — Excel23. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:OcalaFLMontage.png).
+- **dunedin** — Roman Eugeniusz. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Dunedin,Florida,USA._-_panoramio_(3).jpg).
+- **st-petersburg** — Jackdude101. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:St._Pete_Pier_-_East.jpg).
+- **sarasota** — Cullen Morgan. CC BY 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Sarasota_Skyline.jpeg).
+- **stuart** — JonathanPuello. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Stuart,_FL._Downtown.jpg).
+- **deland** — FLboats. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Downtown_DeLand_looking_east.png).
+- **alicante** — Bfoto.ru. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Alicante,_Spain.jpg).
+- **valencia** — Boris  Dzhingarov. CC BY 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Malvarrosa_Beach,_Valencia,_Spain_(29812271043).jpg).
+- **malaga** — Kiban. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Da_Gibralfaro_(cropped)2.jpg).
+- **murcia** — nesimo. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:S%C3%A1bado_Santo_en_Murcia_19-04-2014_edited.jpg).
+- **granada** — Brett Hodnett. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Granada_(25987961022).jpg).
+- **cadiz** — fuente: COVT. CC BY 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Cadiz_aerea.jpg).
+- **girona** — Patronat de Turisme Costa Brava Pirineu de Girona. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Girona_des_de_l_aire_edited.jpg).
+- **santander** — Noreenlam. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:El_Palacio_de_la_Magdalena_(2).jpg).
+- **oviedo** — Simon Burchell. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Catedral_de_Oviedo_03.jpg).
+- **almeria** — Jebulon. CC0. [Original and license](https://commons.wikimedia.org/wiki/File:Alcazaba_1,_Almeria,_Spain.jpg).
+- **denia** — See source. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Denia_desde_el_Montg%C3%B3.jpg).
+- **castellon** — MikeSalu2. CC0. [Original and license](https://commons.wikimedia.org/wiki/File:Vista_de_Castell%C3%B3.png).
+- **ronda** — kallerna. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Ronda_aerial.jpg).
+- **orgiva** — Graham Beards at English Wikipedia. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:%C3%93rgiva_looking_east_(28_11_2004).jpg).
+- **lisbon** — Vitor Oliveira from Torres Vedras, PORTUGAL. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Lisboa_-_Portugal_(52597836992).jpg).
+- **porto** — Diego Delso. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Puente_Don_Luis_I,_Oporto,_Portugal,_2012-05-09,_DD_13.JPG).
+- **cascais** — Jorge Franganillo. CC BY 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Cascais_-_Santa_Marta_(53854018150).jpg).
+- **foz-do-arelho** — Alexkom000. CC BY 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:2025-10-04_Foz_do_Arelho_1.jpg).
+- **caldas-da-rainha** — Vitor Oliveira from Torres Vedras, PORTUGAL. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_da_Rep%C3%BAblica_-_Caldas_da_Rainha_-_Portugal_(7107093923).jpg).
+- **nazare** — Mister No. CC BY 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:La_grande_plage_de_Nazar%C3%A9_-_panoramio_(20).jpg).
+- **tavira** — Panarria. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Vista_Tavira.jpg).
+- **lagos** — Bextrel. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Vista_Centro_Hist%C3%B3rico_de_Lagos_(cropped).jpg).
+- **setubal** — Filipe Rocha,user:sacavem (pt) http://pt.wikipedia.org/wiki/Usu%C3%A1rio:Sacavem  (pt:usuário:sacavem). CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Setubal_III_(cropped).jpg).
+- **braga** — Michael Paraskevas. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Braga_-_Cathedral_(Se)_-_panoramio.jpg).
+- **viana-do-castelo** — Lucas Martínez Farrapeira. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Viana_do_Castelo_(15727153460).jpg).
+- **coimbra** — Leandro Neumann Ciuffo. CC BY 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Coimbra_e_o_rio_Mondego_(6167200429)_(cropped).jpg).
+- **covilha** — ribak000. CC BY 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:6215_Unhais_da_Serra,_Portugal_-_panoramio_(cropped).jpg).
+- **ponte-de-lima** — Joseolgon. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Aerial_Ponte_de_Lima.jpg).
+- **tamarindo** — Hqfrancis. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Beach_Tamarindo,_Costa_Rica.jpg).
+- **nosara** — Carlos Adampol Galindo. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Fisherman_playa_Nosara.jpg).
+- **samara** — Julián Monge-Nájera. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:2021_Playa_Samara_Costa_Rica_enero_2021_19.jpg).
+- **santa-teresa** — Christopher Crouzet. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Fishermen_at_Sunset,_Playa_Santa_Teresa,_Costa_Rica.jpg).
+- **manuel-antonio** — No machine-readable author provided. Jakes19 assumed (based on copyright claims).. Public domain. [Original and license](https://commons.wikimedia.org/wiki/File:Manuel_antonio_06_april_2005.jpeg).
+- **uvita** — Melissa Guadalupe Huertas. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Sunset_over_Playa_Uvita,_Costa_Rica.jpg).
+- **ojochal** — Los Paseos from Earth. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Every_Night_a_Festival_(41872989940).jpg).
+- **atenas** — Haakon S. Krohn. CC BY 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Iglesia_Atenas.jpg).
+- **grecia** — The LEAF Project. CC BY-SA 2.0. [Original and license](https://commons.wikimedia.org/wiki/File:Iglesia_de_La_Merced._Grecia.jpg).
+- **escazu** — Loganx1221. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Parque_de_Escazu_San_Jose_Costa_rica.jpg).
+- **la-fortuna** — Beate Schröder-Wettwer. CC BY-SA 4.0. [Original and license](https://commons.wikimedia.org/wiki/File:Arenal-Vukan_und_der_Ort_La_Fortuna.jpg).
+- **puerto-viejo** — Jsfouche. CC BY-SA 3.0. [Original and license](https://commons.wikimedia.org/wiki/File:Puerto_Viejo_de_Talamanca.jpg).

@@ -1,0 +1,366 @@
+{
+  "lutz": {
+    "source": "https://commons.wikimedia.org/wiki/File:Lutz-Train-Depot.jpg",
+    "author": "Bleau420",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Lutz-Train-Depot"
+  },
+  "odessa": {
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_Rogers_in_Odessa_Florida.jpg",
+    "author": "Jec8992",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Lake Rogers in Odessa Florida"
+  },
+  "dade-city": {
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_Dade_City,_Florida.jpg",
+    "author": "Jacobalexander89",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Downtown Dade City, Florida"
+  },
+  "san-antonio": {
+    "source": "https://commons.wikimedia.org/wiki/File:San_Antonio_FL_city_hall04.jpg",
+    "author": "Ebyabe",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "San Antonio FL city hall04"
+  },
+  "wesley-chapel": {
+    "source": "https://commons.wikimedia.org/wiki/File:Wesley_Chapel,_Florida.jpg",
+    "author": "LittleT889",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "Wesley Chapel, Florida"
+  },
+  "brooksville": {
+    "source": "https://commons.wikimedia.org/wiki/File:Hernando_Cty_Crths_Brooksville05.jpg",
+    "author": "Ebyabe",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "title": "Hernando Cty Crths Brooksville05"
+  },
+  "ocala": {
+    "source": "https://commons.wikimedia.org/wiki/File:OcalaFLMontage.png",
+    "author": "Excel23",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "OcalaFLMontage"
+  },
+  "dunedin": {
+    "source": "https://commons.wikimedia.org/wiki/File:Dunedin,Florida,USA._-_panoramio_(3).jpg",
+    "author": "Roman Eugeniusz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Dunedin,Florida,USA. - panoramio (3)"
+  },
+  "st-petersburg": {
+    "source": "https://commons.wikimedia.org/wiki/File:St._Pete_Pier_-_East.jpg",
+    "author": "Jackdude101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "St. Pete Pier - East"
+  },
+  "sarasota": {
+    "source": "https://commons.wikimedia.org/wiki/File:Sarasota_Skyline.jpeg",
+    "author": "Cullen Morgan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "Sarasota Skyline"
+  },
+  "stuart": {
+    "source": "https://commons.wikimedia.org/wiki/File:Stuart,_FL._Downtown.jpg",
+    "author": "JonathanPuello",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Stuart, FL. Downtown"
+  },
+  "deland": {
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_DeLand_looking_east.png",
+    "author": "FLboats",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Downtown DeLand looking east"
+  },
+  "alicante": {
+    "source": "https://commons.wikimedia.org/wiki/File:Alicante,_Spain.jpg",
+    "author": "Bfoto.ru",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Alicante, Spain"
+  },
+  "valencia": {
+    "source": "https://commons.wikimedia.org/wiki/File:Malvarrosa_Beach,_Valencia,_Spain_(29812271043).jpg",
+    "author": "Boris  Dzhingarov",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "title": "Malvarrosa Beach, Valencia, Spain (29812271043)"
+  },
+  "malaga": {
+    "source": "https://commons.wikimedia.org/wiki/File:Da_Gibralfaro_(cropped)2.jpg",
+    "author": "Kiban",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Da Gibralfaro (cropped)2"
+  },
+  "murcia": {
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%A1bado_Santo_en_Murcia_19-04-2014_edited.jpg",
+    "author": "nesimo",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Sábado Santo en Murcia 19-04-2014 edited"
+  },
+  "granada": {
+    "source": "https://commons.wikimedia.org/wiki/File:Granada_(25987961022).jpg",
+    "author": "Brett Hodnett",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Granada (25987961022)"
+  },
+  "cadiz": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cadiz_aerea.jpg",
+    "author": "fuente: COVT",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "title": "Cadiz aerea"
+  },
+  "girona": {
+    "source": "https://commons.wikimedia.org/wiki/File:Girona_des_de_l_aire_edited.jpg",
+    "author": "Patronat de Turisme Costa Brava Pirineu de Girona",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Girona des de l aire edited"
+  },
+  "santander": {
+    "source": "https://commons.wikimedia.org/wiki/File:El_Palacio_de_la_Magdalena_(2).jpg",
+    "author": "Noreenlam",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "El Palacio de la Magdalena (2)"
+  },
+  "oviedo": {
+    "source": "https://commons.wikimedia.org/wiki/File:Catedral_de_Oviedo_03.jpg",
+    "author": "Simon Burchell",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Catedral de Oviedo 03"
+  },
+  "almeria": {
+    "source": "https://commons.wikimedia.org/wiki/File:Alcazaba_1,_Almeria,_Spain.jpg",
+    "author": "Jebulon",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "Alcazaba 1, Almeria, Spain"
+  },
+  "denia": {
+    "source": "https://commons.wikimedia.org/wiki/File:Denia_desde_el_Montg%C3%B3.jpg",
+    "author": "See source",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "Denia desde el Montgó"
+  },
+  "castellon": {
+    "source": "https://commons.wikimedia.org/wiki/File:Vista_de_Castell%C3%B3.png",
+    "author": "MikeSalu2",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "Vista de Castelló"
+  },
+  "ronda": {
+    "source": "https://commons.wikimedia.org/wiki/File:Ronda_aerial.jpg",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Ronda aerial"
+  },
+  "orgiva": {
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%93rgiva_looking_east_(28_11_2004).jpg",
+    "author": "Graham Beards at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "Órgiva looking east (28 11 2004)"
+  },
+  "lisbon": {
+    "source": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Portugal_(52597836992).jpg",
+    "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Lisboa - Portugal (52597836992)"
+  },
+  "porto": {
+    "source": "https://commons.wikimedia.org/wiki/File:Puente_Don_Luis_I,_Oporto,_Portugal,_2012-05-09,_DD_13.JPG",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Puente Don Luis I, Oporto, Portugal, 2012-05-09, DD 13"
+  },
+  "cascais": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cascais_-_Santa_Marta_(53854018150).jpg",
+    "author": "Jorge Franganillo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "title": "Cascais - Santa Marta (53854018150)"
+  },
+  "foz-do-arelho": {
+    "source": "https://commons.wikimedia.org/wiki/File:2025-10-04_Foz_do_Arelho_1.jpg",
+    "author": "Alexkom000",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "2025-10-04 Foz do Arelho 1"
+  },
+  "caldas-da-rainha": {
+    "source": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_da_Rep%C3%BAblica_-_Caldas_da_Rainha_-_Portugal_(7107093923).jpg",
+    "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Praça da República - Caldas da Rainha - Portugal (7107093923)"
+  },
+  "nazare": {
+    "source": "https://commons.wikimedia.org/wiki/File:La_grande_plage_de_Nazar%C3%A9_-_panoramio_(20).jpg",
+    "author": "Mister No",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "title": "La grande plage de Nazaré - panoramio (20)"
+  },
+  "tavira": {
+    "source": "https://commons.wikimedia.org/wiki/File:Vista_Tavira.jpg",
+    "author": "Panarria",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "Vista Tavira"
+  },
+  "lagos": {
+    "source": "https://commons.wikimedia.org/wiki/File:Vista_Centro_Hist%C3%B3rico_de_Lagos_(cropped).jpg",
+    "author": "Bextrel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Vista Centro Histórico de Lagos (cropped)"
+  },
+  "setubal": {
+    "source": "https://commons.wikimedia.org/wiki/File:Setubal_III_(cropped).jpg",
+    "author": "Filipe Rocha,user:sacavem (pt) http://pt.wikipedia.org/wiki/Usu%C3%A1rio:Sacavem  (pt:usuário:sacavem)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Setubal III (cropped)"
+  },
+  "braga": {
+    "source": "https://commons.wikimedia.org/wiki/File:Braga_-_Cathedral_(Se)_-_panoramio.jpg",
+    "author": "Michael Paraskevas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Braga - Cathedral (Se) - panoramio"
+  },
+  "viana-do-castelo": {
+    "source": "https://commons.wikimedia.org/wiki/File:Viana_do_Castelo_(15727153460).jpg",
+    "author": "Lucas Martínez Farrapeira",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Viana do Castelo (15727153460)"
+  },
+  "coimbra": {
+    "source": "https://commons.wikimedia.org/wiki/File:Coimbra_e_o_rio_Mondego_(6167200429)_(cropped).jpg",
+    "author": "Leandro Neumann Ciuffo",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "title": "Coimbra e o rio Mondego (6167200429) (cropped)"
+  },
+  "covilha": {
+    "source": "https://commons.wikimedia.org/wiki/File:6215_Unhais_da_Serra,_Portugal_-_panoramio_(cropped).jpg",
+    "author": "ribak000",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "title": "6215 Unhais da Serra, Portugal - panoramio (cropped)"
+  },
+  "ponte-de-lima": {
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_Ponte_de_Lima.jpg",
+    "author": "Joseolgon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Aerial Ponte de Lima"
+  },
+  "tamarindo": {
+    "source": "https://commons.wikimedia.org/wiki/File:Beach_Tamarindo,_Costa_Rica.jpg",
+    "author": "Hqfrancis",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Beach Tamarindo, Costa Rica"
+  },
+  "nosara": {
+    "source": "https://commons.wikimedia.org/wiki/File:Fisherman_playa_Nosara.jpg",
+    "author": "Carlos Adampol Galindo",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Fisherman playa Nosara"
+  },
+  "samara": {
+    "source": "https://commons.wikimedia.org/wiki/File:2021_Playa_Samara_Costa_Rica_enero_2021_19.jpg",
+    "author": "Julián Monge-Nájera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "2021 Playa Samara Costa Rica enero 2021 19"
+  },
+  "santa-teresa": {
+    "source": "https://commons.wikimedia.org/wiki/File:Fishermen_at_Sunset,_Playa_Santa_Teresa,_Costa_Rica.jpg",
+    "author": "Christopher Crouzet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Fishermen at Sunset, Playa Santa Teresa, Costa Rica"
+  },
+  "manuel-antonio": {
+    "source": "https://commons.wikimedia.org/wiki/File:Manuel_antonio_06_april_2005.jpeg",
+    "author": "No machine-readable author provided. Jakes19 assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "title": "Manuel antonio 06 april 2005"
+  },
+  "uvita": {
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_over_Playa_Uvita,_Costa_Rica.jpg",
+    "author": "Melissa Guadalupe Huertas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Sunset over Playa Uvita, Costa Rica"
+  },
+  "ojochal": {
+    "source": "https://commons.wikimedia.org/wiki/File:Every_Night_a_Festival_(41872989940).jpg",
+    "author": "Los Paseos from Earth",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Every Night a Festival (41872989940)"
+  },
+  "atenas": {
+    "source": "https://commons.wikimedia.org/wiki/File:Iglesia_Atenas.jpg",
+    "author": "Haakon S. Krohn",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "Iglesia Atenas"
+  },
+  "grecia": {
+    "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_La_Merced._Grecia.jpg",
+    "author": "The LEAF Project",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "Iglesia de La Merced. Grecia"
+  },
+  "escazu": {
+    "source": "https://commons.wikimedia.org/wiki/File:Parque_de_Escazu_San_Jose_Costa_rica.jpg",
+    "author": "Loganx1221",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Parque de Escazu San Jose Costa rica"
+  },
+  "la-fortuna": {
+    "source": "https://commons.wikimedia.org/wiki/File:Arenal-Vukan_und_der_Ort_La_Fortuna.jpg",
+    "author": "Beate Schröder-Wettwer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "Arenal-Vukan und der Ort La Fortuna"
+  },
+  "puerto-viejo": {
+    "source": "https://commons.wikimedia.org/wiki/File:Puerto_Viejo_de_Talamanca.jpg",
+    "author": "Jsfouche",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "Puerto Viejo de Talamanca"
+  }
+}

@@ -129,3 +129,10 @@ npm run render:build # optional migration/seed followed by production build
 npm start            # production server
 npm run db:seed      # create/update admin when PostgreSQL is enabled
 ```
+
+
+## Lifestyle site consolidation (v2.17.0)
+
+The root URL is the consolidated lifestyle site, with Florida buyer/seller forms, four destination explorers, and curated travel interest collection. `/lifestyle` permanently redirects to `/`; existing destination URLs remain valid. The original Florida-only source is retained at `archive/florida-only-v2.14` (commit `cda10b9735db1f51000b4e169e7fdf202de8f2ad`). The active Render service and database are retained; no records are deleted.
+
+Match percentages measure selected editorial preferences met; they are not property, price, or suitability guarantees. No preferences means no score. Airport distances are approximate great-circle distances, not road travel times. Destination photos have source and licensing details at `/photo-credits` and `public/images/places/CREDITS.md`. Travel inquiries use the existing lead storage and owner notification pipeline, with explicit information consent and no booking/payment.

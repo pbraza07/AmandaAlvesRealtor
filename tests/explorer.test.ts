@@ -26,3 +26,26 @@ test('shared explorer views round-trip filters, text, match mode and selected pl
  assert.deepEqual(parseExplorerParams(new URLSearchParams('preferences=coast,fake,coast&match=invalid')).filters,['coast']);
  assert.equal(parseExplorerParams(new URLSearchParams('match=invalid')).mode,'all');
 });
+
+test('match percentages reflect selected preferences and do not invent scores for an empty selection',async()=>{
+ const {matchPercentage,filtersForCountry}=await import('../lib/explorer');
+ const place=areas.find(a=>a.id==='alicante')!;
+ assert.equal(matchPercentage(place,[]),null);
+ assert.equal(matchPercentage(place,['coast','mountains','city']),67);
+ assert.equal(matchPercentage(place,['coast','city']),100);
+ assert.equal(filtersForCountry('florida').some(f=>f.id==='mountains'),false);
+ assert.equal(filtersForCountry('spain').some(f=>f.id==='mountains'),true);
+ assert.ok(lifestyleFilters.some(f=>f.id==='family'));
+ assert.equal(lifestyleFilters.find(f=>f.id==='value')?.label,'Affordability');
+ assert.equal(lifestyleFilters.some(f=>(f.id as string)==='settling'),false);
+});
+
+test('every city has a real photo, a city-specific guide, and travel highlights',()=>{
+ for(const place of areas){
+  assert.match(place.image,/^\/images\/places\/[a-z-]+\.webp$/);
+  assert.ok(place.guideLabel.includes(place.name));
+  assert.doesNotMatch(place.source,/places-to-go\/$|destinations\/$|\/destinos$|where-to-go$/);
+  assert.ok(place.airport.includes('km straight line'));
+  assert.ok(place.idealFor.length>40);
+ }
+});

@@ -28,3 +28,10 @@ test('explorer choices accompany consultation details in owner notifications',()
  assert.equal(rows.find(r=>r[0]==='Explorer match mode')?.[1],'all');
  assert.equal(rows.find(r=>r[0]==='Areas or cities of interest')?.[1],'Foz do Arelho');
 });
+
+test('travel interest details are retained in the owner email and export field order',()=>{
+ const rows=orderedLeadFields({type:'BUYER',details:{inquiryPurpose:'Travel opportunities',destination:'Costa Rica',tripTiming:'3–6 months',travelInterests:'Local food, Cultural immersion',travelInformationConsent:true}});
+ assert.equal(rows.find(r=>r[0]==='Destination')?.[1],'Costa Rica');
+ assert.equal(rows.find(r=>r[0]==='Travel interests')?.[1],'Local food, Cultural immersion');
+ assert.equal(rows.find(r=>r[0]==='Travel information consent')?.[1],'Yes');
+});

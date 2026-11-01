@@ -1,0 +1,314 @@
+{
+  "lutz": {
+    "guide": "https://en.wikipedia.org/wiki/Lutz%2C_Florida",
+    "title": "Lutz, Florida",
+    "image": "/images/places/lutz.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Lutz-Train-Depot.jpg"
+  },
+  "odessa": {
+    "guide": "https://en.wikipedia.org/wiki/Odessa%2C_Florida",
+    "title": "Odessa, Florida",
+    "image": "/images/places/odessa.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Lake_Rogers_in_Odessa_Florida.jpg"
+  },
+  "dade-city": {
+    "guide": "https://en.wikipedia.org/wiki/Dade_City%2C_Florida",
+    "title": "Dade City, Florida",
+    "image": "/images/places/dade-city.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Downtown_Dade_City,_Florida.jpg"
+  },
+  "san-antonio": {
+    "guide": "https://en.wikipedia.org/wiki/San_Antonio%2C_Florida",
+    "title": "San Antonio, Florida",
+    "image": "/images/places/san-antonio.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:San_Antonio_FL_city_hall04.jpg"
+  },
+  "wesley-chapel": {
+    "guide": "https://en.wikipedia.org/wiki/Wesley_Chapel%2C_Florida",
+    "title": "Wesley Chapel, Florida",
+    "image": "/images/places/wesley-chapel.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Wesley_Chapel,_Florida.jpg"
+  },
+  "brooksville": {
+    "guide": "https://en.wikipedia.org/wiki/Brooksville%2C_Florida",
+    "title": "Brooksville, Florida",
+    "image": "/images/places/brooksville.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Hernando_Cty_Crths_Brooksville05.jpg"
+  },
+  "ocala": {
+    "guide": "https://en.wikipedia.org/wiki/Ocala%2C_Florida",
+    "title": "Ocala, Florida",
+    "image": "/images/places/ocala.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:OcalaFLMontage.png"
+  },
+  "dunedin": {
+    "guide": "https://en.wikipedia.org/wiki/Dunedin%2C_Florida",
+    "title": "Dunedin, Florida",
+    "image": "/images/places/dunedin.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Dunedin,Florida,USA._-_panoramio_(3).jpg"
+  },
+  "st-petersburg": {
+    "guide": "https://en.wikipedia.org/wiki/St._Petersburg%2C_Florida",
+    "title": "St. Petersburg, Florida",
+    "image": "/images/places/st-petersburg.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:St._Pete_Pier_-_East.jpg"
+  },
+  "sarasota": {
+    "guide": "https://en.wikipedia.org/wiki/Sarasota%2C_Florida",
+    "title": "Sarasota, Florida",
+    "image": "/images/places/sarasota.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Sarasota_Skyline.jpeg"
+  },
+  "stuart": {
+    "guide": "https://en.wikipedia.org/wiki/Stuart%2C_Florida",
+    "title": "Stuart, Florida",
+    "image": "/images/places/stuart.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Stuart,_FL._Downtown.jpg"
+  },
+  "deland": {
+    "guide": "https://en.wikipedia.org/wiki/DeLand%2C_Florida",
+    "title": "DeLand, Florida",
+    "image": "/images/places/deland.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Downtown_DeLand_looking_east.png"
+  },
+  "alicante": {
+    "guide": "https://en.wikipedia.org/wiki/Alicante",
+    "title": "Alicante",
+    "image": "/images/places/alicante.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Alicante,_Spain.jpg"
+  },
+  "valencia": {
+    "guide": "https://en.wikipedia.org/wiki/Valencia",
+    "title": "Valencia",
+    "image": "/images/places/valencia.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Malvarrosa_Beach,_Valencia,_Spain_(29812271043).jpg"
+  },
+  "malaga": {
+    "guide": "https://en.wikipedia.org/wiki/M%C3%A1laga",
+    "title": "Málaga",
+    "image": "/images/places/malaga.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Da_Gibralfaro_(cropped)2.jpg"
+  },
+  "murcia": {
+    "guide": "https://en.wikipedia.org/wiki/Murcia",
+    "title": "Murcia",
+    "image": "/images/places/murcia.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:S%C3%A1bado_Santo_en_Murcia_19-04-2014_edited.jpg"
+  },
+  "granada": {
+    "guide": "https://en.wikipedia.org/wiki/Granada",
+    "title": "Granada",
+    "image": "/images/places/granada.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Granada_(25987961022).jpg"
+  },
+  "cadiz": {
+    "guide": "https://en.wikipedia.org/wiki/C%C3%A1diz",
+    "title": "Cádiz",
+    "image": "/images/places/cadiz.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Cadiz_aerea.jpg"
+  },
+  "girona": {
+    "guide": "https://en.wikipedia.org/wiki/Girona",
+    "title": "Girona",
+    "image": "/images/places/girona.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Girona_des_de_l_aire_edited.jpg"
+  },
+  "santander": {
+    "guide": "https://en.wikipedia.org/wiki/Santander%2C_Spain",
+    "title": "Santander, Spain",
+    "image": "/images/places/santander.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:El_Palacio_de_la_Magdalena_(2).jpg"
+  },
+  "oviedo": {
+    "guide": "https://en.wikipedia.org/wiki/Oviedo",
+    "title": "Oviedo",
+    "image": "/images/places/oviedo.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Catedral_de_Oviedo_03.jpg"
+  },
+  "almeria": {
+    "guide": "https://en.wikipedia.org/wiki/Almer%C3%ADa",
+    "title": "Almería",
+    "image": "/images/places/almeria.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Alcazaba_1,_Almeria,_Spain.jpg"
+  },
+  "denia": {
+    "guide": "https://en.wikipedia.org/wiki/D%C3%A9nia",
+    "title": "Dénia",
+    "image": "/images/places/denia.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Denia_desde_el_Montg%C3%B3.jpg"
+  },
+  "castellon": {
+    "guide": "https://en.wikipedia.org/wiki/Castell%C3%B3n_de_la_Plana",
+    "title": "Castellón de la Plana",
+    "image": "/images/places/castellon.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Vista_de_Castell%C3%B3.png"
+  },
+  "ronda": {
+    "guide": "https://en.wikipedia.org/wiki/Ronda",
+    "title": "Ronda",
+    "image": "/images/places/ronda.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Ronda_aerial.jpg"
+  },
+  "orgiva": {
+    "guide": "https://en.wikipedia.org/wiki/%C3%93rgiva",
+    "title": "Órgiva",
+    "image": "/images/places/orgiva.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:%C3%93rgiva_looking_east_(28_11_2004).jpg"
+  },
+  "lisbon": {
+    "guide": "https://en.wikipedia.org/wiki/Lisbon",
+    "title": "Lisbon",
+    "image": "/images/places/lisbon.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Portugal_(52597836992).jpg"
+  },
+  "porto": {
+    "guide": "https://en.wikipedia.org/wiki/Porto",
+    "title": "Porto",
+    "image": "/images/places/porto.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Puente_Don_Luis_I,_Oporto,_Portugal,_2012-05-09,_DD_13.JPG"
+  },
+  "cascais": {
+    "guide": "https://en.wikipedia.org/wiki/Cascais",
+    "title": "Cascais",
+    "image": "/images/places/cascais.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Cascais_-_Santa_Marta_(53854018150).jpg"
+  },
+  "foz-do-arelho": {
+    "guide": "https://en.wikipedia.org/wiki/Foz_do_Arelho",
+    "title": "Foz do Arelho",
+    "image": "/images/places/foz-do-arelho.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:2025-10-04_Foz_do_Arelho_1.jpg"
+  },
+  "caldas-da-rainha": {
+    "guide": "https://en.wikipedia.org/wiki/Caldas_da_Rainha",
+    "title": "Caldas da Rainha",
+    "image": "/images/places/caldas-da-rainha.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_da_Rep%C3%BAblica_-_Caldas_da_Rainha_-_Portugal_(7107093923).jpg"
+  },
+  "nazare": {
+    "guide": "https://en.wikipedia.org/wiki/Nazar%C3%A9%2C_Portugal",
+    "title": "Nazaré, Portugal",
+    "image": "/images/places/nazare.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:La_grande_plage_de_Nazar%C3%A9_-_panoramio_(20).jpg"
+  },
+  "tavira": {
+    "guide": "https://en.wikipedia.org/wiki/Tavira",
+    "title": "Tavira",
+    "image": "/images/places/tavira.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Vista_Tavira.jpg"
+  },
+  "lagos": {
+    "guide": "https://en.wikipedia.org/wiki/Lagos%2C_Portugal",
+    "title": "Lagos, Portugal",
+    "image": "/images/places/lagos.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Vista_Centro_Hist%C3%B3rico_de_Lagos_(cropped).jpg"
+  },
+  "setubal": {
+    "guide": "https://en.wikipedia.org/wiki/Set%C3%BAbal",
+    "title": "Setúbal",
+    "image": "/images/places/setubal.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Setubal_III_(cropped).jpg"
+  },
+  "braga": {
+    "guide": "https://en.wikipedia.org/wiki/Braga",
+    "title": "Braga",
+    "image": "/images/places/braga.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Braga_-_Cathedral_(Se)_-_panoramio.jpg"
+  },
+  "viana-do-castelo": {
+    "guide": "https://en.wikipedia.org/wiki/Viana_do_Castelo",
+    "title": "Viana do Castelo",
+    "image": "/images/places/viana-do-castelo.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Viana_do_Castelo_(15727153460).jpg"
+  },
+  "coimbra": {
+    "guide": "https://en.wikipedia.org/wiki/Coimbra",
+    "title": "Coimbra",
+    "image": "/images/places/coimbra.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Coimbra_e_o_rio_Mondego_(6167200429)_(cropped).jpg"
+  },
+  "covilha": {
+    "guide": "https://en.wikipedia.org/wiki/Covilh%C3%A3",
+    "title": "Covilhã",
+    "image": "/images/places/covilha.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:6215_Unhais_da_Serra,_Portugal_-_panoramio_(cropped).jpg"
+  },
+  "ponte-de-lima": {
+    "guide": "https://en.wikipedia.org/wiki/Ponte_de_Lima",
+    "title": "Ponte de Lima",
+    "image": "/images/places/ponte-de-lima.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Aerial_Ponte_de_Lima.jpg"
+  },
+  "tamarindo": {
+    "guide": "https://en.wikipedia.org/wiki/Tamarindo%2C_Costa_Rica",
+    "title": "Tamarindo, Costa Rica",
+    "image": "/images/places/tamarindo.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Beach_Tamarindo,_Costa_Rica.jpg"
+  },
+  "nosara": {
+    "guide": "https://en.wikipedia.org/wiki/Nosara",
+    "title": "Nosara",
+    "image": "/images/places/nosara.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Fisherman_playa_Nosara.jpg"
+  },
+  "samara": {
+    "guide": "https://en.wikipedia.org/wiki/S%C3%A1mara",
+    "title": "Sámara",
+    "image": "/images/places/samara.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:2021_Playa_Samara_Costa_Rica_enero_2021_19.jpg"
+  },
+  "santa-teresa": {
+    "guide": "https://en.wikipedia.org/wiki/Santa_Teresa%2C_Costa_Rica",
+    "title": "Santa Teresa, Costa Rica",
+    "image": "/images/places/santa-teresa.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Fishermen_at_Sunset,_Playa_Santa_Teresa,_Costa_Rica.jpg"
+  },
+  "manuel-antonio": {
+    "guide": "https://en.wikipedia.org/wiki/Manuel_Antonio_National_Park",
+    "title": "Manuel Antonio National Park",
+    "image": "/images/places/manuel-antonio.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Manuel_antonio_06_april_2005.jpeg"
+  },
+  "uvita": {
+    "guide": "https://en.wikipedia.org/wiki/Uvita_(Costa_Rica)",
+    "title": "Uvita (Costa Rica)",
+    "image": "/images/places/uvita.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Sunset_over_Playa_Uvita,_Costa_Rica.jpg"
+  },
+  "ojochal": {
+    "image": "/images/places/ojochal.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Every_Night_a_Festival_(41872989940).jpg",
+    "guide": "https://www.gobiernolocalosa.go.cr/turismo/info.php?item=40",
+    "title": "Ojochal, Costa Rica"
+  },
+  "atenas": {
+    "guide": "https://en.wikipedia.org/wiki/Atenas",
+    "title": "Atenas",
+    "image": "/images/places/atenas.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Iglesia_Atenas.jpg"
+  },
+  "grecia": {
+    "guide": "https://en.wikipedia.org/wiki/Grecia%2C_Costa_Rica",
+    "title": "Grecia, Costa Rica",
+    "image": "/images/places/grecia.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Iglesia_de_La_Merced._Grecia.jpg"
+  },
+  "escazu": {
+    "guide": "https://en.wikipedia.org/wiki/Escaz%C3%BA_(district)",
+    "title": "Escazú, Costa Rica",
+    "image": "/images/places/escazu.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Parque_de_Escazu_San_Jose_Costa_rica.jpg"
+  },
+  "la-fortuna": {
+    "guide": "https://en.wikipedia.org/wiki/La_Fortuna,_Costa_Rica",
+    "title": "La Fortuna, Costa Rica",
+    "image": "/images/places/la-fortuna.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Arenal-Vukan_und_der_Ort_La_Fortuna.jpg"
+  },
+  "puerto-viejo": {
+    "guide": "https://en.wikipedia.org/wiki/Puerto_Viejo_de_Talamanca",
+    "title": "Puerto Viejo de Talamanca",
+    "image": "/images/places/puerto-viejo.webp",
+    "creditPage": "https://commons.wikimedia.org/wiki/File:Puerto_Viejo_de_Talamanca.jpg"
+  }
+}
