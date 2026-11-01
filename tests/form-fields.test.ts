@@ -21,3 +21,10 @@ test('lifestyle consultation details reach notifications and lead exports', () =
  for(const [label,value] of [['Destination','Portugal'],['Property lifestyle goal','Second home'],['Preferred consultation date','2026-12-01'],['Preferred consultation time and time zone','10am Eastern']]) assert.equal(rows.find(r=>r[0]===label)?.[1],value);
  assert.equal(orderedLeadFields({type:'SELLER'}).some(r=>r[0]==='Destination'),false);
 });
+
+test('explorer choices accompany consultation details in owner notifications',()=>{
+ const rows=orderedLeadFields({type:'BUYER',details:{inquiryPurpose:'Lifestyle consultation',areas:'Foz do Arelho',explorerPreferences:'Coastal living, Nature nearby',explorerMatchMode:'all',explorerSearch:'Silver Coast'}});
+ assert.equal(rows.find(r=>r[0]==='Explorer preferences')?.[1],'Coastal living, Nature nearby');
+ assert.equal(rows.find(r=>r[0]==='Explorer match mode')?.[1],'all');
+ assert.equal(rows.find(r=>r[0]==='Areas or cities of interest')?.[1],'Foz do Arelho');
+});
