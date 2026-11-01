@@ -1,9 +1,12 @@
 "use client";
+import { useSiteLanguage, Localized } from "@/components/SiteLanguage";
+
 
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 
 export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:string}) {
+  const {locale,t}=useSiteLanguage();
   const [siteUrl, setSiteUrl] = useState("");
   const [qrDataUrl, setQrDataUrl] = useState("");
   const [copyLabel, setCopyLabel] = useState("Copy Website Link");
@@ -11,7 +14,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
   const destinations:Record<string,string>={lifestyle:"/",florida:"/lifestyle/florida",spain:"/lifestyle/spain",portugal:"/lifestyle/portugal","costa-rica":"/lifestyle/costa-rica",general:"/",seller:"/sell",openhouse:"/openhouse",buyer:"/buy",homevalue:"/home-value"};
 
   useEffect(() => {
-    const url = `${window.location.origin}${destinations[campaign]}?utm_source=qr&utm_medium=print&utm_campaign=${encodeURIComponent(campaign)}`;
+    const url = `${window.location.origin}${destinations[campaign]}?utm_source=qr&utm_medium=print&utm_campaign=${encodeURIComponent(campaign)}&lang=${locale}`;
     setSiteUrl(url);
     QRCode.toDataURL(url, {
       width: 720,
@@ -19,7 +22,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
       errorCorrectionLevel: "H",
       color: { dark: "#18352b", light: "#ffffff" },
     }).then(setQrDataUrl).catch(() => setQrDataUrl(""));
-  }, [campaign]);
+  }, [campaign,locale]);
 
   async function copyLink() {
     if (!siteUrl) return;
@@ -33,7 +36,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
     if (navigator.share) {
       await navigator.share({
         title: "Amanda Alves, Realtor®",
-        text: "Find Your Place. Live Your Lifestyle. Explore Florida, Spain, Portugal, and Costa Rica with Amanda Alves.",
+        text: t("Find Your Place. Live Your Lifestyle. Explore Florida, Spain, Portugal, and Costa Rica with Amanda Alves."),
         url: siteUrl,
       });
       return;
@@ -49,7 +52,7 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
     link.click();
   }
 
-  return <div className="qr-share-card" id="share">
+  return <Localized><div className="qr-share-card" id="share">
     <div className="qr-code-wrap">
       {qrDataUrl
         ? <img src={qrDataUrl} alt="QR code linking to Amanda Alves Realtor website" width="220" height="220"/>
@@ -65,5 +68,5 @@ export function WebsiteQrShare({defaultCampaign="general"}:{defaultCampaign?:str
         <button className="qr-download" type="button" onClick={downloadQr} disabled={!qrDataUrl}>Download QR Code</button>
       </div>
     </div>
-  </div>;
+  </div></Localized>;
 }

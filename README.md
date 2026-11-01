@@ -136,3 +136,10 @@ npm run db:seed      # create/update admin when PostgreSQL is enabled
 The root URL is the consolidated lifestyle site, with Florida buyer/seller forms, four destination explorers, and curated travel interest collection. `/lifestyle` permanently redirects to `/`; existing destination URLs remain valid. The original Florida-only source is retained at `archive/florida-only-v2.14` (commit `cda10b9735db1f51000b4e169e7fdf202de8f2ad`). The active Render service and database are retained; no records are deleted.
 
 Match percentages measure selected editorial preferences met; they are not property, price, or suitability guarantees. No preferences means no score. Airport distances are approximate great-circle distances, not road travel times. Destination photos have source and licensing details at `/photo-credits` and `public/images/places/CREDITS.md`. Travel inquiries use the existing lead storage and owner notification pipeline, with explicit information consent and no booking/payment.
+
+
+## Website languages (v2.18.0)
+
+Visitor-facing pages support English, Spanish, and Brazilian Portuguese through the top-right flag controls. The language is stored in a first-party cookie and rendered on the server, with instant React updates when switching. The dictionaries in `lib/i18n/translations.json` cover current public copy, all 52 destination profiles, forms, filter help, and legal pages. New published copy should receive matching dictionary entries. Proper names, original photo attribution titles, and visitor-entered content are preserved. Translation does not send page text or form data to an external translation service.
+
+Dropdown labels are translated while canonical values remain unchanged for lead processing. Language changes preserve current form state and filters; shared explorer and QR links include the language. `websiteLanguage` records the selected language with new inquiries.

@@ -1,2 +1,4 @@
+"use client";
+import { Localized } from "@/components/SiteLanguage";
 import Link from "next/link";
-export function LegalPage({title,children}:{title:string;children:React.ReactNode}){return <><header className="nav"><div className="container nav-inner"><div className="brand-lockup"><Link className="brand" href="/">Amanda Alves <small>Realtor®</small></Link><img className="nav-brokerage-logo" src="/images/agile-group-logo-dark.webp" alt="Agile Group"/></div><Link className="button outline" href="/">Back home</Link></div></header><main id="main" className="container legal-page"><h1>{title}</h1>{children}</main></>}
+export function LegalPage({title,children}:{title:string;children:React.ReactNode}){return <Localized><><header className="nav"><div className="container nav-inner"><div className="brand-lockup"><Link className="brand" href="/">Amanda Alves <small>Realtor®</small></Link><img className="nav-brokerage-logo" src="/images/agile-group-logo-dark.webp" alt="Agile Group"/></div><Link className="button outline" href="/">Back home</Link></div></header><main id="main" className="container legal-page"><h1>{title}</h1>{children}</main></></Localized>}

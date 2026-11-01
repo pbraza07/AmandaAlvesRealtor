@@ -1,4 +1,6 @@
 "use client";
+import { useSiteLanguage, Localized } from "@/components/SiteLanguage";
+
 import { useEffect, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { areas, filtersForCountry, matchPercentage, lifestyleFilters, filterAreas, parseExplorerParams, explorerQueryString, countryViews, type Area, type FilterId } from '@/lib/explorer';
@@ -7,12 +9,13 @@ import { destinations } from '@/lib/lifestyle';
 import { ExplorerMap } from './ExplorerMap';
 export type ExplorerSelection={area:string;preferences:string;search:string;mode:string};
 export function DestinationExplorer({destination:d,onConsult}:{destination:Destination;onConsult:(selection:ExplorerSelection)=>void}){
+ const {locale}=useSiteLanguage();
  const [filters,setFilters]=useState<FilterId[]>([]),[search,setSearch]=useState(''),[mode,setMode]=useState<'all'|'any'>('all'),[selectedId,setSelectedId]=useState(''),[shared,setShared]=useState('Copy this view'),[saved,setSaved]=useState<string[]>([]),[savedOnly,setSavedOnly]=useState(false);
  useEffect(()=>{
   const p=parseExplorerParams(new URLSearchParams(window.location.search));setFilters(p.filters.filter(id=>filtersForCountry(d.slug).some(f=>f.id===id)));setSearch(p.search);setMode(p.mode);setSelectedId(p.selectedId);
   try{const ids=JSON.parse(localStorage.getItem('amanda-favorite-areas')||'[]');if(Array.isArray(ids))setSaved(ids.filter((id:unknown):id is string=>typeof id==='string'&&areas.some(a=>a.id===id)))}catch{}
  },[]);
- const matches=useMemo(()=>filterAreas({country:d.slug,filters,search,mode}).filter(p=>!savedOnly||saved.includes(p.id)),[d.slug,filters,search,mode,savedOnly,saved]);
+ const matches=useMemo(()=>filterAreas({country:d.slug,filters,search,mode,locale}).filter(p=>!savedOnly||saved.includes(p.id)),[d.slug,filters,search,mode,savedOnly,saved,locale]);
  const selected=matches.find(p=>p.id===selectedId);
  const fitKey=matches.map(p=>p.id).join(',');
  const countryAreas=areas.filter(p=>p.country===d.slug);
@@ -22,13 +25,13 @@ export function DestinationExplorer({destination:d,onConsult}:{destination:Desti
  const save=(id:string)=>setSaved(current=>{const next=current.includes(id)?current.filter(x=>x!==id):[...current,id];try{localStorage.setItem('amanda-favorite-areas',JSON.stringify(next))}catch{}return next});
  const consult=(place?:Area)=>onConsult({area:place?.name||matches.map(p=>p.name).join(', '),preferences:filters.map(id=>lifestyleFilters.find(f=>f.id===id)!.label).join(', '),search,mode});
  const share=async()=>{
-  const params=new URLSearchParams(explorerQueryString(filters,search,mode,selectedId));if(savedOnly)params.set('favorites',saved.filter(id=>countryAreas.some(a=>a.id===id)).join(','));
+  const params=new URLSearchParams(explorerQueryString(filters,search,mode,selectedId));params.set('lang',locale);if(savedOnly)params.set('favorites',saved.filter(id=>countryAreas.some(a=>a.id===id)).join(','));
   const url=`${window.location.origin}/lifestyle/${d.slug}?${params.toString()}#explorer`;
   try{window.history.replaceState(null,'',url);await navigator.clipboard.writeText(url);setShared('View link copied!')}catch{setShared('Use your browser to share this page')}
  };
  // A shared shortlist is explicit in the URL; do not overwrite the visitor’s saved places.
  useEffect(()=>{const ids=new URLSearchParams(window.location.search).get('favorites');if(ids){const valid=ids.split(',').filter(id=>areas.some(a=>a.country===d.slug&&a.id===id));if(valid.length){setSaved(current=>[...new Set([...current,...valid])]);setSavedOnly(true)}}},[d.slug]);
- return <section className={`section explorer-section explorer-${d.slug}`} id="explorer" style={{'--explorer-accent':countryViews[d.slug].accent} as CSSProperties}>
+ return <Localized><section className={`section explorer-section explorer-${d.slug}`} id="explorer" style={{'--explorer-accent':countryViews[d.slug].accent} as CSSProperties}>
   <div className="container explorer-container">
    <div className="explorer-intro"><div><span className="eyebrow">The lifestyle atlas / {d.name}</span><h2>Imagine your everyday.<br/>Find a place to match.</h2><p>Choose the things you’d love around you. Watch your map take shape, then open a place to explore its character.</p></div><div className="explorer-edition"><strong>{String(countryAreas.length).padStart(2,'0')}</strong><span>curated starting points<br/>one personal next chapter</span></div></div>
    <nav className="explorer-country-tabs" aria-label="Choose an explorer destination">{destinations.map(country=><a href={`/lifestyle/${country.slug}${filters.length?`?${explorerQueryString(filters,'',mode,'')}`:''}#explorer`} key={country.slug} aria-current={country.slug===d.slug?'page':undefined}>{country.name}<span aria-hidden>↗</span></a>)}</nav>
@@ -65,5 +68,5 @@ export function DestinationExplorer({destination:d,onConsult}:{destination:Desti
    </div>
    <p className="explorer-data-note">Curated places to explore, not properties for sale.  Area character and tags are a starting point for a personal conversation. Local guides: <a href={d.slug==='florida'?'https://www.visitflorida.com/places-to-go/':d.slug==='spain'?'https://www.spain.info/en/destinations/':d.slug==='portugal'?'https://www.visitportugal.com/en/destinos':'https://www.visitcostarica.com/where-to-go'} target="_blank" rel="noreferrer">official destination information ↗</a> · <a href="/photo-credits">Photo credits</a></p>
   </div>
- </section>;
+ </section></Localized>;
 }

@@ -1,4 +1,6 @@
 "use client";
+import { Localized } from "@/components/SiteLanguage";
+
 import { useState } from "react";
 import { LeadForm } from "@/components/LeadForm";
 import type { SiteContentData } from "@/lib/content";
@@ -14,10 +16,10 @@ export type CampaignSlug=keyof typeof campaigns;
 export const campaignSlugs=Object.keys(campaigns) as CampaignSlug[];
 export function CampaignLanding({slug,content}:{slug:CampaignSlug;content:SiteContentData}){
  const campaign=campaigns[slug];const [open,setOpen]=useState(false);
- return <><header className="nav"><div className="container nav-inner"><div className="brand-lockup"><a className="brand" href="/">Amanda Alves <small>Realtor®</small></a><img className="nav-brokerage-logo" src="/images/agile-group-logo-dark.webp" alt="Agile Group"/></div><a className="button outline" href="/">Main website</a></div></header>
+ return <Localized><><header className="nav"><div className="container nav-inner"><div className="brand-lockup"><a className="brand" href="/">Amanda Alves <small>Realtor®</small></a><img className="nav-brokerage-logo" src="/images/agile-group-logo-dark.webp" alt="Agile Group"/></div><a className="button outline" href="/">Main website</a></div></header>
  <main id="main"><section className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="eyebrow" style={{color:"#dac18f"}}>{campaign.eyebrow}</span><h1>{campaign.title}</h1><p className="lead">{campaign.intro}</p><div className="actions"><button className="button" onClick={()=>setOpen(true)}>{campaign.cta}</button></div><p className="micro">Personal guidance · Local insight · No obligation</p></div><div className="portrait">{content.profileImageUrl&&<img src={content.profileImageUrl} alt="Amanda Alves, Florida real estate professional"/>}</div></div></section>
  <section className="section"><div className="container"><div className="section-head center"><span className="eyebrow">How I can help</span><h2>Your next step, made simpler.</h2></div><div className="specialty-grid">{campaign.points.map((point,i)=><article key={point} className="special-card"><span aria-hidden>{String(i+1).padStart(2,"0")}</span><h3>{point}</h3></article>)}</div><div className="actions" style={{justifyContent:"center",marginTop:"2rem"}}><button className="button dark" onClick={()=>setOpen(true)}>{campaign.cta}</button></div></div></section>
  <section className="section contact"><div className="container"><div className="contact-card"><div><span className="eyebrow">Meet Amanda</span><h2>A personal approach to your next move.</h2><p>{content.aboutBio}</p><p>{content.serviceAreas}</p></div><div className="contact-actions"><button className="button dark" onClick={()=>setOpen(true)}>{campaign.cta}</button><a className="button outline" href={content.phone.startsWith("[")?"#":`tel:${content.phone.replace(/[^+\d]/g,"")}`}>Call Amanda</a></div></div></div></section></main>
  <footer className="footer"><div className="container"><p>Amanda Alves, Realtor® · {content.brokerageName} · Florida license {content.licenseNumber}</p><p>{content.brokerageContact}</p><p>Equal Housing Opportunity · <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Use</a></p><p>{content.disclosureText}</p></div></footer>
- <LeadForm open={open} type={campaign.type} onClose={()=>setOpen(false)}/></>;
+ <LeadForm open={open} type={campaign.type} onClose={()=>setOpen(false)}/></></Localized>;
 }
