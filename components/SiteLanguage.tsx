@@ -29,7 +29,7 @@ export function SiteLanguageProvider({children,initialLocale='en'}:{children:Rea
  useEffect(()=>{
  document.documentElement.lang=locale;
  const country=({'florida':'Florida','spain':'Spain','portugal':'Portugal','costa-rica':'Costa Rica'} as Record<string,string>)[pathname.split('/')[2]];
- const title=country?`${country} Lifestyle Real Estate | Amanda Alves`:pathname==='/bio'?'Meet Amanda Alves | Tampa Bay Realtor & Investor':'Amanda Alves | Lifestyle Real Estate';
+ const title=country?`${country} Lifestyle Real Estate | Amanda Alves`:pathname==='/living-guides'?'400 Researched City & Town Guides | Amanda Alves':pathname==='/bio'?'Meet Amanda Alves | Tampa Bay Realtor & Investor':'Amanda Alves | Lifestyle Real Estate';
  document.title=translate(title,locale);
  },[locale,pathname]);
  useEffect(()=>{const query=new URLSearchParams(location.search).get('lang');if(query==='en'||query==='es'||query==='pt')setLocale(query)},[]);

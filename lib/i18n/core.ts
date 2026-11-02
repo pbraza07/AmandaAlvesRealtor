@@ -14,6 +14,7 @@ export function translate(text:string,locale:Locale):string {
  const community=key.match(/^(.+) is a community in (.+?)\.(?: (.*))?$/);
  if(community)return leading+`${community[1]} ${locale==='es'?'es una comunidad en':'é uma comunidade em'} ${translate(community[2],locale)}. ${(community[3]||'').split(/(?<=\.)\s+/).map(sentence=>translate(sentence,locale)).join(' ')}`+trailing;
  const rules:[RegExp,(...parts:string[])=>string][]=[
+ [/^100 researched places in (.+)$/,p=>locale==='es'?`100 lugares investigados en ${translate(p,locale)}`:`100 lugares pesquisados em ${translate(p,locale)}`],
  [/^Indexed city or community in (.+)\.$/,p=>`${locale==='es'?'Ciudad o comunidad registrada en':'Cidade ou comunidade registrada em'} ${translate(p,locale)}.`],
  [/^(\d+)% match$/,n=>locale==='es'?`${n}% de coincidencia`:`${n}% de compatibilidade`],
  [/^(\d+) of (\d+) preferences$/,(a,b)=>locale==='es'?`${a} de ${b} ${b==='1'?'preferencia':'preferencias'}`:`${a} de ${b} ${b==='1'?'preferência':'preferências'}`],

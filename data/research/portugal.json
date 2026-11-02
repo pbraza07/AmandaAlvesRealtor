@@ -1,0 +1,3863 @@
+{
+  "country": "portugal",
+  "selectionMethod": "Editorial living shortlist balancing major service centres, smaller coastal towns, heritage towns, inland landscapes and the Madeira/Azores islands. The 1–100 order is an editorial starting order, not an independent quality-of-life, safety, affordability or investment league table. Ideal-for statements are activity-based editorial interpretations of cited local features.",
+  "researchedAt": "2026-11-02",
+  "places": [
+    {
+      "name": "Lisbon",
+      "geonamesId": 2267057,
+      "airportCode": "LIS",
+      "rank": 1,
+      "content": {
+        "en": {
+          "intro": "Lisbon brings together Alfama, the Tagus waterfront and the Belém monuments.",
+          "rhythm": "Walk Alfama's lanes, visit Belém's monuments and finish beside the Tagus.",
+          "idealFor": "A primary urban base for museums, neighbourhood dining and Tagus-side evenings.",
+          "consider": "Compare hilltop neighbourhoods with flatter waterfront streets before choosing a walking routine."
+        },
+        "es": {
+          "intro": "Lisbon reúne Alfama, la ribera del Tajo y los monumentos de Belém.",
+          "rhythm": "Recorre Alfama, visita los monumentos de Belém y termina junto al Tajo.",
+          "idealFor": "Una base urbana principal para museos, gastronomía de barrio y tardes junto al Tajo.",
+          "consider": "Compara los barrios elevados con las calles llanas de la ribera antes de elegir tu rutina a pie."
+        },
+        "pt": {
+          "intro": "Lisbon reúne Alfama, a orla do Tejo e os monumentos de Belém.",
+          "rhythm": "Percorra Alfama, visite os monumentos de Belém e termine junto ao Tejo.",
+          "idealFor": "Uma base urbana principal para museus, gastronomia de bairro e tardes junto ao Tejo.",
+          "consider": "Compare os bairros elevados com as ruas planas da orla antes de definir sua rotina a pé."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/discovering-lisbon",
+          "title": "Turismo de Portugal — Discovering Lisbon"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/top-10-lisbon",
+          "title": "Turismo de Portugal — Lisbon Top 10"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Porto",
+      "geonamesId": 2735943,
+      "airportCode": "OPO",
+      "rank": 2,
+      "content": {
+        "en": {
+          "intro": "Porto brings together Ribeira, Clérigos and the Douro bridges.",
+          "rhythm": "Mix Douro-side walks with Clérigos architecture, cafés and city-centre dining.",
+          "idealFor": "City living for Douro walks, independent cafés and architecture across several centuries.",
+          "consider": "Ribeira's visitor activity and steep climbs feel different from outer residential districts."
+        },
+        "es": {
+          "intro": "Porto reúne Ribeira, Clérigos y los puentes del Duero.",
+          "rhythm": "Combina paseos del Duero con arquitectura de Clérigos, cafés y gastronomía urbana.",
+          "idealFor": "Vida urbana para paseos por el Duero, cafés independientes y arquitectura de varias épocas.",
+          "consider": "La actividad turística de Ribeira y sus cuestas difieren de los barrios residenciales exteriores."
+        },
+        "pt": {
+          "intro": "Porto reúne Ribeira, Clérigos e as pontes do Douro.",
+          "rhythm": "Combine passeios no Douro com arquitetura dos Clérigos, cafés e gastronomia urbana.",
+          "idealFor": "Vida urbana para passeios no Douro, cafés independentes e arquitetura de várias épocas.",
+          "consider": "O movimento turístico da Ribeira e suas ladeiras diferem dos bairros residenciais mais afastados."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/top-10-porto",
+          "title": "Porto Top 10 — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/porto-e-norte",
+          "title": "Porto and the North — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Cascais",
+      "geonamesId": 2269594,
+      "airportCode": "LIS",
+      "rank": 3,
+      "content": {
+        "en": {
+          "intro": "Cascais brings together a sheltered town bay, the marina and Casa das Histórias Paula Rego.",
+          "rhythm": "Alternate bay strolls with Paula Rego exhibitions and marina-side meals.",
+          "idealFor": "A seaside residence for bay walks, Paula Rego's art and marina outings.",
+          "consider": "Guincho's exposed surf coast is a different setting from the sheltered town bay."
+        },
+        "es": {
+          "intro": "Cascais reúne una bahía urbana, el puerto deportivo y la Casa das Histórias Paula Rego.",
+          "rhythm": "Alterna paseos por la bahía con exposiciones de Paula Rego y comidas en la marina.",
+          "idealFor": "Una residencia costera para paseos por la bahía, arte de Paula Rego y salidas náuticas.",
+          "consider": "La costa expuesta de Guincho es un entorno distinto de la bahía urbana protegida."
+        },
+        "pt": {
+          "intro": "Cascais reúne uma baía urbana, a marina e a Casa das Histórias Paula Rego.",
+          "rhythm": "Alterne passeios na baía com exposições de Paula Rego e refeições na marina.",
+          "idealFor": "Uma residência costeira para passeios na baía, arte de Paula Rego e saídas náuticas.",
+          "consider": "A costa exposta do Guincho é um cenário diferente da baía urbana abrigada."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/lisboa-regiao/73778",
+          "title": "Cascais and the Estoril Coast — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Oeiras",
+      "geonamesId": 2265464,
+      "airportCode": "LIS",
+      "rank": 4,
+      "content": {
+        "en": {
+          "intro": "Oeiras brings together the Marquês de Pombal palace gardens and Santo Amaro beach.",
+          "rhythm": "Build days around palace-garden walks and exercise along Santo Amaro's shore.",
+          "idealFor": "A Lisbon-region base combining palace gardens, beach exercise and everyday town services.",
+          "consider": "Check the walk from a specific address to Santo Amaro and the rail station."
+        },
+        "es": {
+          "intro": "Oeiras reúne los jardines del palacio Marquês de Pombal y la playa de Santo Amaro.",
+          "rhythm": "Organiza tus días entre jardines palaciegos y ejercicio en Santo Amaro.",
+          "idealFor": "Una base junto a Lisboa que combine jardines palaciegos, ejercicio costero y servicios cotidianos.",
+          "consider": "Comprueba el paseo desde una dirección concreta a Santo Amaro y la estación."
+        },
+        "pt": {
+          "intro": "Oeiras reúne os jardins do Palácio Marquês de Pombal e a praia de Santo Amaro.",
+          "rhythm": "Organize seus dias entre jardins de palácio e exercício em Santo Amaro.",
+          "idealFor": "Uma base perto de Lisboa que combine jardins de palácio, exercício costeiro e serviços cotidianos.",
+          "consider": "Confira a caminhada de um endereço específico até Santo Amaro e a estação."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://cdn.visitportugal.com/en/NR/exeres/DCB924F5-1135-4BC6-A154-D73016F411B4",
+          "title": "Oeiras — Turismo de Portugal"
+        },
+        {
+          "url": "https://cdn.visitportugal.com/pt-pt/content/oeiras",
+          "title": "Oeiras — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Estoril",
+      "geonamesId": 2268436,
+      "airportCode": "LIS",
+      "rank": 5,
+      "content": {
+        "en": {
+          "intro": "Estoril brings together Tamariz beach, the seaside promenade and its historic casino.",
+          "rhythm": "Start at Tamariz, follow the promenade and enjoy the coast's established leisure scene.",
+          "idealFor": "A coastal base for Tamariz mornings, promenade walks and evenings near Cascais.",
+          "consider": "Homes above the coast can involve climbs despite looking close to Tamariz."
+        },
+        "es": {
+          "intro": "Estoril reúne la playa de Tamariz, el paseo marítimo y su histórico casino.",
+          "rhythm": "Empieza en Tamariz, recorre el paseo y disfruta del ocio costero tradicional.",
+          "idealFor": "Una base costera para mañanas en Tamariz, paseos marítimos y tardes cerca de Cascais.",
+          "consider": "Las viviendas sobre la costa pueden exigir cuestas aunque parezcan cercanas a Tamariz."
+        },
+        "pt": {
+          "intro": "Estoril reúne a praia do Tamariz, o passeio à beira-mar e seu cassino histórico.",
+          "rhythm": "Comece no Tamariz, percorra a orla e aproveite o lazer costeiro tradicional.",
+          "idealFor": "Uma base costeira para manhãs no Tamariz, caminhadas na orla e tardes perto de Cascais.",
+          "consider": "Casas acima da costa podem exigir subidas mesmo parecendo próximas do Tamariz."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/0011D571-3E6D-4477-B1AA-EE1694100836",
+          "title": "Estoril — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/estoril-1",
+          "title": "Estoril — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Carcavelos",
+      "geonamesId": 2270184,
+      "airportCode": "LIS",
+      "rank": 6,
+      "content": {
+        "en": {
+          "intro": "Carcavelos brings together a broad surf beach beside the São Julião da Barra fortress.",
+          "rhythm": "Let surf sessions and walks beside São Julião da Barra anchor beach days.",
+          "idealFor": "A surf-led home search with a wide beach and the Lisbon coastal rail corridor.",
+          "consider": "Test the route to the sand; beach proximity and station proximity are different priorities."
+        },
+        "es": {
+          "intro": "Carcavelos reúne una amplia playa de surf junto a la fortaleza de São Julião da Barra.",
+          "rhythm": "Centra los días de playa en surf y paseos junto a São Julião da Barra.",
+          "idealFor": "Una búsqueda centrada en el surf, una playa amplia y el corredor ferroviario de Lisboa.",
+          "consider": "Prueba la ruta a la arena; cercanía a la playa y a la estación son prioridades distintas."
+        },
+        "pt": {
+          "intro": "Carcavelos reúne uma extensa praia de surfe ao lado da Fortaleza de São Julião da Barra.",
+          "rhythm": "Organize os dias de praia com surfe e passeios junto a São Julião da Barra.",
+          "idealFor": "Uma busca focada no surfe, em praia ampla e no corredor ferroviário de Lisboa.",
+          "consider": "Teste o caminho até a areia; proximidade da praia e da estação são prioridades diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/141607",
+          "title": "Turismo de Portugal — Carcavelos Beach"
+        },
+        {
+          "url": "https://www.cascais.pt/descobrir/praia-de-carcavelos",
+          "title": "Cascais municipality — Carcavelos Beach"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Sintra",
+      "geonamesId": 2262912,
+      "airportCode": "LIS",
+      "rank": 7,
+      "content": {
+        "en": {
+          "intro": "Sintra brings together Pena Palace, the Moorish Castle and wooded mountain slopes.",
+          "rhythm": "Combine wooded hillside walks with visits to Pena and the Moorish Castle.",
+          "idealFor": "A green heritage setting for palace visits, wooded walks and a slower hillside routine.",
+          "consider": "Palace routes attract day visitors; assess access to a home separately from sightseeing access."
+        },
+        "es": {
+          "intro": "Sintra reúne el Palacio da Pena, el Castelo dos Mouros y las laderas boscosas.",
+          "rhythm": "Combina paseos arbolados en ladera con Pena y el Castelo dos Mouros.",
+          "idealFor": "Un entorno verde patrimonial para palacios, paseos arbolados y una rutina de ladera pausada.",
+          "consider": "Los palacios atraen excursionistas; evalúa el acceso a la vivienda aparte del acceso turístico."
+        },
+        "pt": {
+          "intro": "Sintra reúne o Palácio da Pena, o Castelo dos Mouros e as encostas arborizadas.",
+          "rhythm": "Combine caminhadas arborizadas nas encostas com Pena e o Castelo dos Mouros.",
+          "idealFor": "Um cenário verde de patrimônio para palácios, caminhadas arborizadas e uma rotina tranquila nas encostas.",
+          "consider": "Os palácios atraem visitantes de um dia; avalie o acesso à casa separadamente do acesso turístico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/discovering-sintra?gclsrc=aw.ds",
+          "title": "Turismo de Portugal — Discovering Sintra"
+        },
+        {
+          "url": "https://www.parquesdesintra.pt/en/plan-your-visit/",
+          "title": "Parques de Sintra — Parks and monuments"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Mafra",
+      "geonamesId": 2266865,
+      "airportCode": "LIS",
+      "rank": 8,
+      "content": {
+        "en": {
+          "intro": "Mafra brings together the monumental palace-convent and the Tapada Nacional woodland.",
+          "rhythm": "Pair the palace-convent's architecture with woodland outings in the Tapada Nacional.",
+          "idealFor": "An inland cultural base for the palace complex and regular woodland outings in the Tapada.",
+          "consider": "Living in Mafra's centre is different from living near Ericeira's Atlantic beaches."
+        },
+        "es": {
+          "intro": "Mafra reúne el palacio-convento monumental y el bosque de la Tapada Nacional.",
+          "rhythm": "Combina la arquitectura del palacio-convento con salidas a la Tapada Nacional.",
+          "idealFor": "Una base cultural de interior para el palacio y salidas frecuentes a la Tapada.",
+          "consider": "Vivir en el centro de Mafra es distinto de vivir junto a las playas de Ericeira."
+        },
+        "pt": {
+          "intro": "Mafra reúne o monumental palácio-convento e a mata da Tapada Nacional.",
+          "rhythm": "Combine a arquitetura do palácio-convento com saídas à Tapada Nacional.",
+          "idealFor": "Uma base cultural de interior para o palácio e passeios frequentes na Tapada.",
+          "consider": "Morar no centro de Mafra é diferente de morar perto das praias da Ericeira."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/mafra",
+          "title": "Mafra — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ericeira",
+      "geonamesId": 2268563,
+      "airportCode": "LIS",
+      "rank": 9,
+      "content": {
+        "en": {
+          "intro": "Ericeira brings together a World Surfing Reserve and a fishing-town centre above Atlantic cliffs.",
+          "rhythm": "Surf different reserve breaks, then return to fishing-town streets for a meal.",
+          "idealFor": "A home base for committed surfers who enjoy a small fishing-town centre.",
+          "consider": "Choose the surf break and daily access route first; the reserve spans several coastal spots."
+        },
+        "es": {
+          "intro": "Ericeira reúne una Reserva Mundial de Surf y un centro pesquero sobre acantilados atlánticos.",
+          "rhythm": "Surfea distintas olas de la reserva y vuelve al centro pesquero para comer.",
+          "idealFor": "Una base para surfistas habituales que valoren un pequeño centro pesquero.",
+          "consider": "Elige primero la ola y la ruta diaria; la reserva abarca varios puntos costeros."
+        },
+        "pt": {
+          "intro": "Ericeira reúne uma Reserva Mundial de Surfe e um centro pesqueiro sobre falésias atlânticas.",
+          "rhythm": "Surfe ondas diferentes da reserva e volte ao centro pesqueiro para comer.",
+          "idealFor": "Uma base para surfistas frequentes que valorizem um pequeno centro pesqueiro.",
+          "consider": "Escolha primeiro a onda e a rota diária; a reserva abrange vários pontos costeiros."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/lisboa-regiao/73781",
+          "title": "Ericeira, Surfing Reserve — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Setúbal",
+      "geonamesId": 2262963,
+      "airportCode": "LIS",
+      "rank": 10,
+      "content": {
+        "en": {
+          "intro": "Setúbal brings together the Livramento market, Sado waterfront and nearby Arrábida hills.",
+          "rhythm": "Shop at Livramento, eat local fish and head toward Sado or Arrábida scenery.",
+          "idealFor": "A food-and-nature base linking Livramento market shopping with Sado and Arrábida outings.",
+          "consider": "The city centre and Arrábida coves require different transport plans, especially during beach-access restrictions."
+        },
+        "es": {
+          "intro": "Setúbal reúne el mercado do Livramento, la ribera del Sado y la cercana sierra de Arrábida.",
+          "rhythm": "Compra en Livramento, prueba pescado local y descubre el Sado o Arrábida.",
+          "idealFor": "Una base gastronómica y natural que una el mercado do Livramento con Sado y Arrábida.",
+          "consider": "El centro y las calas de Arrábida exigen planes de transporte distintos, especialmente con restricciones de acceso."
+        },
+        "pt": {
+          "intro": "Setúbal reúne o Mercado do Livramento, a orla do Sado e a vizinha Serra da Arrábida.",
+          "rhythm": "Compre no Livramento, prove peixe local e descubra o Sado ou a Arrábida.",
+          "idealFor": "Uma base gastronômica e natural que una o Mercado do Livramento ao Sado e à Arrábida.",
+          "consider": "O centro e as enseadas da Arrábida exigem planos de transporte diferentes, sobretudo com restrições de acesso."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://visitsetubal.com/en/bem-vindo-a-setubal/",
+          "title": "Setúbal municipality tourism — Welcome to Setúbal"
+        },
+        {
+          "url": "https://www.mun-setubal.pt/atividade-municipal/turismo/",
+          "title": "Setúbal municipality — Tourism and Arrábida beaches"
+        }
+      ],
+      "verifiedTags": [
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Sesimbra",
+      "geonamesId": 2262957,
+      "airportCode": "LIS",
+      "rank": 11,
+      "content": {
+        "en": {
+          "intro": "Sesimbra brings together a working fishing harbour, Santiago fortress and a south-facing bay.",
+          "rhythm": "Follow the fishing harbour to bay-side restaurants and the beach below Santiago fortress.",
+          "idealFor": "A bay-centred retreat for fish restaurants, harbour walks and beach days below the fortress.",
+          "consider": "A hillside address can add a steep return from the waterfront and beach."
+        },
+        "es": {
+          "intro": "Sesimbra reúne un puerto pesquero activo, la fortaleza de Santiago y una bahía orientada al sur.",
+          "rhythm": "Recorre el puerto hasta los restaurantes de la bahía y la playa bajo Santiago.",
+          "idealFor": "Un refugio en la bahía para pescado, paseos portuarios y playa bajo la fortaleza.",
+          "consider": "Una dirección en ladera puede añadir una fuerte subida de regreso desde la playa."
+        },
+        "pt": {
+          "intro": "Sesimbra reúne um porto pesqueiro ativo, a Fortaleza de Santiago e uma baía voltada ao sul.",
+          "rhythm": "Percorra o porto até os restaurantes da baía e a praia sob Santiago.",
+          "idealFor": "Um refúgio na baía para peixe, passeios no porto e praia sob a fortaleza.",
+          "consider": "Um endereço na encosta pode acrescentar uma subida forte na volta da praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/sesimbra",
+          "title": "Sesimbra — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Almada",
+      "geonamesId": 2271961,
+      "airportCode": "LIS",
+      "rank": 12,
+      "content": {
+        "en": {
+          "intro": "Almada brings together Cacilhas' Tagus waterfront, Cristo Rei and the connection to Caparica beaches.",
+          "rhythm": "Enjoy Cacilhas' river-facing evenings, Cristo Rei views and separate trips to Caparica.",
+          "idealFor": "An urban south-bank base for Cacilhas evenings and trips toward Caparica's beaches.",
+          "consider": "Almada's central districts and the Caparica beachfront are distinct parts of the municipality."
+        },
+        "es": {
+          "intro": "Almada reúne la ribera del Tajo en Cacilhas, Cristo Rei y el acceso a las playas de Caparica.",
+          "rhythm": "Disfruta de tardes en Cacilhas, vistas de Cristo Rei y salidas a Caparica.",
+          "idealFor": "Una base urbana en la margen sur para tardes en Cacilhas y salidas a Caparica.",
+          "consider": "Los barrios centrales de Almada y las playas de Caparica son zonas municipales distintas."
+        },
+        "pt": {
+          "intro": "Almada reúne a orla do Tejo em Cacilhas, o Cristo Rei e o acesso às praias da Caparica.",
+          "rhythm": "Aproveite tardes em Cacilhas, vistas do Cristo Rei e saídas à Caparica.",
+          "idealFor": "Uma base urbana na margem sul para tardes em Cacilhas e saídas à Caparica.",
+          "consider": "Os bairros centrais de Almada e as praias da Caparica são áreas municipais distintas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.cm-almada.pt/conhecer/patrimonio-religioso/santuario-nacional-de-cristo-rei",
+          "title": "Almada municipality — Cristo Rei"
+        },
+        {
+          "url": "https://www.cm-almada.pt/posto-de-turismo-da-costa-da-caparica",
+          "title": "Almada municipality — Costa da Caparica"
+        },
+        {
+          "url": "https://www.cm-almada.pt/posto-de-turismo-de-cacilhas-centro-municipal-de-turismo",
+          "title": "Almada municipality — Cacilhas"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Alcochete",
+      "geonamesId": 2272144,
+      "airportCode": "LIS",
+      "rank": 13,
+      "content": {
+        "en": {
+          "intro": "Alcochete brings together Tagus estuary saltpans, Samouco birdwatching trails and a riverside old town.",
+          "rhythm": "Walk the old riverside and follow Samouco's saltpan trails to watch estuary birds.",
+          "idealFor": "An estuary-side home for birdwatching, saltpan trails and a village-scale waterfront routine.",
+          "consider": "Check bridge-based trips toward Lisbon against the local routine you want to keep."
+        },
+        "es": {
+          "intro": "Alcochete reúne salinas del estuario del Tajo, senderos de aves en Samouco y un casco antiguo ribereño.",
+          "rhythm": "Pasea por la ribera antigua y recorre las salinas de Samouco para observar aves.",
+          "idealFor": "Una casa en el estuario para aves, rutas de salinas y vida ribereña de pueblo.",
+          "consider": "Contrasta los viajes por el puente hacia Lisboa con la rutina local que deseas."
+        },
+        "pt": {
+          "intro": "Alcochete reúne salinas do estuário do Tejo, trilhas de aves em Samouco e um centro antigo ribeirinho.",
+          "rhythm": "Passeie na orla antiga e percorra as salinas de Samouco para observar aves.",
+          "idealFor": "Uma casa no estuário para aves, trilhas nas salinas e vida ribeirinha de vila.",
+          "consider": "Compare os trajetos pela ponte para Lisboa com a rotina local que deseja manter."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.cm-alcochete.pt/Detalhe/salinas",
+          "title": "Alcochete municipality — Saltpans"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila Nova de Gaia",
+      "geonamesId": 2732544,
+      "airportCode": "OPO",
+      "rank": 14,
+      "content": {
+        "en": {
+          "intro": "Vila Nova de Gaia brings together historic Port-wine lodges, the Douro quay and the WOW cultural district.",
+          "rhythm": "Explore restored wine warehouses, Douro quays and WOW's cultural spaces.",
+          "idealFor": "A Douro-facing base for wine culture, restored warehouses and views across to Porto.",
+          "consider": "The wine-lodge waterfront and Gaia's Atlantic beach districts offer very different daily settings."
+        },
+        "es": {
+          "intro": "Vila Nova de Gaia reúne bodegas históricas de oporto, el muelle del Duero y el distrito cultural WOW.",
+          "rhythm": "Explora bodegas restauradas, muelles del Duero y los espacios culturales de WOW.",
+          "idealFor": "Una base frente al Duero para cultura vinícola, antiguos almacenes y vistas a Oporto.",
+          "consider": "La ribera de las bodegas y las playas atlánticas de Gaia ofrecen rutinas muy diferentes."
+        },
+        "pt": {
+          "intro": "Vila Nova de Gaia reúne caves históricas de vinho do Porto, o cais do Douro e o distrito cultural WOW.",
+          "rhythm": "Explore caves restauradas, cais do Douro e os espaços culturais do WOW.",
+          "idealFor": "Uma base diante do Douro para cultura do vinho, antigos armazéns e vistas para o Porto.",
+          "consider": "A orla das caves e as praias atlânticas de Gaia oferecem rotinas muito diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/vila-nova-de-gaia",
+          "title": "Vila Nova de Gaia — Turismo de Portugal"
+        },
+        {
+          "url": "https://visitporto.travel/en-GB/poi/602bacaf9296f500012abf88",
+          "title": "Visit Porto — WOW cultural district in Vila Nova de Gaia"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Matosinhos",
+      "geonamesId": 2737824,
+      "airportCode": "OPO",
+      "rank": 15,
+      "content": {
+        "en": {
+          "intro": "Matosinhos brings together a fishing port, seafood grills and an Atlantic beach linked to Porto.",
+          "rhythm": "Follow a beach walk with grilled fish near the working port.",
+          "idealFor": "A beach-and-food routine for people who value working fishing traditions beside metropolitan Porto.",
+          "consider": "Port activity, restaurant streets and quieter residential blocks vary within the same coastal city."
+        },
+        "es": {
+          "intro": "Matosinhos reúne un puerto pesquero, parrillas de pescado y una playa atlántica conectada con Oporto.",
+          "rhythm": "Después de pasear por la playa, prueba pescado a la parrilla junto al puerto.",
+          "idealFor": "Una rutina de playa y gastronomía para quienes valoran la pesca activa junto a Oporto.",
+          "consider": "La actividad portuaria, las calles gastronómicas y las manzanas tranquilas varían dentro de la ciudad."
+        },
+        "pt": {
+          "intro": "Matosinhos reúne um porto pesqueiro, restaurantes de peixe grelhado e uma praia atlântica ligada ao Porto.",
+          "rhythm": "Depois de caminhar na praia, prove peixe grelhado perto do porto.",
+          "idealFor": "Uma rotina de praia e gastronomia para quem valoriza a pesca ativa junto ao Porto.",
+          "consider": "Atividade portuária, ruas gastronômicas e quadras tranquilas variam dentro da mesma cidade."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/matosinhos",
+          "title": "Turismo de Portugal — Matosinhos"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/praia-de-matosinhos",
+          "title": "Turismo de Portugal — Matosinhos Beach"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila do Conde",
+      "geonamesId": 2732649,
+      "airportCode": "OPO",
+      "rank": 16,
+      "content": {
+        "en": {
+          "intro": "Vila do Conde brings together the Ave river mouth, Santa Clara monastery and a shipbuilding tradition.",
+          "rhythm": "Stroll beside the Ave, discover Santa Clara and explore the town's shipbuilding story.",
+          "idealFor": "A maritime town base for Ave-side walks, Santa Clara heritage and coastal weekends.",
+          "consider": "Distinguish riverfront and beach addresses from inland parts of the wider municipality."
+        },
+        "es": {
+          "intro": "Vila do Conde reúne la desembocadura del Ave, el monasterio de Santa Clara y la tradición naval.",
+          "rhythm": "Pasea junto al Ave, descubre Santa Clara y la historia naval de la villa.",
+          "idealFor": "Una base marítima para paseos junto al Ave, patrimonio de Santa Clara y fines de semana costeros.",
+          "consider": "Distingue las viviendas junto al río y la playa de las zonas interiores del municipio."
+        },
+        "pt": {
+          "intro": "Vila do Conde reúne a foz do Ave, o Mosteiro de Santa Clara e a tradição de construção naval.",
+          "rhythm": "Passeie junto ao Ave, descubra Santa Clara e a história naval da vila.",
+          "idealFor": "Uma base marítima para passeios junto ao Ave, patrimônio de Santa Clara e fins de semana costeiros.",
+          "consider": "Diferencie os endereços junto ao rio e à praia das áreas do interior do município."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://jf-viladoconde.pt/freguesia/",
+          "title": "Vila do Conde parish council — History and heritage"
+        },
+        {
+          "url": "https://www.paroquiadeviladoconde.pt/igreja-santa-clara/",
+          "title": "Vila do Conde parish — Santa Clara church"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Póvoa de Varzim",
+      "geonamesId": 2735787,
+      "airportCode": "OPO",
+      "rank": 17,
+      "content": {
+        "en": {
+          "intro": "Póvoa de Varzim brings together an extensive urban beach, fishing heritage and seafront sports facilities.",
+          "rhythm": "Keep a seafront exercise routine alongside beach leisure and fishing-town heritage.",
+          "idealFor": "A lively northern beach base for seafront exercise, sport and fishing-town traditions.",
+          "consider": "Summer beach and casino activity may feel different from the town's winter routine."
+        },
+        "es": {
+          "intro": "Póvoa de Varzim reúne una extensa playa urbana, tradición pesquera e instalaciones deportivas junto al mar.",
+          "rhythm": "Mantén una rutina deportiva junto al mar entre playa y patrimonio pesquero.",
+          "idealFor": "Una base costera animada para ejercicio, deportes y tradiciones de pueblo pesquero.",
+          "consider": "El movimiento de playa y casino en verano puede diferir de la rutina invernal."
+        },
+        "pt": {
+          "intro": "Póvoa de Varzim reúne uma extensa praia urbana, tradição pesqueira e instalações esportivas à beira-mar.",
+          "rhythm": "Mantenha uma rotina esportiva à beira-mar entre praia e patrimônio pesqueiro.",
+          "idealFor": "Uma base costeira animada para exercício, esportes e tradições pesqueiras.",
+          "consider": "O movimento da praia e do cassino no verão pode diferir da rotina de inverno."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/3C97B707-A552-4F49-9B8D-D14D83653597",
+          "title": "Póvoa de Varzim — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/es/NR/exeres/3C97B707-A552-4F49-9B8D-D14D83653597",
+          "title": "Póvoa de Varzim — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Braga",
+      "geonamesId": 2742032,
+      "airportCode": "OPO",
+      "rank": 18,
+      "content": {
+        "en": {
+          "intro": "Braga brings together an old cathedral, Bom Jesus do Monte and a lively historic centre.",
+          "rhythm": "Move between cathedral streets, central squares and garden outings to Bom Jesus.",
+          "idealFor": "A substantial northern city base for cathedral streets, garden visits and Bom Jesus outings.",
+          "consider": "Bom Jesus sits above the city; a central address does not put every landmark on a flat walk."
+        },
+        "es": {
+          "intro": "Braga reúne una antigua catedral, Bom Jesus do Monte y un animado centro histórico.",
+          "rhythm": "Alterna calles de la catedral, plazas y paseos por jardines de Bom Jesus.",
+          "idealFor": "Una base urbana del norte para calles de catedral, jardines y visitas a Bom Jesus.",
+          "consider": "Bom Jesus está sobre la ciudad; vivir en el centro no convierte todo en un paseo llano."
+        },
+        "pt": {
+          "intro": "Braga reúne uma antiga catedral, o Bom Jesus do Monte e um centro histórico animado.",
+          "rhythm": "Alterne ruas da Sé, praças e passeios pelos jardins do Bom Jesus.",
+          "idealFor": "Uma base urbana do norte para ruas da Sé, jardins e visitas ao Bom Jesus.",
+          "consider": "O Bom Jesus fica acima da cidade; morar no centro não torna todos os passeios planos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132816",
+          "title": "Turismo de Portugal — Braga"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/a-visit-to-braga?furriel=b1857353cce1f47c1f41d6272e99cd47a5a0a428",
+          "title": "Turismo de Portugal — A Visit to Braga"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Guimarães",
+      "geonamesId": 2738752,
+      "airportCode": "OPO",
+      "rank": 19,
+      "content": {
+        "en": {
+          "intro": "Guimarães brings together a UNESCO historic centre, the castle and Vila Flor's gardens and cultural centre.",
+          "rhythm": "Walk medieval squares, visit the castle and look for cultural events at Vila Flor.",
+          "idealFor": "A heritage-centred residence for castle visits, cultural programming and walks through medieval squares.",
+          "consider": "Inspect access and parking within the historic core rather than assuming modern-street convenience."
+        },
+        "es": {
+          "intro": "Guimarães reúne un centro histórico UNESCO, el castillo y los jardines y centro cultural de Vila Flor.",
+          "rhythm": "Recorre plazas medievales, visita el castillo y busca cultura en Vila Flor.",
+          "idealFor": "Una residencia patrimonial para castillo, programación cultural y paseos por plazas medievales.",
+          "consider": "Revisa el acceso y aparcamiento del casco histórico sin asumir comodidad de calles modernas."
+        },
+        "pt": {
+          "intro": "Guimarães reúne um centro histórico UNESCO, o castelo e os jardins e centro cultural de Vila Flor.",
+          "rhythm": "Percorra praças medievais, visite o castelo e procure cultura na Vila Flor.",
+          "idealFor": "Uma residência patrimonial para castelo, programação cultural e passeios por praças medievais.",
+          "consider": "Verifique acesso e estacionamento no centro histórico sem presumir a facilidade de ruas modernas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/guimaraes",
+          "title": "Guimarães — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/guimaraes",
+          "title": "Guimarães — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Barcelos",
+      "geonamesId": 2742416,
+      "airportCode": "OPO",
+      "rank": 20,
+      "content": {
+        "en": {
+          "intro": "Barcelos brings together the Cávado bridge, traditional ceramics and the Porta Nova medieval tower.",
+          "rhythm": "Browse ceramics, cross the Cávado bridge and explore the medieval tower quarter.",
+          "idealFor": "A craft-focused base for ceramics, market traditions and walks beside the Cávado.",
+          "consider": "Compare streets by the old bridge with residential areas beyond the historic core."
+        },
+        "es": {
+          "intro": "Barcelos reúne el puente sobre el Cávado, cerámica tradicional y la torre medieval da Porta Nova.",
+          "rhythm": "Descubre cerámica, cruza el puente del Cávado y recorre la torre medieval.",
+          "idealFor": "Una base artesanal para cerámica, tradiciones de mercado y paseos junto al Cávado.",
+          "consider": "Compara las calles del puente antiguo con las zonas residenciales fuera del casco histórico."
+        },
+        "pt": {
+          "intro": "Barcelos reúne a ponte sobre o Cávado, cerâmica tradicional e a Torre Medieval da Porta Nova.",
+          "rhythm": "Descubra cerâmica, cruze a ponte do Cávado e percorra a torre medieval.",
+          "idealFor": "Uma base artesanal para cerâmica, tradições de mercado e passeios junto ao Cávado.",
+          "consider": "Compare as ruas da ponte antiga com as áreas residenciais fora do centro histórico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132821",
+          "title": "Barcelos — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/barcelos-medieval-bridge",
+          "title": "Barcelos Medieval Bridge — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Viana do Castelo",
+      "geonamesId": 2732773,
+      "airportCode": "OPO",
+      "rank": 21,
+      "content": {
+        "en": {
+          "intro": "Viana do Castelo brings together the Lima riverfront, Santa Luzia hill and the Gil Eannes museum ship.",
+          "rhythm": "Walk the Lima waterfront, visit Gil Eannes and climb toward Santa Luzia's views.",
+          "idealFor": "A maritime cultural base for Lima-side walks, museum visits and Santa Luzia panoramas.",
+          "consider": "The flat riverfront and Santa Luzia slopes create different walking and home-access routines."
+        },
+        "es": {
+          "intro": "Viana do Castelo reúne la ribera del Lima, el monte de Santa Luzia y el barco-museo Gil Eannes.",
+          "rhythm": "Pasea por el Lima, visita Gil Eannes y sube a las vistas de Santa Luzia.",
+          "idealFor": "Una base cultural marítima para el Lima, museos y panorámicas de Santa Luzia.",
+          "consider": "La ribera llana y las pendientes de Santa Luzia crean rutinas peatonales distintas."
+        },
+        "pt": {
+          "intro": "Viana do Castelo reúne a orla do Lima, o Monte de Santa Luzia e o navio-museu Gil Eannes.",
+          "rhythm": "Passeie no Lima, visite o Gil Eannes e suba às vistas de Santa Luzia.",
+          "idealFor": "Uma base cultural marítima para o Lima, museus e panoramas de Santa Luzia.",
+          "consider": "A orla plana e as encostas de Santa Luzia criam rotinas de caminhada diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/viana-do-castelo-accessible-itinerary",
+          "title": "Viana do Castelo – Accessible Itinerary — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/A4FD07F5-41E8-4E47-9B08-DC12A7F39DB7",
+          "title": "Viana do Castelo — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ponte de Lima",
+      "geonamesId": 2736041,
+      "airportCode": "OPO",
+      "rank": 22,
+      "content": {
+        "en": {
+          "intro": "Ponte de Lima brings together a historic bridge over the Lima and a longstanding riverside fair.",
+          "rhythm": "Cross the old bridge, spend time by the Lima and follow the town's fair tradition.",
+          "idealFor": "A river-town home for fair days, bridge walks and Minho countryside exploration.",
+          "consider": "Central riverside life and rural manor-house surroundings involve different daily travel needs."
+        },
+        "es": {
+          "intro": "Ponte de Lima reúne un puente histórico sobre el Lima y una tradicional feria ribereña.",
+          "rhythm": "Cruza el puente antiguo, disfruta del Lima y conoce la feria tradicional.",
+          "idealFor": "Una casa fluvial para días de feria, paseos por el puente y campos del Miño.",
+          "consider": "La vida ribereña central y los entornos rurales de casonas requieren desplazamientos diferentes."
+        },
+        "pt": {
+          "intro": "Ponte de Lima reúne uma ponte histórica sobre o Lima e uma tradicional feira ribeirinha.",
+          "rhythm": "Cruze a ponte antiga, aproveite o Lima e conheça a feira tradicional.",
+          "idealFor": "Uma casa ribeirinha para dias de feira, passeios na ponte e campos do Minho.",
+          "consider": "A vida ribeirinha central e os entornos rurais de solares exigem deslocamentos diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132952",
+          "title": "Ponte de Lima — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Caminha",
+      "geonamesId": 2741672,
+      "airportCode": "OPO",
+      "rank": 23,
+      "content": {
+        "en": {
+          "intro": "Caminha brings together the Minho estuary, a fortified historic centre and views toward Ínsua fort.",
+          "rhythm": "Enjoy Minho-estuary walks, old fortified streets and views of Ínsua's island fort.",
+          "idealFor": "An estuary retreat for Minho views, fortified streets and Atlantic-coast excursions.",
+          "consider": "Estuary scenery does not mean every nearby beach is sheltered from Atlantic wind."
+        },
+        "es": {
+          "intro": "Caminha reúne el estuario del Miño, un centro histórico fortificado y vistas al fuerte da Ínsua.",
+          "rhythm": "Disfruta del estuario del Miño, calles fortificadas y vistas del fuerte da Ínsua.",
+          "idealFor": "Un refugio de estuario para vistas del Miño, calles fortificadas y excursiones atlánticas.",
+          "consider": "El paisaje de estuario no significa que toda playa cercana esté protegida del viento atlántico."
+        },
+        "pt": {
+          "intro": "Caminha reúne o estuário do Minho, um centro histórico fortificado e vistas do Forte da Ínsua.",
+          "rhythm": "Aproveite o estuário do Minho, ruas fortificadas e vistas do Forte da Ínsua.",
+          "idealFor": "Um refúgio de estuário para vistas do Minho, ruas fortificadas e passeios atlânticos.",
+          "consider": "A paisagem de estuário não significa que toda praia próxima seja abrigada do vento atlântico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132894",
+          "title": "Caminha — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Valença",
+      "geonamesId": 2733018,
+      "airportCode": "OPO",
+      "rank": 24,
+      "content": {
+        "en": {
+          "intro": "Valença brings together star-shaped border fortifications above the Minho and routes toward Galicia.",
+          "rhythm": "Walk the fortress circuit and use the border setting to explore the Minho region.",
+          "idealFor": "A border-town base for fortress walks and regular exploration of the Minho–Galicia region.",
+          "consider": "Inside the fortress, narrow historic streets differ from the newer town outside the walls."
+        },
+        "es": {
+          "intro": "Valença reúne fortificaciones fronterizas en estrella sobre el Miño y rutas hacia Galicia.",
+          "rhythm": "Recorre la fortaleza y aprovecha la frontera para explorar la región del Miño.",
+          "idealFor": "Una base fronteriza para fortificaciones y recorridos frecuentes por Miño y Galicia.",
+          "consider": "Dentro de la fortaleza, las calles estrechas difieren de la ciudad nueva extramuros."
+        },
+        "pt": {
+          "intro": "Valença reúne fortificações fronteiriças em estrela sobre o Minho e rotas para a Galícia.",
+          "rhythm": "Percorra a fortaleza e aproveite a fronteira para explorar a região do Minho.",
+          "idealFor": "Uma base fronteiriça para fortificações e passeios frequentes pelo Minho e pela Galícia.",
+          "consider": "Dentro da fortaleza, as ruas estreitas diferem da cidade nova fora das muralhas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132849",
+          "title": "Valença — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/valen%C3%A7a",
+          "title": "Valença — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Monção",
+      "geonamesId": 2737523,
+      "airportCode": "OPO",
+      "rank": 25,
+      "content": {
+        "en": {
+          "intro": "Monção brings together Minho-facing walls, thermal traditions and Alvarinho vineyards.",
+          "rhythm": "Combine river-facing terraces with Alvarinho visits and the town's thermal heritage.",
+          "idealFor": "A rural-food base for Alvarinho interests, thermal heritage and river-facing terraces.",
+          "consider": "Vineyard outings and scattered rural addresses can require more driving than central Monção."
+        },
+        "es": {
+          "intro": "Monção reúne murallas sobre el Miño, tradición termal y viñedos de Alvarinho.",
+          "rhythm": "Combina terrazas sobre el río con Alvarinho y patrimonio termal.",
+          "idealFor": "Una base gastronómica rural para Alvarinho, patrimonio termal y terrazas sobre el río.",
+          "consider": "Las salidas a viñedos y las viviendas rurales dispersas exigen más coche que el centro."
+        },
+        "pt": {
+          "intro": "Monção reúne muralhas sobre o Minho, tradição termal e vinhedos de Alvarinho.",
+          "rhythm": "Combine esplanadas sobre o rio com Alvarinho e patrimônio termal.",
+          "idealFor": "Uma base gastronômica rural para Alvarinho, patrimônio termal e esplanadas sobre o rio.",
+          "consider": "Passeios aos vinhedos e casas rurais dispersas exigem mais carro que o centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132856",
+          "title": "Monção — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/mon%C3%A7%C3%A3o",
+          "title": "Monção — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Bragança",
+      "geonamesId": 2742027,
+      "airportCode": "OPO",
+      "rank": 26,
+      "content": {
+        "en": {
+          "intro": "Bragança brings together a medieval citadel, the Domus Municipalis and nearby Montesinho landscapes.",
+          "rhythm": "Explore the citadel and Domus Municipalis, then head toward Montesinho's countryside.",
+          "idealFor": "An inland heritage base for citadel life, regional museums and Montesinho nature trips.",
+          "consider": "Plan airport travel independently; northeastern inland living is not a coastal-Porto commute."
+        },
+        "es": {
+          "intro": "Bragança reúne una ciudadela medieval, la Domus Municipalis y los paisajes cercanos de Montesinho.",
+          "rhythm": "Explora la ciudadela y la Domus Municipalis y sal hacia los campos de Montesinho.",
+          "idealFor": "Una base patrimonial de interior para ciudadela, museos regionales y excursiones a Montesinho.",
+          "consider": "Planifica el aeropuerto aparte; vivir en el noreste interior no equivale a desplazarse al Oporto costero."
+        },
+        "pt": {
+          "intro": "Bragança reúne uma cidadela medieval, a Domus Municipalis e as paisagens próximas de Montesinho.",
+          "rhythm": "Explore a cidadela e a Domus Municipalis e saia para os campos de Montesinho.",
+          "idealFor": "Uma base patrimonial de interior para cidadela, museus regionais e passeios a Montesinho.",
+          "consider": "Planeje o aeroporto separadamente; viver no nordeste interior não equivale à rotina do Porto costeiro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/porto-e-norte/73740",
+          "title": "Bragança — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/braganca-accessible-itinerary",
+          "title": "Bragança - Accessible Itinerary — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Chaves",
+      "geonamesId": 2740761,
+      "airportCode": "OPO",
+      "rank": 27,
+      "content": {
+        "en": {
+          "intro": "Chaves brings together Roman thermal heritage, a bridge over the Tâmega and a riverside ecovia.",
+          "rhythm": "Use the Tâmega ecovia for exercise and explore the town's Roman thermal story.",
+          "idealFor": "A thermal-town routine for river exercise, Roman history and slower inland weekends.",
+          "consider": "Try both winter and summer days before judging the northern inland climate."
+        },
+        "es": {
+          "intro": "Chaves reúne patrimonio termal romano, un puente sobre el Tâmega y una ecovía ribereña.",
+          "rhythm": "Haz ejercicio en la ecovía del Tâmega y descubre la historia termal romana.",
+          "idealFor": "Una rutina termal para ejercicio junto al río, historia romana y fines de semana de interior.",
+          "consider": "Prueba días de invierno y verano antes de valorar el clima interior del norte."
+        },
+        "pt": {
+          "intro": "Chaves reúne patrimônio termal romano, uma ponte sobre o Tâmega e uma ecovia ribeirinha.",
+          "rhythm": "Faça exercício na ecovia do Tâmega e descubra a história termal romana.",
+          "idealFor": "Uma rotina termal para exercício junto ao rio, história romana e fins de semana no interior.",
+          "consider": "Experimente dias de inverno e verão antes de avaliar o clima do interior do norte."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/chaves",
+          "title": "Chaves — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/64A9E978-EAC4-4BD2-810C-2D23F75762FF",
+          "title": "Chaves - Termas & Spa — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila Real",
+      "geonamesId": 2732438,
+      "airportCode": "OPO",
+      "rank": 28,
+      "content": {
+        "en": {
+          "intro": "Vila Real brings together the Corgo and Cabril rivers, Mateus Palace and views toward Marão.",
+          "rhythm": "Link Corgo-side walks with Mateus Palace visits and drives toward Marão.",
+          "idealFor": "A regional town base for Mateus architecture, riverside walks and Marão country drives.",
+          "consider": "Mateus and the surrounding mountain landscapes are separate outings from the central shopping streets."
+        },
+        "es": {
+          "intro": "Vila Real reúne los ríos Corgo y Cabril, el Palacio de Mateus y vistas hacia Marão.",
+          "rhythm": "Une paseos del Corgo, visitas al Palacio de Mateus y recorridos hacia Marão.",
+          "idealFor": "Una base regional para arquitectura de Mateus, paseos fluviales y recorridos por Marão.",
+          "consider": "Mateus y los paisajes montañosos requieren salidas aparte de las calles comerciales centrales."
+        },
+        "pt": {
+          "intro": "Vila Real reúne os rios Corgo e Cabril, o Palácio de Mateus e vistas para o Marão.",
+          "rhythm": "Una passeios no Corgo, visitas ao Palácio de Mateus e roteiros para o Marão.",
+          "idealFor": "Uma base regional para arquitetura de Mateus, passeios ribeirinhos e roteiros pelo Marão.",
+          "consider": "Mateus e as paisagens montanhosas exigem saídas separadas das ruas comerciais centrais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/FDF9D861-8220-44BA-AEBB-D5BD8DCBFB7C",
+          "title": "Vila Real — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/porto-e-norte/73739",
+          "title": "Vila Real — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Amarante",
+      "geonamesId": 2742965,
+      "airportCode": "OPO",
+      "rank": 29,
+      "content": {
+        "en": {
+          "intro": "Amarante brings together the Tâmega river, São Gonçalo bridge and the backdrop of Serra do Marão.",
+          "rhythm": "Meet beside São Gonçalo bridge, try local pastries and explore Tâmega river scenery.",
+          "idealFor": "A Tâmega-side residence for bridge-and-church scenery, pastry cafés and Marão excursions.",
+          "consider": "Compare river-level streets with hillside homes; the same view can involve a different climb."
+        },
+        "es": {
+          "intro": "Amarante reúne el río Tâmega, el puente de São Gonçalo y la sierra de Marão de fondo.",
+          "rhythm": "Reúnete junto al puente de São Gonçalo, prueba dulces y descubre el Tâmega.",
+          "idealFor": "Una residencia junto al Tâmega para puente e iglesia, pastelerías y excursiones a Marão.",
+          "consider": "Compara calles al nivel del río con casas en ladera; la misma vista implica subidas distintas."
+        },
+        "pt": {
+          "intro": "Amarante reúne o rio Tâmega, a Ponte de São Gonçalo e a Serra do Marão ao fundo.",
+          "rhythm": "Encontre-se junto à Ponte de São Gonçalo, prove doces e descubra o Tâmega.",
+          "idealFor": "Uma residência junto ao Tâmega para ponte e igreja, confeitarias e passeios ao Marão.",
+          "consider": "Compare ruas no nível do rio com casas na encosta; a mesma vista implica subidas diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/amarante",
+          "title": "Amarante — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Lamego",
+      "geonamesId": 2738459,
+      "airportCode": "OPO",
+      "rank": 30,
+      "content": {
+        "en": {
+          "intro": "Lamego brings together the Nossa Senhora dos Remédios stairway, cathedral and access to the Douro wine region.",
+          "rhythm": "Explore cathedral streets, climb the Remédios stairway and make Douro wine-country trips.",
+          "idealFor": "A cultural wine-region base for the Remédios sanctuary, museums and Douro day trips.",
+          "consider": "The sanctuary's celebrated stairway signals terrain; check routine walking routes to a prospective home."
+        },
+        "es": {
+          "intro": "Lamego reúne la escalinata de Nossa Senhora dos Remédios, la catedral y el acceso al Duero vinícola.",
+          "rhythm": "Recorre la catedral, sube la escalinata dos Remédios y visita el Duero vinícola.",
+          "idealFor": "Una base cultural vinícola para el santuario dos Remédios, museos y excursiones al Duero.",
+          "consider": "La famosa escalinata revela el relieve; revisa los recorridos cotidianos hasta una vivienda."
+        },
+        "pt": {
+          "intro": "Lamego reúne a escadaria de Nossa Senhora dos Remédios, a catedral e o acesso ao Douro vinícola.",
+          "rhythm": "Percorra a Sé, suba a escadaria dos Remédios e visite o Douro vinícola.",
+          "idealFor": "Uma base cultural vinícola para o santuário dos Remédios, museus e passeios ao Douro.",
+          "consider": "A famosa escadaria revela o relevo; confira os percursos cotidianos até uma casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132947/1000",
+          "title": "Lamego — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Peso da Régua",
+      "geonamesId": 2736316,
+      "airportCode": "OPO",
+      "rank": 31,
+      "content": {
+        "en": {
+          "intro": "Peso da Régua brings together Douro river quays, terraced vineyards and the history of the Port-wine trade.",
+          "rhythm": "Spend time on the Douro quay and explore the terraces behind the Port-wine trade.",
+          "idealFor": "A Douro home base for vineyard landscapes, riverfront time and Port-wine history.",
+          "consider": "A riverside town address differs greatly from a property up the terraced vineyard slopes."
+        },
+        "es": {
+          "intro": "Peso da Régua reúne muelles del Duero, viñedos en terrazas e historia del comercio del oporto.",
+          "rhythm": "Disfruta del muelle del Duero y explora las terrazas de la tradición vinícola.",
+          "idealFor": "Una base en el Duero para viñedos, vida ribereña e historia del oporto.",
+          "consider": "Una vivienda ribereña difiere mucho de una propiedad en las laderas de viñedos aterrazados."
+        },
+        "pt": {
+          "intro": "Peso da Régua reúne cais do Douro, vinhedos em terraços e a história do comércio do vinho do Porto.",
+          "rhythm": "Aproveite o cais do Douro e explore os terraços da tradição vinícola.",
+          "idealFor": "Uma base no Douro para vinhedos, vida ribeirinha e história do vinho do Porto.",
+          "consider": "Uma casa ribeirinha difere muito de um imóvel nas encostas de vinhedos em terraços."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132802",
+          "title": "Peso da Régua — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/peso-da-r%C3%A9gua",
+          "title": "Peso da Régua — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Aveiro",
+      "geonamesId": 2742611,
+      "airportCode": "OPO",
+      "rank": 32,
+      "content": {
+        "en": {
+          "intro": "Aveiro brings together lagoon canals, colourful moliceiro boats and Art Nouveau streets.",
+          "rhythm": "Cycle or walk between lagoon canals, moliceiro boats and Art Nouveau façades.",
+          "idealFor": "A lagoon-city routine for canal walks, Art Nouveau details and relaxed cycle outings.",
+          "consider": "The canal centre is not the Atlantic beachfront; check the route to the coast separately."
+        },
+        "es": {
+          "intro": "Aveiro reúne canales de la ría, barcos moliceiros de colores y calles modernistas.",
+          "rhythm": "Camina o pedalea entre canales, barcos moliceiros y fachadas modernistas.",
+          "idealFor": "Una rutina de ría para canales, detalles modernistas y paseos tranquilos en bicicleta.",
+          "consider": "El centro de canales no es la playa atlántica; comprueba la ruta al litoral aparte."
+        },
+        "pt": {
+          "intro": "Aveiro reúne canais da ria, barcos moliceiros coloridos e ruas de Arte Nova.",
+          "rhythm": "Caminhe ou pedale entre canais, barcos moliceiros e fachadas de Arte Nova.",
+          "idealFor": "Uma rotina de ria para canais, detalhes de Arte Nova e passeios tranquilos de bicicleta.",
+          "consider": "O centro dos canais não é a praia atlântica; confira a rota até o litoral separadamente."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/1A6C66E5-D08D-4F03-8787-A55B89679230",
+          "title": "Aveiro — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/aveiro",
+          "title": "Aveiro — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Ílhavo",
+      "geonamesId": 2738707,
+      "airportCode": "OPO",
+      "rank": 33,
+      "content": {
+        "en": {
+          "intro": "Ílhavo brings together cod-fishing heritage, the Ria de Aveiro and access to Costa Nova's striped houses.",
+          "rhythm": "Explore cod-fishing history before heading across the ria toward Costa Nova.",
+          "idealFor": "A maritime-history base connecting cod-fishing traditions with lagoon and Costa Nova outings.",
+          "consider": "Ílhavo's inland centre and its municipality's beach settlements have different everyday settings."
+        },
+        "es": {
+          "intro": "Ílhavo reúne tradición bacaladera, la Ría de Aveiro y acceso a las casas de rayas de Costa Nova.",
+          "rhythm": "Descubre la historia bacaladera antes de cruzar la ría hacia Costa Nova.",
+          "idealFor": "Una base de historia marítima que conecte la tradición bacaladera con la ría y Costa Nova.",
+          "consider": "El centro interior de Ílhavo y las poblaciones costeras municipales ofrecen entornos cotidianos distintos."
+        },
+        "pt": {
+          "intro": "Ílhavo reúne tradição bacalhoeira, a Ria de Aveiro e o acesso às casas listradas da Costa Nova.",
+          "rhythm": "Descubra a história bacalhoeira antes de cruzar a ria rumo à Costa Nova.",
+          "idealFor": "Uma base de história marítima que ligue a tradição bacalhoeira à ria e à Costa Nova.",
+          "consider": "O centro interior de Ílhavo e as povoações costeiras municipais oferecem cenários cotidianos distintos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132735/1000",
+          "title": "Ílhavo — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/%C3%ADlhavo",
+          "title": "Ílhavo — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Ovar",
+      "geonamesId": 2736930,
+      "airportCode": "OPO",
+      "rank": 34,
+      "content": {
+        "en": {
+          "intro": "Ovar brings together historic tiled façades, the Rua do Azulejo art route and nearby Furadouro beach.",
+          "rhythm": "Follow the tiled-façade art route and save time for nearby Furadouro beach.",
+          "idealFor": "A tile-art home base for façade walks, craft interests and occasional Furadouro beach days.",
+          "consider": "Ovar town and Furadouro beach are separate places; choose the daily connection you need."
+        },
+        "es": {
+          "intro": "Ovar reúne fachadas de azulejos, la ruta artística Rua do Azulejo y la cercana playa de Furadouro.",
+          "rhythm": "Sigue la ruta de fachadas de azulejos y reserva tiempo para Furadouro.",
+          "idealFor": "Una base de azulejos para fachadas, artesanía y días de playa en Furadouro.",
+          "consider": "Ovar y la playa de Furadouro son lugares distintos; elige la conexión cotidiana que necesitas."
+        },
+        "pt": {
+          "intro": "Ovar reúne fachadas históricas de azulejos, a rota artística Rua do Azulejo e a vizinha praia do Furadouro.",
+          "rhythm": "Siga a rota das fachadas de azulejos e reserve tempo para o Furadouro.",
+          "idealFor": "Uma base de azulejos para fachadas, artesanato e dias de praia no Furadouro.",
+          "consider": "Ovar e a praia do Furadouro são locais distintos; escolha a ligação cotidiana de que precisa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.cm-ovar.pt/pt/menu/2880/azulejo.aspx",
+          "title": "Ovar municipality — Tile Heritage"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/posto-de-turismo-furadouro",
+          "title": "Turismo de Portugal — Furadouro / Ovar"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Espinho",
+      "geonamesId": 2739868,
+      "airportCode": "OPO",
+      "rank": 35,
+      "content": {
+        "en": {
+          "intro": "Espinho brings together a long Atlantic beach, a casino and a longstanding golf tradition.",
+          "rhythm": "Mix long-beach walks with golf interests and the town's casino-led leisure tradition.",
+          "idealFor": "A northern seaside routine for beach exercise, golf interests and town-centre leisure.",
+          "consider": "The Atlantic beach is exposed; a long promenade does not guarantee calm bathing conditions."
+        },
+        "es": {
+          "intro": "Espinho reúne una larga playa atlántica, un casino y una arraigada tradición de golf.",
+          "rhythm": "Combina paseos por la playa con golf y la tradición de ocio del casino.",
+          "idealFor": "Una rutina costera del norte para ejercicio de playa, golf y ocio urbano.",
+          "consider": "La playa atlántica está expuesta; un largo paseo no garantiza condiciones tranquilas de baño."
+        },
+        "pt": {
+          "intro": "Espinho reúne uma longa praia atlântica, um cassino e uma antiga tradição de golfe.",
+          "rhythm": "Combine passeios na praia com golfe e a tradição de lazer do cassino.",
+          "idealFor": "Uma rotina costeira do norte para exercício na praia, golfe e lazer urbano.",
+          "consider": "A praia atlântica é exposta; um longo calçadão não garante condições tranquilas para banho."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/93FF6C27-2078-40DA-8A21-5BACF959D906",
+          "title": "Espinho — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/espinho",
+          "title": "Espinho — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Coimbra",
+      "geonamesId": 2740637,
+      "airportCode": "OPO",
+      "rank": 36,
+      "content": {
+        "en": {
+          "intro": "Coimbra brings together the UNESCO-listed university, Joanine Library and Mondego riverside parks.",
+          "rhythm": "Balance university and Joanine Library visits with walks through Mondego riverside parks.",
+          "idealFor": "An academic cultural base for university heritage, student-shaped evenings and Mondego parks.",
+          "consider": "The hilltop university quarter and flatter Mondego banks create different daily walking demands."
+        },
+        "es": {
+          "intro": "Coimbra reúne la universidad UNESCO, la Biblioteca Joanina y los parques del Mondego.",
+          "rhythm": "Alterna universidad y Biblioteca Joanina con paseos por los parques del Mondego.",
+          "idealFor": "Una base académica y cultural para patrimonio universitario, vida estudiantil y parques del Mondego.",
+          "consider": "El barrio universitario elevado y las riberas llanas del Mondego exigen caminatas distintas."
+        },
+        "pt": {
+          "intro": "Coimbra reúne a universidade UNESCO, a Biblioteca Joanina e os parques do Mondego.",
+          "rhythm": "Alterne universidade e Biblioteca Joanina com passeios nos parques do Mondego.",
+          "idealFor": "Uma base acadêmica e cultural para patrimônio universitário, vida estudantil e parques do Mondego.",
+          "consider": "O bairro universitário elevado e as margens planas do Mondego exigem caminhadas diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/visit-to-coimbra",
+          "title": "Turismo de Portugal — Visit to Coimbra"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Figueira da Foz",
+      "geonamesId": 2739590,
+      "airportCode": "OPO",
+      "rank": 37,
+      "content": {
+        "en": {
+          "intro": "Figueira da Foz brings together the Mondego river mouth, a vast urban beach and a historic casino.",
+          "rhythm": "Choose broad-sand walks, water sports and time where the Mondego reaches the ocean.",
+          "idealFor": "A broad-beach town base for water sports, Mondego views and traditional seaside leisure.",
+          "consider": "The very broad sand and exposed Atlantic conditions matter for the beach routine you imagine."
+        },
+        "es": {
+          "intro": "Figueira da Foz reúne la desembocadura del Mondego, una amplia playa urbana y un casino histórico.",
+          "rhythm": "Elige amplios arenales, deportes acuáticos y paseos en la desembocadura del Mondego.",
+          "idealFor": "Una base de playa amplia para deportes acuáticos, vistas del Mondego y ocio marítimo tradicional.",
+          "consider": "El arenal muy ancho y el Atlántico expuesto condicionan la rutina de playa que imaginas."
+        },
+        "pt": {
+          "intro": "Figueira da Foz reúne a foz do Mondego, uma ampla praia urbana e um cassino histórico.",
+          "rhythm": "Escolha amplos areais, esportes aquáticos e passeios na foz do Mondego.",
+          "idealFor": "Uma base de praia ampla para esportes aquáticos, vistas do Mondego e lazer marítimo tradicional.",
+          "consider": "O areal muito amplo e o Atlântico exposto influenciam a rotina de praia que imagina."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132906",
+          "title": "Figueira da Foz — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/figueira-da-foz",
+          "title": "Figueira da Foz — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Viseu",
+      "geonamesId": 2732265,
+      "airportCode": "OPO",
+      "rank": 38,
+      "content": {
+        "en": {
+          "intro": "Viseu brings together the cathedral quarter, Grão Vasco Museum and access to the Dão wine region.",
+          "rhythm": "Explore Grão Vasco's art and cathedral lanes, then make excursions into the Dão.",
+          "idealFor": "An inland cultural residence for Grão Vasco art, cathedral streets and Dão wine trips.",
+          "consider": "Choose Viseu for inland town life; reaching the ocean is a separate excursion."
+        },
+        "es": {
+          "intro": "Viseu reúne el barrio de la catedral, el Museo Grão Vasco y el acceso a la región vinícola del Dão.",
+          "rhythm": "Descubre Grão Vasco y las calles de la catedral y sal hacia el Dão.",
+          "idealFor": "Una residencia cultural interior para Grão Vasco, calles de la catedral y rutas del Dão.",
+          "consider": "Elige Viseu por la vida urbana interior; llegar al océano requiere otra excursión."
+        },
+        "pt": {
+          "intro": "Viseu reúne o bairro da Sé, o Museu Grão Vasco e o acesso à região vinícola do Dão.",
+          "rhythm": "Descubra Grão Vasco e as ruas da Sé e saia rumo ao Dão.",
+          "idealFor": "Uma residência cultural no interior para Grão Vasco, ruas da Sé e roteiros do Dão.",
+          "consider": "Escolha Viseu pela vida urbana do interior; chegar ao oceano exige outro passeio."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/EF0935C6-3390-4EE5-86E9-FA8CC50EF685",
+          "title": "Viseu — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Guarda",
+      "geonamesId": 2738785,
+      "airportCode": "OPO",
+      "rank": 39,
+      "content": {
+        "en": {
+          "intro": "Guarda brings together a fortified cathedral, medieval streets and a highland position near Serra da Estrela.",
+          "rhythm": "Walk the fortified-cathedral quarter and use the highland position for Estrela outings.",
+          "idealFor": "A highland heritage base for cathedral streets and excursions toward Serra da Estrela.",
+          "consider": "Visit in colder weather too; Guarda's elevated inland setting differs from Portugal's lowland coast."
+        },
+        "es": {
+          "intro": "Guarda reúne una catedral fortificada, calles medievales y un entorno elevado junto a Serra da Estrela.",
+          "rhythm": "Recorre la catedral fortificada y aprovecha la altura para explorar Estrela.",
+          "idealFor": "Una base patrimonial elevada para calles de la catedral y excursiones a Serra da Estrela.",
+          "consider": "Visítala también con frío; su interior elevado difiere del litoral bajo portugués."
+        },
+        "pt": {
+          "intro": "Guarda reúne uma catedral fortificada, ruas medievais e uma posição elevada perto da Serra da Estrela.",
+          "rhythm": "Percorra a Sé fortificada e aproveite a altitude para explorar a Estrela.",
+          "idealFor": "Uma base patrimonial elevada para ruas da Sé e passeios à Serra da Estrela.",
+          "consider": "Visite também no frio; seu interior elevado difere do litoral baixo português."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/356223",
+          "title": "Guarda – Accessible Tour — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/A2A74DEC-B87C-4679-83DA-3EBA6DD35392",
+          "title": "Guarda — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Covilhã",
+      "geonamesId": 2740313,
+      "airportCode": "LIS",
+      "rank": 40,
+      "content": {
+        "en": {
+          "intro": "Covilhã brings together the Wool Museum, an old Jewish quarter and the slopes of Serra da Estrela.",
+          "rhythm": "Discover wool-making history and old Jewish lanes before heading into Serra da Estrela.",
+          "idealFor": "A mountain-facing cultural base for textile history, old lanes and Serra da Estrela outings.",
+          "consider": "The city climbs steep slopes; compare street-level access before choosing a mountain-view address."
+        },
+        "es": {
+          "intro": "Covilhã reúne el Museo de la Lana, una antigua judería y las laderas de Serra da Estrela.",
+          "rhythm": "Descubre la historia textil y la judería antes de subir a Serra da Estrela.",
+          "idealFor": "Una base cultural frente a la montaña para historia textil, calles antiguas y Serra da Estrela.",
+          "consider": "La ciudad sube por fuertes pendientes; compara accesos antes de elegir vistas de montaña."
+        },
+        "pt": {
+          "intro": "Covilhã reúne o Museu de Lanifícios, uma antiga judiaria e as encostas da Serra da Estrela.",
+          "rhythm": "Descubra a história têxtil e a judiaria antes de subir à Serra da Estrela.",
+          "idealFor": "Uma base cultural diante da montanha para história têxtil, ruas antigas e Serra da Estrela.",
+          "consider": "A cidade sobe encostas íngremes; compare os acessos antes de escolher vista para a montanha."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/3AA505BD-32F9-4D08-9B24-65A978244D59",
+          "title": "Covilhã — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/486395",
+          "title": "Covilhã, land of culture and art — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Castelo Branco",
+      "geonamesId": 2269514,
+      "airportCode": "LIS",
+      "rank": 41,
+      "content": {
+        "en": {
+          "intro": "Castelo Branco brings together the Episcopal Palace gardens, embroidered textiles and a hilltop castle quarter.",
+          "rhythm": "Spend time in the Episcopal gardens and discover the city's embroidered-silk tradition.",
+          "idealFor": "A craft-and-garden residence for embroidered traditions, baroque landscaping and inland town life.",
+          "consider": "The Episcopal gardens are central; airport access and coastal outings require separate planning."
+        },
+        "es": {
+          "intro": "Castelo Branco reúne los jardines del Palacio Episcopal, bordados tradicionales y el barrio del castillo.",
+          "rhythm": "Disfruta de los jardines episcopales y descubre la tradición de bordados en seda.",
+          "idealFor": "Una residencia de artesanía y jardines para bordados, paisajismo barroco y vida de interior.",
+          "consider": "Los jardines episcopales son céntricos; aeropuerto y costa requieren una planificación aparte."
+        },
+        "pt": {
+          "intro": "Castelo Branco reúne os jardins do Paço Episcopal, bordados tradicionais e o bairro do castelo.",
+          "rhythm": "Aproveite os jardins episcopais e descubra a tradição dos bordados em seda.",
+          "idealFor": "Uma residência de artesanato e jardins para bordados, paisagismo barroco e vida no interior.",
+          "consider": "Os jardins episcopais são centrais; aeroporto e litoral exigem planejamento separado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitcentrodeportugal.com.pt/pt/discover/castelo-branco/",
+          "title": "Turismo Centro — Castelo Branco"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/jardim-do-paco-episcopal",
+          "title": "Turismo de Portugal — Episcopal Palace Garden"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Leiria",
+      "geonamesId": 2267095,
+      "airportCode": "LIS",
+      "rank": 42,
+      "content": {
+        "en": {
+          "intro": "Leiria brings together a castle above the city, the Lis river and a walkable historic core.",
+          "rhythm": "Walk beside the Lis, browse the historic streets and climb up to the castle.",
+          "idealFor": "A regional city routine combining Lis-side walks with the castle and historic shopping streets.",
+          "consider": "The riverside and castle quarter differ in gradient; test the exact route home."
+        },
+        "es": {
+          "intro": "Leiria reúne un castillo sobre la ciudad, el río Lis y un casco histórico para recorrer a pie.",
+          "rhythm": "Pasea junto al Lis, recorre calles históricas y sube al castillo.",
+          "idealFor": "Una rutina regional que combine el Lis con castillo y calles comerciales históricas.",
+          "consider": "La ribera y el barrio del castillo tienen pendientes distintas; prueba la ruta a casa."
+        },
+        "pt": {
+          "intro": "Leiria reúne um castelo sobre a cidade, o rio Lis e um centro histórico para percorrer a pé.",
+          "rhythm": "Passeie junto ao Lis, percorra ruas históricas e suba ao castelo.",
+          "idealFor": "Uma rotina regional que combine o Lis com castelo e ruas comerciais históricas.",
+          "consider": "A orla e o bairro do castelo têm inclinações diferentes; teste a rota até casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/C9B02E31-B13A-473A-A22E-3DDA3A05306D",
+          "title": "Leiria — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Caldas da Rainha",
+      "geonamesId": 2270437,
+      "airportCode": "LIS",
+      "rank": 43,
+      "content": {
+        "en": {
+          "intro": "Caldas da Rainha brings together thermal heritage, ceramics and the leafy Parque D. Carlos I.",
+          "rhythm": "Make room for ceramics, thermal-town history and shaded walks in Parque D. Carlos I.",
+          "idealFor": "A creative-town base for ceramics, D. Carlos I park and Silver Coast exploration.",
+          "consider": "Caldas' town services and Foz do Arelho's beaches are a drive apart, not the same address."
+        },
+        "es": {
+          "intro": "Caldas da Rainha reúne patrimonio termal, cerámica y el arbolado Parque D. Carlos I.",
+          "rhythm": "Reserva tiempo para cerámica, historia termal y paseos en el Parque D. Carlos I.",
+          "idealFor": "Una base creativa para cerámica, parque D. Carlos I y recorridos por la Costa de Plata.",
+          "consider": "Los servicios de Caldas y las playas de Foz do Arelho están separados, no en la misma dirección."
+        },
+        "pt": {
+          "intro": "Caldas da Rainha reúne patrimônio termal, cerâmica e o arborizado Parque D. Carlos I.",
+          "rhythm": "Reserve tempo para cerâmica, história termal e passeios no Parque D. Carlos I.",
+          "idealFor": "Uma base criativa para cerâmica, Parque D. Carlos I e roteiros pela Costa de Prata.",
+          "consider": "Os serviços de Caldas e as praias da Foz do Arelho ficam separados, não no mesmo endereço."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/caldas-da-rainha",
+          "title": "Caldas da Rainha — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/caldas-da-rainha",
+          "title": "Caldas da Rainha — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/node/137512",
+          "title": "Turismo de Portugal — José Malhoa Museum, D. Carlos I park and ceramics"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Foz do Arelho",
+      "geonamesId": 2267937,
+      "airportCode": "LIS",
+      "rank": 44,
+      "content": {
+        "en": {
+          "intro": "Foz do Arelho brings together the meeting of the Óbidos Lagoon and the Atlantic, with lagoon and ocean beaches.",
+          "rhythm": "Alternate lagoon-side watersports with Atlantic beach walks around the Óbidos Lagoon outlet.",
+          "idealFor": "A lagoon-and-ocean home for windsurfing, boardwalk walks and beach-centred days.",
+          "consider": "Lagoon and ocean sides differ in exposure; choose the beach setting, not just the sea view."
+        },
+        "es": {
+          "intro": "Foz do Arelho reúne el encuentro de la Laguna de Óbidos con el Atlántico, con playas de laguna y océano.",
+          "rhythm": "Alterna deportes en la laguna con paseos atlánticos en su salida al mar.",
+          "idealFor": "Una casa entre laguna y océano para windsurf, pasarelas y días centrados en la playa.",
+          "consider": "Los lados de laguna y océano tienen distinta exposición; elige el entorno, no solo la vista."
+        },
+        "pt": {
+          "intro": "Foz do Arelho reúne o encontro da Lagoa de Óbidos com o Atlântico, com praias de lagoa e oceano.",
+          "rhythm": "Alterne esportes na lagoa com passeios atlânticos em sua saída para o mar.",
+          "idealFor": "Uma casa entre lagoa e oceano para windsurf, passarelas e dias focados na praia.",
+          "consider": "Os lados da lagoa e do oceano têm exposições diferentes; escolha o cenário, não só a vista."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/praia-da-foz-do-arelho-mar-e-lagoa",
+          "title": "Turismo de Portugal — Foz do Arelho, sea and lagoon"
+        },
+        {
+          "url": "https://turismodocentro.pt/poi/foz-do-arelho-lagoa-de-obidos/",
+          "title": "Turismo Centro — Foz do Arelho and Óbidos Lagoon"
+        },
+        {
+          "url": "https://turismodocentro.pt/concelho/caldas-da-rainha/",
+          "title": "Turismo Centro — Caldas da Rainha and Foz do Arelho boardwalks"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Óbidos",
+      "geonamesId": 2265485,
+      "airportCode": "LIS",
+      "rank": 45,
+      "content": {
+        "en": {
+          "intro": "Óbidos brings together medieval walls, a castle and a calendar of literary and cultural events.",
+          "rhythm": "Walk inside the medieval walls and follow literary and cultural events around the castle.",
+          "idealFor": "A small heritage base for literary events, castle streets and the Silver Coast hinterland.",
+          "consider": "Inside the walls, pedestrian lanes and event days can complicate vehicle access and deliveries."
+        },
+        "es": {
+          "intro": "Óbidos reúne murallas medievales, un castillo y una agenda de eventos literarios y culturales.",
+          "rhythm": "Pasea intramuros y sigue los eventos literarios y culturales alrededor del castillo.",
+          "idealFor": "Una pequeña base patrimonial para eventos literarios, calles del castillo e interior costero.",
+          "consider": "Intramuros, las calles peatonales y los eventos pueden complicar vehículos y entregas."
+        },
+        "pt": {
+          "intro": "Óbidos reúne muralhas medievais, um castelo e uma agenda de eventos literários e culturais.",
+          "rhythm": "Passeie dentro das muralhas e acompanhe eventos literários e culturais ao redor do castelo.",
+          "idealFor": "Uma pequena base patrimonial para eventos literários, ruas do castelo e interior costeiro.",
+          "consider": "Dentro das muralhas, ruas de pedestres e eventos podem complicar veículos e entregas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132858",
+          "title": "Óbidos — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/es/content/obidos-vila-natal",
+          "title": "Óbidos Vila Natal — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Nazaré",
+      "geonamesId": 2265552,
+      "airportCode": "LIS",
+      "rank": 46,
+      "content": {
+        "en": {
+          "intro": "Nazaré brings together fishing traditions, the Sítio viewpoint and the funicular above the town beach.",
+          "rhythm": "Enjoy the lower town's fishing character and take the funicular toward Sítio's views.",
+          "idealFor": "A fishing-town residence for beachfront routines, Sítio panoramas and local seafood traditions.",
+          "consider": "Sítio and the lower beachfront are vertically separated; check funicular and walking alternatives."
+        },
+        "es": {
+          "intro": "Nazaré reúne tradición pesquera, el mirador del Sítio y el funicular sobre la playa urbana.",
+          "rhythm": "Disfruta de la tradición pesquera abajo y sube en funicular a las vistas del Sítio.",
+          "idealFor": "Una residencia pesquera para vida de playa, panorámicas del Sítio y gastronomía marinera.",
+          "consider": "El Sítio y la playa baja están separados en altura; revisa funicular y alternativas a pie."
+        },
+        "pt": {
+          "intro": "Nazaré reúne tradição pesqueira, o mirante do Sítio e o funicular sobre a praia urbana.",
+          "rhythm": "Aproveite a tradição pesqueira embaixo e suba de funicular às vistas do Sítio.",
+          "idealFor": "Uma residência pesqueira para vida de praia, panoramas do Sítio e gastronomia do mar.",
+          "consider": "O Sítio e a praia baixa são separados em altura; confira funicular e alternativas a pé."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/3A63D30F-2FA2-4819-B0A2-34911EB5169C",
+          "title": "Nazaré — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/nazare",
+          "title": "Nazaré — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Peniche",
+      "geonamesId": 2264923,
+      "airportCode": "LIS",
+      "rank": 47,
+      "content": {
+        "en": {
+          "intro": "Peniche brings together a working fishing port, the seafront fortress and access to the Berlengas.",
+          "rhythm": "Watch the fishing harbour, visit the fortress and plan surf or Berlengas outings.",
+          "idealFor": "A fishing-and-surf base for harbour life, the fortress and Berlengas excursions.",
+          "consider": "Berlengas outings depend on sea conditions; the peninsula's exposed shore differs from sheltered beaches."
+        },
+        "es": {
+          "intro": "Peniche reúne un puerto pesquero activo, la fortaleza costera y el acceso a las Berlengas.",
+          "rhythm": "Observa el puerto pesquero, visita la fortaleza y planea surf o Berlengas.",
+          "idealFor": "Una base pesquera y de surf para puerto, fortaleza y excursiones a las Berlengas.",
+          "consider": "Las Berlengas dependen del mar; la costa expuesta de la península difiere de playas protegidas."
+        },
+        "pt": {
+          "intro": "Peniche reúne um porto pesqueiro ativo, a fortaleza costeira e o acesso às Berlengas.",
+          "rhythm": "Observe o porto pesqueiro, visite a fortaleza e planeje surfe ou Berlengas.",
+          "idealFor": "Uma base pesqueira e de surfe para porto, fortaleza e passeios às Berlengas.",
+          "consider": "As Berlengas dependem do mar; a costa exposta da península difere de praias abrigadas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/150D8789-B8A5-4C11-B213-8EAD2945A2B1",
+          "title": "Peniche — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/73769",
+          "title": "Peniche — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Torres Vedras",
+      "geonamesId": 2262581,
+      "airportCode": "LIS",
+      "rank": 48,
+      "content": {
+        "en": {
+          "intro": "Torres Vedras brings together historic defensive lines, the Varatojo convent and a distinctive Carnival tradition.",
+          "rhythm": "Follow defensive-history routes and the town's Carnival traditions between ordinary shopping days.",
+          "idealFor": "A regional home base for Carnival culture, defensive-history routes and Oeste countryside drives.",
+          "consider": "Torres Vedras town is inland; municipal coastal beaches require a separate local trip."
+        },
+        "es": {
+          "intro": "Torres Vedras reúne líneas defensivas históricas, el convento de Varatojo y un Carnaval propio.",
+          "rhythm": "Sigue rutas defensivas y tradiciones de Carnaval entre los días de compras cotidianas.",
+          "idealFor": "Una base regional para Carnaval, rutas defensivas y recorridos por el campo del Oeste.",
+          "consider": "La ciudad de Torres Vedras es interior; las playas municipales requieren otro desplazamiento."
+        },
+        "pt": {
+          "intro": "Torres Vedras reúne linhas defensivas históricas, o Convento do Varatojo e um Carnaval próprio.",
+          "rhythm": "Siga roteiros defensivos e tradições de Carnaval entre os dias de compras cotidianas.",
+          "idealFor": "Uma base regional para Carnaval, roteiros defensivos e passeios pelos campos do Oeste.",
+          "consider": "A cidade de Torres Vedras fica no interior; as praias municipais exigem outro deslocamento."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/4482B395-B943-42BC-9719-0139C105F405",
+          "title": "Torres Vedras — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/torres-vedras",
+          "title": "Torres Vedras — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Alcobaça",
+      "geonamesId": 2272147,
+      "airportCode": "LIS",
+      "rank": 49,
+      "content": {
+        "en": {
+          "intro": "Alcobaça brings together the UNESCO Cistercian monastery and a strong convent-pastry tradition.",
+          "rhythm": "Let monastery architecture, convent sweets and small-town cafés shape a cultural daily routine.",
+          "idealFor": "A monastery-town residence for Gothic architecture, convent sweets and a compact cultural routine.",
+          "consider": "A home beside the monastery has different visitor activity from an outlying rural address."
+        },
+        "es": {
+          "intro": "Alcobaça reúne el monasterio cisterciense UNESCO y una marcada tradición de dulces conventuales.",
+          "rhythm": "Centra la rutina cultural en el monasterio, dulces conventuales y cafés de pueblo.",
+          "idealFor": "Una residencia monástica para arquitectura gótica, dulces conventuales y cultura en un centro compacto.",
+          "consider": "Una vivienda junto al monasterio tiene un movimiento turístico distinto de una dirección rural."
+        },
+        "pt": {
+          "intro": "Alcobaça reúne o mosteiro cisterciense UNESCO e uma forte tradição de doces conventuais.",
+          "rhythm": "Organize a rotina cultural com o mosteiro, doces conventuais e cafés de vila.",
+          "idealFor": "Uma residência de cidade monástica para arquitetura gótica, doces conventuais e cultura em um centro compacto.",
+          "consider": "Uma casa junto ao mosteiro tem movimento turístico diferente de um endereço rural."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/58475DB6-D378-40C8-AB2C-78D48D18E7B8",
+          "title": "Alcobaça — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/E0AF287B-BB86-4079-8A85-8C908B576ED4",
+          "title": "Alcobaça — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Batalha",
+      "geonamesId": 2271006,
+      "airportCode": "LIS",
+      "rank": 50,
+      "content": {
+        "en": {
+          "intro": "Batalha brings together the UNESCO Monastery of Santa Maria da Vitória and a town built around it.",
+          "rhythm": "Return to the monastery's Gothic details and explore the small town around its square.",
+          "idealFor": "A quieter heritage base for close-up monastery visits and exploring central Portugal's monuments.",
+          "consider": "The monastery square is the focal point; check routine shopping and wider travel from the chosen street."
+        },
+        "es": {
+          "intro": "Batalha reúne el monasterio UNESCO de Santa Maria da Vitória y una villa formada a su alrededor.",
+          "rhythm": "Redescubre los detalles góticos del monasterio y la pequeña villa de su plaza.",
+          "idealFor": "Una base patrimonial más pausada para el monasterio y monumentos del centro portugués.",
+          "consider": "La plaza del monasterio es central; revisa compras y viajes desde la calle elegida."
+        },
+        "pt": {
+          "intro": "Batalha reúne o Mosteiro de Santa Maria da Vitória, patrimônio UNESCO, e uma vila formada ao redor dele.",
+          "rhythm": "Redescubra os detalhes góticos do mosteiro e a pequena vila de sua praça.",
+          "idealFor": "Uma base patrimonial mais tranquila para o mosteiro e monumentos do centro português.",
+          "consider": "A praça do mosteiro é central; confira compras e viagens a partir da rua escolhida."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/0F2670D8-84F2-4D51-894A-94C0108151F5",
+          "title": "Batalha — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Tomar",
+      "geonamesId": 2262644,
+      "airportCode": "LIS",
+      "rank": 51,
+      "content": {
+        "en": {
+          "intro": "Tomar brings together Templar heritage, the Convent of Christ and the Sete Montes woodland.",
+          "rhythm": "Explore Templar landmarks, walk in Sete Montes and return to the town below the convent.",
+          "idealFor": "A Templar-history home base with woodland walks and a substantial town below the convent.",
+          "consider": "The Convent of Christ sits above town; compare central errands with the uphill heritage route."
+        },
+        "es": {
+          "intro": "Tomar reúne patrimonio templario, el Convento de Cristo y la mata de Sete Montes.",
+          "rhythm": "Descubre los templarios, pasea en Sete Montes y vuelve a la ciudad bajo el convento.",
+          "idealFor": "Una base templaria con paseos arbolados y una ciudad al pie del convento.",
+          "consider": "El Convento de Cristo está sobre la ciudad; diferencia los recados de la subida patrimonial."
+        },
+        "pt": {
+          "intro": "Tomar reúne patrimônio templário, o Convento de Cristo e a Mata dos Sete Montes.",
+          "rhythm": "Descubra os templários, passeie em Sete Montes e volte à cidade abaixo do convento.",
+          "idealFor": "Uma base templária com passeios arborizados e uma cidade ao pé do convento.",
+          "consider": "O Convento de Cristo fica acima da cidade; diferencie os afazeres da subida ao patrimônio."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/73772",
+          "title": "Tomar, a Templar City — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/347229",
+          "title": "Tomar - Accessible Tour — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Fátima",
+      "geonamesId": 2268326,
+      "airportCode": "LIS",
+      "rank": 52,
+      "content": {
+        "en": {
+          "intro": "Fátima brings together the Marian sanctuary and the shepherds' village of Aljustrel nearby.",
+          "rhythm": "Centre days on the sanctuary and quieter visits to the shepherds' homes in Aljustrel.",
+          "idealFor": "A devotional base for sanctuary visits and the rural stories of nearby Aljustrel.",
+          "consider": "Major pilgrimage dates transform central activity; experience both an event and an ordinary weekday."
+        },
+        "es": {
+          "intro": "Fátima reúne el santuario mariano y la cercana aldea de los pastores de Aljustrel.",
+          "rhythm": "Centra los días en el santuario y visitas tranquilas a las casas de Aljustrel.",
+          "idealFor": "Una base devocional para el santuario y las historias rurales de Aljustrel.",
+          "consider": "Las grandes peregrinaciones transforman el centro; experimenta un evento y un día laborable normal."
+        },
+        "pt": {
+          "intro": "Fátima reúne o santuário mariano e a vizinha aldeia dos pastorinhos em Aljustrel.",
+          "rhythm": "Organize os dias com o santuário e visitas tranquilas às casas de Aljustrel.",
+          "idealFor": "Uma base devocional para o santuário e as histórias rurais de Aljustrel.",
+          "consider": "As grandes peregrinações transformam o centro; experimente um evento e um dia útil comum."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/centro-de-portugal/73771",
+          "title": "Fátima, a journey to the altar of the world — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/D661F4FF-5734-4FA2-9C8F-2EB2AC5AE493",
+          "title": "Fátima — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Santarém",
+      "geonamesId": 2263480,
+      "airportCode": "LIS",
+      "rank": 53,
+      "content": {
+        "en": {
+          "intro": "Santarém brings together Gothic churches, the Portas do Sol viewpoint and a position above the Tagus.",
+          "rhythm": "Combine Gothic-church walks with time at Portas do Sol above the Tagus.",
+          "idealFor": "A Tagus-valley cultural base for Gothic churches, viewpoints and Ribatejo exploration.",
+          "consider": "The old city stands above the river; riverbank proximity is not the same as a flat central route."
+        },
+        "es": {
+          "intro": "Santarém reúne iglesias góticas, el mirador de Portas do Sol y una posición sobre el Tajo.",
+          "rhythm": "Combina iglesias góticas con el mirador de Portas do Sol sobre el Tajo.",
+          "idealFor": "Una base cultural del Tajo para iglesias góticas, miradores y recorridos por Ribatejo.",
+          "consider": "El casco antiguo está sobre el río; cercanía a la ribera no significa trayecto llano."
+        },
+        "pt": {
+          "intro": "Santarém reúne igrejas góticas, o mirante das Portas do Sol e uma posição acima do Tejo.",
+          "rhythm": "Combine igrejas góticas com o mirante das Portas do Sol sobre o Tejo.",
+          "idealFor": "Uma base cultural do Tejo para igrejas góticas, mirantes e roteiros pelo Ribatejo.",
+          "consider": "O centro antigo fica acima do rio; proximidade da margem não significa percurso plano."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/735B1D26-65D2-4A21-9E80-EC88C09D7626",
+          "title": "Santarém — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/alentejo/73798",
+          "title": "Santarém, the belvedere city of Ribatejo — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Abrantes",
+      "geonamesId": 2272447,
+      "airportCode": "LIS",
+      "rank": 54,
+      "content": {
+        "en": {
+          "intro": "Abrantes brings together a hilltop castle, wide Tagus views and the local tigelada pastry tradition.",
+          "rhythm": "Climb to castle viewpoints, explore whitewashed streets and stop for local tigeladas.",
+          "idealFor": "A regional hill-town home for Tagus panoramas, castle visits and local pastry cafés.",
+          "consider": "River-level facilities and the castle quarter require different uphill journeys."
+        },
+        "es": {
+          "intro": "Abrantes reúne un castillo en altura, amplias vistas del Tajo y la tradición de las tigeladas.",
+          "rhythm": "Sube a los miradores del castillo, recorre calles blancas y prueba tigeladas.",
+          "idealFor": "Una casa regional de altura para panorámicas del Tajo, castillo y pastelerías locales.",
+          "consider": "Los servicios junto al río y el barrio del castillo exigen subidas distintas."
+        },
+        "pt": {
+          "intro": "Abrantes reúne um castelo no alto, amplas vistas do Tejo e a tradição das tigeladas.",
+          "rhythm": "Suba aos mirantes do castelo, percorra ruas brancas e prove tigeladas.",
+          "idealFor": "Uma casa regional em altura para panoramas do Tejo, castelo e confeitarias locais.",
+          "consider": "Os serviços junto ao rio e o bairro do castelo exigem subidas diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/4D818169-7C7F-465F-974F-BA95FDDF8ED5",
+          "title": "Abrantes — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/abrantes",
+          "title": "Abrantes — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Constância",
+      "geonamesId": 2269088,
+      "airportCode": "LIS",
+      "rank": 55,
+      "content": {
+        "en": {
+          "intro": "Constância brings together the meeting of the Zêzere and Tagus rivers and a literary link to Camões.",
+          "rhythm": "Follow the Zêzere–Tagus riverbanks and discover the town's Camões connection.",
+          "idealFor": "A small riverside retreat for Zêzere–Tagus scenery and Camões-linked cultural walks.",
+          "consider": "Check shops and transport outside the compact centre before planning a car-light routine."
+        },
+        "es": {
+          "intro": "Constância reúne la unión del Zêzere con el Tajo y un vínculo literario con Camões.",
+          "rhythm": "Sigue las riberas del Zêzere y Tajo y descubre el vínculo con Camões.",
+          "idealFor": "Un pequeño refugio ribereño para paisajes de Zêzere y Tajo y paseos ligados a Camões.",
+          "consider": "Comprueba comercios y transporte fuera del pequeño centro antes de prescindir del coche."
+        },
+        "pt": {
+          "intro": "Constância reúne o encontro do Zêzere com o Tejo e uma ligação literária com Camões.",
+          "rhythm": "Siga as margens do Zêzere e Tejo e descubra a ligação com Camões.",
+          "idealFor": "Um pequeno refúgio ribeirinho para paisagens do Zêzere e Tejo e passeios ligados a Camões.",
+          "consider": "Confira comércio e transporte fora do pequeno centro antes de dispensar o carro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/48C48F2F-4A68-4CF0-8FF8-EC927D90E455",
+          "title": "Constância — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/es/NR/exeres/48C48F2F-4A68-4CF0-8FF8-EC927D90E455",
+          "title": "Constância — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Évora",
+      "geonamesId": 2268406,
+      "airportCode": "LIS",
+      "rank": 56,
+      "content": {
+        "en": {
+          "intro": "Évora brings together a UNESCO historic centre, Roman temple and cathedral above Alentejo streets.",
+          "rhythm": "Walk from the Roman temple to cathedral streets and linger in Alentejo squares.",
+          "idealFor": "A primary Alentejo cultural base for Roman remains, cathedral streets and regional food.",
+          "consider": "Historic-centre lanes and inland summer conditions deserve testing beyond a short monument visit."
+        },
+        "es": {
+          "intro": "Évora reúne un centro histórico UNESCO, un templo romano y la catedral sobre calles alentejanas.",
+          "rhythm": "Pasea del templo romano a la catedral y disfruta de plazas alentejanas.",
+          "idealFor": "Una base cultural alentejana para restos romanos, calles de la catedral y gastronomía regional.",
+          "consider": "Las calles antiguas y el verano interior merecen probarse más allá de una visita monumental."
+        },
+        "pt": {
+          "intro": "Évora reúne um centro histórico UNESCO, um templo romano e a Sé sobre ruas alentejanas.",
+          "rhythm": "Passeie do templo romano à Sé e aproveite praças alentejanas.",
+          "idealFor": "Uma base cultural alentejana para vestígios romanos, ruas da Sé e gastronomia regional.",
+          "consider": "As ruas antigas e o verão do interior merecem ser testados além de uma visita monumental."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/9B59CD56-EAF1-446D-B52C-0000CCCB8944",
+          "title": "Évora — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/alentejo/73787/1000",
+          "title": "Évora, World Heritage Site — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Elvas",
+      "geonamesId": 2268615,
+      "airportCode": "LIS",
+      "rank": 57,
+      "content": {
+        "en": {
+          "intro": "Elvas brings together UNESCO-listed border fortifications and the Amoreira aqueduct.",
+          "rhythm": "Explore the great fortifications and follow the Amoreira aqueduct's distinctive silhouette.",
+          "idealFor": "A border-heritage home for fortification walks, the aqueduct and exploration toward Spain.",
+          "consider": "The great forts are dispersed; town-centre living does not put every attraction on one walking route."
+        },
+        "es": {
+          "intro": "Elvas reúne fortificaciones fronterizas UNESCO y el acueducto da Amoreira.",
+          "rhythm": "Explora las grandes fortificaciones y la silueta característica del acueducto da Amoreira.",
+          "idealFor": "Una casa patrimonial fronteriza para fortificaciones, acueducto y recorridos hacia España.",
+          "consider": "Los grandes fuertes están dispersos; el centro no reúne todo en un mismo paseo."
+        },
+        "pt": {
+          "intro": "Elvas reúne fortificações fronteiriças UNESCO e o Aqueduto da Amoreira.",
+          "rhythm": "Explore as grandes fortificações e a silhueta característica do Aqueduto da Amoreira.",
+          "idealFor": "Uma casa patrimonial fronteiriça para fortificações, aqueduto e roteiros para a Espanha.",
+          "consider": "Os grandes fortes ficam dispersos; o centro não reúne tudo em um só passeio."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/B5F9FFBE-A1F5-40A4-BD5D-CFE19788F247",
+          "title": "Elvas — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/elvas-accessible-itinerary-0",
+          "title": "Elvas - Accessible Itinerary — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Beja",
+      "geonamesId": 2270985,
+      "airportCode": "LIS",
+      "rank": 58,
+      "content": {
+        "en": {
+          "intro": "Beja brings together a castle keep, the regional museum and the nearby Roman site of Pisões.",
+          "rhythm": "Combine castle views and regional museum visits with a separate outing to Roman Pisões.",
+          "idealFor": "An inland regional base for castle views, museums and Roman-history excursions to Pisões.",
+          "consider": "Pisões is outside the city; compare daily town services with countryside travel needs."
+        },
+        "es": {
+          "intro": "Beja reúne la torre del castillo, el museo regional y el cercano yacimiento romano de Pisões.",
+          "rhythm": "Combina castillo y museo regional con una salida al yacimiento romano de Pisões.",
+          "idealFor": "Una base regional interior para castillo, museos y excursiones romanas a Pisões.",
+          "consider": "Pisões está fuera de la ciudad; compara servicios cotidianos y desplazamientos al campo."
+        },
+        "pt": {
+          "intro": "Beja reúne a torre de menagem, o museu regional e o vizinho sítio romano de Pisões.",
+          "rhythm": "Combine castelo e museu regional com uma saída ao sítio romano de Pisões.",
+          "idealFor": "Uma base regional no interior para castelo, museus e passeios romanos a Pisões.",
+          "consider": "Pisões fica fora da cidade; compare serviços cotidianos e deslocamentos ao campo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/beja",
+          "title": "Beja — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Estremoz",
+      "geonamesId": 2268411,
+      "airportCode": "LIS",
+      "rank": 59,
+      "content": {
+        "en": {
+          "intro": "Estremoz brings together white-marble streets, a medieval castle and traditional clay figures.",
+          "rhythm": "Browse traditional clay work and white-marble streets before exploring the medieval castle quarter.",
+          "idealFor": "A craft-and-marble town home for pottery traditions, castle streets and Alentejo culture.",
+          "consider": "The medieval upper town and newer lower streets differ in gradient and vehicle access."
+        },
+        "es": {
+          "intro": "Estremoz reúne calles de mármol blanco, un castillo medieval y figuras tradicionales de barro.",
+          "rhythm": "Descubre figuras de barro y calles de mármol antes del barrio medieval del castillo.",
+          "idealFor": "Una casa de artesanía y mármol para alfarería, calles del castillo y cultura alentejana.",
+          "consider": "La villa medieval alta y las calles nuevas bajas difieren en pendientes y acceso."
+        },
+        "pt": {
+          "intro": "Estremoz reúne ruas de mármore branco, um castelo medieval e tradicionais figuras de barro.",
+          "rhythm": "Descubra figuras de barro e ruas de mármore antes do bairro medieval do castelo.",
+          "idealFor": "Uma casa de artesanato e mármore para olaria, ruas do castelo e cultura alentejana.",
+          "consider": "A vila medieval alta e as ruas novas baixas diferem em inclinação e acesso."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132782",
+          "title": "Estremoz — Turismo de Portugal"
+        },
+        {
+          "url": "https://cdn.visitportugal.com/pt-pt/content/estremoz",
+          "title": "Estremoz — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Vila Viçosa",
+      "geonamesId": 2261577,
+      "airportCode": "LIS",
+      "rank": 60,
+      "content": {
+        "en": {
+          "intro": "Vila Viçosa brings together the Ducal Palace and a townscape shaped by the local marble industry.",
+          "rhythm": "Explore the Ducal Palace and notice how local marble shapes the town's architecture.",
+          "idealFor": "A small-town cultural residence for Ducal Palace visits and the marble landscape.",
+          "consider": "Quarry landscapes and palace visits are regional interests; verify daily services at the actual address."
+        },
+        "es": {
+          "intro": "Vila Viçosa reúne el Palacio Ducal y un paisaje urbano marcado por el mármol local.",
+          "rhythm": "Visita el Palacio Ducal y observa cómo el mármol local define la arquitectura.",
+          "idealFor": "Una residencia cultural de pueblo para el Palacio Ducal y el paisaje del mármol.",
+          "consider": "Canteras y palacio son intereses regionales; comprueba servicios diarios en la dirección concreta."
+        },
+        "pt": {
+          "intro": "Vila Viçosa reúne o Paço Ducal e uma paisagem urbana marcada pelo mármore local.",
+          "rhythm": "Visite o Paço Ducal e observe como o mármore local define a arquitetura.",
+          "idealFor": "Uma residência cultural de cidade pequena para o Paço Ducal e a paisagem do mármore.",
+          "consider": "Pedreiras e palácio são interesses regionais; confira serviços diários no endereço específico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://cdn.visitportugal.com/en/node/132837",
+          "title": "Vila Viçosa — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/vila-vicosa",
+          "title": "Vila Viçosa — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Portalegre",
+      "geonamesId": 2264508,
+      "airportCode": "LIS",
+      "rank": 61,
+      "content": {
+        "en": {
+          "intro": "Portalegre brings together São Mamede foothills, historic convents and the José Régio house-museum.",
+          "rhythm": "Pair convent and José Régio visits with outings into the São Mamede foothills.",
+          "idealFor": "A cultural foothill base for convent heritage, José Régio and São Mamede outings.",
+          "consider": "Hills shape local routes; the wider natural-park landscape is not all walkable from town."
+        },
+        "es": {
+          "intro": "Portalegre reúne las estribaciones de São Mamede, conventos históricos y la casa-museo José Régio.",
+          "rhythm": "Combina conventos y José Régio con salidas a las laderas de São Mamede.",
+          "idealFor": "Una base cultural de ladera para conventos, José Régio y salidas a São Mamede.",
+          "consider": "Las cuestas condicionan rutas; no todo el parque natural es accesible a pie desde el centro."
+        },
+        "pt": {
+          "intro": "Portalegre reúne as encostas de São Mamede, conventos históricos e a Casa-Museu José Régio.",
+          "rhythm": "Combine conventos e José Régio com saídas às encostas de São Mamede.",
+          "idealFor": "Uma base cultural de encosta para conventos, José Régio e saídas a São Mamede.",
+          "consider": "As ladeiras condicionam rotas; nem todo o parque natural é acessível a pé do centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/D09DD8A8-61CC-4C02-A69A-A53ACFCA9322",
+          "title": "Portalegre — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/content/portalegre-marvao-and-castelo-de-vide",
+          "title": "Portalegre, Marvão, Castelo de Vide — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Castelo de Vide",
+      "geonamesId": 2269508,
+      "airportCode": "LIS",
+      "rank": 62,
+      "content": {
+        "en": {
+          "intro": "Castelo de Vide brings together a castle, the medieval Jewish quarter and views across São Mamede country.",
+          "rhythm": "Wander the Jewish quarter, climb toward the castle and enjoy São Mamede views.",
+          "idealFor": "A slower heritage home for Jewish-quarter lanes and views into São Mamede country.",
+          "consider": "Stepped old lanes may limit doorstep vehicle access; inspect the actual delivery and shopping route."
+        },
+        "es": {
+          "intro": "Castelo de Vide reúne un castillo, la judería medieval y vistas a los campos de São Mamede.",
+          "rhythm": "Recorre la judería, sube al castillo y disfruta de vistas de São Mamede.",
+          "idealFor": "Una casa patrimonial pausada para la judería y vistas a los campos de São Mamede.",
+          "consider": "Las calles escalonadas pueden limitar vehículos; revisa entregas y la ruta de compras."
+        },
+        "pt": {
+          "intro": "Castelo de Vide reúne um castelo, a judiaria medieval e vistas dos campos de São Mamede.",
+          "rhythm": "Percorra a judiaria, suba ao castelo e aproveite vistas de São Mamede.",
+          "idealFor": "Uma casa patrimonial tranquila para a judiaria e vistas dos campos de São Mamede.",
+          "consider": "As ruas com degraus podem limitar veículos; verifique entregas e a rota das compras."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/5A5D6C5D-89B8-4CCA-9CFD-346BF0296C88",
+          "title": "Castelo de Vide — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/castelo-de-vide",
+          "title": "Castelo de Vide — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Marvão",
+      "geonamesId": 2266633,
+      "airportCode": "LIS",
+      "rank": 63,
+      "content": {
+        "en": {
+          "intro": "Marvão brings together a walled ridge-top village and sweeping views across the São Mamede hills.",
+          "rhythm": "Follow the fortified ridge and take time for broad views over mountain country.",
+          "idealFor": "A ridge-top retreat for people who place fortified-village character and expansive views first.",
+          "consider": "The dramatic hilltop position also means steep access and trips beyond the walls for wider services."
+        },
+        "es": {
+          "intro": "Marvão reúne una villa amurallada en una cresta y amplias vistas de la sierra de São Mamede.",
+          "rhythm": "Recorre la cresta fortificada y contempla los amplios paisajes montañosos.",
+          "idealFor": "Un refugio en la cresta para quienes priorizan carácter fortificado y vistas amplias.",
+          "consider": "La posición elevada también implica acceso empinado y viajes extramuros para más servicios."
+        },
+        "pt": {
+          "intro": "Marvão reúne uma vila murada no alto de uma crista e amplas vistas da Serra de São Mamede.",
+          "rhythm": "Percorra a crista fortificada e contemple as amplas paisagens montanhosas.",
+          "idealFor": "Um refúgio na crista para quem prioriza personalidade fortificada e vistas amplas.",
+          "consider": "A posição elevada também implica acesso íngreme e viagens para fora das muralhas por mais serviços."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/marvao",
+          "title": "Marvão — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/marvao",
+          "title": "Marvão — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Serpa",
+      "geonamesId": 2263049,
+      "airportCode": "LIS",
+      "rank": 64,
+      "content": {
+        "en": {
+          "intro": "Serpa brings together an imposing castle, whitewashed lanes and a setting near the Guadiana.",
+          "rhythm": "Walk whitewashed lanes below the castle and explore the wider Guadiana region.",
+          "idealFor": "An Alentejo small-town base for whitewashed lanes, castle history and Guadiana-region drives.",
+          "consider": "The river is a regional outing, not a waterfront outside every central home."
+        },
+        "es": {
+          "intro": "Serpa reúne un imponente castillo, calles encaladas y un entorno cercano al Guadiana.",
+          "rhythm": "Pasea por calles blancas bajo el castillo y descubre la región del Guadiana.",
+          "idealFor": "Una base alentejana de pueblo para calles blancas, castillo y recorridos por el Guadiana.",
+          "consider": "El río es una salida regional, no una ribera frente a cada casa del centro."
+        },
+        "pt": {
+          "intro": "Serpa reúne um castelo imponente, ruas caiadas e uma localização perto do Guadiana.",
+          "rhythm": "Passeie por ruas brancas sob o castelo e descubra a região do Guadiana.",
+          "idealFor": "Uma base alentejana de cidade pequena para ruas brancas, castelo e roteiros pelo Guadiana.",
+          "consider": "O rio é um passeio regional, não uma orla diante de cada casa do centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132850/1000",
+          "title": "Serpa — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Moura",
+      "geonamesId": 2265686,
+      "airportCode": "LIS",
+      "rank": 65,
+      "content": {
+        "en": {
+          "intro": "Moura brings together a preserved Mouraria, castle walls and olive-growing countryside.",
+          "rhythm": "Explore the Mouraria and castle before driving through the surrounding olive landscapes.",
+          "idealFor": "A rural-culture base for Mouraria walks, olive landscapes and slower Alentejo days.",
+          "consider": "Explore the spread-out countryside by car before choosing an address beyond town."
+        },
+        "es": {
+          "intro": "Moura reúne una Mouraria conservada, murallas del castillo y campos de olivos.",
+          "rhythm": "Recorre la Mouraria y el castillo antes de explorar los olivares cercanos.",
+          "idealFor": "Una base cultural rural para paseos por la Mouraria, olivares y días alentejanos pausados.",
+          "consider": "Recorre el campo disperso en coche antes de elegir una dirección fuera del pueblo."
+        },
+        "pt": {
+          "intro": "Moura reúne uma Mouraria preservada, muralhas do castelo e campos de oliveiras.",
+          "rhythm": "Percorra a Mouraria e o castelo antes de explorar os olivais próximos.",
+          "idealFor": "Uma base cultural rural para passeios na Mouraria, olivais e dias alentejanos tranquilos.",
+          "consider": "Percorra o campo disperso de carro antes de escolher um endereço fora da cidade."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/9753A598-6817-4D4C-B0B9-5482A6EC8894",
+          "title": "Moura — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/moura",
+          "title": "Moura — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Sines",
+      "geonamesId": 2262917,
+      "airportCode": "LIS",
+      "rank": 66,
+      "content": {
+        "en": {
+          "intro": "Sines brings together a fishing bay, a castle linked to Vasco da Gama and an active commercial port.",
+          "rhythm": "Watch the working bay, visit Vasco da Gama's castle story and enjoy fishing-town flavours.",
+          "idealFor": "A working-coast base for fishing heritage, Vasco da Gama history and bay-front evenings.",
+          "consider": "Sines also has port and industrial activity; compare residential streets with those surroundings."
+        },
+        "es": {
+          "intro": "Sines reúne una bahía pesquera, un castillo ligado a Vasco da Gama y un puerto comercial activo.",
+          "rhythm": "Observa la bahía activa, descubre a Vasco da Gama y prueba sabores pesqueros.",
+          "idealFor": "Una base costera activa para pesca, historia de Vasco da Gama y tardes en la bahía.",
+          "consider": "Sines también tiene puerto e industria; compara las calles residenciales con ese entorno."
+        },
+        "pt": {
+          "intro": "Sines reúne uma baía pesqueira, um castelo ligado a Vasco da Gama e um porto comercial ativo.",
+          "rhythm": "Observe a baía ativa, descubra Vasco da Gama e prove sabores pesqueiros.",
+          "idealFor": "Uma base costeira ativa para pesca, história de Vasco da Gama e tardes na baía.",
+          "consider": "Sines também tem porto e indústria; compare as ruas residenciais com esse entorno."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/sines",
+          "title": "Sines — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/sines",
+          "title": "Sines — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Vila Nova de Milfontes",
+      "geonamesId": 2261617,
+      "airportCode": "LIS",
+      "rank": 67,
+      "content": {
+        "en": {
+          "intro": "Vila Nova de Milfontes brings together the Mira river mouth, a small fortress and Costa Vicentina beaches.",
+          "rhythm": "Move between Mira-side walks, the small fortress and Costa Vicentina beach days.",
+          "idealFor": "A Mira-estuary retreat for river-and-ocean beach days and exploring the Costa Vicentina.",
+          "consider": "Summer visitor activity and the river crossing change the feel of different beach addresses."
+        },
+        "es": {
+          "intro": "Vila Nova de Milfontes reúne la desembocadura del Mira, una pequeña fortaleza y playas de la Costa Vicentina.",
+          "rhythm": "Alterna paseos del Mira, la pequeña fortaleza y playas de la Costa Vicentina.",
+          "idealFor": "Un refugio en el Mira para playas de río y océano y rutas por la Costa Vicentina.",
+          "consider": "El turismo veraniego y el cruce del río cambian el ambiente de cada zona de playa."
+        },
+        "pt": {
+          "intro": "Vila Nova de Milfontes reúne a foz do Mira, uma pequena fortaleza e praias da Costa Vicentina.",
+          "rhythm": "Alterne passeios no Mira, a pequena fortaleza e praias da Costa Vicentina.",
+          "idealFor": "Um refúgio no Mira para praias de rio e oceano e roteiros pela Costa Vicentina.",
+          "consider": "O turismo de verão e a travessia do rio mudam o ambiente de cada área de praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/84ADA01B-1393-4441-90CC-666C7CDD1059",
+          "title": "Vila Nova de Milfontes — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/vila-nova-de-milfontes",
+          "title": "Vila Nova de Milfontes — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Alcácer do Sal",
+      "geonamesId": 2272212,
+      "airportCode": "LIS",
+      "rank": 68,
+      "content": {
+        "en": {
+          "intro": "Alcácer do Sal brings together the Sado riverfront, a hilltop castle and a long salt-trading history.",
+          "rhythm": "Start beside the Sado, climb the old lanes and discover the town's salt-trading past.",
+          "idealFor": "A Sado-side home for river cafés, castle walks and exploring the Alentejo coast's hinterland.",
+          "consider": "The castle quarter rises above the waterfront; assess slopes rather than distance alone."
+        },
+        "es": {
+          "intro": "Alcácer do Sal reúne la ribera del Sado, un castillo en altura y una larga historia salinera.",
+          "rhythm": "Empieza junto al Sado, sube calles antiguas y descubre la historia del comercio de sal.",
+          "idealFor": "Una casa junto al Sado para cafés, castillo e interior de la costa alentejana.",
+          "consider": "El barrio del castillo se eleva sobre la ribera; evalúa pendientes, no solo distancias."
+        },
+        "pt": {
+          "intro": "Alcácer do Sal reúne a orla do Sado, um castelo no alto e uma longa história ligada ao sal.",
+          "rhythm": "Comece junto ao Sado, suba ruas antigas e descubra a história do comércio de sal.",
+          "idealFor": "Uma casa junto ao Sado para cafés, castelo e interior da costa alentejana.",
+          "consider": "O bairro do castelo sobe acima da orla; avalie inclinações, não apenas distâncias."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/30D0D346-4A2F-4413-B0BE-56968ADA12A7",
+          "title": "Alcácer do Sal — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/alc%C3%A1cer-do-sal",
+          "title": "Alcácer do Sal — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Faro",
+      "geonamesId": 2268339,
+      "airportCode": "FAO",
+      "rank": 69,
+      "content": {
+        "en": {
+          "intro": "Faro brings together the walled Vila-Adentro, the Arco da Vila and the Ria Formosa waterfront.",
+          "rhythm": "Walk through Arco da Vila, explore Vila-Adentro and head out toward Ria Formosa.",
+          "idealFor": "A year-round Algarve city base for old-town culture and Ria Formosa excursions.",
+          "consider": "Central Faro borders a lagoon; an Atlantic beach routine needs a separate access plan."
+        },
+        "es": {
+          "intro": "Faro reúne la amurallada Vila-Adentro, el Arco da Vila y la ribera de la Ría Formosa.",
+          "rhythm": "Cruza el Arco da Vila, recorre Vila-Adentro y sal hacia la Ría Formosa.",
+          "idealFor": "Una base urbana algarvía para cultura histórica y excursiones a la Ría Formosa.",
+          "consider": "Faro central bordea una ría; la rutina de playa atlántica necesita un acceso aparte."
+        },
+        "pt": {
+          "intro": "Faro reúne a murada Vila-Adentro, o Arco da Vila e a orla da Ria Formosa.",
+          "rhythm": "Cruze o Arco da Vila, percorra a Vila-Adentro e saia rumo à Ria Formosa.",
+          "idealFor": "Uma base urbana algarvia para cultura histórica e passeios à Ria Formosa.",
+          "consider": "Faro central fica junto à ria; a rotina de praia atlântica precisa de acesso separado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/faro",
+          "title": "Faro — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Loulé",
+      "geonamesId": 2266988,
+      "airportCode": "FAO",
+      "rank": 70,
+      "content": {
+        "en": {
+          "intro": "Loulé brings together a medieval castle, São Clemente church and a traditional inland trading centre.",
+          "rhythm": "Browse the inland trading centre and explore the castle and São Clemente's heritage.",
+          "idealFor": "An inland Algarve residence for heritage streets, local commerce and excursions toward the coast.",
+          "consider": "Loulé's historic town is inland; the municipality's resorts do not share the same setting."
+        },
+        "es": {
+          "intro": "Loulé reúne un castillo medieval, la iglesia de São Clemente y un centro comercial tradicional del interior.",
+          "rhythm": "Recorre el centro comercial tradicional, el castillo y el patrimonio de São Clemente.",
+          "idealFor": "Una residencia interior algarvía para calles históricas, comercio local y salidas al litoral.",
+          "consider": "La villa histórica es interior; los complejos turísticos del municipio no comparten su entorno."
+        },
+        "pt": {
+          "intro": "Loulé reúne um castelo medieval, a Igreja de São Clemente e um tradicional centro comercial do interior.",
+          "rhythm": "Percorra o centro comercial tradicional, o castelo e o patrimônio de São Clemente.",
+          "idealFor": "Uma residência no interior algarvio para ruas históricas, comércio local e saídas ao litoral.",
+          "consider": "A vila histórica fica no interior; os resorts do município não compartilham seu cenário."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/8C876868-B7D1-4CFD-814F-4D6B1E09B91E",
+          "title": "Loulé — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/loul%C3%A9",
+          "title": "Loulé — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Almancil",
+      "geonamesId": 2271947,
+      "airportCode": "FAO",
+      "rank": 71,
+      "content": {
+        "en": {
+          "intro": "Almancil brings together São Lourenço church's blue tiles and the Algarve's coastal resort hinterland.",
+          "rhythm": "Visit São Lourenço's tilework and use the village for exploring the nearby resort coast.",
+          "idealFor": "A village base for São Lourenço tilework with access to the Algarve's resort coast.",
+          "consider": "Compare village-centre errands with the driving distances to beaches and coastal developments."
+        },
+        "es": {
+          "intro": "Almancil reúne los azulejos azules de la iglesia de São Lourenço y el entorno de los complejos costeros del Algarve.",
+          "rhythm": "Visita los azulejos de São Lourenço y explora desde el pueblo la costa turística.",
+          "idealFor": "Una base de pueblo para azulejos de São Lourenço y acceso a la costa turística algarvía.",
+          "consider": "Compara recados en el pueblo con distancias en coche a playas y urbanizaciones costeras."
+        },
+        "pt": {
+          "intro": "Almancil reúne os azulejos azuis da Igreja de São Lourenço e o entorno dos resorts costeiros do Algarve.",
+          "rhythm": "Visite os azulejos de São Lourenço e explore a costa turística a partir da vila.",
+          "idealFor": "Uma base de vila para azulejos de São Lourenço e acesso à costa turística algarvia.",
+          "consider": "Compare afazeres na vila com distâncias de carro a praias e empreendimentos costeiros."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/almancil",
+          "title": "Almancil — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/E21CB341-32A3-43C1-B7E9-8CE04D3C575E",
+          "title": "Almancil — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vilamoura",
+      "geonamesId": 6545006,
+      "airportCode": "FAO",
+      "rank": 72,
+      "content": {
+        "en": {
+          "intro": "Vilamoura brings together a large marina, golf courses and a waterfront lined with restaurants.",
+          "rhythm": "Organise days around golf, boating and restaurant terraces along the marina.",
+          "idealFor": "A leisure-led residence for golfers and boaters who want a marina-centred social routine.",
+          "consider": "Marina-front bustle differs from quieter golf-side addresses; experience both in peak season."
+        },
+        "es": {
+          "intro": "Vilamoura reúne un gran puerto deportivo, campos de golf y una ribera con restaurantes.",
+          "rhythm": "Organiza los días entre golf, navegación y terrazas de la marina.",
+          "idealFor": "Una residencia de ocio para golfistas y navegantes que busquen vida social junto a la marina.",
+          "consider": "El bullicio de la marina difiere de las zonas de golf; prueba ambas en temporada alta."
+        },
+        "pt": {
+          "intro": "Vilamoura reúne uma grande marina, campos de golfe e uma orla com restaurantes.",
+          "rhythm": "Organize os dias entre golfe, navegação e esplanadas da marina.",
+          "idealFor": "Uma residência de lazer para golfistas e navegantes que busquem vida social junto à marina.",
+          "consider": "O movimento da marina difere das áreas de golfe; experimente ambas na alta temporada."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/06A0AEE6-E124-4FF3-98C3-D18E55414F8C",
+          "title": "Vilamoura — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/73801",
+          "title": "Vilamoura and its marina — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Quarteira",
+      "geonamesId": 2264299,
+      "airportCode": "FAO",
+      "rank": 73,
+      "content": {
+        "en": {
+          "intro": "Quarteira brings together fishing-village roots, an urban beach and a long seafront promenade.",
+          "rhythm": "Walk the long promenade and keep the old fishing identity in your beach-town routine.",
+          "idealFor": "A beach-town home for promenade exercise, fishing roots and everyday seafront dining.",
+          "consider": "Seafront summer activity differs from residential blocks farther from the beach."
+        },
+        "es": {
+          "intro": "Quarteira reúne raíces de pueblo pesquero, una playa urbana y un largo paseo marítimo.",
+          "rhythm": "Recorre el largo paseo y descubre las raíces pesqueras de esta ciudad de playa.",
+          "idealFor": "Una casa de playa para ejercicio marítimo, raíces pesqueras y comidas cotidianas junto al mar.",
+          "consider": "El movimiento estival de la orilla difiere de los bloques residenciales más alejados."
+        },
+        "pt": {
+          "intro": "Quarteira reúne raízes de vila pesqueira, uma praia urbana e um longo calçadão à beira-mar.",
+          "rhythm": "Percorra o longo calçadão e descubra as raízes pesqueiras desta cidade de praia.",
+          "idealFor": "Uma casa de praia para exercício na orla, raízes pesqueiras e refeições cotidianas junto ao mar.",
+          "consider": "O movimento de verão na orla difere das quadras residenciais mais afastadas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/FC0B8610-BF3E-42ED-867D-8E6CF03C3C60",
+          "title": "Quarteira — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/quarteira",
+          "title": "Quarteira — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Tavira",
+      "geonamesId": 2262744,
+      "airportCode": "FAO",
+      "rank": 74,
+      "content": {
+        "en": {
+          "intro": "Tavira brings together the Gilão river, an old church-filled centre and boat access to Tavira Island.",
+          "rhythm": "Cross the Gilão, explore church-lined streets and plan boat days on Tavira Island.",
+          "idealFor": "An eastern-Algarve cultural base for Gilão walks, church streets and island-beach outings.",
+          "consider": "The famous island beaches require boat or other specific access, not a doorstep ocean promenade."
+        },
+        "es": {
+          "intro": "Tavira reúne el río Gilão, un centro antiguo de iglesias y barcos a la isla de Tavira.",
+          "rhythm": "Cruza el Gilão, descubre iglesias y planea días de barco a la isla de Tavira.",
+          "idealFor": "Una base cultural del Algarve oriental para el Gilão, iglesias y playas insulares.",
+          "consider": "Las playas insulares famosas requieren acceso específico, no un paseo oceánico a la puerta."
+        },
+        "pt": {
+          "intro": "Tavira reúne o rio Gilão, um centro antigo de igrejas e barcos para a Ilha de Tavira.",
+          "rhythm": "Cruze o Gilão, descubra igrejas e planeje dias de barco à Ilha de Tavira.",
+          "idealFor": "Uma base cultural do Algarve oriental para o Gilão, igrejas e praias insulares.",
+          "consider": "As famosas praias insulares exigem acesso específico, não um calçadão oceânico à porta."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/5517ED19-9087-4BA0-B403-47344CD6C198",
+          "title": "Tavira — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/357665",
+          "title": "Tavira - Accessible Tour — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Olhão",
+      "geonamesId": 2265447,
+      "airportCode": "FAO",
+      "rank": 75,
+      "content": {
+        "en": {
+          "intro": "Olhão brings together cube-like roof terraces, fishing-quarter lanes and the Ria Formosa quayside.",
+          "rhythm": "Explore fishermen's lanes and roof terraces before an island outing across Ria Formosa.",
+          "idealFor": "A fishing-and-food base for roof-terrace architecture, quayside cafés and Ria Formosa island trips.",
+          "consider": "Island beach trips depend on crossing the ria; distinguish waterfront scenery from direct beach access."
+        },
+        "es": {
+          "intro": "Olhão reúne azoteas cúbicas, calles del barrio pesquero y el muelle de la Ría Formosa.",
+          "rhythm": "Recorre calles pesqueras y azoteas antes de salir a las islas de la Ría Formosa.",
+          "idealFor": "Una base de pesca y gastronomía para azoteas, cafés del muelle e islas de la Ría Formosa.",
+          "consider": "Las playas insulares exigen cruzar la ría; distingue paisaje marítimo de acceso directo a la playa."
+        },
+        "pt": {
+          "intro": "Olhão reúne açoteias cúbicas, ruas do bairro pesqueiro e o cais da Ria Formosa.",
+          "rhythm": "Percorra ruas pesqueiras e açoteias antes de sair às ilhas da Ria Formosa.",
+          "idealFor": "Uma base de pesca e gastronomia para açoteias, cafés do cais e ilhas da Ria Formosa.",
+          "consider": "As praias insulares exigem cruzar a ria; diferencie paisagem marítima de acesso direto à praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/C8819108-1DE7-4602-B5D1-C5DF962DF7EA",
+          "title": "Olhão — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/olhao",
+          "title": "Olhão — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Lagos",
+      "geonamesId": 2267226,
+      "airportCode": "FAO",
+      "rank": 76,
+      "content": {
+        "en": {
+          "intro": "Lagos brings together a historic maritime centre, city walls and access to the western Algarve coastline.",
+          "rhythm": "Explore old maritime streets and city walls, then choose a western-Algarve coastal outing.",
+          "idealFor": "A western-Algarve base for maritime history, old-town dining and coastal exploration.",
+          "consider": "The historic centre and cliff-coast addresses differ in slopes, parking and visitor activity."
+        },
+        "es": {
+          "intro": "Lagos reúne un centro marítimo histórico, murallas y acceso al litoral del Algarve occidental.",
+          "rhythm": "Descubre calles marítimas y murallas y elige una salida por el Algarve occidental.",
+          "idealFor": "Una base del Algarve occidental para historia marítima, gastronomía antigua y exploración costera.",
+          "consider": "El centro histórico y la costa de acantilados difieren en pendientes, aparcamiento y turismo."
+        },
+        "pt": {
+          "intro": "Lagos reúne um centro marítimo histórico, muralhas e acesso ao litoral do Algarve ocidental.",
+          "rhythm": "Descubra ruas marítimas e muralhas e escolha uma saída pelo Algarve ocidental.",
+          "idealFor": "Uma base do Algarve ocidental para história marítima, gastronomia no centro antigo e exploração costeira.",
+          "consider": "O centro histórico e a costa de falésias diferem em inclinação, estacionamento e turismo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/73799",
+          "title": "Lagos — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/84C07A85-7B78-40DD-97D8-7AD74B9D2CAD",
+          "title": "Lagos — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Portimão",
+      "geonamesId": 2264456,
+      "airportCode": "FAO",
+      "rank": 77,
+      "content": {
+        "en": {
+          "intro": "Portimão brings together the Arade riverfront, Manuel Bívar gardens and nearby Praia da Rocha.",
+          "rhythm": "Watch Arade river life, pause in Manuel Bívar gardens and visit Praia da Rocha.",
+          "idealFor": "An active Arade-side city base with a separate beach-leisure option at Praia da Rocha.",
+          "consider": "Portimão's working town and Praia da Rocha's resort strip are different everyday environments."
+        },
+        "es": {
+          "intro": "Portimão reúne la ribera del Arade, los jardines Manuel Bívar y la cercana Praia da Rocha.",
+          "rhythm": "Observa la vida del Arade, descansa en Manuel Bívar y visita Praia da Rocha.",
+          "idealFor": "Una base urbana activa junto al Arade con ocio de playa aparte en Praia da Rocha.",
+          "consider": "La ciudad activa y la franja turística de Praia da Rocha son entornos cotidianos distintos."
+        },
+        "pt": {
+          "intro": "Portimão reúne a orla do Arade, os jardins Manuel Bívar e a vizinha Praia da Rocha.",
+          "rhythm": "Observe a vida do Arade, descanse no Manuel Bívar e visite a Praia da Rocha.",
+          "idealFor": "Uma base urbana ativa junto ao Arade com lazer de praia separado na Praia da Rocha.",
+          "consider": "A cidade ativa e a faixa turística da Praia da Rocha são ambientes cotidianos distintos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/73800",
+          "title": "Portimão — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/F2D23A2F-4898-4545-9607-E6970622005F",
+          "title": "Portimão — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Silves",
+      "geonamesId": 2262926,
+      "airportCode": "FAO",
+      "rank": 78,
+      "content": {
+        "en": {
+          "intro": "Silves brings together a red-stone castle, a cathedral and the river Arade below the old town.",
+          "rhythm": "Climb to the red castle, discover the cathedral and return toward the Arade.",
+          "idealFor": "A castle-town home for Moorish heritage, Arade views and inland Algarve evenings.",
+          "consider": "Steep lanes lead toward the castle; coastal beaches are separate trips from the town."
+        },
+        "es": {
+          "intro": "Silves reúne un castillo de piedra roja, una catedral y el Arade bajo el casco antiguo.",
+          "rhythm": "Sube al castillo rojo, descubre la catedral y vuelve hacia el Arade.",
+          "idealFor": "Una casa de castillo para patrimonio islámico, vistas del Arade y tardes interiores algarvías.",
+          "consider": "Las calles suben al castillo; las playas costeras requieren otros desplazamientos."
+        },
+        "pt": {
+          "intro": "Silves reúne um castelo de pedra vermelha, uma catedral e o Arade abaixo do centro antigo.",
+          "rhythm": "Suba ao castelo vermelho, descubra a Sé e volte rumo ao Arade.",
+          "idealFor": "Uma casa de cidade de castelo para patrimônio islâmico, vistas do Arade e tardes no interior algarvio.",
+          "consider": "As ruas sobem ao castelo; as praias costeiras exigem outros deslocamentos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/silves",
+          "title": "Silves — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/73806",
+          "title": "Silves — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Lagoa",
+      "geonamesId": 2267254,
+      "airportCode": "FAO",
+      "rank": 79,
+      "content": {
+        "en": {
+          "intro": "Lagoa brings together an inland Algarve town centre and access to the municipality's cliff-fringed coast.",
+          "rhythm": "Use the inland town for local errands and separate outings to the municipality's cliff coast.",
+          "idealFor": "A practical inland base for exploring the municipality's varied Algarve coves and cliffs.",
+          "consider": "Lagoa town is not Carvoeiro beach; check the exact distance to the coast you prefer."
+        },
+        "es": {
+          "intro": "Lagoa reúne un centro urbano del interior algarvío y acceso al litoral de acantilados del municipio.",
+          "rhythm": "Haz recados en el pueblo interior y sal aparte a los acantilados del municipio.",
+          "idealFor": "Una base interior práctica para explorar calas y acantilados del municipio algarvío.",
+          "consider": "La ciudad de Lagoa no es la playa de Carvoeiro; comprueba la distancia al litoral preferido."
+        },
+        "pt": {
+          "intro": "Lagoa reúne um centro urbano do interior algarvio e acesso ao litoral de falésias do município.",
+          "rhythm": "Faça afazeres na vila interior e saia separadamente às falésias do município.",
+          "idealFor": "Uma base prática no interior para explorar enseadas e falésias do município algarvio.",
+          "consider": "A cidade de Lagoa não é a praia do Carvoeiro; confira a distância ao litoral preferido."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/5D9432F7-E37C-40D2-9B23-38E18B1DFA23",
+          "title": "Lagoa — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/lagoa",
+          "title": "Lagoa — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Carvoeiro",
+      "geonamesId": 2269946,
+      "airportCode": "FAO",
+      "rank": 80,
+      "content": {
+        "en": {
+          "intro": "Carvoeiro brings together a beach cove framed by cliffs and terraces in the village centre.",
+          "rhythm": "Walk down to the cove, enjoy village terraces and explore nearby cliff scenery.",
+          "idealFor": "A cove-centred second-home search for beach walks, terraces and dramatic coastal scenery.",
+          "consider": "Hills rise quickly from the beach cove; test the walk back to a prospective home."
+        },
+        "es": {
+          "intro": "Carvoeiro reúne una cala entre acantilados y terrazas en el centro del pueblo.",
+          "rhythm": "Baja a la cala, disfruta de terrazas y descubre los acantilados próximos.",
+          "idealFor": "Una búsqueda de segunda residencia en una cala para playa, terrazas y paisaje costero.",
+          "consider": "Las laderas suben rápido desde la cala; prueba el regreso a pie a una vivienda."
+        },
+        "pt": {
+          "intro": "Carvoeiro reúne uma enseada entre falésias e esplanadas no centro da vila.",
+          "rhythm": "Desça à enseada, aproveite esplanadas e descubra as falésias próximas.",
+          "idealFor": "Uma busca de segunda residência em uma enseada para praia, esplanadas e paisagem costeira.",
+          "consider": "As encostas sobem rapidamente da enseada; teste a volta a pé até uma casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/141695",
+          "title": "Turismo de Portugal — Carvoeiro Beach"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Albufeira",
+      "geonamesId": 2272222,
+      "airportCode": "FAO",
+      "rank": 81,
+      "content": {
+        "en": {
+          "intro": "Albufeira brings together Cerro da Vila's whitewashed lanes, town beaches and a lively leisure scene.",
+          "rhythm": "Alternate old-town lanes and town beaches with the resort's lively dining scene.",
+          "idealFor": "A lively leisure base for town beaches, old lanes and an extensive dining scene.",
+          "consider": "Choose the street carefully if nightlife activity is not part of your preferred routine."
+        },
+        "es": {
+          "intro": "Albufeira reúne las calles blancas de Cerro da Vila, playas urbanas y una animada oferta de ocio.",
+          "rhythm": "Alterna calles antiguas y playas urbanas con la animada gastronomía turística.",
+          "idealFor": "Una base de ocio animada para playas urbanas, calles antiguas y amplia gastronomía.",
+          "consider": "Elige la calle con cuidado si la actividad nocturna no forma parte de tu rutina preferida."
+        },
+        "pt": {
+          "intro": "Albufeira reúne as ruas brancas do Cerro da Vila, praias urbanas e uma animada oferta de lazer.",
+          "rhythm": "Alterne ruas antigas e praias urbanas com a animada gastronomia turística.",
+          "idealFor": "Uma base de lazer animada para praias urbanas, ruas antigas e ampla gastronomia.",
+          "consider": "Escolha a rua com cuidado se a atividade noturna não fizer parte de sua rotina preferida."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/DEFA2ACD-0BDC-49FF-885E-F35F9B5E4D56",
+          "title": "Albufeira — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/73802",
+          "title": "Albufeira and the beaches — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila Real de Santo António",
+      "geonamesId": 2261598,
+      "airportCode": "FAO",
+      "rank": 82,
+      "content": {
+        "en": {
+          "intro": "Vila Real de Santo António brings together a planned street grid, the Guadiana waterfront and a border-town setting.",
+          "rhythm": "Follow the planned street grid to the Guadiana and explore the eastern border region.",
+          "idealFor": "A flat-grid border-town base for Guadiana strolls and eastern-Algarve exploration.",
+          "consider": "The riverfront grid and Atlantic beaches are distinct locations within the wider area."
+        },
+        "es": {
+          "intro": "Vila Real de Santo António reúne una cuadrícula urbana planificada, la ribera del Guadiana y un entorno fronterizo.",
+          "rhythm": "Sigue la cuadrícula urbana hasta el Guadiana y explora la frontera oriental.",
+          "idealFor": "Una base fronteriza de trazado llano para paseos del Guadiana y Algarve oriental.",
+          "consider": "La cuadrícula ribereña y las playas atlánticas son lugares distintos de la región."
+        },
+        "pt": {
+          "intro": "Vila Real de Santo António reúne uma malha urbana planejada, a orla do Guadiana e uma localização fronteiriça.",
+          "rhythm": "Siga a malha urbana até o Guadiana e explore a fronteira oriental.",
+          "idealFor": "Uma base fronteiriça de traçado plano para passeios no Guadiana e Algarve oriental.",
+          "consider": "A malha ribeirinha e as praias atlânticas são locais diferentes da região."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/vila-real-de-santo-antonio",
+          "title": "Vila Real de Santo António — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/vila-real-de-santo-antonio",
+          "title": "Vila Real de Santo António — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Castro Marim",
+      "geonamesId": 2269496,
+      "airportCode": "FAO",
+      "rank": 83,
+      "content": {
+        "en": {
+          "intro": "Castro Marim brings together a hilltop castle, the São Sebastião fort and the lower Guadiana landscape.",
+          "rhythm": "Move between castle and fort, with the lower Guadiana landscape as your backdrop.",
+          "idealFor": "A smaller heritage base for castle walks and discovering the lower Guadiana landscape.",
+          "consider": "Coastal outings and the hilltop monuments need different routes from a chosen home."
+        },
+        "es": {
+          "intro": "Castro Marim reúne un castillo en altura, el fuerte de São Sebastião y el paisaje del bajo Guadiana.",
+          "rhythm": "Alterna castillo y fuerte con el paisaje del bajo Guadiana de fondo.",
+          "idealFor": "Una base patrimonial menor para el castillo y paisajes del bajo Guadiana.",
+          "consider": "Las salidas costeras y los monumentos elevados requieren rutas distintas desde una vivienda."
+        },
+        "pt": {
+          "intro": "Castro Marim reúne um castelo no alto, o Forte de São Sebastião e a paisagem do baixo Guadiana.",
+          "rhythm": "Alterne castelo e forte com a paisagem do baixo Guadiana ao fundo.",
+          "idealFor": "Uma base patrimonial menor para o castelo e paisagens do baixo Guadiana.",
+          "consider": "Saídas ao litoral e monumentos elevados exigem rotas diferentes a partir de uma casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132938",
+          "title": "Castro Marim — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/algarve/484431",
+          "title": "Castro Marim — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Aljezur",
+      "geonamesId": 2271968,
+      "airportCode": "FAO",
+      "rank": 84,
+      "content": {
+        "en": {
+          "intro": "Aljezur brings together a hilltop castle, a valley town and the cliffs and dunes of the Vicentine coast.",
+          "rhythm": "Walk the old valley town, climb toward the castle and drive to Vicentine beaches.",
+          "idealFor": "A rural surf-region base for valley life, castle views and Vicentine-coast outings.",
+          "consider": "The town sits inland from the surf beaches; compare the actual daily driving loop."
+        },
+        "es": {
+          "intro": "Aljezur reúne un castillo en altura, un pueblo en el valle y los acantilados y dunas de la costa Vicentina.",
+          "rhythm": "Recorre el valle antiguo, sube al castillo y ve en coche a playas vicentinas.",
+          "idealFor": "Una base rural de surf para vida de valle, castillo y costa Vicentina.",
+          "consider": "El pueblo está al interior de las playas de surf; compara el recorrido diario real."
+        },
+        "pt": {
+          "intro": "Aljezur reúne um castelo no alto, uma vila no vale e as falésias e dunas da Costa Vicentina.",
+          "rhythm": "Percorra o vale antigo, suba ao castelo e vá de carro às praias vicentinas.",
+          "idealFor": "Uma base rural de surfe para vida no vale, castelo e Costa Vicentina.",
+          "consider": "A vila fica no interior em relação às praias de surfe; compare o percurso diário real."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/aljezur",
+          "title": "Aljezur — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/aljezur",
+          "title": "Aljezur — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Monchique",
+      "geonamesId": 2266268,
+      "airportCode": "FAO",
+      "rank": 85,
+      "content": {
+        "en": {
+          "intro": "Monchique brings together steep lanes, distinctive skirt-shaped chimneys and green Algarve hill scenery.",
+          "rhythm": "Explore steep whitewashed lanes, distinctive chimneys and the Algarve's green interior.",
+          "idealFor": "A green hill-town retreat for steep-lane walks and the Algarve's inland scenery.",
+          "consider": "Hillside access and winding regional roads differ from a flat coastal-resort routine."
+        },
+        "es": {
+          "intro": "Monchique reúne calles empinadas, chimeneas en forma de falda y verdes montes del Algarve.",
+          "rhythm": "Descubre calles blancas empinadas, chimeneas singulares y el interior verde algarvío.",
+          "idealFor": "Un refugio verde de montaña para calles empinadas y paisajes interiores del Algarve.",
+          "consider": "Los accesos en ladera y carreteras sinuosas difieren de la rutina llana de un complejo costero."
+        },
+        "pt": {
+          "intro": "Monchique reúne ruas íngremes, chaminés em forma de saia e montanhas verdes do Algarve.",
+          "rhythm": "Descubra ruas brancas íngremes, chaminés singulares e o interior verde algarvio.",
+          "idealFor": "Um refúgio verde de montanha para ruas íngremes e paisagens do interior do Algarve.",
+          "consider": "Acessos nas encostas e estradas sinuosas diferem da rotina plana de um resort costeiro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132841",
+          "title": "Monchique — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/monchique",
+          "title": "Monchique — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Sagres",
+      "geonamesId": 2263650,
+      "airportCode": "FAO",
+      "rank": 86,
+      "content": {
+        "en": {
+          "intro": "Sagres brings together a sea-facing fortress, a rocky headland and Atlantic surf beaches.",
+          "rhythm": "Visit the headland fortress and choose surf beaches by the day's Atlantic conditions.",
+          "idealFor": "An Atlantic headland base for dedicated surfers, fortress history and wide ocean horizons.",
+          "consider": "Exposure to Atlantic wind is part of the setting; compare beaches by orientation."
+        },
+        "es": {
+          "intro": "Sagres reúne una fortaleza frente al mar, un promontorio rocoso y playas de surf atlánticas.",
+          "rhythm": "Visita la fortaleza y elige playas de surf según las condiciones atlánticas del día.",
+          "idealFor": "Una base de promontorio atlántico para surfistas, fortaleza y horizontes oceánicos amplios.",
+          "consider": "La exposición al viento atlántico forma parte del entorno; compara playas según orientación."
+        },
+        "pt": {
+          "intro": "Sagres reúne uma fortaleza diante do mar, um promontório rochoso e praias atlânticas de surfe.",
+          "rhythm": "Visite a fortaleza e escolha praias de surfe conforme as condições atlânticas do dia.",
+          "idealFor": "Uma base de promontório atlântico para surfistas, fortaleza e horizontes oceânicos amplos.",
+          "consider": "A exposição ao vento atlântico faz parte do cenário; compare praias pela orientação."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132721",
+          "title": "Sagres — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/sagres-1",
+          "title": "Sagres — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Funchal",
+      "geonamesId": 2267827,
+      "airportCode": "FNC",
+      "rank": 87,
+      "content": {
+        "en": {
+          "intro": "Funchal brings together Mercado dos Lavradores, Monte's gardens and a marina on Madeira's south coast.",
+          "rhythm": "Shop at Mercado dos Lavradores, explore Monte's gardens and spend evenings beside the marina.",
+          "idealFor": "An island-city home for market food, botanical gardens, museums and marina evenings.",
+          "consider": "Funchal climbs sharply above the bay; inspect the walking gradient of the specific neighbourhood."
+        },
+        "es": {
+          "intro": "Funchal reúne el Mercado dos Lavradores, los jardines de Monte y un puerto deportivo en el sur de Madeira.",
+          "rhythm": "Compra en el Mercado dos Lavradores, visita los jardines de Monte y disfruta de la marina.",
+          "idealFor": "Una casa urbana insular para mercado, jardines botánicos, museos y tardes en la marina.",
+          "consider": "Funchal sube con fuerza sobre la bahía; revisa la pendiente del barrio concreto."
+        },
+        "pt": {
+          "intro": "Funchal reúne o Mercado dos Lavradores, os jardins do Monte e uma marina na costa sul da Madeira.",
+          "rhythm": "Compre no Mercado dos Lavradores, visite os jardins do Monte e aproveite a marina.",
+          "idealFor": "Uma casa urbana insular para mercado, jardins botânicos, museus e tardes na marina.",
+          "consider": "Funchal sobe fortemente acima da baía; confira a inclinação do bairro específico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/content/funchal",
+          "title": "Funchal — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/south-coast/funchal/",
+          "title": "Funchal - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": [
+        "nature",
+        "amenities",
+        "culture"
+      ]
+    },
+    {
+      "name": "Câmara de Lobos",
+      "geonamesId": 2270380,
+      "airportCode": "FNC",
+      "rank": 88,
+      "content": {
+        "en": {
+          "intro": "Câmara de Lobos brings together a colourful fishing bay, traditional xavelha boats and the Espírito Santo viewpoint.",
+          "rhythm": "Watch xavelha fishing boats, enjoy harbour cafés and seek the Espírito Santo viewpoint.",
+          "idealFor": "A fishing-village-style base for harbour cafés, traditional boats and local Madeiran flavours.",
+          "consider": "The compact bay and surrounding hillside settlements create very different doorstep walks."
+        },
+        "es": {
+          "intro": "Câmara de Lobos reúne una colorida bahía pesquera, barcos xavelha y el mirador do Espírito Santo.",
+          "rhythm": "Observa barcos xavelha, disfruta de cafés del puerto y busca el mirador do Espírito Santo.",
+          "idealFor": "Una base de aire pesquero para cafés del puerto, barcos tradicionales y sabores madeirenses.",
+          "consider": "La pequeña bahía y los barrios en ladera crean paseos de acceso muy distintos."
+        },
+        "pt": {
+          "intro": "Câmara de Lobos reúne uma baía pesqueira colorida, barcos xavelha e o Miradouro do Espírito Santo.",
+          "rhythm": "Observe barcos xavelha, aproveite cafés do porto e procure o Miradouro do Espírito Santo.",
+          "idealFor": "Uma base de clima pesqueiro para cafés do porto, barcos tradicionais e sabores madeirenses.",
+          "consider": "A pequena baía e os bairros nas encostas criam caminhadas de acesso muito diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/south-coast/camara-de-lobos/camara-de-lobos-bay/",
+          "title": "Câmara de Lobos Bay - Visit Madeira | Madeira Islands Tourism Board official website"
+        },
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/south-coast/camara-de-lobos/",
+          "title": "Câmara de Lobos - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Caniço",
+      "geonamesId": 2270258,
+      "airportCode": "FNC",
+      "rank": 89,
+      "content": {
+        "en": {
+          "intro": "Caniço brings together the Cristo Rei viewpoint, Garajau marine reserve and Reis Magos beach.",
+          "rhythm": "Combine Cristo Rei views with Garajau sea activities and Reis Magos beach stops.",
+          "idealFor": "A sea-activity residence for Garajau diving interests, Cristo Rei views and Reis Magos outings.",
+          "consider": "Caniço centre and Caniço de Baixo's shore sit at different elevations; check the route between them."
+        },
+        "es": {
+          "intro": "Caniço reúne el mirador de Cristo Rei, la reserva marina de Garajau y la playa de Reis Magos.",
+          "rhythm": "Combina vistas de Cristo Rei con actividades en Garajau y playa en Reis Magos.",
+          "idealFor": "Una residencia marítima para buceo en Garajau, vistas de Cristo Rei y Reis Magos.",
+          "consider": "El centro y Caniço de Baixo tienen alturas distintas; revisa la ruta entre ambos."
+        },
+        "pt": {
+          "intro": "Caniço reúne o Miradouro do Cristo Rei, a reserva marinha do Garajau e a praia dos Reis Magos.",
+          "rhythm": "Combine vistas do Cristo Rei com atividades no Garajau e praia nos Reis Magos.",
+          "idealFor": "Uma residência marítima para mergulho no Garajau, vistas do Cristo Rei e Reis Magos.",
+          "consider": "O centro e o Caniço de Baixo têm altitudes diferentes; confira a rota entre ambos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/east-coast/santa-cruz/cristo-rei-viewpoint/",
+          "title": "Madeira Tourism Board — Cristo Rei Viewpoint"
+        },
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/points-of-interest-in-santa-cruz/",
+          "title": "Madeira Tourism Board — Santa Cruz and Caniço points of interest"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Machico",
+      "geonamesId": 2266895,
+      "airportCode": "FNC",
+      "rank": 90,
+      "content": {
+        "en": {
+          "intro": "Machico brings together Madeira's first landing place, a sheltered bay and an old-town waterfront.",
+          "rhythm": "Walk the historic waterfront and sheltered bay where Madeira's settlement story began.",
+          "idealFor": "An eastern-Madeira town base for bay walks, island history and nearby coastal excursions.",
+          "consider": "Bay-level homes and elevated outskirts offer different access to daily town-centre errands."
+        },
+        "es": {
+          "intro": "Machico reúne el primer desembarco en Madeira, una bahía protegida y un frente marítimo histórico.",
+          "rhythm": "Recorre la orilla histórica y la bahía donde comenzó el poblamiento madeirense.",
+          "idealFor": "Una base del este madeirense para bahía, historia insular y excursiones costeras cercanas.",
+          "consider": "Las casas al nivel de la bahía y las afueras elevadas acceden al centro de forma distinta."
+        },
+        "pt": {
+          "intro": "Machico reúne o primeiro desembarque na Madeira, uma baía abrigada e uma orla histórica.",
+          "rhythm": "Percorra a orla histórica e a baía onde começou o povoamento madeirense.",
+          "idealFor": "Uma base do leste madeirense para baía, história insular e passeios costeiros próximos.",
+          "consider": "Casas no nível da baía e arredores elevados acessam o centro de maneiras diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/east-coast/machico/",
+          "title": "Machico - Visit Madeira | Madeira Islands Tourism Board official website"
+        },
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/points-of-interest-in-machico/",
+          "title": "Machico - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Santa Cruz",
+      "geonamesId": 2263540,
+      "airportCode": "FNC",
+      "rank": 91,
+      "content": {
+        "en": {
+          "intro": "Santa Cruz brings together Palmeiras beach, sea-water swimming pools and an old coastal town centre.",
+          "rhythm": "Enjoy Palmeiras' beach and sea-water pools around a compact old coastal centre.",
+          "idealFor": "A compact coastal home for Palmeiras swims and convenient access to Madeira's airport.",
+          "consider": "Airport proximity warrants checking aircraft noise at the exact residential street."
+        },
+        "es": {
+          "intro": "Santa Cruz reúne la playa de Palmeiras, piscinas de agua de mar y un antiguo centro costero.",
+          "rhythm": "Disfruta de Palmeiras y sus piscinas de mar junto a un pequeño centro histórico.",
+          "idealFor": "Una casa costera compacta para baños en Palmeiras y acceso práctico al aeropuerto madeirense.",
+          "consider": "La cercanía del aeropuerto aconseja comprobar el ruido aéreo en la calle concreta."
+        },
+        "pt": {
+          "intro": "Santa Cruz reúne a praia das Palmeiras, piscinas de água do mar e um antigo centro costeiro.",
+          "rhythm": "Aproveite as Palmeiras e suas piscinas de mar junto a um pequeno centro histórico.",
+          "idealFor": "Uma casa costeira compacta para banhos nas Palmeiras e acesso prático ao aeroporto madeirense.",
+          "consider": "A proximidade do aeroporto recomenda conferir o ruído dos aviões na rua específica."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/east-coast/santa-cruz/",
+          "title": "Santa Cruz - Visit Madeira | Madeira Islands Tourism Board official website"
+        },
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/points-of-interest-in-santa-cruz/",
+          "title": "Santa Cruz - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Ribeira Brava",
+      "geonamesId": 2263905,
+      "airportCode": "FNC",
+      "rank": 92,
+      "content": {
+        "en": {
+          "intro": "Ribeira Brava brings together a river valley, the Madeira Ethnographic Museum and access to mountain landscapes.",
+          "rhythm": "Explore the Ethnographic Museum, walk the valley town and venture into mountain landscapes.",
+          "idealFor": "A western-Madeira base linking ethnographic culture, valley life and mountain excursions.",
+          "consider": "A seafront address and an upper-valley home involve different gradients and travel patterns."
+        },
+        "es": {
+          "intro": "Ribeira Brava reúne un valle fluvial, el Museo Etnográfico de Madeira y acceso a paisajes montañosos.",
+          "rhythm": "Descubre el Museo Etnográfico, pasea por el valle y sal hacia paisajes montañosos.",
+          "idealFor": "Una base del oeste madeirense que una cultura etnográfica, valle y montaña.",
+          "consider": "Una casa de orilla y otra en el valle alto tienen pendientes y desplazamientos distintos."
+        },
+        "pt": {
+          "intro": "Ribeira Brava reúne um vale fluvial, o Museu Etnográfico da Madeira e o acesso a paisagens montanhosas.",
+          "rhythm": "Descubra o Museu Etnográfico, passeie pelo vale e saia rumo a paisagens montanhosas.",
+          "idealFor": "Uma base do oeste madeirense que una cultura etnográfica, vale e montanha.",
+          "consider": "Uma casa na orla e outra no vale alto têm inclinações e deslocamentos diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/west-coast/ribeira-brava/",
+          "title": "Ribeira Brava - Visit Madeira | Madeira Islands Tourism Board official website"
+        },
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/west-coast/ribeira-brava/ribeira-brava-market/",
+          "title": "Ribeira Brava Market - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ponta do Sol",
+      "geonamesId": 2264557,
+      "airportCode": "FNC",
+      "rank": 93,
+      "content": {
+        "en": {
+          "intro": "Ponta do Sol brings together a small seafront village, a pebble beach and hillside settlements.",
+          "rhythm": "Spend time by the pebble beach and explore villages climbing the green hillsides.",
+          "idealFor": "A smaller Madeiran retreat for pebble-beach evenings and green hillside village exploration.",
+          "consider": "The attractive seafront is compact; hillside homes can require driving for ordinary errands."
+        },
+        "es": {
+          "intro": "Ponta do Sol reúne una pequeña villa marítima, una playa de guijarros y poblaciones en ladera.",
+          "rhythm": "Disfruta de la playa de guijarros y de pueblos que suben las laderas verdes.",
+          "idealFor": "Un pequeño refugio madeirense para tardes de playa de guijarros y pueblos verdes en ladera.",
+          "consider": "La atractiva orilla es pequeña; las casas en ladera pueden requerir coche para recados."
+        },
+        "pt": {
+          "intro": "Ponta do Sol reúne uma pequena vila à beira-mar, uma praia de calhau e povoações nas encostas.",
+          "rhythm": "Aproveite a praia de calhau e as vilas que sobem as encostas verdes.",
+          "idealFor": "Um pequeno refúgio madeirense para tardes na praia de calhau e vilas verdes nas encostas.",
+          "consider": "A atraente orla é pequena; casas nas encostas podem exigir carro para afazeres."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitmadeira.com/en/where-to-go/madeira/west-coast/ponta-do-sol/",
+          "title": "Ponta do Sol - Visit Madeira | Madeira Islands Tourism Board official website"
+        },
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/madeira/west-coast/ponta-do-sol/",
+          "title": "Ponta do Sol - Visit Madeira | Madeira Islands Tourism Board official website"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila Baleira (Porto Santo)",
+      "geonamesId": 2261658,
+      "airportCode": "PXO",
+      "rank": 94,
+      "content": {
+        "en": {
+          "intro": "Vila Baleira (Porto Santo) brings together a nine-kilometre sandy beach and the historic centre of Vila Baleira.",
+          "rhythm": "Combine long sandy-beach walks with short visits to Vila Baleira's historic centre.",
+          "idealFor": "A small-island beach home for long sand walks and an uncomplicated town-centre routine.",
+          "consider": "A nine-kilometre beach does not mean equally close town services along its full length."
+        },
+        "es": {
+          "intro": "Vila Baleira (Porto Santo) reúne una playa de nueve kilómetros y el centro histórico de Vila Baleira.",
+          "rhythm": "Combina largos paseos de arena con visitas al pequeño centro histórico de Vila Baleira.",
+          "idealFor": "Una casa insular de playa para largos paseos por arena y una rutina urbana sencilla.",
+          "consider": "Una playa de nueve kilómetros no ofrece servicios urbanos igual de próximos en toda su longitud."
+        },
+        "pt": {
+          "intro": "Vila Baleira (Porto Santo) reúne uma praia de nove quilômetros e o centro histórico de Vila Baleira.",
+          "rhythm": "Combine longos passeios na areia com visitas ao pequeno centro histórico de Vila Baleira.",
+          "idealFor": "Uma casa insular de praia para longas caminhadas na areia e uma rotina urbana simples.",
+          "consider": "Uma praia de nove quilômetros não oferece serviços urbanos igualmente próximos em toda a extensão."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/porto-santo/porto-santo/",
+          "title": "Madeira Tourism Board — Porto Santo"
+        },
+        {
+          "url": "https://visitmadeira.com/en/where-to-go/porto-santo/discovering-porto-santo/largo-pelourinho-garden/",
+          "title": "Madeira Tourism Board — Historic Vila Baleira and Largo Pelourinho"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ponta Delgada",
+      "geonamesId": 6941014,
+      "airportCode": "PDL",
+      "rank": 95,
+      "content": {
+        "en": {
+          "intro": "Ponta Delgada brings together São Miguel's harbour promenade, the City Gates and José do Canto Garden.",
+          "rhythm": "Walk São Miguel's harbour promenade, pass the City Gates and visit José do Canto Garden.",
+          "idealFor": "A São Miguel urban base for harbour walks, gardens and cultural outings between island trips.",
+          "consider": "Choose between harbour-facing streets and inland neighbourhoods, then plan flights separately from ordinary São Miguel day trips."
+        },
+        "es": {
+          "intro": "Ponta Delgada reúne el paseo del puerto de São Miguel, las Portas da Cidade y el jardín José do Canto.",
+          "rhythm": "Pasea por el puerto de São Miguel, cruza las Portas da Cidade y visita José do Canto.",
+          "idealFor": "Una base urbana de São Miguel para puerto, jardines y cultura entre excursiones insulares.",
+          "consider": "Elige entre calles portuarias y barrios interiores y planifica los vuelos aparte de las excursiones cotidianas por São Miguel."
+        },
+        "pt": {
+          "intro": "Ponta Delgada reúne o passeio do porto de São Miguel, as Portas da Cidade e o Jardim José do Canto.",
+          "rhythm": "Passeie pelo porto de São Miguel, cruze as Portas da Cidade e visite José do Canto.",
+          "idealFor": "Uma base urbana de São Miguel para porto, jardins e cultura entre passeios insulares.",
+          "consider": "Escolha entre ruas portuárias e bairros do interior e planeje os voos separadamente dos passeios cotidianos por São Miguel."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/194511D8-4523-4C20-9260-8237311762B7",
+          "title": "Ponta Delgada — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    },
+    {
+      "name": "Ribeira Grande",
+      "geonamesId": 3372709,
+      "airportCode": "PDL",
+      "rank": 96,
+      "content": {
+        "en": {
+          "intro": "Ribeira Grande brings together Santa Bárbara surf beach, historic mills and the Caldeiras thermal landscape.",
+          "rhythm": "Surf Santa Bárbara, explore old mills and make separate trips to the thermal landscape.",
+          "idealFor": "A north-São-Miguel base for Santa Bárbara surf, thermal landscapes and historic town walks.",
+          "consider": "Santa Bárbara surf beach and the historic town centre are separate stops; test the daily route from a prospective home."
+        },
+        "es": {
+          "intro": "Ribeira Grande reúne la playa de surf de Santa Bárbara, molinos históricos y el paisaje termal de Caldeiras.",
+          "rhythm": "Surfea en Santa Bárbara, descubre molinos y visita aparte el paisaje termal.",
+          "idealFor": "Una base del norte de São Miguel para surf en Santa Bárbara, termas y calles históricas.",
+          "consider": "La playa de surf de Santa Bárbara y el centro histórico son lugares distintos; prueba la ruta diaria desde una vivienda."
+        },
+        "pt": {
+          "intro": "Ribeira Grande reúne a praia de surfe de Santa Bárbara, moinhos históricos e a paisagem termal das Caldeiras.",
+          "rhythm": "Surfe em Santa Bárbara, descubra moinhos e visite separadamente a paisagem termal.",
+          "idealFor": "Uma base do norte de São Miguel para surfe em Santa Bárbara, termas e ruas históricas.",
+          "consider": "A praia de surfe de Santa Bárbara e o centro histórico são locais distintos; teste a rota diária a partir de uma casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/destinos/acores/73816",
+          "title": "Turismo de Portugal — São Miguel, the green island"
+        },
+        {
+          "url": "https://itrails.visitazores.com/trails/EN/SAOMIGUEL/PRC29SMI/",
+          "title": "Azores Tourism — Caldeiras da Ribeira Grande–Salto do Cabrito trail"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vila Franca do Campo",
+      "geonamesId": 3372472,
+      "airportCode": "PDL",
+      "rank": 97,
+      "content": {
+        "en": {
+          "intro": "Vila Franca do Campo brings together a volcanic offshore islet, a waterfront town and nearby Água de Alto beaches.",
+          "rhythm": "Walk the waterfront, plan an offshore-islet visit and explore Água de Alto's beaches.",
+          "idealFor": "A south-São-Miguel home for islet outings, waterfront walks and nearby beach time.",
+          "consider": "The offshore islet is an excursion governed by access conditions, not an everyday private beach."
+        },
+        "es": {
+          "intro": "Vila Franca do Campo reúne un islote volcánico, una villa marítima y las cercanas playas de Água de Alto.",
+          "rhythm": "Recorre la orilla, planea visitar el islote y descubre las playas de Água de Alto.",
+          "idealFor": "Una casa del sur de São Miguel para el islote, paseos marítimos y playas cercanas.",
+          "consider": "El islote es una excursión sujeta a condiciones de acceso, no una playa privada cotidiana."
+        },
+        "pt": {
+          "intro": "Vila Franca do Campo reúne um ilhéu vulcânico, uma vila à beira-mar e as praias próximas de Água de Alto.",
+          "rhythm": "Percorra a orla, planeje visitar o ilhéu e descubra as praias de Água de Alto.",
+          "idealFor": "Uma casa do sul de São Miguel para o ilhéu, passeios à beira-mar e praias próximas.",
+          "consider": "O ilhéu é um passeio sujeito a condições de acesso, não uma praia privada cotidiana."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitazores.com/explorar/vila-franca-do-campo-islet",
+          "title": "Azores Tourism — Vila Franca do Campo Islet"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/CAC43BFD-F974-403B-BBFA-43C9A1C794B4",
+          "title": "Turismo de Portugal — Água de Alto beach"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Angra do Heroísmo",
+      "geonamesId": 3373348,
+      "airportCode": "TER",
+      "rank": 98,
+      "content": {
+        "en": {
+          "intro": "Angra do Heroísmo brings together a UNESCO Renaissance street plan, an Atlantic marina and historic fortifications.",
+          "rhythm": "Walk Renaissance streets from marina to centre, then explore the historic fortifications.",
+          "idealFor": "A Terceira cultural residence for Renaissance streets, fortifications and marina-side evenings.",
+          "consider": "Historic streets include slopes and narrow pavements; check mobility needs at the specific address."
+        },
+        "es": {
+          "intro": "Angra do Heroísmo reúne un trazado renacentista UNESCO, una marina atlántica y fortificaciones históricas.",
+          "rhythm": "Recorre calles renacentistas de la marina al centro y explora las fortificaciones históricas.",
+          "idealFor": "Una residencia cultural en Terceira para calles renacentistas, fortificaciones y tardes en la marina.",
+          "consider": "Las calles históricas tienen pendientes y aceras estrechas; revisa movilidad en la dirección concreta."
+        },
+        "pt": {
+          "intro": "Angra do Heroísmo reúne um traçado renascentista UNESCO, uma marina atlântica e fortificações históricas.",
+          "rhythm": "Percorra ruas renascentistas da marina ao centro e explore as fortificações históricas.",
+          "idealFor": "Uma residência cultural na Terceira para ruas renascentistas, fortificações e tardes na marina.",
+          "consider": "As ruas históricas têm ladeiras e calçadas estreitas; confira mobilidade no endereço específico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/node/132779",
+          "title": "Angra do Heroísmo — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/acores/316197",
+          "title": "Angra do Heroísmo - Accessible Tour — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Praia da Vitória",
+      "geonamesId": 3372760,
+      "airportCode": "TER",
+      "rank": 99,
+      "content": {
+        "en": {
+          "intro": "Praia da Vitória brings together Terceira's long Praia Grande beach, a marina and the sheltered town bay.",
+          "rhythm": "Mix Praia Grande beach walks, marina leisure and the town's sheltered-bay setting.",
+          "idealFor": "A Terceira beach-town home for Praia Grande walks, marina leisure and bay-side routines.",
+          "consider": "Central bay access differs from scattered municipal settlements; compare the chosen residential area."
+        },
+        "es": {
+          "intro": "Praia da Vitória reúne la larga Praia Grande de Terceira, una marina y la bahía urbana protegida.",
+          "rhythm": "Combina paseos por Praia Grande, ocio náutico y el entorno de la bahía urbana.",
+          "idealFor": "Una casa costera en Terceira para Praia Grande, ocio náutico y rutinas junto a la bahía.",
+          "consider": "El acceso a la bahía central difiere de poblaciones dispersas; compara la zona residencial elegida."
+        },
+        "pt": {
+          "intro": "Praia da Vitória reúne a extensa Praia Grande da Terceira, uma marina e a baía urbana abrigada.",
+          "rhythm": "Combine passeios na Praia Grande, lazer náutico e o cenário da baía urbana.",
+          "idealFor": "Uma casa costeira na Terceira para Praia Grande, lazer náutico e rotinas junto à baía.",
+          "consider": "O acesso à baía central difere de povoações dispersas; compare a área residencial escolhida."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/praia-grande-praia-da-vit%C3%B3ria-1",
+          "title": "Turismo de Portugal — Praia Grande, Praia da Vitória"
+        },
+        {
+          "url": "https://www.visitportugal.com/pt-pt/content/pra%C3%ADnha-praia-da-vit%C3%B3ria",
+          "title": "Turismo de Portugal — Praínha and Praia da Vitória marina"
+        }
+      ],
+      "verifiedTags": [
+        "nature"
+      ]
+    },
+    {
+      "name": "Horta",
+      "geonamesId": 3372988,
+      "airportCode": "HOR",
+      "rank": 100,
+      "content": {
+        "en": {
+          "intro": "Horta brings together the painted marina walls, Porto Pim bay and views toward Pico.",
+          "rhythm": "Watch marina arrivals, stroll toward Porto Pim and enjoy views across to Pico.",
+          "idealFor": "A Faial home base for sailing culture, Porto Pim swims and views toward Pico.",
+          "consider": "Pico views are local scenery, but visits to other islands depend on transport and weather."
+        },
+        "es": {
+          "intro": "Horta reúne los muros pintados de la marina, la bahía de Porto Pim y vistas a Pico.",
+          "rhythm": "Observa las llegadas a la marina, pasea hasta Porto Pim y disfruta de Pico.",
+          "idealFor": "Una base en Faial para cultura náutica, baños en Porto Pim y vistas a Pico.",
+          "consider": "Las vistas a Pico son locales, pero visitar otras islas depende de transporte y tiempo."
+        },
+        "pt": {
+          "intro": "Horta reúne os muros pintados da marina, a Baía do Porto Pim e vistas para o Pico.",
+          "rhythm": "Observe as chegadas à marina, passeie até o Porto Pim e aproveite o Pico.",
+          "idealFor": "Uma base no Faial para cultura náutica, banhos no Porto Pim e vistas para o Pico.",
+          "consider": "As vistas do Pico são locais, mas visitar outras ilhas depende de transporte e tempo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.visitportugal.com/en/NR/exeres/B437635B-F029-458E-A6EA-D36DA81F032E",
+          "title": "Horta — Turismo de Portugal"
+        },
+        {
+          "url": "https://www.visitportugal.com/en/destinos/acores/73824",
+          "title": "Horta: The most colourful marina in the world — Turismo de Portugal"
+        }
+      ],
+      "verifiedTags": []
+    }
+  ]
+}

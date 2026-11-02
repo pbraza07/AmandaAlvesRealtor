@@ -28,6 +28,6 @@ test('all existing editorial profiles retain stable IDs, photos and shareable sa
  const city=queryCities({country:'spain',search:'Barcelona'}).places[0];assert.ok(city.id.startsWith('gn-'));assert.equal(cityById('spain',city.id)?.name,city.name);const saved=queryCities({country:'spain',savedIds:['alicante',city.id],filters:['mountains']});assert.equal(saved.total,2);
 });
 test('new indexed profiles are translated and distinguish regional imagery from verified city photos',()=>{
- const city=queryCities({country:'spain',search:'Barcelona'}).places.find(p=>p.name==='Barcelona')!;assert.ok(city);assert.equal(city.photoKind,'regional');assert.match(city.source,/^https:\/\/www.geonames.org\//);
- for(const locale of ['es','pt'] as const)for(const text of [city.intro,city.rhythm,city.consider,city.idealFor])assert.notEqual(translate(text,locale),text);
+ const city=queryCities({country:'spain',search:'Barcelona'}).places.find(p=>p.name==='Barcelona')!;assert.ok(city);assert.ok(city.photoKind==='regional'||!!city.photoCredit);assert.match(city.source,/^https:\/\/www.geonames.org\//);
+ for(const locale of ['es','pt'] as const){const local=cityById('spain',city.id,[],locale)!;for(const key of ['intro','rhythm','consider','idealFor'] as const)assert.notEqual(city.researched?local[key]:translate(city[key],locale),city[key]);}
 });

@@ -2,6 +2,7 @@ import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {gunzipSync} from 'node:zlib';
 import {areas,lifestyleFilters,matchPercentage,type Area,type CountrySlug,type FilterId} from './explorer';
+import {researchedProfiles,livingResearch,cityResearchPhoto,type LivingProfile} from './researched-cities';
 import {translate,type Locale} from './i18n/core';
 import manifest from '../data/cities/manifest.json';
 import airportData from '../data/cities/airports.json';
@@ -9,7 +10,7 @@ import type {CityMapData,CityMapPoint,CityMapCluster,CityResult,CityResults,MapB
 
 type Row=[number,string,string,number,number,string,string,number|null,number|null,number];
 type Airport=typeof airportData[number];
-type Entry={id:string;row:Row;tags:FilterId[];assessed:FilterId[];airport:Airport;airportKm:number;curated?:Area;search:string};
+type Entry={id:string;row:Row;tags:FilterId[];assessed:FilterId[];airport:Airport;airportKm:number;curated?:Area;research?:LivingProfile;search:string};
 const cache=new Map<CountrySlug,Entry[]>();
 const rankings=new Map<string,{entry:Entry;score:number|null}[]>();
 const allFilters=lifestyleFilters.map(f=>f.id);
@@ -22,23 +23,25 @@ function nearestAirport(country:CountrySlug,lat:number,lng:number){const found=a
 export function getEntries(country:CountrySlug):Entry[]{
  const hit=cache.get(country);if(hit)return hit;
  const rows=JSON.parse(gunzipSync(readFileSync(join(process.cwd(),'data','cities',country+'.json.gz'))).toString('utf8')) as Row[];
- const profiles=areas.filter(a=>a.country===country);const used=new Set<string>();
- const entries=rows.map(row=>{
+ const profiles=areas.filter(a=>a.country===country);const research=researchedProfiles(country);const used=new Set<string>();
+ const entries:Entry[]=rows.map(row=>{
   const curated=profiles.find(a=>curatedLinks[a.id]===row[0]);if(curated)used.add(curated.id);
-  const nearest=nearestAirport(country,row[3],row[4]);
+  const profile=research.get(row[0]);const gateway=profile&&airportData.find(a=>a.country===country&&a.code===profile.airportCode);const nearest=gateway?{airport:gateway,km:kmBetween(row[3],row[4],gateway.lat,gateway.lng)}:nearestAirport(country,row[3],row[4]);
   const assessed:FilterId[]=['coast','connected'];if(country!=='florida'&&row[8]!==null)assessed.push('mountains');if(row[7]!==null||['PPLC','PPLA'].includes(row[6]))assessed.push('city');
   const tags:FilterId[]=[];if(row[9]<=20)tags.push('coast');if(country!=='florida'&&row[8]!==null&&row[8]>=600)tags.push('mountains');if(nearest.km<=50)tags.push('connected');if((row[7]||0)>=50000||['PPLC','PPLA'].includes(row[6]))tags.push('city');
-  return {id:curated?.id||`gn-${row[0]}`,row,tags:curated?[...curated.tags]:tags,assessed:curated?[...allFilters]:assessed,airport:nearest.airport,airportKm:nearest.km,curated,search:normalize(`${row[1]} ${row[2]} ${row[5]} ${curated?.name||''} ${curated?.region||''}`)};
+  const confirmed=(profile?.verifiedTags||[]).filter(id=>['culture','nature','amenities'].includes(id));
+  return {id:curated?.id||`gn-${row[0]}`,row,tags:[...new Set([...(curated?.tags||tags),...confirmed])],assessed:[...new Set([...(curated?allFilters:assessed),...confirmed])],airport:nearest.airport,airportKm:nearest.km,curated,research:profile,search:normalize(`${row[1]} ${row[2]} ${row[5]} ${curated?.name||''} ${curated?.region||''}`)};
  });
  for(const a of profiles.filter(a=>!used.has(a.id))){const nearest=nearestAirport(country,a.lat,a.lng);entries.push({id:a.id,row:[0,a.name,a.name,a.lat,a.lng,a.region,'PPL',null,null,0],tags:[...a.tags],assessed:[...allFilters],airport:nearest.airport,airportKm:nearest.km,curated:a,search:normalize(`${a.name} ${a.region}`)})}
  cache.set(country,entries);return entries;
 }
-function detail(entry:Entry,filters:readonly FilterId[]):CityResult{
- const {row,curated}=entry;const country=(curated?.country||entry.airport.country) as CountrySlug;
+function detail(entry:Entry,filters:readonly FilterId[],locale:Locale='en'):CityResult{
+ const {row,curated,research}=entry;const country=(curated?.country||entry.airport.country) as CountrySlug;
  const image=country==='florida'?'/images/farmhouse-acreage-hero.webp':`/images/lifestyle-${country}.jpg`;
  const base:Area=curated||{id:entry.id,country,name:row[1],region:row[5],lat:row[3],lng:row[4],tags:entry.tags,image,guideLabel:'GeoNames place record',source:`https://www.geonames.org/${row[0]}/`,airport:'',airportUrl:'',intro:`${row[1]} is a community in ${row[5]}. ${entry.tags.includes('coast')?'Its setting is within 20 km of the coast. ':''}${entry.tags.includes('city')?'Its population or regional role gives it an urban character. ':''}${entry.tags.includes('mountains')?'It has an upland setting at 600 m or more. ':''}${entry.tags.includes('connected')?'A scheduled-service airport is within 50 km.':''}`.trim(),rhythm:'Start with your preferred daily routine, then review local services and neighborhoods.',consider:'Local prices, schools, services and property availability have not been assessed for this indexed place.',idealFor:'A place to discuss if its setting fits your plans; local lifestyle details still need review.'};
  const km=Math.max(5,Math.round(entry.airportKm/5)*5);
- return {...base,tags:entry.tags,airport:`${entry.airport.name} (${entry.airport.code}) · about ${km} km straight line${km>100?' · plan a longer ground transfer':''}. Check routes and seasonal flights.`,airportUrl:entry.airport.url,origin:curated?'curated':'gazetteer',assessedTags:entry.assessed,population:row[7],elevation:row[8],coastKm:row[9],photoKind:curated?'city':'regional',score:matchPercentage({tags:entry.tags},filters),unknownPreferences:filters.filter(f=>!entry.assessed.includes(f)).length};
+ const copy=research?.content[locale];const asset=!curated&&research&&cityResearchPhoto(row[0]);
+ return {...base,...copy,...(asset?{image:asset.image,photoCredit:{author:asset.author,license:asset.license,url:asset.url}}:{}),name:research?.name||base.name,researched:!!research,researchCopy:research?.content,researchRank:research?.rank,researchDate:research?livingResearch(country).researchedAt:undefined,researchSources:research?.sources,contentLocale:locale,tags:entry.tags,airport:`${entry.airport.name} (${entry.airport.code}) · about ${km} km straight line${km>100?' · plan a longer ground transfer':''}. Check routes and seasonal flights.`,airportUrl:entry.airport.url,origin:curated?'curated':'gazetteer',assessedTags:entry.assessed,population:row[7],elevation:row[8],coastKm:row[9],photoKind:curated||asset?'city':'regional',score:matchPercentage({tags:entry.tags},filters),unknownPreferences:filters.filter(f=>!entry.assessed.includes(f)).length};
 }
 function boundsOf(entries:Entry[]):MapBounds{if(!entries.length)return [0,0,0,0];return entries.reduce<MapBounds>((b,e)=>[Math.min(b[0],e.row[3]),Math.min(b[1],e.row[4]),Math.max(b[2],e.row[3]),Math.max(b[3],e.row[4])],[90,180,-90,-180])}
 function mapData(scored:{entry:Entry;score:number|null}[],bounds:MapBounds|undefined,zoom:number):CityMapData{
@@ -54,17 +57,17 @@ function mapData(scored:{entry:Entry;score:number|null}[],bounds:MapBounds|undef
  for(const [key,members]of buckets){if(members.length===1)points.push(point(members[0]));else{const b=boundsOf(members.map(m=>m.entry));clusters.push({id:key,lat:(b[0]+b[2])/2,lng:(b[1]+b[3])/2,count:members.length,bounds:b,members:members.slice(0,8).map(point),maxScore:members[0].score})}}
  return {points,clusters,total:scored.length,visible:visible.length,bounds:boundsOf(scored.map(s=>s.entry))};
 }
-export type CityQuery={country:CountrySlug;filters?:readonly FilterId[];search?:string;locale?:Locale;page?:number;savedIds?:string[];bounds?:MapBounds;zoom?:number};
-export function queryCities({country,filters=[],search='',locale='en',page=0,savedIds,bounds,zoom=7}:CityQuery):CityResults{
+export type CityQuery={country:CountrySlug;filters?:readonly FilterId[];search?:string;locale?:Locale;page?:number;savedIds?:string[];bounds?:MapBounds;zoom?:number;researchedOnly?:boolean};
+export function queryCities({country,filters=[],search='',locale='en',page=0,savedIds,bounds,zoom=7,researchedOnly=false}:CityQuery):CityResults{
  const selected=[...new Set(filters)];const q=normalize(search).slice(0,100);const all=getEntries(country);const saved=savedIds?new Set(savedIds):undefined;
- const key=JSON.stringify([country,[...selected].sort(),q,locale,savedIds?[...savedIds].sort():null]);
+ const key=JSON.stringify([country,[...selected].sort(),q,locale,researchedOnly,savedIds?[...savedIds].sort():null]);
  let scored=rankings.get(key);
  if(!scored){
- const rows=all.filter(e=>(!saved||saved.has(e.id)||saved.has(`gn-${e.row[0]}`))&&(!q||e.search.includes(q)||normalize(`${translate(e.row[1],locale)} ${translate(e.row[5],locale)} ${translate(e.curated?.region||'',locale)}`).includes(q)));
- scored=rows.map(entry=>({entry,score:matchPercentage({tags:entry.tags},selected)})).sort((a,b)=>(b.score??0)-(a.score??0)||((normalize(a.entry.row[1])===q?0:1)-(normalize(b.entry.row[1])===q?0:1))||(b.entry.row[7]||0)-(a.entry.row[7]||0)||(a.entry.curated?0:1)-(b.entry.curated?0:1)||a.entry.row[1].localeCompare(b.entry.row[1])||a.entry.id.localeCompare(b.entry.id));
+ const rows=all.filter(e=>(!researchedOnly||!!e.research)&&(!saved||saved.has(e.id)||saved.has(`gn-${e.row[0]}`))&&(!q||e.search.includes(q)||normalize(`${translate(e.row[1],locale)} ${translate(e.row[5],locale)} ${translate(e.curated?.region||'',locale)}`).includes(q)));
+ scored=rows.map(entry=>({entry,score:matchPercentage({tags:entry.tags},selected)})).sort((a,b)=>(b.score??0)-(a.score??0)||((normalize(a.entry.row[1])===q?0:1)-(normalize(b.entry.row[1])===q?0:1))||(a.entry.research?.rank??1000)-(b.entry.research?.rank??1000)||(b.entry.row[7]||0)-(a.entry.row[7]||0)||(a.entry.curated?0:1)-(b.entry.curated?0:1)||a.entry.row[1].localeCompare(b.entry.row[1])||a.entry.id.localeCompare(b.entry.id));
  if(rankings.size>=8)rankings.delete(rankings.keys().next().value!);rankings.set(key,scored);
  }
  const pageSize=24;const validPage=Math.max(0,Math.floor(page));
- return {country,total:scored.length,countryTotal:all.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<scored.length,places:scored.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected)),map:mapData(scored,bounds,zoom),updatedAt:manifest.updatedAt};
+ return {country,total:scored.length,countryTotal:all.length,researchedTotal:livingResearch(country).places.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<scored.length,places:scored.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected,locale)),map:mapData(scored,bounds,zoom),updatedAt:manifest.updatedAt};
 }
-export function cityById(country:CountrySlug,id:string,filters:readonly FilterId[]=[]){const entry=getEntries(country).find(e=>e.id===id||`gn-${e.row[0]}`===id);return entry?detail(entry,filters):undefined}
+export function cityById(country:CountrySlug,id:string,filters:readonly FilterId[]=[],locale:Locale='en'){const entry=getEntries(country).find(e=>e.id===id||`gn-${e.row[0]}`===id);return entry?detail(entry,filters,locale):undefined}

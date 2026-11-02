@@ -1,0 +1,3596 @@
+{
+  "country": "spain",
+  "selectionMethod": "Editorial shortlist of 100 varied cities and towns across mainland regions, the Balearics and the Canaries, selected for distinct living settings, heritage, everyday activities and access to commercial airport gateways. This is not an objective quality-of-life ranking; visitor match percentage determines displayed order. Lifestyle fit is an editorial inference from cited place features, not an assessment of residents, safety, schools, affordability or current property availability.",
+  "researchedAt": "2026-11-02",
+  "places": [
+    {
+      "name": "Madrid",
+      "geonamesId": 3117735,
+      "airportCode": "MAD",
+      "rank": 1,
+      "content": {
+        "en": {
+          "intro": "Madrid brings together Museo del Prado and Parque del Retiro.",
+          "rhythm": "Combine museum visits with Retiro walks and neighbourhood tapas.",
+          "idealFor": "A culture-led home in a major inland capital.",
+          "consider": "Compare central walking distances with the pace of outer districts."
+        },
+        "es": {
+          "intro": "Madrid reúne Museo del Prado y Parque del Retiro.",
+          "rhythm": "Combina museos, paseos por el Retiro y tapas de barrio.",
+          "idealFor": "Una base cultural en una gran capital interior.",
+          "consider": "Compara los recorridos a pie del centro con el ritmo de los barrios exteriores."
+        },
+        "pt": {
+          "intro": "Madrid combina Museo del Prado e Parque del Retiro.",
+          "rhythm": "Combine museus, caminhadas no Retiro e tapas de bairro.",
+          "idealFor": "Uma base cultural em uma grande capital do interior.",
+          "consider": "Compare os percursos a pé no centro com o ritmo dos bairros externos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/madrid/",
+          "title": "Tourism in Madrid: what to do in Madrid"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Barcelona",
+      "geonamesId": 3128760,
+      "airportCode": "BCN",
+      "rank": 2,
+      "content": {
+        "en": {
+          "intro": "Barcelona brings together Sagrada Família and Park Güell.",
+          "rhythm": "Move between Modernista streets, food markets and the Mediterranean waterfront.",
+          "idealFor": "Urban architecture and beach access within the same city.",
+          "consider": "Visit potential streets during both busy visitor hours and quiet evenings."
+        },
+        "es": {
+          "intro": "Barcelona reúne Sagrada Família y Park Güell.",
+          "rhythm": "Alterna calles modernistas, mercados y el frente marítimo mediterráneo.",
+          "idealFor": "Arquitectura urbana y acceso a la playa en la misma ciudad.",
+          "consider": "Visita las calles elegidas tanto en horas turísticas como en noches tranquilas."
+        },
+        "pt": {
+          "intro": "Barcelona combina Sagrada Família e Park Güell.",
+          "rhythm": "Alterne ruas modernistas, mercados e a orla mediterrânea.",
+          "idealFor": "Arquitetura urbana e acesso à praia na mesma cidade.",
+          "consider": "Visite as ruas escolhidas tanto no horário turístico como em noites tranquilas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/barcelona/",
+          "title": "Barcelona, what to see and do"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Valencia",
+      "geonamesId": 2509954,
+      "airportCode": "VLC",
+      "rank": 3,
+      "content": {
+        "en": {
+          "intro": "Valencia brings together Jardín del Turia and Lonja de la Seda.",
+          "rhythm": "Link park walks with Central Market shopping and beach outings.",
+          "idealFor": "A Mediterranean city routine with a large linear park.",
+          "consider": "Distinguish the historic centre from the coastal neighbourhoods when house hunting."
+        },
+        "es": {
+          "intro": "Valencia reúne Jardín del Turia y Lonja de la Seda.",
+          "rhythm": "Combina paseos por el parque, compras en el Mercado Central y playa.",
+          "idealFor": "Una rutina mediterránea con un gran parque lineal.",
+          "consider": "Distingue el centro histórico de los barrios marítimos al buscar vivienda."
+        },
+        "pt": {
+          "intro": "Valencia combina Jardín del Turia e Lonja de la Seda.",
+          "rhythm": "Combine caminhadas no parque, compras no Mercado Central e praia.",
+          "idealFor": "Uma rotina mediterrânea com um grande parque linear.",
+          "consider": "Diferencie o centro histórico dos bairros marítimos ao procurar um imóvel."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/valencia/",
+          "title": "Tourism in Valencia. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Alicante",
+      "geonamesId": 2521978,
+      "airportCode": "ALC",
+      "rank": 4,
+      "content": {
+        "en": {
+          "intro": "Alicante brings together Castillo de Santa Bárbara and Explanada de España.",
+          "rhythm": "Follow the palm-lined promenade, then spend time at Postiguet beach.",
+          "idealFor": "An airport-connected coastal city with a walkable historic core.",
+          "consider": "Check slopes around the old quarter against flatter seafront options."
+        },
+        "es": {
+          "intro": "Alicante reúne Castillo de Santa Bárbara y Explanada de España.",
+          "rhythm": "Recorre el paseo de palmeras y disfruta de la playa del Postiguet.",
+          "idealFor": "Una ciudad costera conectada por aeropuerto y con casco histórico caminable.",
+          "consider": "Compara las pendientes del casco antiguo con zonas llanas junto al mar."
+        },
+        "pt": {
+          "intro": "Alicante combina Castillo de Santa Bárbara e Explanada de España.",
+          "rhythm": "Percorra o passeio de palmeiras e aproveite a praia de Postiguet.",
+          "idealFor": "Uma cidade litorânea com aeroporto e centro histórico para explorar a pé.",
+          "consider": "Compare as ladeiras do centro antigo com opções planas junto ao mar."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/alicante-alacant/",
+          "title": "Tourism in Alicante-Alacant. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Málaga",
+      "geonamesId": 2514256,
+      "airportCode": "AGP",
+      "rank": 5,
+      "content": {
+        "en": {
+          "intro": "Málaga brings together Alcazaba and Museo Picasso Málaga.",
+          "rhythm": "Pair museum afternoons with Atarazanas market and port-side walks.",
+          "idealFor": "A coastal home where art and a working city overlap.",
+          "consider": "Compare the busy historic centre with beachside residential districts."
+        },
+        "es": {
+          "intro": "Málaga reúne Alcazaba y Museo Picasso Málaga.",
+          "rhythm": "Combina museos, el mercado de Atarazanas y paseos por el puerto.",
+          "idealFor": "Una base costera donde coinciden arte y vida urbana.",
+          "consider": "Compara el animado centro histórico con los barrios residenciales de playa."
+        },
+        "pt": {
+          "intro": "Málaga combina Alcazaba e Museo Picasso Málaga.",
+          "rhythm": "Combine museus, o mercado de Atarazanas e passeios pelo porto.",
+          "idealFor": "Uma base litorânea que reúne arte e vida urbana.",
+          "consider": "Compare o movimentado centro histórico com bairros residenciais de praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/malaga/",
+          "title": "Tourism in Málaga. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Sevilla",
+      "geonamesId": 2510911,
+      "airportCode": "SVQ",
+      "rank": 6,
+      "content": {
+        "en": {
+          "intro": "Sevilla brings together Real Alcázar and Triana.",
+          "rhythm": "Enjoy riverside walks, neighbourhood tapas and flamenco traditions.",
+          "idealFor": "A heritage-rich city lifestyle shaped by plazas and the Guadalquivir.",
+          "consider": "Test your daily routes in summer heat as well as milder seasons."
+        },
+        "es": {
+          "intro": "Sevilla reúne Real Alcázar y Triana.",
+          "rhythm": "Disfruta del río, las tapas de barrio y la tradición flamenca.",
+          "idealFor": "Vida urbana patrimonial entre plazas y el Guadalquivir.",
+          "consider": "Prueba tus recorridos diarios en verano y en temporadas más suaves."
+        },
+        "pt": {
+          "intro": "Sevilla combina Real Alcázar e Triana.",
+          "rhythm": "Aproveite caminhadas junto ao rio, tapas de bairro e flamenco.",
+          "idealFor": "Vida urbana patrimonial entre praças e o Guadalquivir.",
+          "consider": "Teste seus trajetos diários no calor do verão e em épocas mais amenas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/seville/",
+          "title": "Tourism in Seville. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Bilbao",
+      "geonamesId": 3128026,
+      "airportCode": "BIO",
+      "rank": 7,
+      "content": {
+        "en": {
+          "intro": "Bilbao brings together Museo Guggenheim Bilbao and Casco Viejo.",
+          "rhythm": "Mix riverside promenades, contemporary exhibitions and pintxo-bar evenings.",
+          "idealFor": "A design-and-food city base in the green Basque north.",
+          "consider": "Compare valley-floor streets with hillside neighbourhoods and their transport links."
+        },
+        "es": {
+          "intro": "Bilbao reúne Museo Guggenheim Bilbao y Casco Viejo.",
+          "rhythm": "Alterna paseos por la ría, exposiciones y tardes de pintxos.",
+          "idealFor": "Una base urbana de diseño y gastronomía en el norte vasco.",
+          "consider": "Compara las calles del valle con barrios de ladera y sus transportes."
+        },
+        "pt": {
+          "intro": "Bilbao combina Museo Guggenheim Bilbao e Casco Viejo.",
+          "rhythm": "Alterne passeios pela ria, exposições e noites de pintxos.",
+          "idealFor": "Uma base urbana de design e gastronomia no verde norte basco.",
+          "consider": "Compare ruas no fundo do vale com bairros em encostas e seus transportes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/bilbao/",
+          "title": "Sightseeing in Bilbao. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Donostia / San Sebastián",
+      "geonamesId": 3110044,
+      "airportCode": "EAS",
+      "rank": 8,
+      "content": {
+        "en": {
+          "intro": "Donostia / San Sebastián brings together La Concha and Parte Vieja.",
+          "rhythm": "Build days around bay walks and the old quarter's pintxo culture.",
+          "idealFor": "A compact coastal city focused on food and seaside walking.",
+          "consider": "Compare beachfront activity with quieter streets beyond the visitor core."
+        },
+        "es": {
+          "intro": "Donostia / San Sebastián reúne La Concha y Parte Vieja.",
+          "rhythm": "Organiza el día entre paseos por la bahía y pintxos en la Parte Vieja.",
+          "idealFor": "Una ciudad costera compacta centrada en gastronomía y paseos marítimos.",
+          "consider": "Compara el movimiento de primera línea con calles fuera del núcleo turístico."
+        },
+        "pt": {
+          "intro": "Donostia / San Sebastián combina La Concha e Parte Vieja.",
+          "rhythm": "Organize o dia entre caminhadas na baía e pintxos na Parte Vieja.",
+          "idealFor": "Uma cidade litorânea compacta voltada à gastronomia e aos passeios à beira-mar.",
+          "consider": "Compare o movimento à beira-mar com ruas fora do núcleo turístico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/donostia-san-sebastian/",
+          "title": "Tourism in Donostia-San Sebastián. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Zaragoza",
+      "geonamesId": 3104324,
+      "airportCode": "ZAZ",
+      "rank": 9,
+      "content": {
+        "en": {
+          "intro": "Zaragoza brings together Basílica del Pilar and Palacio de la Aljafería.",
+          "rhythm": "Combine Ebro river walks with Roman remains and El Tubo tapas.",
+          "idealFor": "An inland urban base with layered Roman and Mudéjar heritage.",
+          "consider": "Compare centre-to-work journeys rather than assuming every district is walkable."
+        },
+        "es": {
+          "intro": "Zaragoza reúne Basílica del Pilar y Palacio de la Aljafería.",
+          "rhythm": "Combina paseos por el Ebro, vestigios romanos y tapas en El Tubo.",
+          "idealFor": "Una base urbana interior con patrimonio romano y mudéjar.",
+          "consider": "Compara los trayectos al trabajo sin suponer que todo barrio se recorre a pie."
+        },
+        "pt": {
+          "intro": "Zaragoza combina Basílica del Pilar e Palacio de la Aljafería.",
+          "rhythm": "Combine caminhadas pelo Ebro, vestígios romanos e tapas em El Tubo.",
+          "idealFor": "Uma base urbana no interior com patrimônio romano e mudéjar.",
+          "consider": "Compare os trajetos ao trabalho sem supor que todos os bairros sejam caminháveis."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/zaragoza/",
+          "title": "Tourism in Zaragoza. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Murcia",
+      "geonamesId": 2513416,
+      "airportCode": "RMU",
+      "rank": 10,
+      "content": {
+        "en": {
+          "intro": "Murcia brings together Catedral de Murcia and río Segura.",
+          "rhythm": "Explore cathedral squares, the riverfront and the region's market-garden cuisine.",
+          "idealFor": "A city routine built around an inland historic centre and regional food.",
+          "consider": "The city is inland; plan beach visits as separate trips."
+        },
+        "es": {
+          "intro": "Murcia reúne Catedral de Murcia y río Segura.",
+          "rhythm": "Explora plazas, la ribera y la cocina de la huerta murciana.",
+          "idealFor": "Vida urbana entre casco histórico interior y cocina regional.",
+          "consider": "La ciudad es interior: organiza las visitas a la playa como salidas aparte."
+        },
+        "pt": {
+          "intro": "Murcia combina Catedral de Murcia e río Segura.",
+          "rhythm": "Explore praças, a margem do rio e a culinária das hortas murcianas.",
+          "idealFor": "Vida urbana entre centro histórico no interior e culinária regional.",
+          "consider": "A cidade fica no interior; planeje a praia como um passeio separado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/murcia/",
+          "title": "Tourism in Murcia. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Palma",
+      "geonamesId": 2512989,
+      "airportCode": "PMI",
+      "rank": 11,
+      "content": {
+        "en": {
+          "intro": "Palma brings together Catedral de Mallorca and Palau de l'Almudaina.",
+          "rhythm": "Stroll between old-town courtyards, the waterfront and island food markets.",
+          "idealFor": "An island capital with substantial urban life beyond the beach.",
+          "consider": "Compare the year-round centre with more seasonal coastal districts."
+        },
+        "es": {
+          "intro": "Palma reúne Catedral de Mallorca y Palau de l'Almudaina.",
+          "rhythm": "Pasea entre patios históricos, el frente marítimo y mercados isleños.",
+          "idealFor": "Una capital isleña con vida urbana más allá de la playa.",
+          "consider": "Compara el centro activo todo el año con zonas costeras más estacionales."
+        },
+        "pt": {
+          "intro": "Palma combina Catedral de Mallorca e Palau de l'Almudaina.",
+          "rhythm": "Passeie entre pátios históricos, a orla e mercados da ilha.",
+          "idealFor": "Uma capital insular com vida urbana além da praia.",
+          "consider": "Compare o centro ativo o ano todo com áreas costeiras mais sazonais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/palma/",
+          "title": "Tourism in Palma. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Las Palmas de Gran Canaria",
+      "geonamesId": 2515270,
+      "airportCode": "LPA",
+      "rank": 12,
+      "content": {
+        "en": {
+          "intro": "Las Palmas de Gran Canaria brings together Vegueta and Playa de Las Canteras.",
+          "rhythm": "Balance historic streets with a long urban beach and port-city dining.",
+          "idealFor": "An Atlantic island city combining beach walking and everyday city services.",
+          "consider": "Vegueta and Las Canteras are distinct areas; test the journey between them."
+        },
+        "es": {
+          "intro": "Las Palmas de Gran Canaria reúne Vegueta y Playa de Las Canteras.",
+          "rhythm": "Equilibra calles históricas, playa urbana y gastronomía de ciudad portuaria.",
+          "idealFor": "Una ciudad insular atlántica que une playa y servicios urbanos.",
+          "consider": "Vegueta y Las Canteras son zonas distintas: prueba el trayecto entre ambas."
+        },
+        "pt": {
+          "intro": "Las Palmas de Gran Canaria combina Vegueta e Playa de Las Canteras.",
+          "rhythm": "Equilibre ruas históricas, praia urbana e gastronomia de cidade portuária.",
+          "idealFor": "Uma cidade insular atlântica que une praia e serviços urbanos.",
+          "consider": "Vegueta e Las Canteras são áreas distintas; teste o percurso entre elas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/las-palmas-gran-canaria/",
+          "title": "Tourism in Las Palmas de Gran Canaria. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Santa Cruz de Tenerife",
+      "geonamesId": 2511174,
+      "airportCode": "TFN",
+      "rank": 13,
+      "content": {
+        "en": {
+          "intro": "Santa Cruz de Tenerife brings together Auditorio de Tenerife and Parque García Sanabria.",
+          "rhythm": "Follow harbour-city culture, garden walks and the island's carnival traditions.",
+          "idealFor": "A working island capital rather than a purely beach-resort setting.",
+          "consider": "Central Santa Cruz is a port city; beach days require choosing a separate coastal spot."
+        },
+        "es": {
+          "intro": "Santa Cruz de Tenerife reúne Auditorio de Tenerife y Parque García Sanabria.",
+          "rhythm": "Disfruta de cultura portuaria, jardines y tradiciones de carnaval.",
+          "idealFor": "Una capital isleña con vida propia, más allá del turismo de playa.",
+          "consider": "El centro es portuario: para días de playa hay que elegir otro enclave costero."
+        },
+        "pt": {
+          "intro": "Santa Cruz de Tenerife combina Auditorio de Tenerife e Parque García Sanabria.",
+          "rhythm": "Aproveite cultura portuária, jardins e tradições de carnaval.",
+          "idealFor": "Uma capital insular com vida própria, além do turismo de praia.",
+          "consider": "O centro é portuário; para dias de praia, escolha outro ponto da costa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/santa-cruz-tenerife/",
+          "title": "Tourism in Santa Cruz de Tenerife. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "San Cristóbal de La Laguna",
+      "geonamesId": 2511401,
+      "airportCode": "TFN",
+      "rank": 14,
+      "content": {
+        "en": {
+          "intro": "San Cristóbal de La Laguna brings together historic street grid and Universidad de La Laguna.",
+          "rhythm": "Enjoy pastel-coloured heritage streets and a lively university atmosphere.",
+          "idealFor": "A Tenerife base centred on history and university life.",
+          "consider": "This is an inland upland city, not a beach-front location."
+        },
+        "es": {
+          "intro": "San Cristóbal de La Laguna reúne trazado histórico y Universidad de La Laguna.",
+          "rhythm": "Disfruta de calles patrimoniales de colores y ambiente universitario.",
+          "idealFor": "Una base tinerfeña centrada en historia y vida universitaria.",
+          "consider": "Es una ciudad interior y elevada, no una ubicación a pie de playa."
+        },
+        "pt": {
+          "intro": "San Cristóbal de La Laguna combina traçado histórico e Universidad de La Laguna.",
+          "rhythm": "Aproveite ruas patrimoniais coloridas e ambiente universitário.",
+          "idealFor": "Uma base em Tenerife voltada à história e à vida universitária.",
+          "consider": "É uma cidade elevada no interior, sem localização à beira da praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/san-cristobal-laguna/",
+          "title": "Sightseeing in San Cristóbal de La Laguna What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Oviedo",
+      "geonamesId": 3114711,
+      "airportCode": "OVD",
+      "rank": 15,
+      "content": {
+        "en": {
+          "intro": "Oviedo brings together Catedral de San Salvador and Campo de San Francisco.",
+          "rhythm": "Pair old-town squares and Asturian food with a central green park.",
+          "idealFor": "A northern cultural city with an inland, green setting.",
+          "consider": "Coastal trips are separate from daily life in the inland centre."
+        },
+        "es": {
+          "intro": "Oviedo reúne Catedral de San Salvador y Campo de San Francisco.",
+          "rhythm": "Combina plazas históricas, cocina asturiana y un parque céntrico.",
+          "idealFor": "Una ciudad cultural del norte en un entorno interior y verde.",
+          "consider": "Las salidas a la costa son independientes de la rutina del centro interior."
+        },
+        "pt": {
+          "intro": "Oviedo combina Catedral de San Salvador e Campo de San Francisco.",
+          "rhythm": "Combine praças históricas, culinária asturiana e um parque central.",
+          "idealFor": "Uma cidade cultural do norte em um ambiente verde no interior.",
+          "consider": "Os passeios à costa são separados da rotina no centro do interior."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/oviedo/",
+          "title": "Tourism in Oviedo. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Gijón",
+      "geonamesId": 3121424,
+      "airportCode": "OVD",
+      "rank": 16,
+      "content": {
+        "en": {
+          "intro": "Gijón brings together Cimadevilla and Laboral Ciudad de la Cultura.",
+          "rhythm": "Move between a fishing-quarter atmosphere, museums and San Lorenzo beach.",
+          "idealFor": "A Cantabrian-sea city where beach and industrial heritage share the stage.",
+          "consider": "Compare the seafront with inland neighbourhoods before choosing daily travel routes."
+        },
+        "es": {
+          "intro": "Gijón reúne Cimadevilla y Laboral Ciudad de la Cultura.",
+          "rhythm": "Alterna ambiente marinero, museos y la playa de San Lorenzo.",
+          "idealFor": "Una ciudad cantábrica que une playa y patrimonio industrial.",
+          "consider": "Compara la costa con barrios interiores antes de fijar tus recorridos diarios."
+        },
+        "pt": {
+          "intro": "Gijón combina Cimadevilla e Laboral Ciudad de la Cultura.",
+          "rhythm": "Alterne ambiente de bairro pesqueiro, museus e a praia de San Lorenzo.",
+          "idealFor": "Uma cidade no mar Cantábrico que reúne praia e patrimônio industrial.",
+          "consider": "Compare a orla com bairros internos antes de definir seus trajetos diários."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/gijon/",
+          "title": "Tourism in Gijón. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Santander",
+      "geonamesId": 3109718,
+      "airportCode": "SDR",
+      "rank": 17,
+      "content": {
+        "en": {
+          "intro": "Santander brings together Palacio de la Magdalena and bahía de Santander.",
+          "rhythm": "Build a routine around bay promenades, Sardinero beaches and cultural visits.",
+          "idealFor": "A green northern seaside base with a strong bay identity.",
+          "consider": "Test hillside walking routes as well as the flatter waterfront."
+        },
+        "es": {
+          "intro": "Santander reúne Palacio de la Magdalena y bahía de Santander.",
+          "rhythm": "Organiza tu rutina entre la bahía, el Sardinero y visitas culturales.",
+          "idealFor": "Una base marítima del norte verde con identidad de bahía.",
+          "consider": "Prueba las rutas por laderas además del frente marítimo más llano."
+        },
+        "pt": {
+          "intro": "Santander combina Palacio de la Magdalena e bahía de Santander.",
+          "rhythm": "Organize a rotina entre a baía, o Sardinero e visitas culturais.",
+          "idealFor": "Uma base marítima no verde norte com identidade de baía.",
+          "consider": "Teste percursos em ladeiras além da orla mais plana."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/santander/",
+          "title": "Tourism in Santander: what to do in Santander"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "A Coruña",
+      "geonamesId": 3119841,
+      "airportCode": "LCG",
+      "rank": 18,
+      "content": {
+        "en": {
+          "intro": "A Coruña brings together Torre de Hércules and Riazor y Orzán.",
+          "rhythm": "Combine long oceanfront walks, galleries and the city's glass-fronted harbour façades.",
+          "idealFor": "An Atlantic city with beaches integrated into its urban fabric.",
+          "consider": "Observe wind and weather on the exposed seafront during a trial stay."
+        },
+        "es": {
+          "intro": "A Coruña reúne Torre de Hércules y Riazor y Orzán.",
+          "rhythm": "Combina paseos oceánicos, museos y las galerías acristaladas del puerto.",
+          "idealFor": "Una ciudad atlántica con playas integradas en el tejido urbano.",
+          "consider": "Observa el viento y el tiempo en la costa expuesta durante una estancia de prueba."
+        },
+        "pt": {
+          "intro": "A Coruña combina Torre de Hércules e Riazor y Orzán.",
+          "rhythm": "Combine passeios oceânicos, museus e fachadas envidraçadas do porto.",
+          "idealFor": "Uma cidade atlântica com praias integradas ao tecido urbano.",
+          "consider": "Observe vento e clima na orla exposta durante uma estadia de teste."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/a-coruna/",
+          "title": "Tourism in A Coruna. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vigo",
+      "geonamesId": 3105976,
+      "airportCode": "VGO",
+      "rank": 19,
+      "content": {
+        "en": {
+          "intro": "Vigo brings together Parque de Castrelos and ría de Vigo.",
+          "rhythm": "Combine a working harbour, Galician seafood and wooded viewpoints.",
+          "idealFor": "A substantial coastal city for port culture and access to the Rías Baixas.",
+          "consider": "The city rises above the estuary; compare slopes and transport options."
+        },
+        "es": {
+          "intro": "Vigo reúne Parque de Castrelos y ría de Vigo.",
+          "rhythm": "Combina puerto activo, marisco gallego y miradores arbolados.",
+          "idealFor": "Una ciudad costera con cultura portuaria y acceso a las Rías Baixas.",
+          "consider": "La ciudad sube sobre la ría: compara pendientes y transportes."
+        },
+        "pt": {
+          "intro": "Vigo combina Parque de Castrelos e ría de Vigo.",
+          "rhythm": "Combine porto ativo, frutos do mar galegos e mirantes arborizados.",
+          "idealFor": "Uma cidade litorânea com cultura portuária e acesso às Rías Baixas.",
+          "consider": "A cidade sobe acima da ria; compare ladeiras e opções de transporte."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/vigo/?ct=t%28from-spain-with-love%29",
+          "title": "Tourism in Vigo. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Pontevedra",
+      "geonamesId": 3113209,
+      "airportCode": "VGO",
+      "rank": 20,
+      "content": {
+        "en": {
+          "intro": "Pontevedra brings together Plaza de la Leña and río Lérez.",
+          "rhythm": "Enjoy granite squares, heritage streets and walks beside the Lérez.",
+          "idealFor": "A smaller Galician city focused on historic-centre walking.",
+          "consider": "An estuary setting does not put an ocean beach outside every door."
+        },
+        "es": {
+          "intro": "Pontevedra reúne Plaza de la Leña y río Lérez.",
+          "rhythm": "Disfruta de plazas de granito, calles históricas y paseos junto al Lérez.",
+          "idealFor": "Una ciudad gallega de menor escala centrada en paseos por el casco antiguo.",
+          "consider": "Un entorno de ría no significa tener playa oceánica frente a cada vivienda."
+        },
+        "pt": {
+          "intro": "Pontevedra combina Plaza de la Leña e río Lérez.",
+          "rhythm": "Aproveite praças de granito, ruas históricas e passeios pelo Lérez.",
+          "idealFor": "Uma cidade galega de menor escala voltada a caminhar pelo centro histórico.",
+          "consider": "Uma localização na ria não significa ter praia oceânica diante de cada casa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/pontevedra/",
+          "title": "Tourism in Pontevedra. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Santiago de Compostela",
+      "geonamesId": 3109642,
+      "airportCode": "SCQ",
+      "rank": 21,
+      "content": {
+        "en": {
+          "intro": "Santiago de Compostela brings together Catedral de Santiago and Praza do Obradoiro.",
+          "rhythm": "Combine university energy, seafood restaurants and the daily arrival of pilgrims.",
+          "idealFor": "A cultural base shaped by pilgrimage and a UNESCO-listed historic centre.",
+          "consider": "Distinguish busy pilgrimage streets from quieter residential routes."
+        },
+        "es": {
+          "intro": "Santiago de Compostela reúne Catedral de Santiago y Praza do Obradoiro.",
+          "rhythm": "Combina ambiente universitario, marisco y la llegada diaria de peregrinos.",
+          "idealFor": "Una base cultural marcada por el Camino y un casco histórico de la UNESCO.",
+          "consider": "Distingue las calles de peregrinación de los recorridos residenciales tranquilos."
+        },
+        "pt": {
+          "intro": "Santiago de Compostela combina Catedral de Santiago e Praza do Obradoiro.",
+          "rhythm": "Combine ambiente universitário, frutos do mar e a chegada diária de peregrinos.",
+          "idealFor": "Uma base cultural marcada pelo Caminho e um centro histórico da UNESCO.",
+          "consider": "Diferencie ruas de peregrinação de percursos residenciais tranquilos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/santiago-compostela/",
+          "title": "Tourism in Santiago de Compostela. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Ourense",
+      "geonamesId": 3114965,
+      "airportCode": "VGO",
+      "rank": 22,
+      "content": {
+        "en": {
+          "intro": "Ourense brings together As Burgas and río Miño.",
+          "rhythm": "Pair thermal-spring culture with bridges, old-town squares and river walks.",
+          "idealFor": "An inland Galician base for thermal bathing and river-centred leisure.",
+          "consider": "Check how each neighbourhood connects to the dispersed thermal areas."
+        },
+        "es": {
+          "intro": "Ourense reúne As Burgas y río Miño.",
+          "rhythm": "Combina cultura termal, puentes, plazas históricas y paseos por el Miño.",
+          "idealFor": "Una base gallega interior para termalismo y ocio junto al río.",
+          "consider": "Comprueba cómo conecta cada barrio con las distintas zonas termales."
+        },
+        "pt": {
+          "intro": "Ourense combina As Burgas e río Miño.",
+          "rhythm": "Combine cultura termal, pontes, praças históricas e caminhadas pelo Minho.",
+          "idealFor": "Uma base galega no interior para termalismo e lazer junto ao rio.",
+          "consider": "Confira como cada bairro se conecta às diferentes áreas termais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/ourense/",
+          "title": "Tourism in Orense. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Lugo",
+      "geonamesId": 3117814,
+      "airportCode": "SCQ",
+      "rank": 23,
+      "content": {
+        "en": {
+          "intro": "Lugo brings together Roman city wall and río Miño.",
+          "rhythm": "Walk the ancient wall, then enjoy pedestrian squares and Galician restaurants.",
+          "idealFor": "A compact inland city with Roman heritage in everyday view.",
+          "consider": "Compare living inside the walls with access and parking outside them."
+        },
+        "es": {
+          "intro": "Lugo reúne muralla romana y río Miño.",
+          "rhythm": "Recorre la muralla y disfruta de plazas peatonales y restaurantes gallegos.",
+          "idealFor": "Una ciudad interior compacta con patrimonio romano a la vista.",
+          "consider": "Compara vivir intramuros con el acceso y aparcamiento fuera de la muralla."
+        },
+        "pt": {
+          "intro": "Lugo combina muralha romana e río Miño.",
+          "rhythm": "Percorra a muralha e aproveite praças de pedestres e restaurantes galegos.",
+          "idealFor": "Uma cidade compacta do interior com patrimônio romano no cotidiano.",
+          "consider": "Compare morar dentro das muralhas com acesso e estacionamento fora delas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/lugo/",
+          "title": "Tourism in Lugo. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "León",
+      "geonamesId": 3118532,
+      "airportCode": "LEN",
+      "rank": 24,
+      "content": {
+        "en": {
+          "intro": "León brings together Catedral de León and San Isidoro.",
+          "rhythm": "Combine cathedral visits, Camino heritage and the Barrio Húmedo's food scene.",
+          "idealFor": "A historic northern inland base for architecture and tapas-led evenings.",
+          "consider": "Separate winter living needs from impressions formed during a summer visit."
+        },
+        "es": {
+          "intro": "León reúne Catedral de León y San Isidoro.",
+          "rhythm": "Combina catedral, patrimonio del Camino y gastronomía del Barrio Húmedo.",
+          "idealFor": "Una base histórica interior del norte para arquitectura y tapas.",
+          "consider": "Valora las necesidades del invierno además de la impresión de una visita estival."
+        },
+        "pt": {
+          "intro": "León combina Catedral de León e San Isidoro.",
+          "rhythm": "Combine catedral, patrimônio do Caminho e gastronomia do Barrio Húmedo.",
+          "idealFor": "Uma base histórica no interior do norte para arquitetura e tapas.",
+          "consider": "Avalie as necessidades do inverno além da impressão de uma visita no verão."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/leon/",
+          "title": "Tourism in León. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Burgos",
+      "geonamesId": 3127461,
+      "airportCode": "VLL",
+      "rank": 25,
+      "content": {
+        "en": {
+          "intro": "Burgos brings together Catedral de Burgos and Paseo del Espolón.",
+          "rhythm": "Pair Gothic heritage with riverside strolling and the city's Castilian food traditions.",
+          "idealFor": "An inland heritage city with a strong cathedral-and-river identity.",
+          "consider": "Assess daily routines in the cooler season, not just on sightseeing days."
+        },
+        "es": {
+          "intro": "Burgos reúne Catedral de Burgos y Paseo del Espolón.",
+          "rhythm": "Combina patrimonio gótico, paseos junto al río y cocina castellana.",
+          "idealFor": "Una ciudad patrimonial interior con identidad de catedral y río.",
+          "consider": "Valora la rutina de la estación fría, no solo los días de turismo."
+        },
+        "pt": {
+          "intro": "Burgos combina Catedral de Burgos e Paseo del Espolón.",
+          "rhythm": "Combine patrimônio gótico, passeios junto ao rio e culinária castelhana.",
+          "idealFor": "Uma cidade patrimonial do interior com identidade de catedral e rio.",
+          "consider": "Avalie a rotina na estação fria, além dos dias de turismo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/burgos/",
+          "title": "Tourism in Burgos. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Valladolid",
+      "geonamesId": 3106672,
+      "airportCode": "VLL",
+      "rank": 26,
+      "content": {
+        "en": {
+          "intro": "Valladolid brings together Museo Nacional de Escultura and río Pisuerga.",
+          "rhythm": "Combine Renaissance streets, riverside walks and Seminci's film culture.",
+          "idealFor": "A university-city base for sculpture, cinema and Castilian food.",
+          "consider": "Compare historic-centre living with journeys to outer employment areas."
+        },
+        "es": {
+          "intro": "Valladolid reúne Museo Nacional de Escultura y río Pisuerga.",
+          "rhythm": "Combina calles renacentistas, paseos fluviales y la cultura cinematográfica de Seminci.",
+          "idealFor": "Una base universitaria para escultura, cine y cocina castellana.",
+          "consider": "Compara el centro histórico con los desplazamientos a áreas de trabajo periféricas."
+        },
+        "pt": {
+          "intro": "Valladolid combina Museo Nacional de Escultura e río Pisuerga.",
+          "rhythm": "Combine ruas renascentistas, passeios pelo rio e a cultura cinematográfica da Seminci.",
+          "idealFor": "Uma base universitária para escultura, cinema e culinária castelhana.",
+          "consider": "Compare o centro histórico com os deslocamentos a áreas de trabalho externas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/valladolid/",
+          "title": "Tourism in Valladolid. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Salamanca",
+      "geonamesId": 3111108,
+      "airportCode": "MAD",
+      "rank": 27,
+      "content": {
+        "en": {
+          "intro": "Salamanca brings together Plaza Mayor and Universidad de Salamanca.",
+          "rhythm": "Share sandstone streets with university life, cafés and evening plaza walks.",
+          "idealFor": "A learning-and-heritage setting with a strongly defined old town.",
+          "consider": "The main international gateway is Madrid; allow for the onward journey."
+        },
+        "es": {
+          "intro": "Salamanca reúne Plaza Mayor y Universidad de Salamanca.",
+          "rhythm": "Comparte calles de piedra dorada con vida universitaria, cafés y paseos por la plaza.",
+          "idealFor": "Un entorno de estudio y patrimonio con casco antiguo bien definido.",
+          "consider": "La principal puerta aérea internacional es Madrid: cuenta con el trayecto posterior."
+        },
+        "pt": {
+          "intro": "Salamanca combina Plaza Mayor e Universidad de Salamanca.",
+          "rhythm": "Compartilhe ruas de pedra dourada com vida universitária, cafés e passeios pela praça.",
+          "idealFor": "Um ambiente de estudo e patrimônio com centro antigo bem definido.",
+          "consider": "A principal porta aérea internacional é Madri; reserve tempo para seguir viagem."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/salamanca/",
+          "title": "Tourism in Salamanca. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Segovia",
+      "geonamesId": 3109256,
+      "airportCode": "MAD",
+      "rank": 28,
+      "content": {
+        "en": {
+          "intro": "Segovia brings together Roman aqueduct and Alcázar de Segovia.",
+          "rhythm": "Walk between the aqueduct, cathedral streets and the cliff-edge Alcázar.",
+          "idealFor": "A compact heritage town for landmark-rich walking and Castilian dining.",
+          "consider": "Check station-to-home access; the high-speed station is outside the old centre."
+        },
+        "es": {
+          "intro": "Segovia reúne acueducto romano y Alcázar de Segovia.",
+          "rhythm": "Camina entre el acueducto, las calles de la catedral y el Alcázar.",
+          "idealFor": "Una ciudad patrimonial compacta para paseos monumentales y cocina castellana.",
+          "consider": "Comprueba el acceso desde la estación de alta velocidad, fuera del casco antiguo."
+        },
+        "pt": {
+          "intro": "Segovia combina aqueduto romano e Alcázar de Segovia.",
+          "rhythm": "Caminhe entre o aqueduto, as ruas da catedral e o Alcázar.",
+          "idealFor": "Uma cidade patrimonial compacta para passeios monumentais e culinária castelhana.",
+          "consider": "Confira o acesso desde a estação de alta velocidade, fora do centro antigo."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/segovia/",
+          "title": "Sightseeing in Segovia. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Ávila",
+      "geonamesId": 3129136,
+      "airportCode": "MAD",
+      "rank": 29,
+      "content": {
+        "en": {
+          "intro": "Ávila brings together medieval walls and Convento de Santa Teresa.",
+          "rhythm": "Explore fortified streets and the city's links to Teresa of Ávila.",
+          "idealFor": "A smaller inland base for religious history and walled-city character.",
+          "consider": "Investigate winter routines and whether a home lies inside or outside the walls."
+        },
+        "es": {
+          "intro": "Ávila reúne murallas medievales y Convento de Santa Teresa.",
+          "rhythm": "Explora calles amuralladas y el vínculo de la ciudad con Teresa de Jesús.",
+          "idealFor": "Una base interior de menor escala para historia religiosa y carácter amurallado.",
+          "consider": "Valora el invierno y si la vivienda está dentro o fuera de las murallas."
+        },
+        "pt": {
+          "intro": "Ávila combina muralhas medievais e Convento de Santa Teresa.",
+          "rhythm": "Explore ruas muradas e o vínculo da cidade com Teresa de Ávila.",
+          "idealFor": "Uma base menor no interior para história religiosa e caráter de cidade murada.",
+          "consider": "Avalie o inverno e se o imóvel fica dentro ou fora das muralhas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/avila/",
+          "title": "Tourism in Ávila. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Zamora",
+      "geonamesId": 3104342,
+      "airportCode": "VLL",
+      "rank": 30,
+      "content": {
+        "en": {
+          "intro": "Zamora brings together Romanesque churches and río Duero.",
+          "rhythm": "Make riverside walks and a concentration of Romanesque architecture part of daily life.",
+          "idealFor": "A slower inland city for architecture and Duero-side leisure.",
+          "consider": "Compare central historic streets with easier-access residential edges."
+        },
+        "es": {
+          "intro": "Zamora reúne iglesias románicas y río Duero.",
+          "rhythm": "Integra paseos por el Duero y arquitectura románica en la vida diaria.",
+          "idealFor": "Una ciudad interior de ritmo pausado para arquitectura y ocio junto al Duero.",
+          "consider": "Compara las calles históricas céntricas con zonas residenciales de acceso más sencillo."
+        },
+        "pt": {
+          "intro": "Zamora combina igrejas românicas e río Duero.",
+          "rhythm": "Integre passeios pelo Douro e arquitetura românica à vida diária.",
+          "idealFor": "Uma cidade interior de ritmo tranquilo para arquitetura e lazer junto ao Douro.",
+          "consider": "Compare ruas históricas centrais com áreas residenciais de acesso mais fácil."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/zamora/",
+          "title": "Tourism in Zamora. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Logroño",
+      "geonamesId": 3118150,
+      "airportCode": "BIO",
+      "rank": 31,
+      "content": {
+        "en": {
+          "intro": "Logroño brings together Calle Laurel and río Ebro.",
+          "rhythm": "Combine a compact tapas quarter with Rioja wine culture and river walks.",
+          "idealFor": "A regional capital for food-led evenings and vineyard excursions.",
+          "consider": "The selected gateway is Bilbao; compare onward ground transport carefully."
+        },
+        "es": {
+          "intro": "Logroño reúne Calle Laurel y río Ebro.",
+          "rhythm": "Combina una zona compacta de tapas, cultura del vino de Rioja y paseos por el Ebro.",
+          "idealFor": "Una capital regional para gastronomía y salidas a viñedos.",
+          "consider": "El aeropuerto elegido es Bilbao: compara bien el transporte terrestre posterior."
+        },
+        "pt": {
+          "intro": "Logroño combina Calle Laurel e río Ebro.",
+          "rhythm": "Combine uma área compacta de tapas, cultura do vinho de Rioja e passeios pelo Ebro.",
+          "idealFor": "Uma capital regional para gastronomia e passeios a vinhedos.",
+          "consider": "O aeroporto escolhido é Bilbao; compare bem o transporte terrestre posterior."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/logrono/",
+          "title": "Tourism in Logroño. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Pamplona",
+      "geonamesId": 3114472,
+      "airportCode": "PNA",
+      "rank": 32,
+      "content": {
+        "en": {
+          "intro": "Pamplona brings together Ciudadela and Catedral de Santa María.",
+          "rhythm": "Enjoy historic streets, fortified green spaces and Camino pilgrim activity.",
+          "idealFor": "A Navarre city base combining heritage, parks and regional food.",
+          "consider": "Assess your chosen street during San Fermín as well as ordinary weeks."
+        },
+        "es": {
+          "intro": "Pamplona reúne Ciudadela y Catedral de Santa María.",
+          "rhythm": "Disfruta de calles históricas, zonas verdes fortificadas y ambiente del Camino.",
+          "idealFor": "Una base urbana navarra que reúne patrimonio, parques y gastronomía.",
+          "consider": "Valora la calle elegida durante San Fermín y en semanas corrientes."
+        },
+        "pt": {
+          "intro": "Pamplona combina Ciudadela e Catedral de Santa María.",
+          "rhythm": "Aproveite ruas históricas, áreas verdes fortificadas e movimento do Caminho.",
+          "idealFor": "Uma base urbana navarra que reúne patrimônio, parques e gastronomia.",
+          "consider": "Avalie a rua escolhida durante San Fermín e em semanas comuns."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/pamplona/",
+          "title": "Tourism in Pamplona-Iruña. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Gasteiz / Vitoria",
+      "geonamesId": 3104499,
+      "airportCode": "VIT",
+      "rank": 33,
+      "content": {
+        "en": {
+          "intro": "Gasteiz / Vitoria brings together medieval quarter and Green Belt.",
+          "rhythm": "Link old-town squares with extensive green spaces and cycling routes.",
+          "idealFor": "An inland Basque base for park access and bicycle-oriented routines.",
+          "consider": "Compare actual flight options at Vitoria with the broader Bilbao gateway."
+        },
+        "es": {
+          "intro": "Gasteiz / Vitoria reúne casco medieval y Anillo Verde.",
+          "rhythm": "Conecta plazas históricas con amplias zonas verdes y rutas ciclistas.",
+          "idealFor": "Una base vasca interior para parques y rutinas en bicicleta.",
+          "consider": "Compara los vuelos de Vitoria con la oferta más amplia de Bilbao."
+        },
+        "pt": {
+          "intro": "Gasteiz / Vitoria combina centro medieval e Anel Verde.",
+          "rhythm": "Conecte praças históricas a amplas áreas verdes e rotas de bicicleta.",
+          "idealFor": "Uma base basca no interior para parques e rotinas de bicicleta.",
+          "consider": "Compare os voos de Vitoria com a oferta mais ampla de Bilbao."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/vitoria-gasteiz/",
+          "title": "Tourism in Vitoria-Gasteiz. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Haro",
+      "geonamesId": 3120874,
+      "airportCode": "BIO",
+      "rank": 34,
+      "content": {
+        "en": {
+          "intro": "Haro brings together Santo Tomás and Barrio de la Estación.",
+          "rhythm": "Centre outings on historic wine cellars, a compact old town and Rioja landscapes.",
+          "idealFor": "A smaller town for Rioja wine heritage and countryside excursions.",
+          "consider": "A wine-country base means planning regional trips beyond the town centre."
+        },
+        "es": {
+          "intro": "Haro reúne Santo Tomás y Barrio de la Estación.",
+          "rhythm": "Organiza salidas entre bodegas históricas, casco antiguo compacto y paisajes de Rioja.",
+          "idealFor": "Una villa de menor escala para patrimonio vinícola y escapadas rurales.",
+          "consider": "Una base vinícola exige planificar los recorridos regionales fuera del centro."
+        },
+        "pt": {
+          "intro": "Haro combina Santo Tomás e Barrio de la Estación.",
+          "rhythm": "Organize passeios entre vinícolas históricas, centro antigo compacto e paisagens de Rioja.",
+          "idealFor": "Uma cidade menor para patrimônio vinícola e passeios pelo campo.",
+          "consider": "Uma base vinícola exige planejar trajetos regionais fora do centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/haro/",
+          "title": "Tourism in Haro. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Tudela",
+      "geonamesId": 3107418,
+      "airportCode": "ZAZ",
+      "rank": 35,
+      "content": {
+        "en": {
+          "intro": "Tudela brings together Catedral de Tudela and Plaza de los Fueros.",
+          "rhythm": "Mix cathedral lanes with Ebro-valley produce and lively central squares.",
+          "idealFor": "A compact southern Navarre base for market-garden food and heritage.",
+          "consider": "Choose between old-quarter walking and access to outlying daily services."
+        },
+        "es": {
+          "intro": "Tudela reúne Catedral de Tudela y Plaza de los Fueros.",
+          "rhythm": "Combina calles de la catedral, productos de la ribera del Ebro y plazas animadas.",
+          "idealFor": "Una base compacta del sur de Navarra para cocina de huerta y patrimonio.",
+          "consider": "Elige entre paseos por el casco antiguo y acceso a servicios periféricos."
+        },
+        "pt": {
+          "intro": "Tudela combina Catedral de Tudela e Plaza de los Fueros.",
+          "rhythm": "Combine ruas da catedral, produtos do vale do Ebro e praças animadas.",
+          "idealFor": "Uma base compacta no sul de Navarra para culinária de horta e patrimônio.",
+          "consider": "Escolha entre caminhar no centro antigo e acessar serviços externos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/tudela/",
+          "title": "Tourism in Tudela. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Huesca",
+      "geonamesId": 3120514,
+      "airportCode": "ZAZ",
+      "rank": 36,
+      "content": {
+        "en": {
+          "intro": "Huesca brings together Catedral de Huesca and San Pedro el Viejo.",
+          "rhythm": "Combine a small provincial-city rhythm with Romanesque heritage and regional excursions.",
+          "idealFor": "An urban foothold for exploring Aragón without living in a mountain resort.",
+          "consider": "Pyrenean outings require onward travel; they are not in the city centre."
+        },
+        "es": {
+          "intro": "Huesca reúne Catedral de Huesca y San Pedro el Viejo.",
+          "rhythm": "Combina ritmo de capital pequeña, patrimonio románico y excursiones regionales.",
+          "idealFor": "Una base urbana para explorar Aragón sin residir en una estación de montaña.",
+          "consider": "Las salidas al Pirineo requieren desplazamiento: no están en el centro urbano."
+        },
+        "pt": {
+          "intro": "Huesca combina Catedral de Huesca e San Pedro el Viejo.",
+          "rhythm": "Combine ritmo de capital pequena, patrimônio românico e passeios regionais.",
+          "idealFor": "Uma base urbana para explorar Aragão sem morar em uma estação de montanha.",
+          "consider": "Passeios aos Pireneus exigem deslocamento; não ficam no centro urbano."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/huesca/",
+          "title": "Tourism in Huesca. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Teruel",
+      "geonamesId": 3108126,
+      "airportCode": "VLC",
+      "rank": 37,
+      "content": {
+        "en": {
+          "intro": "Teruel brings together Mudéjar towers and Plaza del Torico.",
+          "rhythm": "Walk between tiled medieval towers, the central square and the Paseo del Óvalo.",
+          "idealFor": "A smaller elevated city for Mudéjar architecture and inland exploration.",
+          "consider": "Allow a substantial ground transfer from the chosen Valencia airport gateway."
+        },
+        "es": {
+          "intro": "Teruel reúne torres mudéjares y Plaza del Torico.",
+          "rhythm": "Pasea entre torres medievales, la plaza central y el Paseo del Óvalo.",
+          "idealFor": "Una ciudad elevada de menor escala para arquitectura mudéjar y excursiones interiores.",
+          "consider": "Cuenta con un traslado terrestre importante desde el aeropuerto de Valencia."
+        },
+        "pt": {
+          "intro": "Teruel combina torres mudéjares e Plaza del Torico.",
+          "rhythm": "Passeie entre torres medievais, a praça central e o Paseo del Óvalo.",
+          "idealFor": "Uma cidade elevada de menor escala para arquitetura mudéjar e passeios interiores.",
+          "consider": "Considere um deslocamento terrestre significativo desde o aeroporto de Valência."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/teruel/",
+          "title": "Tourism in Teruel. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Cuenca",
+      "geonamesId": 3124132,
+      "airportCode": "MAD",
+      "rank": 38,
+      "content": {
+        "en": {
+          "intro": "Cuenca brings together Casas Colgadas and Huécar gorge.",
+          "rhythm": "Pair cliff-edge views with old-town walks and Spanish abstract art.",
+          "idealFor": "An inland cultural setting where landscape and architecture are inseparable.",
+          "consider": "The upper old town is steep; test daily access and station connections."
+        },
+        "es": {
+          "intro": "Cuenca reúne Casas Colgadas y hoz del Huécar.",
+          "rhythm": "Combina vistas sobre la hoz, paseos históricos y arte abstracto español.",
+          "idealFor": "Un enclave cultural interior donde paisaje y arquitectura son inseparables.",
+          "consider": "El casco antiguo alto tiene pendientes: prueba accesos y conexiones con la estación."
+        },
+        "pt": {
+          "intro": "Cuenca combina Casas Colgadas e desfiladeiro do Huécar.",
+          "rhythm": "Combine vistas do desfiladeiro, passeios históricos e arte abstrata espanhola.",
+          "idealFor": "Um lugar cultural no interior onde paisagem e arquitetura são inseparáveis.",
+          "consider": "O centro antigo elevado tem ladeiras; teste acessos e conexões com a estação."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/cuenca/",
+          "title": "Sightseeing in Cuenca. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Toledo",
+      "geonamesId": 2510409,
+      "airportCode": "MAD",
+      "rank": 39,
+      "content": {
+        "en": {
+          "intro": "Toledo brings together Catedral de Toledo and río Tajo.",
+          "rhythm": "Explore layered Jewish, Muslim and Christian heritage above the Tagus.",
+          "idealFor": "A monumental home base for heritage walks and El Greco's artistic legacy.",
+          "consider": "Compare steep old-town lanes with flatter districts beyond the walls."
+        },
+        "es": {
+          "intro": "Toledo reúne Catedral de Toledo y río Tajo.",
+          "rhythm": "Explora el patrimonio judío, musulmán y cristiano sobre el Tajo.",
+          "idealFor": "Una base monumental para paseos históricos y el legado artístico de El Greco.",
+          "consider": "Compara las cuestas del casco antiguo con barrios más llanos fuera de las murallas."
+        },
+        "pt": {
+          "intro": "Toledo combina Catedral de Toledo e río Tajo.",
+          "rhythm": "Explore o patrimônio judaico, muçulmano e cristão acima do Tejo.",
+          "idealFor": "Uma base monumental para passeios históricos e o legado artístico de El Greco.",
+          "consider": "Compare as ladeiras do centro antigo com bairros mais planos fora das muralhas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/toledo/",
+          "title": "Sightseeing in Toledo. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Alcalá de Henares",
+      "geonamesId": 3130616,
+      "airportCode": "MAD",
+      "rank": 40,
+      "content": {
+        "en": {
+          "intro": "Alcalá de Henares brings together Universidad de Alcalá and Calle Mayor.",
+          "rhythm": "Combine Cervantes heritage with arcaded shopping streets and university culture.",
+          "idealFor": "A heritage-and-university town within the Madrid region.",
+          "consider": "Compare the historic centre with your actual Madrid-region commute."
+        },
+        "es": {
+          "intro": "Alcalá de Henares reúne Universidad de Alcalá y Calle Mayor.",
+          "rhythm": "Combina patrimonio cervantino, calles comerciales porticadas y cultura universitaria.",
+          "idealFor": "Una ciudad patrimonial y universitaria dentro de la región madrileña.",
+          "consider": "Compara el casco histórico con tu desplazamiento real por la región de Madrid."
+        },
+        "pt": {
+          "intro": "Alcalá de Henares combina Universidad de Alcalá e Calle Mayor.",
+          "rhythm": "Combine patrimônio de Cervantes, ruas comerciais com arcadas e cultura universitária.",
+          "idealFor": "Uma cidade patrimonial e universitária na região de Madri.",
+          "consider": "Compare o centro histórico com seu trajeto real pela região de Madri."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/alcala-de-henares/",
+          "title": "Tourism in Alcalá de Henares. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Aranjuez",
+      "geonamesId": 3129857,
+      "airportCode": "MAD",
+      "rank": 41,
+      "content": {
+        "en": {
+          "intro": "Aranjuez brings together Palacio Real de Aranjuez and río Tajo.",
+          "rhythm": "Build leisure around royal gardens, riverside scenery and a planned historic town.",
+          "idealFor": "A garden-focused town for royal heritage south of Madrid.",
+          "consider": "Test rail or road journeys to Madrid against your daily schedule."
+        },
+        "es": {
+          "intro": "Aranjuez reúne Palacio Real de Aranjuez y río Tajo.",
+          "rhythm": "Organiza el ocio entre jardines reales, paisaje fluvial y trazado histórico.",
+          "idealFor": "Una ciudad de jardines y patrimonio real al sur de Madrid.",
+          "consider": "Prueba el viaje en tren o carretera a Madrid según tu horario diario."
+        },
+        "pt": {
+          "intro": "Aranjuez combina Palacio Real de Aranjuez e río Tajo.",
+          "rhythm": "Organize o lazer entre jardins reais, paisagem fluvial e traçado histórico.",
+          "idealFor": "Uma cidade de jardins e patrimônio real ao sul de Madri.",
+          "consider": "Teste o trajeto de trem ou carro a Madri conforme sua rotina diária."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/aranjuez/",
+          "title": "Tourism in Aranjuez. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "San Lorenzo de El Escorial",
+      "geonamesId": 3110458,
+      "airportCode": "MAD",
+      "rank": 42,
+      "content": {
+        "en": {
+          "intro": "San Lorenzo de El Escorial brings together Real Monasterio de El Escorial and Sierra de Guadarrama.",
+          "rhythm": "Combine royal-monastery culture with walks near the Guadarrama foothills.",
+          "idealFor": "A mountain-edge heritage town rather than a central-Madrid lifestyle.",
+          "consider": "Confirm the home-to-station route; town and rail access are not identical."
+        },
+        "es": {
+          "intro": "San Lorenzo de El Escorial reúne Real Monasterio de El Escorial y Sierra de Guadarrama.",
+          "rhythm": "Combina cultura del monasterio real y paseos al pie del Guadarrama.",
+          "idealFor": "Una ciudad patrimonial al pie de la sierra, distinta del Madrid central.",
+          "consider": "Comprueba el recorrido hasta la estación: casco urbano y acceso ferroviario no coinciden."
+        },
+        "pt": {
+          "intro": "San Lorenzo de El Escorial combina Real Monasterio de El Escorial e Sierra de Guadarrama.",
+          "rhythm": "Combine a cultura do mosteiro real e passeios ao pé do Guadarrama.",
+          "idealFor": "Uma cidade patrimonial ao pé da serra, diferente da vida no centro de Madri.",
+          "consider": "Confira o percurso até a estação; centro urbano e acesso ferroviário não coincidem."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/san-lorenzo-el-escorial/",
+          "title": "Tourism in San Lorenzo de El Escorial. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Cáceres",
+      "geonamesId": 2520611,
+      "airportCode": "BJZ",
+      "rank": 43,
+      "content": {
+        "en": {
+          "intro": "Cáceres brings together Plaza de Santa María and Museo Helga de Alvear.",
+          "rhythm": "Contrast medieval stone streets with contemporary art and Extremaduran cooking.",
+          "idealFor": "A heritage-led inland city with a contemporary-art counterpoint.",
+          "consider": "Compare old-quarter access with newer residential streets beyond the monumental core."
+        },
+        "es": {
+          "intro": "Cáceres reúne Plaza de Santa María y Museo Helga de Alvear.",
+          "rhythm": "Contrasta calles medievales de piedra con arte contemporáneo y cocina extremeña.",
+          "idealFor": "Una ciudad interior patrimonial con contrapunto de arte contemporáneo.",
+          "consider": "Compara el acceso al casco antiguo con calles residenciales fuera del núcleo monumental."
+        },
+        "pt": {
+          "intro": "Cáceres combina Plaza de Santa María e Museo Helga de Alvear.",
+          "rhythm": "Contraste ruas medievais de pedra com arte contemporânea e culinária da Extremadura.",
+          "idealFor": "Uma cidade patrimonial do interior com contraponto de arte contemporânea.",
+          "consider": "Compare o acesso ao centro antigo com ruas residenciais fora do núcleo monumental."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/caceres/",
+          "title": "Tourism in Cáceres. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Mérida",
+      "geonamesId": 2513917,
+      "airportCode": "BJZ",
+      "rank": 44,
+      "content": {
+        "en": {
+          "intro": "Mérida brings together Teatro Romano and Templo de Diana.",
+          "rhythm": "Keep Roman archaeology, summer theatre and Guadiana walks close to daily life.",
+          "idealFor": "A compact cultural city for Roman history and live performance.",
+          "consider": "Visit residential streets during theatre season and ordinary working weeks."
+        },
+        "es": {
+          "intro": "Mérida reúne Teatro Romano y Templo de Diana.",
+          "rhythm": "Mantén cerca arqueología romana, teatro de verano y paseos por el Guadiana.",
+          "idealFor": "Una ciudad cultural compacta para historia romana y artes escénicas.",
+          "consider": "Visita las calles residenciales en temporada de teatro y en semanas laborales normales."
+        },
+        "pt": {
+          "intro": "Mérida combina Teatro Romano e Templo de Diana.",
+          "rhythm": "Mantenha por perto arqueologia romana, teatro de verão e passeios pelo Guadiana.",
+          "idealFor": "Uma cidade cultural compacta para história romana e artes cênicas.",
+          "consider": "Visite ruas residenciais na temporada teatral e em semanas normais de trabalho."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/merida/",
+          "title": "Tourism in Mérida. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Badajoz",
+      "geonamesId": 2521420,
+      "airportCode": "BJZ",
+      "rank": 45,
+      "content": {
+        "en": {
+          "intro": "Badajoz brings together Alcazaba de Badajoz and río Guadiana.",
+          "rhythm": "Mix fortress heritage, riverside space and a border-city outlook towards Portugal.",
+          "idealFor": "An Extremaduran city for cross-border outings and historic urban life.",
+          "consider": "Compare the historic quarter with daily destinations across the wider city."
+        },
+        "es": {
+          "intro": "Badajoz reúne Alcazaba de Badajoz y río Guadiana.",
+          "rhythm": "Combina patrimonio de la alcazaba, río y ambiente fronterizo hacia Portugal.",
+          "idealFor": "Una ciudad extremeña para salidas transfronterizas y vida urbana histórica.",
+          "consider": "Compara el casco histórico con tus destinos diarios por la ciudad más amplia."
+        },
+        "pt": {
+          "intro": "Badajoz combina Alcazaba de Badajoz e río Guadiana.",
+          "rhythm": "Combine patrimônio da alcáçova, rio e ambiente fronteiriço voltado a Portugal.",
+          "idealFor": "Uma cidade da Extremadura para passeios transfronteiriços e vida urbana histórica.",
+          "consider": "Compare o centro histórico com seus destinos diários pela cidade mais ampla."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/badajoz/",
+          "title": "Tourism in Badajoz. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Córdoba",
+      "geonamesId": 2519240,
+      "airportCode": "SVQ",
+      "rank": 46,
+      "content": {
+        "en": {
+          "intro": "Córdoba brings together Mezquita-Catedral and Judería.",
+          "rhythm": "Combine courtyard traditions, old-quarter lanes and evening walks by the Guadalquivir.",
+          "idealFor": "An architecture-and-courtyard lifestyle rooted in Andalusian history.",
+          "consider": "Test summer comfort and shade on your actual daily walking routes."
+        },
+        "es": {
+          "intro": "Córdoba reúne Mezquita-Catedral y Judería.",
+          "rhythm": "Combina tradición de patios, calles de la Judería y paseos junto al Guadalquivir.",
+          "idealFor": "Un estilo de vida de arquitectura y patios ligado a la historia andaluza.",
+          "consider": "Prueba el confort y la sombra del verano en tus recorridos diarios reales."
+        },
+        "pt": {
+          "intro": "Córdoba combina Mezquita-Catedral e Judería.",
+          "rhythm": "Combine tradição de pátios, ruas da Judería e passeios pelo Guadalquivir.",
+          "idealFor": "Um estilo de vida de arquitetura e pátios ligado à história andaluza.",
+          "consider": "Teste o conforto e a sombra no verão em seus trajetos diários reais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/top/cordoba-world-heritage-visits-destination/",
+          "title": "What to see in Cordoba: 4 World Heritage tours"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Granada",
+      "geonamesId": 2517117,
+      "airportCode": "GRX",
+      "rank": 47,
+      "content": {
+        "en": {
+          "intro": "Granada brings together Alhambra and Albaicín.",
+          "rhythm": "Pair Nasrid heritage and neighbourhood tapas with views towards Sierra Nevada.",
+          "idealFor": "A cultural inland base with distinctive hilltop neighbourhoods.",
+          "consider": "Albaicín's slopes and narrow lanes deserve a practical access check."
+        },
+        "es": {
+          "intro": "Granada reúne Alhambra y Albaicín.",
+          "rhythm": "Combina patrimonio nazarí, tapas de barrio y vistas hacia Sierra Nevada.",
+          "idealFor": "Una base cultural interior con barrios en colinas de fuerte personalidad.",
+          "consider": "Las cuestas y calles estrechas del Albaicín merecen comprobar el acceso."
+        },
+        "pt": {
+          "intro": "Granada combina Alhambra e Albaicín.",
+          "rhythm": "Combine patrimônio nasrida, tapas de bairro e vistas para a Sierra Nevada.",
+          "idealFor": "Uma base cultural do interior com bairros em colinas de personalidade marcante.",
+          "consider": "As ladeiras e ruas estreitas do Albaicín merecem uma verificação de acesso."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/granada/",
+          "title": "Sightseeing in Granada. What to visit"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Cádiz",
+      "geonamesId": 2520600,
+      "airportCode": "XRY",
+      "rank": 48,
+      "content": {
+        "en": {
+          "intro": "Cádiz brings together La Caleta and Catedral de Cádiz.",
+          "rhythm": "Enjoy Atlantic seawalls, market food and a compact peninsula old town.",
+          "idealFor": "An ocean-facing urban routine with strong maritime character.",
+          "consider": "Check parking and vehicle access within the tightly packed peninsula centre."
+        },
+        "es": {
+          "intro": "Cádiz reúne La Caleta y Catedral de Cádiz.",
+          "rhythm": "Disfruta de murallas atlánticas, mercado y casco antiguo peninsular compacto.",
+          "idealFor": "Una rutina urbana frente al océano con fuerte carácter marinero.",
+          "consider": "Comprueba aparcamiento y acceso de vehículos en el compacto centro peninsular."
+        },
+        "pt": {
+          "intro": "Cádiz combina La Caleta e Catedral de Cádiz.",
+          "rhythm": "Aproveite muralhas atlânticas, mercado e centro antigo compacto em uma península.",
+          "idealFor": "Uma rotina urbana de frente para o oceano com forte caráter marítimo.",
+          "consider": "Confira estacionamento e acesso de veículos no compacto centro da península."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/cadiz/",
+          "title": "Tourism in Cádiz. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Jerez de la Frontera",
+      "geonamesId": 2516326,
+      "airportCode": "XRY",
+      "rank": 49,
+      "content": {
+        "en": {
+          "intro": "Jerez de la Frontera brings together sherry bodegas and Alcázar de Jerez.",
+          "rhythm": "Combine wine-cellar heritage with flamenco quarters and equestrian traditions.",
+          "idealFor": "A food-and-performance base inland from the Cádiz coast.",
+          "consider": "Beach outings require a separate trip from the inland city."
+        },
+        "es": {
+          "intro": "Jerez de la Frontera reúne bodegas de jerez y Alcázar de Jerez.",
+          "rhythm": "Combina patrimonio bodeguero con barrios flamencos y tradición ecuestre.",
+          "idealFor": "Una base gastronómica y escénica al interior de la costa gaditana.",
+          "consider": "Las salidas a la playa requieren un trayecto desde esta ciudad interior."
+        },
+        "pt": {
+          "intro": "Jerez de la Frontera combina bodegas de xerez e Alcázar de Jerez.",
+          "rhythm": "Combine patrimônio das bodegas com bairros de flamenco e tradição equestre.",
+          "idealFor": "Uma base gastronômica e artística no interior da costa de Cádiz.",
+          "consider": "Os passeios à praia exigem um trajeto a partir desta cidade interior."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/jerez-la-frontera/",
+          "title": "Tourism in Jerez de la Frontera. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Huelva",
+      "geonamesId": 2516548,
+      "airportCode": "SVQ",
+      "rank": 50,
+      "content": {
+        "en": {
+          "intro": "Huelva brings together río Odiel and Muelle del Tinto.",
+          "rhythm": "Combine estuary-side walking with maritime history and regional seafood.",
+          "idealFor": "An estuary-city base for exploring western Andalusia and its coast.",
+          "consider": "Central Huelva is not a beach resort; compare onward access to coastal towns."
+        },
+        "es": {
+          "intro": "Huelva reúne río Odiel y Muelle del Tinto.",
+          "rhythm": "Combina paseos junto al estuario, historia marítima y marisco regional.",
+          "idealFor": "Una base urbana de estuario para explorar Andalucía occidental y su costa.",
+          "consider": "El centro de Huelva no es una zona de playa: compara el acceso a pueblos costeros."
+        },
+        "pt": {
+          "intro": "Huelva combina río Odiel e Muelle del Tinto.",
+          "rhythm": "Combine caminhadas pelo estuário, história marítima e frutos do mar regionais.",
+          "idealFor": "Uma base urbana no estuário para explorar a Andaluzia ocidental e sua costa.",
+          "consider": "O centro de Huelva não é uma zona de praia; compare o acesso às cidades costeiras."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/huelva/",
+          "title": "Tourism in Huelva. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Almería",
+      "geonamesId": 2521886,
+      "airportCode": "LEI",
+      "rank": 51,
+      "content": {
+        "en": {
+          "intro": "Almería brings together Alcazaba de Almería and Catedral de Almería.",
+          "rhythm": "Combine a fortified old town, port-side streets and a semi-desert coastal setting.",
+          "idealFor": "A coastal city for fortress heritage and excursions into distinctive dry landscapes.",
+          "consider": "Cabo de Gata outings require travel beyond the city, not a central-city walk."
+        },
+        "es": {
+          "intro": "Almería reúne Alcazaba de Almería y Catedral de Almería.",
+          "rhythm": "Combina casco fortificado, calles portuarias y entorno costero semidesértico.",
+          "idealFor": "Una ciudad costera para patrimonio fortificado y paisajes áridos singulares.",
+          "consider": "Las visitas a Cabo de Gata exigen salir de la ciudad, no un paseo céntrico."
+        },
+        "pt": {
+          "intro": "Almería combina Alcazaba de Almería e Catedral de Almería.",
+          "rhythm": "Combine centro fortificado, ruas portuárias e um ambiente costeiro semidesértico.",
+          "idealFor": "Uma cidade litorânea para patrimônio fortificado e paisagens áridas singulares.",
+          "consider": "As visitas a Cabo de Gata exigem sair da cidade, não uma caminhada pelo centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/almeria/",
+          "title": "Tourism in Almería. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Jaén",
+      "geonamesId": 2516395,
+      "airportCode": "GRX",
+      "rank": 52,
+      "content": {
+        "en": {
+          "intro": "Jaén brings together Catedral de Jaén and Castillo de Santa Catalina.",
+          "rhythm": "Explore Renaissance streets and castle views against extensive olive-growing countryside.",
+          "idealFor": "An inland Andalusian capital for olive-oil culture and hilltop heritage.",
+          "consider": "Compare hill gradients and summer routes before choosing a neighbourhood."
+        },
+        "es": {
+          "intro": "Jaén reúne Catedral de Jaén y Castillo de Santa Catalina.",
+          "rhythm": "Explora calles renacentistas y vistas del castillo entre paisajes de olivares.",
+          "idealFor": "Una capital andaluza interior para cultura del aceite y patrimonio en altura.",
+          "consider": "Compara pendientes y recorridos de verano antes de elegir barrio."
+        },
+        "pt": {
+          "intro": "Jaén combina Catedral de Jaén e Castillo de Santa Catalina.",
+          "rhythm": "Explore ruas renascentistas e vistas do castelo entre paisagens de olivais.",
+          "idealFor": "Uma capital andaluza do interior para cultura do azeite e patrimônio no alto.",
+          "consider": "Compare ladeiras e trajetos de verão antes de escolher um bairro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/jaen/",
+          "title": "Tourism in Jaén. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Úbeda",
+      "geonamesId": 2510116,
+      "airportCode": "GRX",
+      "rank": 53,
+      "content": {
+        "en": {
+          "intro": "Úbeda brings together Plaza Vázquez de Molina and Hospital de Santiago.",
+          "rhythm": "Combine Renaissance palaces, artisan traditions and surrounding olive groves.",
+          "idealFor": "A smaller heritage base for Renaissance architecture and Jaén-region exploration.",
+          "consider": "Plan airport transfers separately from the compact historic-centre routine."
+        },
+        "es": {
+          "intro": "Úbeda reúne Plaza Vázquez de Molina y Hospital de Santiago.",
+          "rhythm": "Combina palacios renacentistas, tradición artesanal y olivares alrededor.",
+          "idealFor": "Una base patrimonial de menor escala para arquitectura renacentista y la provincia de Jaén.",
+          "consider": "Planifica el traslado al aeropuerto aparte de la rutina del centro histórico."
+        },
+        "pt": {
+          "intro": "Úbeda combina Plaza Vázquez de Molina e Hospital de Santiago.",
+          "rhythm": "Combine palácios renascentistas, tradição artesanal e olivais ao redor.",
+          "idealFor": "Uma base patrimonial menor para arquitetura renascentista e a região de Jaén.",
+          "consider": "Planeje o traslado ao aeroporto separadamente da rotina no centro histórico."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/ubeda/",
+          "title": "Sightseeing in Úbeda. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Baeza",
+      "geonamesId": 2521413,
+      "airportCode": "GRX",
+      "rank": 54,
+      "content": {
+        "en": {
+          "intro": "Baeza brings together Plaza del Pópulo and Renaissance cathedral.",
+          "rhythm": "Enjoy stone-paved heritage streets and olive-oil traditions in a smaller-town rhythm.",
+          "idealFor": "A quiet architectural setting for exploring the olive-growing heart of Jaén.",
+          "consider": "Compare local daily services with regional trips to Úbeda or Jaén."
+        },
+        "es": {
+          "intro": "Baeza reúne Plaza del Pópulo y catedral renacentista.",
+          "rhythm": "Disfruta de calles de piedra y tradición aceitera con ritmo de pequeña ciudad.",
+          "idealFor": "Un entorno arquitectónico tranquilo para explorar el corazón olivarero de Jaén.",
+          "consider": "Compara los servicios cotidianos con los viajes regionales a Úbeda o Jaén."
+        },
+        "pt": {
+          "intro": "Baeza combina Plaza del Pópulo e catedral renascentista.",
+          "rhythm": "Aproveite ruas de pedra e tradição do azeite com ritmo de cidade pequena.",
+          "idealFor": "Um ambiente arquitetônico tranquilo para explorar o coração dos olivais de Jaén.",
+          "consider": "Compare os serviços cotidianos com viagens regionais a Úbeda ou Jaén."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/baeza/",
+          "title": "Tourism in Baeza. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Ronda",
+      "geonamesId": 2511730,
+      "airportCode": "AGP",
+      "rank": 55,
+      "content": {
+        "en": {
+          "intro": "Ronda brings together Puente Nuevo and Tajo de Ronda.",
+          "rhythm": "Organise days around gorge viewpoints, historic streets and Serranía landscapes.",
+          "idealFor": "An elevated inland town for dramatic scenery and heritage-rich walking.",
+          "consider": "Mountain-road journeys to the coast take planning despite the short map distance."
+        },
+        "es": {
+          "intro": "Ronda reúne Puente Nuevo y Tajo de Ronda.",
+          "rhythm": "Organiza el día entre miradores del Tajo, calles históricas y paisajes serranos.",
+          "idealFor": "Una ciudad interior elevada para paisajes espectaculares y paseos patrimoniales.",
+          "consider": "Las carreteras serranas a la costa requieren planificación pese a la distancia en el mapa."
+        },
+        "pt": {
+          "intro": "Ronda combina Puente Nuevo e Tajo de Ronda.",
+          "rhythm": "Organize o dia entre mirantes do Tajo, ruas históricas e paisagens serranas.",
+          "idealFor": "Uma cidade interior elevada para paisagens marcantes e passeios patrimoniais.",
+          "consider": "As estradas serranas até a costa exigem planejamento, apesar da distância no mapa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/ronda/",
+          "title": "Tourism in Ronda. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Antequera",
+      "geonamesId": 2521710,
+      "airportCode": "AGP",
+      "rank": 56,
+      "content": {
+        "en": {
+          "intro": "Antequera brings together Menga and Viera dolmens and El Torcal.",
+          "rhythm": "Combine monumental streets with prehistoric heritage and limestone-landscape excursions.",
+          "idealFor": "An inland Andalusian base for archaeology and unusual natural landscapes.",
+          "consider": "El Torcal lies outside town; plan access rather than assuming door-to-trail walking."
+        },
+        "es": {
+          "intro": "Antequera reúne dólmenes de Menga y Viera y El Torcal.",
+          "rhythm": "Combina calles monumentales, patrimonio prehistórico y excursiones entre formaciones calizas.",
+          "idealFor": "Una base andaluza interior para arqueología y paisajes naturales singulares.",
+          "consider": "El Torcal está fuera del casco urbano: planifica el acceso a las rutas."
+        },
+        "pt": {
+          "intro": "Antequera combina dólmens de Menga e Viera e El Torcal.",
+          "rhythm": "Combine ruas monumentais, patrimônio pré-histórico e passeios entre formações calcárias.",
+          "idealFor": "Uma base andaluza do interior para arqueologia e paisagens naturais singulares.",
+          "consider": "El Torcal fica fora do centro; planeje o acesso às trilhas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/antequera/",
+          "title": "Tourism in Antequera. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Marbella",
+      "geonamesId": 2514169,
+      "airportCode": "AGP",
+      "rank": 57,
+      "content": {
+        "en": {
+          "intro": "Marbella brings together Plaza de los Naranjos and Puerto Banús.",
+          "rhythm": "Balance whitewashed old-town lanes with marinas, beaches and outdoor dining.",
+          "idealFor": "A Costa del Sol home for marina leisure and an active coastal social scene.",
+          "consider": "Marbella's centre and Puerto Banús are separate areas; test your likely journeys."
+        },
+        "es": {
+          "intro": "Marbella reúne Plaza de los Naranjos y Puerto Banús.",
+          "rhythm": "Equilibra calles blancas del casco antiguo, puertos deportivos, playas y terrazas.",
+          "idealFor": "Una base en la Costa del Sol para ocio náutico y vida social costera.",
+          "consider": "El centro de Marbella y Puerto Banús son zonas distintas: prueba tus recorridos."
+        },
+        "pt": {
+          "intro": "Marbella combina Plaza de los Naranjos e Puerto Banús.",
+          "rhythm": "Equilibre ruas brancas do centro antigo, marinas, praias e restaurantes ao ar livre.",
+          "idealFor": "Uma base na Costa del Sol para lazer náutico e vida social litorânea.",
+          "consider": "O centro de Marbella e Puerto Banús são áreas distintas; teste seus percursos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/marbella/",
+          "title": "Tourism in Marbella. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Estepona",
+      "geonamesId": 2517816,
+      "airportCode": "AGP",
+      "rank": 58,
+      "content": {
+        "en": {
+          "intro": "Estepona brings together La Rada and whitewashed old quarter.",
+          "rhythm": "Link flower-filled lanes with a central beach and marina-side evenings.",
+          "idealFor": "A coastal base blending traditional-town character with beach routines.",
+          "consider": "Compare walkable central streets with developments spread farther along the coast."
+        },
+        "es": {
+          "intro": "Estepona reúne La Rada y casco antiguo de casas blancas.",
+          "rhythm": "Conecta calles floridas, playa céntrica y tardes junto al puerto deportivo.",
+          "idealFor": "Una base costera que combina carácter tradicional y rutina de playa.",
+          "consider": "Compara calles céntricas caminables con urbanizaciones dispersas por la costa."
+        },
+        "pt": {
+          "intro": "Estepona combina La Rada e centro antigo de casas brancas.",
+          "rhythm": "Conecte ruas floridas, praia central e tardes junto à marina.",
+          "idealFor": "Uma base costeira que combina caráter tradicional e rotina de praia.",
+          "consider": "Compare ruas centrais para caminhar com condomínios espalhados pela costa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/estepona/",
+          "title": "Tourism in Estepona. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Nerja",
+      "geonamesId": 2513240,
+      "airportCode": "AGP",
+      "rank": 59,
+      "content": {
+        "en": {
+          "intro": "Nerja brings together Balcón de Europa and Cueva de Nerja.",
+          "rhythm": "Enjoy cliff-top sea views, small coves and trips to the celebrated cave.",
+          "idealFor": "A smaller Axarquía coastal town for coves and scenic walking.",
+          "consider": "Check slopes and beach steps on the routes you would use each day."
+        },
+        "es": {
+          "intro": "Nerja reúne Balcón de Europa y Cueva de Nerja.",
+          "rhythm": "Disfruta de miradores al mar, pequeñas calas y visitas a la célebre cueva.",
+          "idealFor": "Una localidad costera de la Axarquía para calas y paseos paisajísticos.",
+          "consider": "Comprueba pendientes y escaleras a las playas en tus recorridos diarios."
+        },
+        "pt": {
+          "intro": "Nerja combina Balcón de Europa e Cueva de Nerja.",
+          "rhythm": "Aproveite mirantes do mar, pequenas enseadas e visitas à célebre caverna.",
+          "idealFor": "Uma cidade costeira da Axarquía para enseadas e passeios paisagísticos.",
+          "consider": "Confira ladeiras e escadas até as praias nos seus percursos diários."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/nerja/",
+          "title": "Tourism in Nerja. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Fuengirola",
+      "geonamesId": 2517595,
+      "airportCode": "AGP",
+      "rank": 60,
+      "content": {
+        "en": {
+          "intro": "Fuengirola brings together Castillo Sohail and Los Boliches.",
+          "rhythm": "Combine seafront walking, a fishing-quarter identity and broad resort-town services.",
+          "idealFor": "A built-up coastal base for beach access and an established leisure scene.",
+          "consider": "Compare the livelier beachfront with residential streets a little inland."
+        },
+        "es": {
+          "intro": "Fuengirola reúne Castillo Sohail y Los Boliches.",
+          "rhythm": "Combina paseo marítimo, carácter marinero y numerosos servicios de ciudad turística.",
+          "idealFor": "Una base costera urbanizada para playa y una oferta consolidada de ocio.",
+          "consider": "Compara la primera línea animada con calles residenciales algo interiores."
+        },
+        "pt": {
+          "intro": "Fuengirola combina Castillo Sohail e Los Boliches.",
+          "rhythm": "Combine calçadão, identidade de bairro pesqueiro e muitos serviços de cidade turística.",
+          "idealFor": "Uma base costeira urbanizada para praia e uma oferta consolidada de lazer.",
+          "consider": "Compare a orla animada com ruas residenciais um pouco mais para dentro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/fuengirola/",
+          "title": "Tourism in Fuengirola. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Torremolinos",
+      "geonamesId": 2510281,
+      "airportCode": "AGP",
+      "rank": 61,
+      "content": {
+        "en": {
+          "intro": "Torremolinos brings together La Carihuela and Casa de los Navajas.",
+          "rhythm": "Mix fishing-quarter dining, long beaches and an established Costa del Sol leisure scene.",
+          "idealFor": "A lively beach-town base close to the Málaga airport gateway.",
+          "consider": "Assess summer activity and the climb between beachfront and upper streets."
+        },
+        "es": {
+          "intro": "Torremolinos reúne La Carihuela y Casa de los Navajas.",
+          "rhythm": "Combina cocina marinera, playas extensas y ocio consolidado de la Costa del Sol.",
+          "idealFor": "Una base playera animada cerca del aeropuerto de Málaga.",
+          "consider": "Valora el movimiento del verano y la subida desde la playa a las calles altas."
+        },
+        "pt": {
+          "intro": "Torremolinos combina La Carihuela e Casa de los Navajas.",
+          "rhythm": "Combine gastronomia pesqueira, praias extensas e lazer consolidado na Costa del Sol.",
+          "idealFor": "Uma base de praia animada perto do aeroporto de Málaga.",
+          "consider": "Avalie o movimento no verão e a subida da praia às ruas mais altas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/torremolinos/",
+          "title": "Tourism in Torremolinos. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Mijas",
+      "geonamesId": 2513882,
+      "airportCode": "AGP",
+      "rank": 62,
+      "content": {
+        "en": {
+          "intro": "Mijas brings together Mijas Pueblo and La Cala de Mijas.",
+          "rhythm": "Choose between hillside whitewashed streets and a separate coastal settlement.",
+          "idealFor": "A municipality offering distinct village, coastal and urban daily routines.",
+          "consider": "Mijas Pueblo, Las Lagunas and La Cala are not interchangeable locations."
+        },
+        "es": {
+          "intro": "Mijas reúne Mijas Pueblo y La Cala de Mijas.",
+          "rhythm": "Elige entre calles blancas en la ladera y un núcleo costero separado.",
+          "idealFor": "Un municipio con rutinas diferentes de pueblo, costa y zona urbana.",
+          "consider": "Mijas Pueblo, Las Lagunas y La Cala no son ubicaciones intercambiables."
+        },
+        "pt": {
+          "intro": "Mijas combina Mijas Pueblo e La Cala de Mijas.",
+          "rhythm": "Escolha entre ruas brancas na encosta e um núcleo costeiro separado.",
+          "idealFor": "Um município com rotinas distintas de vila, costa e área urbana.",
+          "consider": "Mijas Pueblo, Las Lagunas e La Cala não são localizações equivalentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/mijas/",
+          "title": "Tourism in Mijas. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Motril",
+      "geonamesId": 2513477,
+      "airportCode": "GRX",
+      "rank": 63,
+      "content": {
+        "en": {
+          "intro": "Motril brings together Santuario de la Virgen de la Cabeza and Costa Tropical.",
+          "rhythm": "Combine a hill-set historic town with separate coastal beaches and port activity.",
+          "idealFor": "A working Costa Tropical town for culture and coastal excursions.",
+          "consider": "The town centre and beach districts differ; check the actual home-to-sea journey."
+        },
+        "es": {
+          "intro": "Motril reúne Santuario de la Virgen de la Cabeza y Costa Tropical.",
+          "rhythm": "Combina casco histórico en colina, playas costeras y actividad portuaria.",
+          "idealFor": "Una ciudad activa de la Costa Tropical para cultura y salidas al litoral.",
+          "consider": "Centro y barrios de playa son distintos: comprueba el trayecto real al mar."
+        },
+        "pt": {
+          "intro": "Motril combina Santuario de la Virgen de la Cabeza e Costa Tropical.",
+          "rhythm": "Combine centro histórico em colina, praias costeiras e atividade portuária.",
+          "idealFor": "Uma cidade ativa da Costa Tropical para cultura e passeios ao litoral.",
+          "consider": "O centro e os bairros de praia são distintos; confira o trajeto real até o mar."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/motril/",
+          "title": "Tourism in Motril. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Cartagena",
+      "geonamesId": 2520058,
+      "airportCode": "RMU",
+      "rank": 64,
+      "content": {
+        "en": {
+          "intro": "Cartagena brings together Teatro Romano de Cartagena and natural harbour.",
+          "rhythm": "Link Roman archaeology with naval history, waterfront walks and music events.",
+          "idealFor": "A cultural port-city lifestyle with a strong Roman and maritime identity.",
+          "consider": "Central harbour living is different from living beside a sandy beach."
+        },
+        "es": {
+          "intro": "Cartagena reúne Teatro Romano de Cartagena y puerto natural.",
+          "rhythm": "Conecta arqueología romana, historia naval, paseos marítimos y música.",
+          "idealFor": "Un estilo urbano portuario con marcada identidad romana y marítima.",
+          "consider": "Vivir junto al puerto céntrico no equivale a vivir junto a una playa de arena."
+        },
+        "pt": {
+          "intro": "Cartagena combina Teatro Romano de Cartagena e porto natural.",
+          "rhythm": "Conecte arqueologia romana, história naval, passeios marítimos e música.",
+          "idealFor": "Um estilo urbano portuário com forte identidade romana e marítima.",
+          "consider": "Morar junto ao porto central não equivale a morar junto a uma praia de areia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/cartagena/",
+          "title": "Tourism in Cartagena. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Lorca",
+      "geonamesId": 2514891,
+      "airportCode": "RMU",
+      "rank": 65,
+      "content": {
+        "en": {
+          "intro": "Lorca brings together Fortaleza del Sol and Palacio de Guevara.",
+          "rhythm": "Explore Baroque façades, castle heritage and the city's embroidery traditions.",
+          "idealFor": "An inland Murcia-region base for monumental history and local craft culture.",
+          "consider": "Coastal visits are excursions; assess your everyday inland travel requirements."
+        },
+        "es": {
+          "intro": "Lorca reúne Fortaleza del Sol y Palacio de Guevara.",
+          "rhythm": "Explora fachadas barrocas, patrimonio del castillo y tradición del bordado.",
+          "idealFor": "Una base interior murciana para historia monumental y cultura artesanal.",
+          "consider": "Las visitas costeras son excursiones: valora tus desplazamientos cotidianos interiores."
+        },
+        "pt": {
+          "intro": "Lorca combina Fortaleza del Sol e Palacio de Guevara.",
+          "rhythm": "Explore fachadas barrocas, patrimônio do castelo e tradição do bordado.",
+          "idealFor": "Uma base no interior de Múrcia para história monumental e cultura artesanal.",
+          "consider": "As visitas costeiras são passeios; avalie seus deslocamentos cotidianos pelo interior."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/lorca/",
+          "title": "Tourism in Lorca. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Águilas",
+      "geonamesId": 2522333,
+      "airportCode": "RMU",
+      "rank": 66,
+      "content": {
+        "en": {
+          "intro": "Águilas brings together Castillo de San Juan and Plaza de España.",
+          "rhythm": "Combine fishing-port life, beach outings and squares with mature greenery.",
+          "idealFor": "A Costa Cálida town for a maritime routine at a smaller urban scale.",
+          "consider": "Check routes to services and coves spread along the long municipal coastline."
+        },
+        "es": {
+          "intro": "Águilas reúne Castillo de San Juan y Plaza de España.",
+          "rhythm": "Combina vida de puerto pesquero, playa y plazas arboladas.",
+          "idealFor": "Una localidad de la Costa Cálida para rutina marinera de escala menor.",
+          "consider": "Comprueba los recorridos a servicios y calas repartidos por el extenso litoral municipal."
+        },
+        "pt": {
+          "intro": "Águilas combina Castillo de San Juan e Plaza de España.",
+          "rhythm": "Combine vida de porto pesqueiro, praia e praças arborizadas.",
+          "idealFor": "Uma cidade da Costa Cálida para uma rotina marítima em escala menor.",
+          "consider": "Confira os percursos até serviços e enseadas espalhados pelo extenso litoral municipal."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/aguilas/",
+          "title": "Tourism in Águilas. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Elche",
+      "geonamesId": 2518559,
+      "airportCode": "ALC",
+      "rank": 67,
+      "content": {
+        "en": {
+          "intro": "Elche brings together Palmeral de Elche and Basílica de Santa María.",
+          "rhythm": "Walk among palm groves and historic streets shaped by the Mystery of Elche tradition.",
+          "idealFor": "An inland Costa Blanca city for palm-garden heritage and regional connections.",
+          "consider": "The main city is inland; distinguish it from the municipality's coastal districts."
+        },
+        "es": {
+          "intro": "Elche reúne Palmeral de Elche y Basílica de Santa María.",
+          "rhythm": "Pasea entre palmerales y calles históricas marcadas por el Misteri d'Elx.",
+          "idealFor": "Una ciudad interior de la Costa Blanca para patrimonio de palmeras y conexiones regionales.",
+          "consider": "La ciudad principal es interior: distínguela de sus núcleos costeros."
+        },
+        "pt": {
+          "intro": "Elche combina Palmeral de Elche e Basílica de Santa María.",
+          "rhythm": "Passeie entre palmeirais e ruas históricas marcadas pelo Misteri d'Elx.",
+          "idealFor": "Uma cidade interior da Costa Blanca para patrimônio dos palmeirais e conexões regionais.",
+          "consider": "A cidade principal fica no interior; diferencie-a de seus núcleos costeiros."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/elche-elx/",
+          "title": "Tourism in Elche. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Torrevieja",
+      "geonamesId": 2510253,
+      "airportCode": "ALC",
+      "rank": 68,
+      "content": {
+        "en": {
+          "intro": "Torrevieja brings together Lagunas de La Mata y Torrevieja and salt-producing harbour.",
+          "rhythm": "Combine seafront promenades with the salt-lagoon landscape and marina activity.",
+          "idealFor": "A developed coastal base for sea-oriented leisure and distinctive lagoon scenery.",
+          "consider": "Compare the central seafront with residential estates farther from daily services."
+        },
+        "es": {
+          "intro": "Torrevieja reúne Lagunas de La Mata y Torrevieja y puerto salinero.",
+          "rhythm": "Combina paseos marítimos, paisaje de lagunas salinas y actividad náutica.",
+          "idealFor": "Una base costera desarrollada para ocio marítimo y paisajes de lagunas singulares.",
+          "consider": "Compara el paseo céntrico con urbanizaciones más alejadas de los servicios diarios."
+        },
+        "pt": {
+          "intro": "Torrevieja combina Lagunas de La Mata y Torrevieja e porto salineiro.",
+          "rhythm": "Combine calçadões, paisagem de lagoas salgadas e atividade náutica.",
+          "idealFor": "Uma base costeira desenvolvida para lazer marítimo e paisagens singulares de lagoas.",
+          "consider": "Compare a orla central com condomínios mais distantes dos serviços diários."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/torrevieja/",
+          "title": "Tourism in Torrevieja. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Altea",
+      "geonamesId": 2521804,
+      "airportCode": "ALC",
+      "rank": 69,
+      "content": {
+        "en": {
+          "intro": "Altea brings together Nuestra Señora del Consuelo and Sierra Bernia.",
+          "rhythm": "Move between blue-domed hilltop streets, sea views and the waterfront below.",
+          "idealFor": "A scenic Costa Blanca town for historic streets and a slower coastal routine.",
+          "consider": "The old town has steep cobbles and steps; test the climb from the sea."
+        },
+        "es": {
+          "intro": "Altea reúne Nuestra Señora del Consuelo y Sierra Bernia.",
+          "rhythm": "Alterna calles de cúpulas azules en altura, vistas al mar y paseo costero.",
+          "idealFor": "Una localidad paisajística de la Costa Blanca para calles históricas y ritmo costero pausado.",
+          "consider": "El casco antiguo tiene adoquines y escaleras: prueba la subida desde el mar."
+        },
+        "pt": {
+          "intro": "Altea combina Nuestra Señora del Consuelo e Sierra Bernia.",
+          "rhythm": "Alterne ruas elevadas com cúpulas azuis, vistas do mar e passeio costeiro.",
+          "idealFor": "Uma cidade paisagística da Costa Blanca para ruas históricas e ritmo costeiro tranquilo.",
+          "consider": "O centro antigo tem pedras e escadarias; teste a subida a partir do mar."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/altea/",
+          "title": "Tourism in Altea. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Denia",
+      "geonamesId": 2518878,
+      "airportCode": "ALC",
+      "rank": 70,
+      "content": {
+        "en": {
+          "intro": "Denia brings together Castillo de Dénia and Marqués de Campo.",
+          "rhythm": "Combine a working port, castle heritage and restaurants around the fishermen's quarter.",
+          "idealFor": "A coastal home for boating culture, town-centre life and varied shorelines.",
+          "consider": "The long coast includes distinct sandy and rocky areas; choose the precise setting."
+        },
+        "es": {
+          "intro": "Denia reúne Castillo de Dénia y Marqués de Campo.",
+          "rhythm": "Combina puerto activo, castillo y restaurantes del barrio marinero.",
+          "idealFor": "Una base costera para cultura náutica, vida urbana y litoral variado.",
+          "consider": "El litoral combina sectores arenosos y rocosos: elige el entorno preciso."
+        },
+        "pt": {
+          "intro": "Denia combina Castillo de Dénia e Marqués de Campo.",
+          "rhythm": "Combine porto ativo, castelo e restaurantes do bairro pesqueiro.",
+          "idealFor": "Uma base costeira para cultura náutica, vida urbana e litoral variado.",
+          "consider": "O litoral reúne setores arenosos e rochosos; escolha o ambiente exato."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/denia/",
+          "title": "Tourism in Denia. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Javea",
+      "geonamesId": 2516336,
+      "airportCode": "ALC",
+      "rank": 71,
+      "content": {
+        "en": {
+          "intro": "Javea brings together El Arenal and Montgó.",
+          "rhythm": "Combine a historic centre, port activity and beach days beneath the Montgó landscape.",
+          "idealFor": "A Costa Blanca base for distinct town, harbour and beach experiences.",
+          "consider": "Old town, port and Arenal are separate zones; test journeys between them."
+        },
+        "es": {
+          "intro": "Javea reúne El Arenal y Montgó.",
+          "rhythm": "Combina casco histórico, puerto y días de playa bajo el paisaje del Montgó.",
+          "idealFor": "Una base de la Costa Blanca con ambientes de pueblo, puerto y playa diferenciados.",
+          "consider": "Casco antiguo, puerto y Arenal son zonas separadas: prueba los trayectos."
+        },
+        "pt": {
+          "intro": "Javea combina El Arenal e Montgó.",
+          "rhythm": "Combine centro histórico, porto e dias de praia sob a paisagem do Montgó.",
+          "idealFor": "Uma base da Costa Blanca com ambientes distintos de vila, porto e praia.",
+          "consider": "Centro antigo, porto e Arenal são áreas separadas; teste os trajetos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/javea-xabia/",
+          "title": "Tourism in Javea / Xàbia. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Calp",
+      "geonamesId": 2520496,
+      "airportCode": "ALC",
+      "rank": 72,
+      "content": {
+        "en": {
+          "intro": "Calp brings together Peñón de Ifach and Baños de la Reina.",
+          "rhythm": "Follow seafront paths beneath the rock and explore Roman coastal remains.",
+          "idealFor": "A Mediterranean base for beach routines and a dramatic natural landmark.",
+          "consider": "Compare beach-front intensity with streets towards the older inland quarter."
+        },
+        "es": {
+          "intro": "Calp reúne Peñón de Ifach y Baños de la Reina.",
+          "rhythm": "Recorre paseos al pie del peñón y descubre vestigios romanos costeros.",
+          "idealFor": "Una base mediterránea para rutina de playa y un gran hito natural.",
+          "consider": "Compara el movimiento de primera línea con calles hacia el casco antiguo interior."
+        },
+        "pt": {
+          "intro": "Calp combina Peñón de Ifach e Baños de la Reina.",
+          "rhythm": "Percorra passeios ao pé do rochedo e descubra vestígios romanos costeiros.",
+          "idealFor": "Uma base mediterrânea para rotina de praia e um grande marco natural.",
+          "consider": "Compare o movimento à beira-mar com ruas rumo ao centro antigo mais interno."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/calpe/",
+          "title": "Tourism in Calpe. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Benidorm",
+      "geonamesId": 2521088,
+      "airportCode": "ALC",
+      "rank": 73,
+      "content": {
+        "en": {
+          "intro": "Benidorm brings together Playa de Levante and Serra Gelada.",
+          "rhythm": "Combine an extensive beach-service scene with walks towards coastal natural landscapes.",
+          "idealFor": "A highly developed resort-city routine with abundant organised leisure.",
+          "consider": "Visit your chosen block during peak visitor periods, not just quieter months."
+        },
+        "es": {
+          "intro": "Benidorm reúne Playa de Levante y Serra Gelada.",
+          "rhythm": "Combina una amplia oferta playera con paseos hacia paisajes naturales costeros.",
+          "idealFor": "Una rutina de ciudad turística muy desarrollada y abundante ocio organizado.",
+          "consider": "Visita la manzana elegida en temporada alta, no solo en meses tranquilos."
+        },
+        "pt": {
+          "intro": "Benidorm combina Playa de Levante e Serra Gelada.",
+          "rhythm": "Combine ampla oferta de praia com passeios rumo a paisagens naturais costeiras.",
+          "idealFor": "Uma rotina de cidade turística muito desenvolvida e amplo lazer organizado.",
+          "consider": "Visite o quarteirão escolhido na alta temporada, além dos meses tranquilos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/benidorm/",
+          "title": "Tourism in Benidorm. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Gandia",
+      "geonamesId": 2517367,
+      "airportCode": "VLC",
+      "rank": 74,
+      "content": {
+        "en": {
+          "intro": "Gandia brings together Palau Ducal dels Borja and Playa Norte.",
+          "rhythm": "Alternate ducal-city heritage with a separate beach district and long promenade.",
+          "idealFor": "A Valencian town offering both historic-city and seaside daily settings.",
+          "consider": "The historic centre and Playa de Gandia have different rhythms and locations."
+        },
+        "es": {
+          "intro": "Gandia reúne Palau Ducal dels Borja y Playa Norte.",
+          "rhythm": "Alterna patrimonio ducal con un distrito de playa separado y largo paseo marítimo.",
+          "idealFor": "Una ciudad valenciana con entornos cotidianos de casco histórico y playa.",
+          "consider": "El casco histórico y la Playa de Gandia tienen ritmos y ubicaciones diferentes."
+        },
+        "pt": {
+          "intro": "Gandia combina Palau Ducal dels Borja e Playa Norte.",
+          "rhythm": "Alterne patrimônio ducal com um bairro de praia separado e longo calçadão.",
+          "idealFor": "Uma cidade valenciana com ambientes cotidianos de centro histórico e praia.",
+          "consider": "O centro histórico e a Playa de Gandia têm ritmos e localizações diferentes."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/gandia/",
+          "title": "Tourism in Gandía. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "Castelló de la Plana",
+      "geonamesId": 2519752,
+      "airportCode": "CDT",
+      "rank": 75,
+      "content": {
+        "en": {
+          "intro": "Castelló de la Plana brings together Plaza Mayor and Grau de Castelló.",
+          "rhythm": "Combine a provincial-city centre with seafood dining and port-side leisure at El Grau.",
+          "idealFor": "A regional urban base with a distinct maritime district nearby.",
+          "consider": "The main centre is inland from El Grau; compare the actual coastal journey."
+        },
+        "es": {
+          "intro": "Castelló de la Plana reúne Plaza Mayor y Grau de Castelló.",
+          "rhythm": "Combina centro de capital, cocina marinera y ocio portuario en el Grau.",
+          "idealFor": "Una base urbana regional con un distrito marítimo diferenciado cercano.",
+          "consider": "El centro principal está separado del Grau: compara el recorrido real al mar."
+        },
+        "pt": {
+          "intro": "Castelló de la Plana combina Plaza Mayor e Grau de Castelló.",
+          "rhythm": "Combine centro de capital, gastronomia marítima e lazer portuário no Grau.",
+          "idealFor": "Uma base urbana regional com um distrito marítimo distinto por perto.",
+          "consider": "O centro principal é separado do Grau; compare o percurso real até o mar."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/castellon-la-plana/",
+          "title": "Tourism in Castellón de la Plana-Castelló de la Plana. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Peníscola",
+      "geonamesId": 3113860,
+      "airportCode": "CDT",
+      "rank": 76,
+      "content": {
+        "en": {
+          "intro": "Peníscola brings together Castillo del Papa Luna and walled peninsula.",
+          "rhythm": "Pair a compact castle-town setting with sandy beaches below the walls.",
+          "idealFor": "A coastal heritage town for castle views and walk-to-beach outings.",
+          "consider": "Compare the steep walled quarter with flatter beachfront residential areas."
+        },
+        "es": {
+          "intro": "Peníscola reúne Castillo del Papa Luna y península amurallada.",
+          "rhythm": "Combina un núcleo compacto de castillo con playas de arena bajo las murallas.",
+          "idealFor": "Una localidad patrimonial costera para vistas del castillo y salidas a la playa a pie.",
+          "consider": "Compara el casco amurallado en pendiente con áreas residenciales llanas junto a la playa."
+        },
+        "pt": {
+          "intro": "Peníscola combina Castillo del Papa Luna e península murada.",
+          "rhythm": "Combine um núcleo compacto de castelo com praias de areia abaixo das muralhas.",
+          "idealFor": "Uma cidade patrimonial costeira para vistas do castelo e passeios a pé à praia.",
+          "consider": "Compare o centro murado em ladeira com áreas residenciais planas junto à praia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/peniscola/",
+          "title": "Tourism in Peñíscola. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vinaròs",
+      "geonamesId": 3104584,
+      "airportCode": "CDT",
+      "rank": 77,
+      "content": {
+        "en": {
+          "intro": "Vinaròs brings together fishing port and Costa del Azahar.",
+          "rhythm": "Enjoy seafood traditions, urban beaches and a port-town rhythm near Catalonia.",
+          "idealFor": "A smaller coastal city for local food and everyday beach access.",
+          "consider": "Assess the central coast separately from coves and housing farther out."
+        },
+        "es": {
+          "intro": "Vinaròs reúne puerto pesquero y Costa del Azahar.",
+          "rhythm": "Disfruta de tradición marinera, playas urbanas y ritmo portuario cerca de Cataluña.",
+          "idealFor": "Una ciudad costera de menor escala para cocina local y playa cotidiana.",
+          "consider": "Valora el litoral céntrico aparte de calas y viviendas más alejadas."
+        },
+        "pt": {
+          "intro": "Vinaròs combina porto pesqueiro e Costa del Azahar.",
+          "rhythm": "Aproveite tradição marítima, praias urbanas e ritmo portuário perto da Catalunha.",
+          "idealFor": "Uma cidade litorânea menor para culinária local e praia no cotidiano.",
+          "consider": "Avalie o litoral central separadamente das enseadas e moradias mais afastadas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/vinaros/",
+          "title": "Tourism in Vinaròs. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Sagunto",
+      "geonamesId": 2511619,
+      "airportCode": "VLC",
+      "rank": 78,
+      "content": {
+        "en": {
+          "intro": "Sagunto brings together Roman theatre and Sagunto castle.",
+          "rhythm": "Combine archaeological streets with a separate port district and sandy coastline.",
+          "idealFor": "A heritage-and-coast municipality offering two distinct urban settings.",
+          "consider": "Sagunto's historic town and Puerto de Sagunto are not the same location."
+        },
+        "es": {
+          "intro": "Sagunto reúne teatro romano y castillo de Sagunto.",
+          "rhythm": "Combina calles arqueológicas con un núcleo portuario separado y costa arenosa.",
+          "idealFor": "Un municipio de patrimonio y costa con dos entornos urbanos diferenciados.",
+          "consider": "El casco histórico y Puerto de Sagunto no son la misma ubicación."
+        },
+        "pt": {
+          "intro": "Sagunto combina teatro romano e castelo de Sagunto.",
+          "rhythm": "Combine ruas arqueológicas com um núcleo portuário separado e costa arenosa.",
+          "idealFor": "Um município de patrimônio e costa com dois ambientes urbanos distintos.",
+          "consider": "O centro histórico e Puerto de Sagunto não são a mesma localização."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/sagunto-sagunt/",
+          "title": "Tourism in Sagunto. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Tarragona",
+      "geonamesId": 3108288,
+      "airportCode": "REU",
+      "rank": 79,
+      "content": {
+        "en": {
+          "intro": "Tarragona brings together Roman amphitheatre and Balcó del Mediterrani.",
+          "rhythm": "Combine Roman archaeology with sea views, old-town streets and coastal dining.",
+          "idealFor": "A Mediterranean city where Roman remains sit beside modern urban life.",
+          "consider": "Distinguish the central station from the out-of-town high-speed rail station."
+        },
+        "es": {
+          "intro": "Tarragona reúne anfiteatro romano y Balcó del Mediterrani.",
+          "rhythm": "Combina arqueología romana, vistas al mar, casco antiguo y cocina costera.",
+          "idealFor": "Una ciudad mediterránea donde conviven restos romanos y vida urbana actual.",
+          "consider": "Distingue la estación céntrica de la estación de alta velocidad fuera de la ciudad."
+        },
+        "pt": {
+          "intro": "Tarragona combina anfiteatro romano e Balcó del Mediterrani.",
+          "rhythm": "Combine arqueologia romana, vistas do mar, centro antigo e culinária costeira.",
+          "idealFor": "Uma cidade mediterrânea onde convivem vestígios romanos e vida urbana atual.",
+          "consider": "Diferencie a estação central da estação de alta velocidade fora da cidade."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/tarragona/",
+          "title": "Sightseeing in Tarragona. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Reus",
+      "geonamesId": 3111933,
+      "airportCode": "REU",
+      "rank": 80,
+      "content": {
+        "en": {
+          "intro": "Reus brings together Casa Navàs and Gaudí Centre.",
+          "rhythm": "Explore Modernista architecture, pedestrian shopping streets and an active cultural calendar.",
+          "idealFor": "An inland Catalan city for design heritage rather than beachfront living.",
+          "consider": "Plan beach outings separately and compare Reus with nearby Tarragona."
+        },
+        "es": {
+          "intro": "Reus reúne Casa Navàs y Gaudí Centre.",
+          "rhythm": "Explora arquitectura modernista, comercio peatonal y una agenda cultural activa.",
+          "idealFor": "Una ciudad catalana interior para patrimonio del diseño, no primera línea de playa.",
+          "consider": "Planifica la playa como salida aparte y compara Reus con Tarragona cercana."
+        },
+        "pt": {
+          "intro": "Reus combina Casa Navàs e Gaudí Centre.",
+          "rhythm": "Explore arquitetura modernista, comércio em ruas de pedestres e uma agenda cultural ativa.",
+          "idealFor": "Uma cidade catalã do interior para patrimônio do design, sem localização na orla.",
+          "consider": "Planeje a praia como passeio separado e compare Reus com Tarragona próxima."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/reus/",
+          "title": "Tourism in Reus. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Girona",
+      "geonamesId": 3121456,
+      "airportCode": "GRO",
+      "rank": 81,
+      "content": {
+        "en": {
+          "intro": "Girona brings together El Call and río Onyar.",
+          "rhythm": "Combine medieval lanes, coloured riverside façades and a compact historic centre.",
+          "idealFor": "A Catalan inland base for history, food and Costa Brava excursions.",
+          "consider": "The old quarter's steps and slopes differ from flatter districts across the river."
+        },
+        "es": {
+          "intro": "Girona reúne El Call y río Onyar.",
+          "rhythm": "Combina calles medievales, fachadas de colores junto al Onyar y casco compacto.",
+          "idealFor": "Una base catalana interior para historia, gastronomía y excursiones a la Costa Brava.",
+          "consider": "Las escaleras y cuestas del casco antiguo contrastan con zonas llanas al otro lado del río."
+        },
+        "pt": {
+          "intro": "Girona combina El Call e río Onyar.",
+          "rhythm": "Combine ruas medievais, fachadas coloridas junto ao Onyar e um centro compacto.",
+          "idealFor": "Uma base catalã no interior para história, gastronomia e passeios à Costa Brava.",
+          "consider": "As escadas e ladeiras do centro antigo contrastam com áreas planas do outro lado do rio."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/girona/",
+          "title": "Tourism in Girona. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Lleida",
+      "geonamesId": 3118514,
+      "airportCode": "BCN",
+      "rank": 82,
+      "content": {
+        "en": {
+          "intro": "Lleida brings together Seu Vella and río Segre.",
+          "rhythm": "Combine hilltop cathedral views, riverside space and inland Catalan food traditions.",
+          "idealFor": "A working inland city for cathedral heritage and regional connections.",
+          "consider": "The Barcelona airport gateway involves a separate onward ground journey."
+        },
+        "es": {
+          "intro": "Lleida reúne Seu Vella y río Segre.",
+          "rhythm": "Combina vistas de la Seu Vella, espacios fluviales y cocina catalana interior.",
+          "idealFor": "Una ciudad interior activa para patrimonio catedralicio y conexiones regionales.",
+          "consider": "El aeropuerto de Barcelona exige un trayecto terrestre posterior independiente."
+        },
+        "pt": {
+          "intro": "Lleida combina Seu Vella e río Segre.",
+          "rhythm": "Combine vistas da Seu Vella, espaços junto ao rio e culinária catalã do interior.",
+          "idealFor": "Uma cidade interior ativa para patrimônio da catedral e conexões regionais.",
+          "consider": "O aeroporto de Barcelona exige um trajeto terrestre posterior separado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/lleida/",
+          "title": "Tourism in Lérida. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Sitges",
+      "geonamesId": 3108877,
+      "airportCode": "BCN",
+      "rank": 83,
+      "content": {
+        "en": {
+          "intro": "Sitges brings together Cau Ferrat and Mediterranean seafront.",
+          "rhythm": "Pair an artistic coastal identity with beaches, cafés and a film-festival tradition.",
+          "idealFor": "A culture-and-beach town with a distinctive arts calendar.",
+          "consider": "Check the chosen street during festival weekends as well as ordinary weekdays."
+        },
+        "es": {
+          "intro": "Sitges reúne Cau Ferrat y frente marítimo mediterráneo.",
+          "rhythm": "Combina identidad artística costera, playas, cafés y tradición de festival de cine.",
+          "idealFor": "Una localidad de cultura y playa con calendario artístico propio.",
+          "consider": "Comprueba la calle elegida en fines de semana de festival y días laborables."
+        },
+        "pt": {
+          "intro": "Sitges combina Cau Ferrat e orla mediterrânea.",
+          "rhythm": "Combine identidade artística costeira, praias, cafés e tradição de festival de cinema.",
+          "idealFor": "Uma cidade de cultura e praia com calendário artístico próprio.",
+          "consider": "Confira a rua escolhida em fins de semana de festival e dias úteis comuns."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/sitges/",
+          "title": "Tourism in Sitges. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vilanova i la Geltrú",
+      "geonamesId": 3105184,
+      "airportCode": "BCN",
+      "rank": 84,
+      "content": {
+        "en": {
+          "intro": "Vilanova i la Geltrú brings together Museu del Ferrocarril and Biblioteca Museu Víctor Balaguer.",
+          "rhythm": "Combine maritime-town life with railway heritage, art collections and beaches.",
+          "idealFor": "A coastal Catalan base for museums alongside a working-town routine.",
+          "consider": "Compare the historic core with the port and beach districts before choosing."
+        },
+        "es": {
+          "intro": "Vilanova i la Geltrú reúne Museu del Ferrocarril y Biblioteca Museu Víctor Balaguer.",
+          "rhythm": "Combina vida marinera, patrimonio ferroviario, colecciones de arte y playas.",
+          "idealFor": "Una base costera catalana para museos y rutina de ciudad activa.",
+          "consider": "Compara el casco histórico con los barrios del puerto y la playa antes de elegir."
+        },
+        "pt": {
+          "intro": "Vilanova i la Geltrú combina Museu del Ferrocarril e Biblioteca Museu Víctor Balaguer.",
+          "rhythm": "Combine vida marítima, patrimônio ferroviário, coleções de arte e praias.",
+          "idealFor": "Uma base costeira catalã para museus e rotina de cidade ativa.",
+          "consider": "Compare o centro histórico com os bairros do porto e da praia antes de escolher."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/vilanova-i-la-geltru/",
+          "title": "Tourism in Vilanova i la Geltrú. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Vic",
+      "geonamesId": 3106050,
+      "airportCode": "BCN",
+      "rank": 85,
+      "content": {
+        "en": {
+          "intro": "Vic brings together Plaça Major and Catedral de Vic.",
+          "rhythm": "Enjoy an inland market-square atmosphere, cathedral heritage and Osona excursions.",
+          "idealFor": "A smaller inland Catalan city for local markets and historic streets.",
+          "consider": "This is an inland Osona base; coastal days require a planned journey."
+        },
+        "es": {
+          "intro": "Vic reúne Plaça Major y Catedral de Vic.",
+          "rhythm": "Disfruta de ambiente de plaza comercial, patrimonio catedralicio y salidas por Osona.",
+          "idealFor": "Una ciudad catalana interior de menor escala para mercados y calles históricas.",
+          "consider": "Es una base interior de Osona: los días de costa requieren desplazamiento."
+        },
+        "pt": {
+          "intro": "Vic combina Plaça Major e Catedral de Vic.",
+          "rhythm": "Aproveite o ambiente da praça comercial, o patrimônio da catedral e passeios por Osona.",
+          "idealFor": "Uma cidade catalã menor no interior para mercados e ruas históricas.",
+          "consider": "É uma base no interior de Osona; dias na costa exigem deslocamento planejado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/vic/",
+          "title": "Tourism in Vic. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Figueres",
+      "geonamesId": 3122453,
+      "airportCode": "GRO",
+      "rank": 86,
+      "content": {
+        "en": {
+          "intro": "Figueres brings together Teatre-Museu Dalí and Museu del Joguet de Catalunya.",
+          "rhythm": "Pair Surrealist art with a compact commercial centre and Empordà outings.",
+          "idealFor": "An art-focused inland town for exploring northern Costa Brava landscapes.",
+          "consider": "The beaches are outside Figueres; assess travel rather than assuming a seaside home."
+        },
+        "es": {
+          "intro": "Figueres reúne Teatre-Museu Dalí y Museu del Joguet de Catalunya.",
+          "rhythm": "Combina arte surrealista, centro comercial compacto y salidas por el Empordà.",
+          "idealFor": "Una localidad artística interior para explorar el norte de la Costa Brava.",
+          "consider": "Las playas están fuera de Figueres: valora los trayectos, no una vivienda junto al mar."
+        },
+        "pt": {
+          "intro": "Figueres combina Teatre-Museu Dalí e Museu del Joguet de Catalunya.",
+          "rhythm": "Combine arte surrealista, centro comercial compacto e passeios pelo Empordà.",
+          "idealFor": "Uma cidade artística do interior para explorar o norte da Costa Brava.",
+          "consider": "As praias ficam fora de Figueres; avalie os trajetos, não uma moradia à beira-mar."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/figueres/",
+          "title": "Tourism in Figueres. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture"
+      ]
+    },
+    {
+      "name": "Roses",
+      "geonamesId": 3111348,
+      "airportCode": "GRO",
+      "rank": 87,
+      "content": {
+        "en": {
+          "intro": "Roses brings together Ciutadella de Roses and Bay of Roses.",
+          "rhythm": "Combine a broad bay, archaeological heritage and rocky Costa Brava coves.",
+          "idealFor": "A maritime base for boating, cove outings and coastal scenery.",
+          "consider": "Compare flatter bay-front streets with hillside homes above the coves."
+        },
+        "es": {
+          "intro": "Roses reúne Ciutadella de Roses y bahía de Roses.",
+          "rhythm": "Combina una amplia bahía, patrimonio arqueológico y calas rocosas de la Costa Brava.",
+          "idealFor": "Una base marítima para navegación, calas y paisajes costeros.",
+          "consider": "Compara calles llanas junto a la bahía con viviendas en laderas sobre las calas."
+        },
+        "pt": {
+          "intro": "Roses combina Ciutadella de Roses e baía de Roses.",
+          "rhythm": "Combine uma ampla baía, patrimônio arqueológico e enseadas rochosas da Costa Brava.",
+          "idealFor": "Uma base marítima para navegação, enseadas e paisagens costeiras.",
+          "consider": "Compare ruas planas junto à baía com casas nas encostas acima das enseadas."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/roses/",
+          "title": "Tourism in Roses. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Blanes",
+      "geonamesId": 3127978,
+      "airportCode": "GRO",
+      "rank": 88,
+      "content": {
+        "en": {
+          "intro": "Blanes brings together Castell de Sant Joan and Tordera river mouth.",
+          "rhythm": "Mix beach-town routines with old-town Gothic details and coastal viewpoints.",
+          "idealFor": "A southern Costa Brava base for beaches and a recognisable town centre.",
+          "consider": "Check the distance between the actual home, station and preferred beach."
+        },
+        "es": {
+          "intro": "Blanes reúne Castell de Sant Joan y desembocadura del Tordera.",
+          "rhythm": "Combina rutina de playa, detalles góticos y miradores costeros.",
+          "idealFor": "Una base del sur de la Costa Brava para playas y centro urbano definido.",
+          "consider": "Comprueba la distancia entre la vivienda, la estación y la playa elegida."
+        },
+        "pt": {
+          "intro": "Blanes combina Castell de Sant Joan e foz do Tordera.",
+          "rhythm": "Combine rotina de praia, detalhes góticos e mirantes costeiros.",
+          "idealFor": "Uma base no sul da Costa Brava para praias e centro urbano definido.",
+          "consider": "Confira a distância entre o imóvel, a estação e a praia escolhida."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/blanes/",
+          "title": "Tourism in Blanes. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Lloret de Mar",
+      "geonamesId": 3118212,
+      "airportCode": "GRO",
+      "rank": 89,
+      "content": {
+        "en": {
+          "intro": "Lloret de Mar brings together Sa Boadella and Mediterranean coves.",
+          "rhythm": "Combine beach activities, coastal walking and a well-developed evening leisure scene.",
+          "idealFor": "An active resort-town setting for organised leisure and cove exploration.",
+          "consider": "Compare nightlife streets with residential areas before deciding on a year-round home."
+        },
+        "es": {
+          "intro": "Lloret de Mar reúne Sa Boadella y calas mediterráneas.",
+          "rhythm": "Combina actividades de playa, paseos costeros y amplia oferta de ocio nocturno.",
+          "idealFor": "Un entorno turístico activo para ocio organizado y exploración de calas.",
+          "consider": "Compara calles de ocio nocturno y áreas residenciales antes de elegir vivienda permanente."
+        },
+        "pt": {
+          "intro": "Lloret de Mar combina Sa Boadella e enseadas mediterrâneas.",
+          "rhythm": "Combine atividades de praia, caminhadas costeiras e ampla oferta de lazer noturno.",
+          "idealFor": "Um ambiente turístico ativo para lazer organizado e exploração de enseadas.",
+          "consider": "Compare ruas de vida noturna e áreas residenciais antes de escolher moradia permanente."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/lloret-mar/",
+          "title": "Tourism in Lloret de Mar. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Tossa de Mar",
+      "geonamesId": 3107661,
+      "airportCode": "GRO",
+      "rank": 90,
+      "content": {
+        "en": {
+          "intro": "Tossa de Mar brings together Vila Vella and Costa Brava cliffs.",
+          "rhythm": "Link a walled old town with pine-framed coves and seaside dining.",
+          "idealFor": "A compact coastal heritage town for scenery and smaller-scale seafront life.",
+          "consider": "Test seasonal service availability and the approach roads outside a summer visit."
+        },
+        "es": {
+          "intro": "Tossa de Mar reúne Vila Vella y acantilados de la Costa Brava.",
+          "rhythm": "Conecta casco amurallado, calas entre pinos y cocina junto al mar.",
+          "idealFor": "Una localidad patrimonial costera compacta para paisaje y vida marítima de menor escala.",
+          "consider": "Comprueba servicios y carreteras de acceso fuera de la visita de verano."
+        },
+        "pt": {
+          "intro": "Tossa de Mar combina Vila Vella e falésias da Costa Brava.",
+          "rhythm": "Conecte centro murado, enseadas entre pinheiros e restaurantes junto ao mar.",
+          "idealFor": "Uma cidade patrimonial costeira compacta para paisagem e vida marítima em menor escala.",
+          "consider": "Confira serviços e estradas de acesso fora de uma visita no verão."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/tossa-mar/",
+          "title": "Tourism in Tossa de Mar. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Cadaqués",
+      "geonamesId": 3127117,
+      "airportCode": "GRO",
+      "rank": 91,
+      "content": {
+        "en": {
+          "intro": "Cadaqués brings together Portlligat and Cap de Creus.",
+          "rhythm": "Combine whitewashed seafront streets, Dalí connections and rugged natural landscapes.",
+          "idealFor": "A scenic art-and-nature retreat at the edge of the Costa Brava.",
+          "consider": "The winding approach road makes regional journeys different from a motorway commute."
+        },
+        "es": {
+          "intro": "Cadaqués reúne Portlligat y Cap de Creus.",
+          "rhythm": "Combina calles blancas junto al mar, vínculos con Dalí y paisajes naturales rocosos.",
+          "idealFor": "Un refugio paisajístico de arte y naturaleza en el extremo de la Costa Brava.",
+          "consider": "La carretera sinuosa de acceso condiciona los trayectos regionales."
+        },
+        "pt": {
+          "intro": "Cadaqués combina Portlligat e Cap de Creus.",
+          "rhythm": "Combine ruas brancas junto ao mar, vínculos com Dalí e paisagens naturais rochosas.",
+          "idealFor": "Um refúgio paisagístico de arte e natureza na ponta da Costa Brava.",
+          "consider": "A estrada sinuosa de acesso condiciona os trajetos regionais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/cadaques/",
+          "title": "Tourism in Cadaqués. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Olot",
+      "geonamesId": 3115093,
+      "airportCode": "GRO",
+      "rank": 92,
+      "content": {
+        "en": {
+          "intro": "Olot brings together Sant Esteve and Garrotxa volcanic landscape.",
+          "rhythm": "Combine an inland town centre, regional art and nearby volcanic-country walks.",
+          "idealFor": "A nature-and-art base in the volcanic country of inland Girona.",
+          "consider": "Compare your chosen home with the trailheads and services you actually need."
+        },
+        "es": {
+          "intro": "Olot reúne Sant Esteve y paisaje volcánico de la Garrotxa.",
+          "rhythm": "Combina centro urbano interior, arte regional y paseos por paisajes volcánicos cercanos.",
+          "idealFor": "Una base de naturaleza y arte en la zona volcánica de Girona interior.",
+          "consider": "Compara la vivienda elegida con los inicios de rutas y servicios que necesitas."
+        },
+        "pt": {
+          "intro": "Olot combina Sant Esteve e paisagem vulcânica da Garrotxa.",
+          "rhythm": "Combine centro urbano no interior, arte regional e passeios por paisagens vulcânicas próximas.",
+          "idealFor": "Uma base de natureza e arte na zona vulcânica do interior de Girona.",
+          "consider": "Compare o imóvel escolhido com os acessos às trilhas e serviços de que precisa."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/olot/",
+          "title": "Tourism in Olot. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ibiza",
+      "geonamesId": 2516479,
+      "airportCode": "IBZ",
+      "rank": 93,
+      "content": {
+        "en": {
+          "intro": "Ibiza brings together Dalt Vila and Talamanca.",
+          "rhythm": "Mix fortified heritage, harbour-side restaurants and beaches around the island capital.",
+          "idealFor": "An island-city base for historic streets and a lively maritime social scene.",
+          "consider": "Compare the party-season atmosphere with the same neighbourhood outside summer."
+        },
+        "es": {
+          "intro": "Ibiza reúne Dalt Vila y Talamanca.",
+          "rhythm": "Combina patrimonio fortificado, restaurantes portuarios y playas de la capital isleña.",
+          "idealFor": "Una base urbana isleña para calles históricas y vida social marinera.",
+          "consider": "Compara el ambiente de temporada festiva con el mismo barrio fuera del verano."
+        },
+        "pt": {
+          "intro": "Ibiza combina Dalt Vila e Talamanca.",
+          "rhythm": "Combine patrimônio fortificado, restaurantes no porto e praias da capital insular.",
+          "idealFor": "Uma base urbana insular para ruas históricas e vida social marítima.",
+          "consider": "Compare o ambiente da temporada festiva com o mesmo bairro fora do verão."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/eivissa/",
+          "title": "Tourism in Ibiza. What to see"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Maó",
+      "geonamesId": 2514301,
+      "airportCode": "MAH",
+      "rank": 94,
+      "content": {
+        "en": {
+          "intro": "Maó brings together Port de Maó and Trepucó.",
+          "rhythm": "Combine a deep natural harbour, terrace dining and Menorcan archaeological outings.",
+          "idealFor": "An island-capital routine for maritime scenery and Menorca's layered history.",
+          "consider": "The harbour lies below the town; test steps, slopes and daily access."
+        },
+        "es": {
+          "intro": "Maó reúne Port de Maó y Trepucó.",
+          "rhythm": "Combina puerto natural, terrazas y salidas arqueológicas menorquinas.",
+          "idealFor": "Una rutina de capital isleña para paisaje marítimo e historia menorquina.",
+          "consider": "El puerto queda bajo el casco urbano: prueba escaleras, pendientes y acceso diario."
+        },
+        "pt": {
+          "intro": "Maó combina Port de Maó e Trepucó.",
+          "rhythm": "Combine porto natural, restaurantes com terraço e passeios arqueológicos menorquinos.",
+          "idealFor": "Uma rotina de capital insular para paisagem marítima e história de Menorca.",
+          "consider": "O porto fica abaixo da cidade; teste escadas, ladeiras e acesso diário."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/mao/",
+          "title": "Tourism in Mahón. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Ciutadella",
+      "geonamesId": 3124967,
+      "airportCode": "MAH",
+      "rank": 95,
+      "content": {
+        "en": {
+          "intro": "Ciutadella brings together Catedral de Menorca and historic harbour.",
+          "rhythm": "Walk aristocratic old-town streets and descend to restaurants around the small port.",
+          "idealFor": "A western Menorca base for historic-town character and harbour evenings.",
+          "consider": "Menorca's airport is across the island near Maó; plan the transfer."
+        },
+        "es": {
+          "intro": "Ciutadella reúne Catedral de Menorca y puerto histórico.",
+          "rhythm": "Pasea por calles señoriales y baja a los restaurantes del pequeño puerto.",
+          "idealFor": "Una base en Menorca occidental para carácter histórico y tardes portuarias.",
+          "consider": "El aeropuerto queda al otro lado de la isla, cerca de Maó: planifica el traslado."
+        },
+        "pt": {
+          "intro": "Ciutadella combina Catedral de Menorca e porto histórico.",
+          "rhythm": "Passeie por ruas senhoriais e desça aos restaurantes do pequeno porto.",
+          "idealFor": "Uma base no oeste de Menorca para caráter histórico e tardes no porto.",
+          "consider": "O aeroporto fica do outro lado da ilha, perto de Maó; planeje o traslado."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/ciutadella-menorca/",
+          "title": "Tourism in Ciutadella de Menorca. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Arrecife",
+      "geonamesId": 2521570,
+      "airportCode": "ACE",
+      "rank": 96,
+      "content": {
+        "en": {
+          "intro": "Arrecife brings together Charco de San Ginés and Castillo de San Gabriel.",
+          "rhythm": "Pair a working island capital with lagoon-side cafés and a compact seafront.",
+          "idealFor": "An urban Lanzarote base for maritime heritage and island-wide exploration.",
+          "consider": "Volcanic-park outings are island trips, not attractions within the city centre."
+        },
+        "es": {
+          "intro": "Arrecife reúne Charco de San Ginés y Castillo de San Gabriel.",
+          "rhythm": "Combina una capital isleña activa, cafés junto al charco y paseo marítimo compacto.",
+          "idealFor": "Una base urbana lanzaroteña para patrimonio marítimo y exploración de la isla.",
+          "consider": "Las visitas a parques volcánicos son salidas por la isla, no paseos céntricos."
+        },
+        "pt": {
+          "intro": "Arrecife combina Charco de San Ginés e Castillo de San Gabriel.",
+          "rhythm": "Combine uma capital insular ativa, cafés junto à lagoa e uma orla compacta.",
+          "idealFor": "Uma base urbana em Lanzarote para patrimônio marítimo e exploração da ilha.",
+          "consider": "As visitas a parques vulcânicos são passeios pela ilha, não caminhadas pelo centro."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/arrecife/",
+          "title": "Tourism in Arrecife. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Puerto del Rosario",
+      "geonamesId": 2512186,
+      "airportCode": "FUE",
+      "rank": 97,
+      "content": {
+        "en": {
+          "intro": "Puerto del Rosario brings together Casa Museo Unamuno and Nuestra Señora del Rosario.",
+          "rhythm": "Combine port-city streets, whitewashed architecture and a practical Fuerteventura base.",
+          "idealFor": "A working island capital for services and trips across Fuerteventura.",
+          "consider": "The island's celebrated dune and surf areas require onward trips."
+        },
+        "es": {
+          "intro": "Puerto del Rosario reúne Casa Museo Unamuno y Nuestra Señora del Rosario.",
+          "rhythm": "Combina calles portuarias, arquitectura blanca y una base funcional en Fuerteventura.",
+          "idealFor": "Una capital isleña activa para servicios y recorridos por Fuerteventura.",
+          "consider": "Las conocidas zonas de dunas y surf de la isla requieren desplazamiento."
+        },
+        "pt": {
+          "intro": "Puerto del Rosario combina Casa Museo Unamuno e Nuestra Señora del Rosario.",
+          "rhythm": "Combine ruas portuárias, arquitetura branca e uma base funcional em Fuerteventura.",
+          "idealFor": "Uma capital insular ativa para serviços e passeios por Fuerteventura.",
+          "consider": "As conhecidas áreas de dunas e surfe da ilha exigem deslocamento."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/puerto-del-rosario/",
+          "title": "Tourism in Puerto del Rosario. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Puerto de la Cruz",
+      "geonamesId": 2512196,
+      "airportCode": "TFN",
+      "rank": 98,
+      "content": {
+        "en": {
+          "intro": "Puerto de la Cruz brings together Lago Martiánez and old fishing harbour.",
+          "rhythm": "Enjoy a traditional north-Tenerife resort, ocean promenades and Manrique-designed pools.",
+          "idealFor": "A seafront town for landscaped leisure and access to the Orotava Valley.",
+          "consider": "Check north-coast weather and ocean conditions during a trial stay."
+        },
+        "es": {
+          "intro": "Puerto de la Cruz reúne Lago Martiánez y antiguo puerto pesquero.",
+          "rhythm": "Disfruta de un destino tradicional del norte tinerfeño, paseos y piscinas de Manrique.",
+          "idealFor": "Una localidad marítima para ocio ajardinado y acceso al valle de La Orotava.",
+          "consider": "Comprueba el tiempo y las condiciones del océano en la costa norte durante una estancia."
+        },
+        "pt": {
+          "intro": "Puerto de la Cruz combina Lago Martiánez e antigo porto pesqueiro.",
+          "rhythm": "Aproveite um destino tradicional do norte de Tenerife, passeios e piscinas de Manrique.",
+          "idealFor": "Uma cidade marítima para lazer em jardins e acesso ao vale de La Orotava.",
+          "consider": "Confira o clima e as condições do oceano na costa norte durante uma estadia."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/puerto-la-cruz/",
+          "title": "Tourism in Puerto de la Cruz. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature",
+        "amenities"
+      ]
+    },
+    {
+      "name": "La Orotava",
+      "geonamesId": 2515692,
+      "airportCode": "TFN",
+      "rank": 99,
+      "content": {
+        "en": {
+          "intro": "La Orotava brings together Casas de los Balcones and Nuestra Señora de la Concepción.",
+          "rhythm": "Explore timber balconies, craft traditions and a historic town above banana-growing country.",
+          "idealFor": "A heritage-rich inland Tenerife town with valley views rather than beachfront life.",
+          "consider": "The elevated historic centre is distinct from the coast; compare slopes and access."
+        },
+        "es": {
+          "intro": "La Orotava reúne Casas de los Balcones y Nuestra Señora de la Concepción.",
+          "rhythm": "Explora balcones de madera, artesanía y un casco histórico sobre paisajes de plataneras.",
+          "idealFor": "Una localidad interior tinerfeña de patrimonio y vistas al valle, sin primera línea de playa.",
+          "consider": "El casco histórico elevado es distinto de la costa: compara pendientes y accesos."
+        },
+        "pt": {
+          "intro": "La Orotava combina Casas de los Balcones e Nuestra Señora de la Concepción.",
+          "rhythm": "Explore balcões de madeira, artesanato e um centro histórico acima de paisagens de bananeiras.",
+          "idealFor": "Uma cidade interior de Tenerife com patrimônio e vistas do vale, sem localização na praia.",
+          "consider": "O centro histórico elevado é distinto da costa; compare ladeiras e acessos."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/la-orotava/",
+          "title": "Tourism in La Orotava. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    },
+    {
+      "name": "Arucas",
+      "geonamesId": 2521519,
+      "airportCode": "LPA",
+      "rank": 100,
+      "content": {
+        "en": {
+          "intro": "Arucas brings together San Juan Bautista and Arucas volcanic mountain.",
+          "rhythm": "Combine stone-built heritage, volcanic viewpoints and surrounding banana-growing landscapes.",
+          "idealFor": "A smaller northern Gran Canaria town for heritage and island countryside.",
+          "consider": "This is a hillside town outside Las Palmas; test your regional travel needs."
+        },
+        "es": {
+          "intro": "Arucas reúne San Juan Bautista y montaña volcánica de Arucas.",
+          "rhythm": "Combina patrimonio de piedra, miradores volcánicos y paisajes de plataneras.",
+          "idealFor": "Una localidad del norte grancanario para patrimonio y campo insular.",
+          "consider": "Es una localidad en ladera fuera de Las Palmas: prueba tus desplazamientos regionales."
+        },
+        "pt": {
+          "intro": "Arucas combina San Juan Bautista e montanha vulcânica de Arucas.",
+          "rhythm": "Combine patrimônio de pedra, mirantes vulcânicos e paisagens de bananeiras.",
+          "idealFor": "Uma cidade menor no norte de Gran Canaria para patrimônio e campo insular.",
+          "consider": "É uma cidade em encosta fora de Las Palmas; teste seus deslocamentos regionais."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.spain.info/en/destination/arucas/",
+          "title": "Tourism in Arucas. What to see. Tourist information"
+        }
+      ],
+      "verifiedTags": [
+        "culture",
+        "nature"
+      ]
+    }
+  ]
+}

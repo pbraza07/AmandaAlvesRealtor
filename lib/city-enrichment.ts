@@ -20,7 +20,7 @@ async function lookup(city:CityResult,locale:Locale):Promise<Partial<CityResult>
    if(translatedTitle){const localParams=new URLSearchParams({action:'query',format:'json',formatversion:'2',redirects:'1',titles:translatedTitle,prop:'extracts|info',inprop:'url',exintro:'1',explaintext:'1',exchars:'1200'});try{const localResponse=await fetch(`https://${locale}.wikipedia.org/w/api.php?${localParams}`,{...options,signal:AbortSignal.timeout(4500)});if(localResponse.ok)summaryPage=(await localResponse.json()).query?.pages?.[0]}catch{}}
   }
   const summary=condenseCityIntroduction(summaryPage?.extract||'',locale);
-  if(summary&&summaryPage?.fullurl?.startsWith(`https://${locale}.wikipedia.org/`))extra.overview={summary,sourceTitle:summaryPage.title+' · Wikipedia contributors',url:summaryPage.fullurl,license:'CC BY-SA 4.0',locale};
+  if(!city.researched&&summary&&summaryPage?.fullurl?.startsWith(`https://${locale}.wikipedia.org/`))extra.overview={summary,sourceTitle:summaryPage.title+' · Wikipedia contributors',url:summaryPage.fullurl,license:'CC BY-SA 4.0',locale};
   // An unavailable or unlicensed photograph must not discard a valid city summary.
   if(city.photoKind==='city'||!page.pageimage)return extra;
   try{
@@ -34,6 +34,7 @@ async function lookup(city:CityResult,locale:Locale):Promise<Partial<CityResult>
  }catch{return {}}
 }
 export function enrichCity(city:CityResult,locale:Locale='en'){
+ if(city.researched&&city.photoKind==='city')return Promise.resolve(city);
  const key=city.country+':'+city.id+':'+locale;let entry=cache.get(key);
  if(!entry||Date.now()-entry.time>86400000){if(cache.size>=200)cache.delete(cache.keys().next().value!);entry={time:Date.now(),value:lookup(city,locale)};cache.set(key,entry)}
  return entry.value.then(extra=>({...city,...extra}));

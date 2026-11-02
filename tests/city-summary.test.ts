@@ -13,7 +13,8 @@ test('city digest preserves whole factual sentences and removes markup, pronunci
 });
 test('verified city summary survives missing images, is localized, and never changes matching tags or scores',async()=>{
  const originalFetch=globalThis.fetch;
- const city=queryCities({country:'spain',search:'Madrid',filters:['coast']}).places.find(p=>p.name==='Madrid')!;
+ const indexed=queryCities({country:'spain',search:'Madrid',filters:['coast']}).places.find(p=>p.name==='Madrid')!;
+ const city={...indexed,researched:false,photoKind:'regional' as const};
  globalThis.fetch=(async(input)=>{
   const url=new URL(String(input));
   if(url.hostname==='en.wikipedia.org')return Response.json({query:{pages:[{title:'Madrid',fullurl:'https://en.wikipedia.org/wiki/Madrid',coordinates:[{lat:city.lat,lon:city.lng}],extract:'Madrid is the capital and largest city of Spain. Its historic architecture includes palaces and public squares.',langlinks:[{lang:'es',title:'Madrid'}]}]}});
@@ -25,7 +26,7 @@ test('verified city summary survives missing images, is localized, and never cha
  }finally{globalThis.fetch=originalFetch}
 });
 test('wrong-city source coordinates cannot enrich a card',async()=>{
- const originalFetch=globalThis.fetch;const city=queryCities({country:'florida',search:'Tampa'}).places.find(p=>p.name==='Tampa')!;
+ const originalFetch=globalThis.fetch;const city={...queryCities({country:'florida',search:'Tampa'}).places.find(p=>p.name==='Tampa')!,researched:false,photoKind:'regional' as const};
  globalThis.fetch=(async()=>Response.json({query:{pages:[{title:'Wrong city',coordinates:[{lat:0,lon:0}],extract:'This historic city has a different location.',fullurl:'https://en.wikipedia.org/wiki/Wrong'}]}})) as typeof fetch;
  try{assert.equal((await enrichCity(city)).overview,undefined)}finally{globalThis.fetch=originalFetch}
 });
