@@ -102,8 +102,11 @@ export async function POST(req:NextRequest){
         }
       });
     }
-    if(lead.createdAt.getTime()>Date.now()-10000)await sendLeadEmails(lead,attachments);
-    return NextResponse.json({ok:true,id:lead.id,storageMode:"database"},{status:201});
+    // Retry only missing deliveries; the persisted Gmail events replace the old ten-second cutoff.
+    const sent=await prisma.emailEvent.findMany({where:{leadId:lead.id,status:"SENT",kind:{in:["ADMIN_NOTIFICATION","CLIENT_CONFIRMATION"]}},select:{kind:true}});
+    const delivery=await sendLeadEmails(lead,attachments,{adminSent:sent.some(e=>e.kind==="ADMIN_NOTIFICATION"),clientSent:sent.some(e=>e.kind==="CLIENT_CONFIRMATION")});
+    if(!delivery.adminSent)return NextResponse.json({error:"Your request was saved, but Amanda’s email notification could not be delivered. Please contact Amanda directly.",id:lead.id},{status:502});
+    return NextResponse.json({ok:true,id:lead.id,storageMode:"database",autoResponseSent:delivery.clientSent},{status:201});
   }catch(error){
     console.error("Lead submission failed",error);
     const configurationError=String(error).includes("GMAIL_API_NOT_CONFIGURED")||String(error).includes("LEAD_NOTIFICATION_EMAIL_NOT_CONFIGURED");
