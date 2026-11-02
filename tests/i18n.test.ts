@@ -29,6 +29,8 @@ test('language rendering preserves form business values and visitor-entered text
 test('dynamic matches, guide labels, airport details, and translated searches retain meaning',()=>{
  assert.equal(translate('67% match','es'),'67% de coincidencia');
  assert.equal(translate('2 of 3 preferences','pt'),'2 de 3 preferências');
+ assert.equal(translate('· 1 preference','pt'),'· 1 preferência');
+ assert.equal(translate('· 1 preference','es'),'· 1 preferencia');
  assert.equal(translate('Official Foz do Arelho guide','pt'),'Guia oficial de Foz do Arelho');
  assert.match(translate(areas[0].airport,'es'),/km en línea recta/);
  assert.match(translate(areas[0].airport,'pt'),/km em linha reta/);

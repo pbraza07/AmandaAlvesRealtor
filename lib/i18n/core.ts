@@ -13,8 +13,8 @@ export function translate(text:string,locale:Locale):string {
  // Dynamic display fragments retain canonical data and numbers.
  const rules:[RegExp,(...parts:string[])=>string][]=[
  [/^(\d+)% match$/,n=>locale==='es'?`${n}% de coincidencia`:`${n}% de compatibilidade`],
- [/^(\d+) of (\d+) preferences$/,(a,b)=>locale==='es'?`${a} de ${b} preferencias`:`${a} de ${b} preferências`],
- [/^· (\d+) (preference|preferences)$/,n=>locale==='es'?`· ${n} preferencias`:`· ${n} preferências`],
+ [/^(\d+) of (\d+) preferences$/,(a,b)=>locale==='es'?`${a} de ${b} ${b==='1'?'preferencia':'preferencias'}`:`${a} de ${b} ${b==='1'?'preferência':'preferências'}`],
+ [/^· (\d+) (preference|preferences)$/,n=>locale==='es'?`· ${n} ${n==='1'?'preferencia':'preferencias'}`:`· ${n} ${n==='1'?'preferência':'preferências'}`],
  [/^(.+) Lifestyle Real Estate \| Amanda Alves$/,p=>`${translate(p,locale)} | ${locale==='es'?'Bienes raíces y estilo de vida':'Imóveis e estilo de vida'} | Amanda Alves`],
  [/^Lifestyle destinations \/ (.+)$/,p=>`${locale==='es'?'Destinos y estilo de vida':'Destinos e estilo de vida'} / ${translate(p,locale)}`],
  [/^Search (.+)…$/,p=>`${locale==='es'?'Buscar':'Buscar'} ${translate(p,locale)}…`],
@@ -30,7 +30,7 @@ export function translate(text:string,locale:Locale):string {
  ];
  for(const [pattern,render] of rules){const m=key.match(pattern);if(m)return leading+render(...m.slice(1))+trailing}
  // Paragraphs, combined preference lists, and icon labels are composed from translated source phrases.
- for(const separator of ['\n\n',', ',' · ',': ']){
+ for(const separator of ['\n\n',', ',' · ',': ',' | ']){
   if(text.includes(separator)){const parts=text.split(separator);const result=parts.map(p=>translate(p,locale));if(result.some((p,i)=>p!==parts[i]))return result.join(separator)}
  }
  for(const icon of ['⌂ ','◇ ','← ','· ','≈ '])if(key.startsWith(icon))return leading+icon+translate(key.slice(icon.length),locale)+trailing;

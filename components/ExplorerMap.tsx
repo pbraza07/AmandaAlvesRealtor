@@ -62,6 +62,8 @@ export function ExplorerMap({country,places,selectedId,onSelect,fitKey}:Props){
  for(const [selector,label] of [['.leaflet-control-zoom-in','Zoom in'],['.leaflet-control-zoom-out','Zoom out']]){
   const button=root.querySelector(selector);button?.setAttribute('title',t(label));button?.setAttribute('aria-label',t(label));
  }
+ const attribution=root.querySelector('.leaflet-control-attribution');
+ attribution?.childNodes.forEach(node=>{if(node.nodeType===3&&node.textContent)node.textContent=node.textContent.replace(/contributors|colaboradores/g,t('contributors'))});
  },[locale,ready]);
  const resetView=()=>{const m=map.current,L=library.current;if(!m||!L)return;if(places.length)m.fitBounds(L.latLngBounds(places.map(p=>[p.lat,p.lng] as [number,number])),{padding:[40,40],maxZoom:11});else m.setView(view.center,view.zoom)};
  return <Localized><div className="explorer-map-wrap">
