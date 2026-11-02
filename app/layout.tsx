@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const c = await getContent();
   const locale=validLocale((await cookies()).get("amanda-language")?.value);
   const t=(text:string)=>translate(text,locale);
-  return { verification:{google:"4rvXDWSBPDue9k4RNlmgn06ptHQeUG54aiYZ03NRgp4"}, metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||"https://amandaalvesrealtor.onrender.com"), title:t("Amanda Alves | Lifestyle Real Estate"), description:t("Find the property to fit your lifestyle in Florida. Explore lifestyle destinations in Spain, Portugal, and Costa Rica."), openGraph:{ title:t("Amanda Alves | Lifestyle Real Estate"), description:t("Find the property to fit your lifestyle in Florida. Explore lifestyle destinations in Spain, Portugal, and Costa Rica."), images:c.socialImageUrl ? [c.socialImageUrl] : [] }, robots:{ index:true, follow:true } };
+  return { verification:{google:["4rvXDWSBPDue9k4RNlmgn06ptHQeUG54aiYZ03NRgp4","CVp7NcxcLh7jhHhCFdMNicLX3TLNx-YNp3evUX7ZQkg"]}, metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||"https://amandaalvesrealtor.onrender.com"), title:t("Amanda Alves | Lifestyle Real Estate"), description:t("Find the property to fit your lifestyle in Florida. Explore lifestyle destinations in Spain, Portugal, and Costa Rica."), openGraph:{ title:t("Amanda Alves | Lifestyle Real Estate"), description:t("Find the property to fit your lifestyle in Florida. Explore lifestyle destinations in Spain, Portugal, and Costa Rica."), images:c.socialImageUrl ? [c.socialImageUrl] : [] }, robots:{ index:true, follow:true } };
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
