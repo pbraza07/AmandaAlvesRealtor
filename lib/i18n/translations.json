@@ -3082,5 +3082,89 @@
   "Public domain": {
     "es": "Dominio público",
     "pt": "Domínio público"
+  },
+  "Rank": {
+    "es": "Puesto",
+    "pt": "Posição"
+  },
+  "match": {
+    "es": "coincidencia",
+    "pt": "compatibilidade"
+  },
+  "Choose preferences": {
+    "es": "Elige preferencias",
+    "pt": "Escolha preferências"
+  },
+  "· Highest match first": {
+    "es": "· Mayor coincidencia primero",
+    "pt": "· Maior compatibilidade primeiro"
+  },
+  "Selected preferences": {
+    "es": "Preferencias seleccionadas",
+    "pt": "Preferências selecionadas"
+  },
+  "Matches": {
+    "es": "Coincide",
+    "pt": "Corresponde"
+  },
+  "Not matched": {
+    "es": "No coincide",
+    "pt": "Não corresponde"
+  },
+  "Needs review": {
+    "es": "Por revisar",
+    "pt": "A verificar"
+  },
+  "Saved": {
+    "es": "Guardado",
+    "pt": "Salvo"
+  },
+  "View city summary →": {
+    "es": "Ver resumen de la ciudad →",
+    "pt": "Ver resumo da cidade →"
+  },
+  "City overview": {
+    "es": "Resumen de la ciudad",
+    "pt": "Resumo da cidade"
+  },
+  "Sources & photo credits": {
+    "es": "Fuentes y créditos de fotos",
+    "pt": "Fontes e créditos das fotos"
+  },
+  "Condensed city introduction": {
+    "es": "Introducción resumida de la ciudad",
+    "pt": "Introdução resumida da cidade"
+  },
+  "City facts are summarized from the place index, geographic data and available city introductions. Local lifestyle details may still need review.": {
+    "es": "Los datos de la ciudad se resumen a partir del índice de lugares, datos geográficos e introducciones disponibles. Los detalles del estilo de vida local aún pueden necesitar revisión.",
+    "pt": "Os dados da cidade são resumidos a partir do índice de lugares, dados geográficos e introduções disponíveis. Os detalhes do estilo de vida local ainda podem precisar de verificação."
+  },
+  "Its setting is within 20 km of the coast.": {
+    "es": "Se encuentra a menos de 20 km de la costa.",
+    "pt": "Fica a até 20 km da costa."
+  },
+  "Its population or regional role gives it an urban character.": {
+    "es": "Su población o papel regional le da un carácter urbano.",
+    "pt": "Sua população ou função regional lhe confere um caráter urbano."
+  },
+  "It has an upland setting at 600 m or more.": {
+    "es": "Se encuentra en una zona elevada a 600 m o más.",
+    "pt": "Fica em uma área elevada a 600 m ou mais."
+  },
+  "A scheduled-service airport is within 50 km.": {
+    "es": "Hay un aeropuerto con vuelos regulares a menos de 50 km.",
+    "pt": "Há um aeroporto com voos regulares a até 50 km."
+  },
+  "City summaries stay on this site. Indexed-place summaries use recorded location, coast, elevation and airport facts. When available, a coordinate-verified Wikipedia city introduction is condensed into a short overview in the selected language. This does not add lifestyle tags or change match percentages.": {
+    "es": "Los resúmenes de las ciudades se muestran en este sitio. Usan datos registrados de ubicación, costa, elevación y aeropuertos. Cuando está disponible, una introducción de Wikipedia verificada por coordenadas se condensa en el idioma seleccionado. Esto no añade etiquetas ni cambia los porcentajes.",
+    "pt": "Os resumos das cidades ficam neste site. Usam dados registrados de localização, costa, elevação e aeroportos. Quando disponível, uma introdução da Wikipédia verificada por coordenadas é condensada no idioma selecionado. Isso não adiciona etiquetas nem altera as porcentagens."
+  },
+  "Condensed Wikipedia introductions are adapted from Wikipedia contributors under CC BY-SA 4.0. Original article and photo attribution remain available inside each city card’s Sources & photo credits section. If a verified introduction is unavailable, the card keeps its recorded geographic facts.": {
+    "es": "Las introducciones condensadas se adaptan de colaboradores de Wikipedia bajo CC BY-SA 4.0. La atribución del artículo y las fotos está disponible en Fuentes y créditos de fotos de cada tarjeta. Si no hay una introducción verificada, se muestran los datos geográficos registrados.",
+    "pt": "As introduções condensadas são adaptadas de colaboradores da Wikipédia sob CC BY-SA 4.0. A atribuição do artigo e das fotos fica em Fontes e créditos das fotos de cada cartão. Se não houver uma introdução verificada, o cartão mantém os dados geográficos registrados."
+  },
+  "← Back to ranked places": {
+    "es": "← Volver a los lugares clasificados",
+    "pt": "← Voltar aos lugares classificados"
   }
 }

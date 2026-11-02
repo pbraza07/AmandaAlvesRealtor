@@ -11,6 +11,8 @@ export function translate(text:string,locale:Locale):string {
  const entry=dictionary[key];
  if(entry)return leading+entry[locale]+trailing;
  // Dynamic display fragments retain canonical data and numbers.
+ const community=key.match(/^(.+) is a community in (.+?)\.(?: (.*))?$/);
+ if(community)return leading+`${community[1]} ${locale==='es'?'es una comunidad en':'é uma comunidade em'} ${translate(community[2],locale)}. ${(community[3]||'').split(/(?<=\.)\s+/).map(sentence=>translate(sentence,locale)).join(' ')}`+trailing;
  const rules:[RegExp,(...parts:string[])=>string][]=[
  [/^Indexed city or community in (.+)\.$/,p=>`${locale==='es'?'Ciudad o comunidad registrada en':'Cidade ou comunidade registrada em'} ${translate(p,locale)}.`],
  [/^(\d+)% match$/,n=>locale==='es'?`${n}% de coincidencia`:`${n}% de compatibilidade`],
