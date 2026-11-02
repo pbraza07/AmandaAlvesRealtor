@@ -1,0 +1,499 @@
+{
+  "country": "costa-rica",
+  "updatedAt": "2026-11-02",
+  "sports": [
+    {
+      "id": "soccer",
+      "label": "Soccer",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s leagues. The current UNAFUT club directory lists 10 first-division teams; the LIASCE active standings list 15 second-division teams. Club bases are approximate town centers; match venues can differ or change.",
+        "es": "Ligas masculinas mayores. El directorio actual de UNAFUT incluye 10 equipos de primera; la tabla activa de LIASCE incluye 15 de segunda. Las bases corresponden aproximadamente al centro de cada localidad; las sedes de los partidos pueden ser distintas o cambiar.",
+        "pt": "Ligas masculinas adultas. O diretório atual da UNAFUT inclui 10 equipes da primeira divisão; a classificação ativa da LIASCE inclui 15 da segunda. As bases correspondem aproximadamente ao centro de cada localidade; os locais dos jogos podem ser diferentes ou mudar."
+      },
+      "competitions": [
+        {
+          "id": "cr-soccer-first",
+          "name": "UNAFUT Liga Promerica",
+          "level": "first",
+          "season": "2026–27 · Apertura 2026",
+          "sourceUrl": "https://www.unafut.com/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "AD San Carlos",
+              "base": "Ciudad Quesada",
+              "lat": 10.32381,
+              "lng": -84.42714,
+              "url": "https://www.unafut.com/club/14124/ad-san-carlos"
+            },
+            {
+              "name": "CS Cartaginés",
+              "base": "Cartago",
+              "lat": 9.86371,
+              "lng": -83.9195,
+              "url": "https://www.unafut.com/club/14057/cs-cartagines"
+            },
+            {
+              "name": "CS Herediano",
+              "base": "Heredia",
+              "lat": 9.99872,
+              "lng": -84.11587,
+              "url": "https://www.unafut.com/club/14078/cs-herediano"
+            },
+            {
+              "name": "Deportivo Saprissa",
+              "base": "San Juan de Tibás",
+              "lat": 9.96188,
+              "lng": -84.07876,
+              "url": "https://www.unafut.com/club/14044/deportivo-saprissa"
+            },
+            {
+              "name": "Escorpiones FC",
+              "base": "San Antonio de Belén",
+              "lat": 9.98261,
+              "lng": -84.18159,
+              "url": "https://www.unafut.com/club/15370/escorpiones-fc"
+            },
+            {
+              "name": "Inter San Carlos",
+              "base": "Pital, San Carlos",
+              "lat": 10.45056,
+              "lng": -84.27406,
+              "url": "https://www.unafut.com/club/15374/inter-san-carlos"
+            },
+            {
+              "name": "LD Alajuelense",
+              "base": "Alajuela",
+              "lat": 10.01723,
+              "lng": -84.21275,
+              "url": "https://www.unafut.com/club/14098/ld-alajuelense"
+            },
+            {
+              "name": "Municipal Pérez Zeledón",
+              "base": "San Isidro de El General",
+              "lat": 9.3721,
+              "lng": -83.70399,
+              "url": "https://www.unafut.com/club/14103/municipal-perez-zeledon"
+            },
+            {
+              "name": "Puntarenas FC",
+              "base": "Puntarenas",
+              "lat": 9.97691,
+              "lng": -84.8379,
+              "url": "https://www.unafut.com/club/14050/puntarenas-fc"
+            },
+            {
+              "name": "Sporting FC",
+              "base": "Pavas, San José",
+              "lat": 9.94252,
+              "lng": -84.13364,
+              "url": "https://www.unafut.com/club/14049/sporting-fc"
+            }
+          ]
+        },
+        {
+          "id": "cr-soccer-second",
+          "name": "LIASCE Liga de Ascenso",
+          "level": "second",
+          "season": "2026–27 · Apertura 2026",
+          "sourceUrl": "https://liasce.com/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "AD Cofutpa",
+              "base": "Palmares",
+              "lat": 10.05693,
+              "lng": -84.43544,
+              "url": "https://liasce.com/equipos/ad-cofutpa/"
+            },
+            {
+              "name": "AD Grecia",
+              "base": "Grecia",
+              "lat": 10.07243,
+              "lng": -84.31124,
+              "url": "https://liasce.com/equipos/municipal-grecia/"
+            },
+            {
+              "name": "Jicaral Sercoba",
+              "base": "Jicaral",
+              "lat": 9.96049,
+              "lng": -85.11408,
+              "url": "https://liasce.com/equipos/jicaral-sercoba/"
+            },
+            {
+              "name": "AD Rosareña",
+              "base": "Rosario, Naranjo",
+              "lat": 10.1144,
+              "lng": -84.3969,
+              "url": "https://liasce.com/equipos/ad-rosario/"
+            },
+            {
+              "name": "PFA Antioquia (Santa Cruz)",
+              "base": "Santa Cruz",
+              "lat": 10.26053,
+              "lng": -85.5851,
+              "url": "https://liasce.com/equipos/pfa-antioquia/"
+            },
+            {
+              "name": "Deportivo Cambute",
+              "base": "Damas, Quepos",
+              "lat": 9.48833,
+              "lng": -84.19444,
+              "url": "https://liasce.com/equipos/quepos-cambute/"
+            },
+            {
+              "name": "CS Uruguay de Coronado",
+              "base": "San Isidro de Coronado",
+              "lat": 9.9754,
+              "lng": -84.00645,
+              "url": "https://liasce.com/equipos/cs-uruguay/"
+            },
+            {
+              "name": "Sarchí FC",
+              "base": "Sarchí",
+              "lat": 10.08972,
+              "lng": -84.34758,
+              "url": "https://liasce.com/equipos/barrio-mexico/"
+            },
+            {
+              "name": "Guadalupe FC",
+              "base": "Guadalupe, Goicoechea",
+              "lat": 9.94805,
+              "lng": -84.05665,
+              "url": "https://liasce.com/equipos/guadalupe-fc/"
+            },
+            {
+              "name": "AD Carmelita",
+              "base": "Alajuela",
+              "lat": 10.01723,
+              "lng": -84.21275,
+              "url": "https://liasce.com/equipos/a-d-carmelita/"
+            },
+            {
+              "name": "AD Barva",
+              "base": "Barva",
+              "lat": 10.02024,
+              "lng": -84.12451,
+              "url": "https://liasce.com/equipos/pitbulls-f-c/"
+            },
+            {
+              "name": "AD Cariari Pococí",
+              "base": "Cariari, Pococí",
+              "lat": 10.35719,
+              "lng": -83.7362,
+              "url": "https://liasce.com/equipos/a-d-cariari-pococi/"
+            },
+            {
+              "name": "Fútbol Consultants Moravia",
+              "base": "San Vicente, Moravia",
+              "lat": 9.96164,
+              "lng": -84.0488,
+              "url": "https://liasce.com/equipos/futbol-consultants-moravia/"
+            },
+            {
+              "name": "AD Santa Ana",
+              "base": "Santa Ana",
+              "lat": 9.9326,
+              "lng": -84.18255,
+              "url": "https://liasce.com/equipos/municipal-santa-ana/"
+            },
+            {
+              "name": "Aserrí FC",
+              "base": "Aserrí",
+              "lat": 9.86142,
+              "lng": -84.09266,
+              "url": "https://liasce.com/equipos/ad-aserri/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basketball",
+      "label": "Basketball",
+      "secondTierStatus": "not-verified",
+      "note": {
+        "en": "The official LSB directory and FECOBA season announcement identify eight senior men’s clubs in 2026. A current senior second-division roster has not been verified; U24 development competition is not treated as second division. Confirm the fixture venue before traveling.",
+        "es": "El directorio oficial de la LSB y el anuncio de temporada de FECOBA identifican ocho clubes masculinos mayores en 2026. No se ha verificado una lista actual de segunda división mayor; la competición de desarrollo U24 no se presenta como segunda división. Confirma la sede antes de viajar.",
+        "pt": "O diretório oficial da LSB e o anúncio da temporada da FECOBA identificam oito clubes masculinos adultos em 2026. Não foi verificada uma lista atual de segunda divisão adulta; a competição de desenvolvimento U24 não é apresentada como segunda divisão. Confirme o local antes de viajar."
+      },
+      "competitions": [
+        {
+          "id": "cr-basketball-first",
+          "name": "Liga Superior de Baloncesto (LSB)",
+          "level": "first",
+          "season": "2026",
+          "sourceUrl": "https://www.lsbcostarica.com/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Escazú Escoba",
+              "base": "Escazú",
+              "lat": 9.91887,
+              "lng": -84.13989,
+              "url": "https://www.lsbcostarica.com/equipos/escazu-escoba"
+            },
+            {
+              "name": "ARBA San Ramón",
+              "base": "San Ramón",
+              "lat": 10.08802,
+              "lng": -84.47022,
+              "url": "https://www.lsbcostarica.com/equipos/arba-san-ramon"
+            },
+            {
+              "name": "Seminario E.L.",
+              "base": "San José",
+              "lat": 9.92807,
+              "lng": -84.09072,
+              "url": "https://www.lsbcostarica.com/equipos/seminario-el"
+            },
+            {
+              "name": "AGB Grecia",
+              "base": "Grecia",
+              "lat": 10.07243,
+              "lng": -84.31124,
+              "url": "https://www.lsbcostarica.com/equipos/agb-grecia"
+            },
+            {
+              "name": "AAB Jaguars Santa Ana",
+              "base": "Santa Ana",
+              "lat": 9.9326,
+              "lng": -84.18255,
+              "url": "https://www.lsbcostarica.com/equipos/aab-jaguars"
+            },
+            {
+              "name": "Roswell",
+              "base": "San José",
+              "lat": 9.92807,
+              "lng": -84.09072,
+              "url": "https://www.lsbcostarica.com/equipos/roswell"
+            },
+            {
+              "name": "SEMEDES-LH",
+              "base": "Heredia",
+              "lat": 9.99872,
+              "lng": -84.11587,
+              "url": "https://www.lsbcostarica.com/equipos/semedes-lh"
+            },
+            {
+              "name": "JMC Sharks Limón",
+              "base": "Limón",
+              "lat": 9.99074,
+              "lng": -83.03596,
+              "url": "https://www.lsbcostarica.com/equipos/jmc-sharks-limon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volleyball",
+      "label": "Volleyball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Men’s senior indoor volleyball. The complete 10-team first-division roster uses current 2026 specialist reporting from Punto de Partida, corroborated by its September season review. The complete 15-team Liga de Ascenso roster is verified in FECOVOL’s official Sporty2 competition groups. Locations approximate club-base centers; match venues can change.",
+        "es": "Voleibol masculino mayor de sala. La lista completa de 10 equipos de Primera División procede de la cobertura especializada de Punto de Partida de 2026, corroborada por su repaso de temporada de septiembre. Los 15 equipos de la Liga de Ascenso están verificados en los grupos oficiales de FECOVOL en Sporty2. Las ubicaciones aproximan las sedes de los clubes; las canchas pueden cambiar.",
+        "pt": "Voleibol masculino adulto de quadra. A lista completa de 10 times da Primeira Divisão usa a cobertura especializada de 2026 do Punto de Partida, corroborada por sua análise da temporada em setembro. Os 15 times da Liga de Ascenso estão verificados nos grupos oficiais da FECOVOL no Sporty2. As localizações aproximam as cidades-base; os locais dos jogos podem mudar."
+      },
+      "competitions": [
+        {
+          "id": "cr-volleyball-first",
+          "name": "FECOVOL Primera División Masculina",
+          "level": "first",
+          "season": "2026",
+          "sourceUrl": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026",
+          "sourceLabel": "Specialist roster report",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Cartago Voleibol",
+              "base": "Cartago",
+              "lat": 9.86371,
+              "lng": -83.9195,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "San José Voleibol",
+              "base": "San José",
+              "lat": 9.92807,
+              "lng": -84.09072,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "ASOVOL Belén",
+              "base": "San Antonio de Belén",
+              "lat": 9.98261,
+              "lng": -84.18159,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "Atenas Voleibol",
+              "base": "Atenas",
+              "lat": 9.97923,
+              "lng": -84.3783,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "UNED",
+              "base": "Barrio Dent, Montes de Oca",
+              "lat": 9.9366,
+              "lng": -84.0542,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "IET Turrialba",
+              "base": "Turrialba",
+              "lat": 9.90467,
+              "lng": -83.68352,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "CODEA Alajuela",
+              "base": "Alajuela",
+              "lat": 10.01723,
+              "lng": -84.21275,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "CCDR Grecia",
+              "base": "Grecia",
+              "lat": 10.07243,
+              "lng": -84.31124,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "ASOVOL San Carlos",
+              "base": "Ciudad Quesada",
+              "lat": 10.32381,
+              "lng": -84.42714,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            },
+            {
+              "name": "Universidad de Costa Rica (UCR)",
+              "base": "San Pedro, Montes de Oca",
+              "lat": 9.93056,
+              "lng": -84.05083,
+              "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
+            }
+          ]
+        },
+        {
+          "id": "cr-volleyball-second",
+          "name": "FECOVOL Liga de Ascenso Masculina",
+          "level": "second",
+          "season": "2026",
+          "sourceUrl": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Aserrí",
+              "base": "Aserrí",
+              "lat": 9.86142,
+              "lng": -84.09266,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "NAJA Voleibol Sarchí",
+              "base": "Sarchí",
+              "lat": 10.08972,
+              "lng": -84.34758,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Academia T&D Cartago",
+              "base": "Cartago",
+              "lat": 9.86371,
+              "lng": -83.9195,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Rockets",
+              "base": "San Francisco de Dos Ríos, San José",
+              "lat": 9.91131,
+              "lng": -84.05662,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Carrillos Volley Club",
+              "base": "Carrillos, Poás",
+              "lat": 10.02136,
+              "lng": -84.27415,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Desamparados",
+              "base": "Desamparados",
+              "lat": 9.899,
+              "lng": -84.06232,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Vichima Pérez Zeledón",
+              "base": "San Isidro de El General",
+              "lat": 9.3721,
+              "lng": -83.70399,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "ASODEVOL Parrita",
+              "base": "Parrita",
+              "lat": 9.52091,
+              "lng": -84.32249,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Santa Ana",
+              "base": "Santa Ana",
+              "lat": 9.9326,
+              "lng": -84.18255,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Goicoechea",
+              "base": "Guadalupe, Goicoechea",
+              "lat": 9.94805,
+              "lng": -84.05665,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "ADVCM Moravia",
+              "base": "San Vicente, Moravia",
+              "lat": 9.96164,
+              "lng": -84.0488,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Universidad Nacional (UNA)",
+              "base": "Heredia",
+              "lat": 9.99872,
+              "lng": -84.11587,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "Tibás",
+              "base": "San Juan de Tibás",
+              "lat": 9.96188,
+              "lng": -84.07876,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "CCDR Abangares",
+              "base": "Las Juntas, Abangares",
+              "lat": 10.2798,
+              "lng": -84.959,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            },
+            {
+              "name": "CCDR Escazú",
+              "base": "Escazú",
+              "lat": 9.91887,
+              "lng": -84.13989,
+              "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

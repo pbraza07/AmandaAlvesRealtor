@@ -1,0 +1,1489 @@
+{
+  "country": "spain",
+  "updatedAt": "2026-11-02",
+  "sports": [
+    {
+      "id": "soccer",
+      "label": "Soccer",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s Spanish league clubs, including reserve teams and Andorran clubs participating in the Spanish pyramid. Bases are home-match towns or the club city; confirm the fixture venue before travelling.",
+        "es": "Clubes sénior masculinos de las ligas españolas, incluidos filiales y clubes andorranos que compiten en la pirámide española. Las bases son localidades de partidos como local o la ciudad del club; confirma la sede del encuentro antes de viajar.",
+        "pt": "Clubes seniores masculinos das ligas espanholas, incluindo equipes reservas e clubes andorranos na pirâmide espanhola. As bases são localidades de jogos em casa ou a cidade do clube; confirme o local da partida antes de viajar."
+      },
+      "competitions": [
+        {
+          "id": "es-laliga",
+          "name": "LALIGA EA SPORTS",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://www.laliga.com/laliga-easports/clubes",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Athletic Club",
+              "base": "Bilbao",
+              "lat": 43.26271,
+              "lng": -2.92528,
+              "url": "https://www.laliga.com/clubes/athletic-club/plantilla"
+            },
+            {
+              "name": "Atlético de Madrid",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://www.laliga.com/clubes/atletico-de-madrid/plantilla"
+            },
+            {
+              "name": "CA Osasuna",
+              "base": "Pamplona",
+              "lat": 42.81687,
+              "lng": -1.64323,
+              "url": "https://www.laliga.com/clubes/c-a-osasuna/plantilla"
+            },
+            {
+              "name": "Celta",
+              "base": "Vigo",
+              "lat": 42.23282,
+              "lng": -8.72264,
+              "url": "https://www.laliga.com/clubes/rc-celta/plantilla"
+            },
+            {
+              "name": "Deportivo Alavés",
+              "base": "Vitoria-Gasteiz",
+              "lat": 42.84998,
+              "lng": -2.67268,
+              "url": "https://www.laliga.com/clubes/d-alaves/plantilla"
+            },
+            {
+              "name": "Elche CF",
+              "base": "Elche",
+              "lat": 38.26218,
+              "lng": -0.70107,
+              "url": "https://www.laliga.com/clubes/elche-c-f/plantilla"
+            },
+            {
+              "name": "FC Barcelona",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://www.laliga.com/clubes/fc-barcelona/plantilla"
+            },
+            {
+              "name": "Getafe CF",
+              "base": "Getafe",
+              "lat": 40.30571,
+              "lng": -3.73295,
+              "url": "https://www.laliga.com/clubes/getafe-cf/plantilla"
+            },
+            {
+              "name": "Levante UD",
+              "base": "Valencia",
+              "lat": 39.47391,
+              "lng": -0.37966,
+              "url": "https://www.laliga.com/clubes/levante-ud/plantilla"
+            },
+            {
+              "name": "Málaga CF",
+              "base": "Málaga",
+              "lat": 36.72016,
+              "lng": -4.42034,
+              "url": "https://www.laliga.com/clubes/malaga-cf/plantilla"
+            },
+            {
+              "name": "R. Racing Club",
+              "base": "Santander",
+              "lat": 43.46589,
+              "lng": -3.80493,
+              "url": "https://www.laliga.com/clubes/r-racing-club/plantilla"
+            },
+            {
+              "name": "Rayo Vallecano",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://www.laliga.com/clubes/rayo-vallecano/plantilla"
+            },
+            {
+              "name": "RC Deportivo",
+              "base": "A Coruña",
+              "lat": 43.37135,
+              "lng": -8.396,
+              "url": "https://www.laliga.com/clubes/rc-deportivo/plantilla"
+            },
+            {
+              "name": "RCD Espanyol de Barcelona",
+              "base": "Cornellà de Llobregat",
+              "lat": 41.35,
+              "lng": 2.08333,
+              "url": "https://www.laliga.com/clubes/rcd-espanyol/plantilla"
+            },
+            {
+              "name": "Real Betis",
+              "base": "Sevilla",
+              "lat": 37.38283,
+              "lng": -5.97317,
+              "url": "https://www.laliga.com/clubes/real-betis/plantilla"
+            },
+            {
+              "name": "Real Madrid",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://www.laliga.com/clubes/real-madrid/plantilla"
+            },
+            {
+              "name": "Real Sociedad",
+              "base": "Donostia-San Sebastián",
+              "lat": 43.31283,
+              "lng": -1.97499,
+              "url": "https://www.laliga.com/clubes/real-sociedad/plantilla"
+            },
+            {
+              "name": "Sevilla FC",
+              "base": "Sevilla",
+              "lat": 37.38283,
+              "lng": -5.97317,
+              "url": "https://www.laliga.com/clubes/sevilla-fc/plantilla"
+            },
+            {
+              "name": "Valencia CF",
+              "base": "Valencia",
+              "lat": 39.47391,
+              "lng": -0.37966,
+              "url": "https://www.laliga.com/clubes/valencia-cf/plantilla"
+            },
+            {
+              "name": "Villarreal CF",
+              "base": "Vila-real",
+              "lat": 39.9383,
+              "lng": -0.10087,
+              "url": "https://www.laliga.com/clubes/villarreal-cf/plantilla"
+            }
+          ]
+        },
+        {
+          "id": "es-laliga2",
+          "name": "LALIGA HYPERMOTION",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://www.laliga.com/laliga-hypermotion/clubes",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "AD Ceuta FC",
+              "base": "Ceuta",
+              "lat": 35.88919,
+              "lng": -5.32042,
+              "url": "https://www.laliga.com/clubes/ad-ceuta-fc/plantilla"
+            },
+            {
+              "name": "Albacete BP",
+              "base": "Albacete",
+              "lat": 38.99424,
+              "lng": -1.85643,
+              "url": "https://www.laliga.com/clubes/albacete-bp/plantilla"
+            },
+            {
+              "name": "Burgos CF",
+              "base": "Burgos",
+              "lat": 42.34106,
+              "lng": -3.70184,
+              "url": "https://www.laliga.com/clubes/burgos/plantilla"
+            },
+            {
+              "name": "Cádiz CF",
+              "base": "Cádiz",
+              "lat": 36.52672,
+              "lng": -6.2891,
+              "url": "https://www.laliga.com/clubes/cadiz-cf/plantilla"
+            },
+            {
+              "name": "CD Castellón",
+              "base": "Castelló de la Plana",
+              "lat": 39.98567,
+              "lng": -0.04935,
+              "url": "https://www.laliga.com/clubes/cd-castellon/plantilla"
+            },
+            {
+              "name": "CD Eldense",
+              "base": "Elda",
+              "lat": 38.47783,
+              "lng": -0.79157,
+              "url": "https://www.laliga.com/clubes/eldense/plantilla"
+            },
+            {
+              "name": "CD Leganés",
+              "base": "Leganés",
+              "lat": 40.32718,
+              "lng": -3.7635,
+              "url": "https://www.laliga.com/clubes/cd-leganes/plantilla"
+            },
+            {
+              "name": "CD Tenerife",
+              "base": "Santa Cruz de Tenerife",
+              "lat": 28.46824,
+              "lng": -16.25462,
+              "url": "https://www.laliga.com/clubes/cd-tenerife/plantilla"
+            },
+            {
+              "name": "CE Sabadell",
+              "base": "Sabadell",
+              "lat": 41.54329,
+              "lng": 2.10942,
+              "url": "https://www.laliga.com/clubes/ce-sabadell/plantilla"
+            },
+            {
+              "name": "Celta Fortuna",
+              "base": "Vigo",
+              "lat": 42.23282,
+              "lng": -8.72264,
+              "url": "https://www.laliga.com/clubes/rc-celta-b/plantilla"
+            },
+            {
+              "name": "Córdoba CF",
+              "base": "Córdoba",
+              "lat": 37.89155,
+              "lng": -4.77275,
+              "url": "https://www.laliga.com/clubes/cordoba-cf/plantilla"
+            },
+            {
+              "name": "FC Andorra",
+              "base": "Encamp",
+              "lat": 42.5347,
+              "lng": 1.5801,
+              "url": "https://www.fcandorra.com/es/installacions"
+            },
+            {
+              "name": "Girona FC",
+              "base": "Girona",
+              "lat": 41.98311,
+              "lng": 2.82493,
+              "url": "https://www.laliga.com/clubes/girona-fc/plantilla"
+            },
+            {
+              "name": "Granada CF",
+              "base": "Granada",
+              "lat": 37.18817,
+              "lng": -3.60667,
+              "url": "https://www.laliga.com/clubes/granada-cf/plantilla"
+            },
+            {
+              "name": "R. Sociedad B",
+              "base": "Donostia-San Sebastián",
+              "lat": 43.31283,
+              "lng": -1.97499,
+              "url": "https://www.laliga.com/clubes/r-sociedad-b/plantilla"
+            },
+            {
+              "name": "RCD Mallorca",
+              "base": "Palma",
+              "lat": 39.56939,
+              "lng": 2.65024,
+              "url": "https://www.laliga.com/clubes/rcd-mallorca/plantilla"
+            },
+            {
+              "name": "Real Oviedo",
+              "base": "Oviedo",
+              "lat": 43.36029,
+              "lng": -5.84476,
+              "url": "https://www.laliga.com/clubes/real-oviedo/plantilla"
+            },
+            {
+              "name": "Real Sporting",
+              "base": "Gijón",
+              "lat": 43.53573,
+              "lng": -5.66152,
+              "url": "https://www.laliga.com/clubes/real-sporting/plantilla"
+            },
+            {
+              "name": "Real Valladolid CF",
+              "base": "Valladolid",
+              "lat": 41.65541,
+              "lng": -4.72353,
+              "url": "https://www.laliga.com/clubes/r-valladolid-cf/plantilla"
+            },
+            {
+              "name": "SD Eibar",
+              "base": "Eibar",
+              "lat": 43.18493,
+              "lng": -2.47158,
+              "url": "https://www.laliga.com/clubes/sd-eibar/plantilla"
+            },
+            {
+              "name": "UD Almería",
+              "base": "Almería",
+              "lat": 36.83814,
+              "lng": -2.45974,
+              "url": "https://www.laliga.com/clubes/ud-almeria/plantilla"
+            },
+            {
+              "name": "UD Las Palmas",
+              "base": "Las Palmas de Gran Canaria",
+              "lat": 28.10178,
+              "lng": -15.41573,
+              "url": "https://www.laliga.com/clubes/ud-las-palmas/plantilla"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basketball",
+      "label": "Basketball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s Liga Endesa and Primera FEB. Primera FEB is Spain’s second national level; Segunda FEB is the third level and is not used as a second-division substitute. Andorran league members are included.",
+        "es": "Liga Endesa y Primera FEB sénior masculinas. Primera FEB es el segundo nivel nacional; Segunda FEB es el tercero y no se usa como sustituto de segunda división. Se incluyen los miembros andorranos de la liga.",
+        "pt": "Liga Endesa e Primera FEB seniores masculinas. Primera FEB é o segundo nível nacional; Segunda FEB é o terceiro e não é usada como substituta da segunda divisão. Os membros andorranos da liga estão incluídos."
+      },
+      "competitions": [
+        {
+          "id": "es-acb",
+          "name": "Liga Endesa (ACB)",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://acb.com/es/liga/equipos",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Asisa Joventut",
+              "base": "Badalona",
+              "lat": 41.45004,
+              "lng": 2.24741,
+              "url": "https://acb.com/es/liga/equipos/asisa-joventut-8"
+            },
+            {
+              "name": "Barça",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://acb.com/es/liga/equipos/barca-2"
+            },
+            {
+              "name": "Casademont Zaragoza",
+              "base": "Zaragoza",
+              "lat": 41.65606,
+              "lng": -0.87734,
+              "url": "https://acb.com/es/liga/equipos/casademont-zaragoza-16"
+            },
+            {
+              "name": "FIATC Girona",
+              "base": "Girona",
+              "lat": 41.98311,
+              "lng": 2.82493,
+              "url": "https://acb.com/es/liga/equipos/fiatc-girona-591"
+            },
+            {
+              "name": "iLERNA Lleida",
+              "base": "Lleida",
+              "lat": 41.61674,
+              "lng": 0.62218,
+              "url": "https://acb.com/es/liga/equipos/ilerna-lleida-658"
+            },
+            {
+              "name": "Kids&Us Manresa",
+              "base": "Manresa",
+              "lat": 41.72815,
+              "lng": 1.82399,
+              "url": "https://acb.com/es/liga/equipos/kidsandus-manresa-10"
+            },
+            {
+              "name": "Kosner Baskonia",
+              "base": "Vitoria-Gasteiz",
+              "lat": 42.84998,
+              "lng": -2.67268,
+              "url": "https://acb.com/es/liga/equipos/kosner-baskonia-3"
+            },
+            {
+              "name": "La Laguna Tenerife",
+              "base": "San Cristóbal de La Laguna",
+              "lat": 28.4853,
+              "lng": -16.32014,
+              "url": "https://acb.com/es/liga/equipos/la-laguna-tenerife-28"
+            },
+            {
+              "name": "Leyma Coruña",
+              "base": "A Coruña",
+              "lat": 43.37135,
+              "lng": -8.396,
+              "url": "https://acb.com/es/liga/equipos/leyma-coruna-657"
+            },
+            {
+              "name": "Monbus Obradoiro",
+              "base": "Santiago de Compostela",
+              "lat": 42.88052,
+              "lng": -8.54569,
+              "url": "https://acb.com/es/liga/equipos/monbus-obradoiro-57"
+            },
+            {
+              "name": "MoraBanc Andorra",
+              "base": "Andorra la Vella",
+              "lat": 42.5078,
+              "lng": 1.5211,
+              "url": "https://acb.com/es/liga/equipos/morabanc-andorra-22"
+            },
+            {
+              "name": "Real Madrid",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://acb.com/es/liga/equipos/real-madrid-9"
+            },
+            {
+              "name": "Recoletas Salud San Pablo Burgos",
+              "base": "Burgos",
+              "lat": 42.34106,
+              "lng": -3.70184,
+              "url": "https://acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549"
+            },
+            {
+              "name": "Río Breogán",
+              "base": "Lugo",
+              "lat": 43.00992,
+              "lng": -7.55602,
+              "url": "https://acb.com/es/liga/equipos/rio-breogan-25"
+            },
+            {
+              "name": "Surne Bilbao",
+              "base": "Bilbao",
+              "lat": 43.26271,
+              "lng": -2.92528,
+              "url": "https://acb.com/es/liga/equipos/surne-bilbao-4"
+            },
+            {
+              "name": "UCAM Murcia",
+              "base": "Murcia",
+              "lat": 37.98704,
+              "lng": -1.13004,
+              "url": "https://acb.com/es/liga/equipos/ucam-murcia-12"
+            },
+            {
+              "name": "Unicaja",
+              "base": "Málaga",
+              "lat": 36.72016,
+              "lng": -4.42034,
+              "url": "https://acb.com/es/liga/equipos/unicaja-14"
+            },
+            {
+              "name": "Valencia Basket",
+              "base": "Valencia",
+              "lat": 39.47391,
+              "lng": -0.37966,
+              "url": "https://acb.com/es/liga/equipos/valencia-basket-13"
+            }
+          ]
+        },
+        {
+          "id": "es-primera-feb",
+          "name": "Primera FEB",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Cajasiete Gran Canaria",
+              "base": "Las Palmas de Gran Canaria",
+              "lat": 28.10178,
+              "lng": -15.41573,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Coviran Granada",
+              "base": "Granada",
+              "lat": 37.18817,
+              "lng": -3.60667,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Movistar Estudiantes",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Iberolea Palencia",
+              "base": "Palencia",
+              "lat": 42.00955,
+              "lng": -4.52406,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Alimerka Oviedo Baloncesto",
+              "base": "Oviedo",
+              "lat": 43.36029,
+              "lng": -5.84476,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Inveready Askatuak Gipuzkoa",
+              "base": "Donostia-San Sebastián",
+              "lat": 43.31283,
+              "lng": -1.97499,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Partizán de Fuenlabrada",
+              "base": "Fuenlabrada",
+              "lat": 40.28419,
+              "lng": -3.79415,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Bàsquet Menorca",
+              "base": "Maó",
+              "lat": 39.88853,
+              "lng": 4.26583,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "HLA Alicante",
+              "base": "Alicante",
+              "lat": 38.34517,
+              "lng": -0.48149,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Caja Rural CB Zamora",
+              "base": "Zamora",
+              "lat": 41.50633,
+              "lng": -5.74456,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Grupo Alega Cantabria",
+              "base": "Torrelavega",
+              "lat": 43.34943,
+              "lng": -4.04785,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Club Ourense Baloncesto",
+              "base": "Ourense",
+              "lat": 42.33669,
+              "lng": -7.86407,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Grupo Ureta Tizona Burgos",
+              "base": "Burgos",
+              "lat": 42.34106,
+              "lng": -3.70184,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Fibwi Palma Bàsquet",
+              "base": "Palma",
+              "lat": 39.56939,
+              "lng": 2.65024,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Palmer Basket Mallorca",
+              "base": "Palma",
+              "lat": 39.56939,
+              "lng": 2.65024,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Bueno Arenas Albacete Basket",
+              "base": "Albacete",
+              "lat": 38.99424,
+              "lng": -1.85643,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Insolac Caja 87",
+              "base": "Sevilla",
+              "lat": 37.38283,
+              "lng": -5.97317,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            },
+            {
+              "name": "Cajasol Coto Córdoba",
+              "base": "Córdoba",
+              "lat": 37.89155,
+              "lng": -4.77275,
+              "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volleyball",
+      "label": "Volleyball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s Superliga clubs and all 36 Superliga 2 clubs across Groups A, B and C, including the island and reserve sides. Bases are club towns; venues may vary by fixture. Cisneros La Laguna’s second-tier side is shown separately from its top-tier team.",
+        "es": "Clubes sénior masculinos de Superliga y los 36 clubes de Superliga 2 de los grupos A, B y C, incluidos equipos insulares y filiales. Las bases son localidades de los clubes; las sedes pueden variar por partido. El equipo de segunda categoría de Cisneros La Laguna aparece separado de su primer equipo.",
+        "pt": "Clubes seniores masculinos da Superliga e todos os 36 clubes da Superliga 2 nos grupos A, B e C, incluindo equipes das ilhas e reservas. As bases são cidades dos clubes; os locais podem variar por partida. A equipe de segunda divisão do Cisneros La Laguna aparece separadamente da equipe principal."
+      },
+      "competitions": [
+        {
+          "id": "es-superliga-volleyball",
+          "name": "Superliga Masculina",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "CV Guaguas",
+              "base": "Las Palmas de Gran Canaria",
+              "lat": 28.10178,
+              "lng": -15.41573,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Grupo Herce Soria Voleibol",
+              "base": "Soria",
+              "lat": 41.76401,
+              "lng": -2.46883,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Servigroup Playas de Benidorm",
+              "base": "Benidorm",
+              "lat": 38.53816,
+              "lng": -0.13098,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Cisneros La Laguna",
+              "base": "San Cristóbal de La Laguna",
+              "lat": 28.4853,
+              "lng": -16.32014,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Conqueridor Valencia",
+              "base": "Valencia",
+              "lat": 39.47391,
+              "lng": -0.37966,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Pamesa Teruel Voleibol",
+              "base": "Teruel",
+              "lat": 40.3456,
+              "lng": -1.10646,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Melilla Ciudad del Deporte",
+              "base": "Melilla",
+              "lat": 35.29369,
+              "lng": -2.93833,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "UC3M Voleibol Leganés",
+              "base": "Leganés",
+              "lat": 40.32718,
+              "lng": -3.7635,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Conectabalear CV Manacor",
+              "base": "Manacor",
+              "lat": 39.56964,
+              "lng": 3.20955,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "Unicaja Costa de Almería",
+              "base": "Almería",
+              "lat": 36.83814,
+              "lng": -2.45974,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            },
+            {
+              "name": "CV SUAC Canarias",
+              "base": "Las Palmas de Gran Canaria",
+              "lat": 28.10178,
+              "lng": -15.41573,
+              "url": "https://www.cvsuaccanarias.es/"
+            },
+            {
+              "name": "Intasa San Sadurniño",
+              "base": "San Sadurniño",
+              "lat": 43.53333,
+              "lng": -8.06667,
+              "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
+            }
+          ]
+        },
+        {
+          "id": "es-superliga2-volleyball",
+          "name": "Superliga Masculina 2 (Groups A, B and C)",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Almendralejo Extremadura",
+              "base": "Almendralejo",
+              "lat": 38.68316,
+              "lng": -6.40747,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Arona Spring In Motion",
+              "base": "Arona",
+              "lat": 28.09962,
+              "lng": -16.68102,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-a/equipos/arona-spring-in-motion"
+            },
+            {
+              "name": "Barça Voleibol",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-a/equipos/barca-voleibol"
+            },
+            {
+              "name": "Bus Leader San Roque",
+              "base": "Las Palmas de Gran Canaria",
+              "lat": 28.10178,
+              "lng": -15.41573,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-a/equipos/bus-leader-san-roque"
+            },
+            {
+              "name": "Club Vigo Voleibol",
+              "base": "Vigo",
+              "lat": 42.23282,
+              "lng": -8.72264,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Club Voley Palma",
+              "base": "Palma",
+              "lat": 39.56939,
+              "lng": 2.65024,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Grupo Egido Pinto",
+              "base": "Pinto",
+              "lat": 40.24147,
+              "lng": -3.69999,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Indescar Zaragoza",
+              "base": "Zaragoza",
+              "lat": 41.65606,
+              "lng": -0.87734,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Instercap Asisa Tarragona SPiSP",
+              "base": "Tarragona",
+              "lat": 41.11905,
+              "lng": 1.24544,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Rotogal Boiro Voleibol",
+              "base": "Boiro",
+              "lat": 42.64725,
+              "lng": -8.88459,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Textil Santanderina",
+              "base": "Cabezón de la Sal",
+              "lat": 43.30824,
+              "lng": -4.23571,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-a/equipos/textil-santanderina"
+            },
+            {
+              "name": "UBE L’Illa Grau",
+              "base": "Castelló de la Plana",
+              "lat": 39.98567,
+              "lng": -0.04935,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CN Sabadell",
+              "base": "Sabadell",
+              "lat": 41.54329,
+              "lng": 2.10942,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Cratevo Volei Arenys",
+              "base": "Arenys de Mar",
+              "lat": 41.5819,
+              "lng": 2.54936,
+              "url": "https://www.voleiarenys.com/team/senior-masculi/"
+            },
+            {
+              "name": "CV Almoradí",
+              "base": "Almoradí",
+              "lat": 38.10879,
+              "lng": -0.79197,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CV Elche Grupo Alcudia",
+              "base": "Elche",
+              "lat": 38.26218,
+              "lng": -0.70107,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CV Gemavi Vinaròs",
+              "base": "Vinaròs",
+              "lat": 40.47033,
+              "lng": 0.47559,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CV Paterna Líceo",
+              "base": "Paterna",
+              "lat": 39.50263,
+              "lng": -0.44079,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CV Portol",
+              "base": "Marratxí",
+              "lat": 39.62142,
+              "lng": 2.7253,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-b/equipos/cv-portol"
+            },
+            {
+              "name": "CV Roquetes",
+              "base": "Roquetes",
+              "lat": 40.8203,
+              "lng": 0.50262,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Familycash Xátiva Voleibol",
+              "base": "Xàtiva",
+              "lat": 38.99042,
+              "lng": -0.51852,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Mediterráneo Castellón",
+              "base": "Castelló de la Plana",
+              "lat": 39.98567,
+              "lng": -0.04935,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Mintonette Almería",
+              "base": "Almería",
+              "lat": 36.83814,
+              "lng": -2.45974,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Rodi Balafia Volei Lleida",
+              "base": "Lleida",
+              "lat": 41.61674,
+              "lng": 0.62218,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "AD Voleibol Rivas",
+              "base": "Rivas-Vaciamadrid",
+              "lat": 40.32605,
+              "lng": -3.51089,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Arenal Emevé",
+              "base": "Lugo",
+              "lat": 43.00992,
+              "lng": -7.55602,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CDE Parla Vóley",
+              "base": "Parla",
+              "lat": 40.23604,
+              "lng": -3.76752,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CID Jovellanos",
+              "base": "Gijón",
+              "lat": 43.53573,
+              "lng": -5.66152,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Cisneros La Laguna (Superliga 2)",
+              "base": "San Cristóbal de La Laguna",
+              "lat": 28.4853,
+              "lng": -16.32014,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-c/equipos/cisneros-la-laguna"
+            },
+            {
+              "name": "Club Voleibol Collado Villalba",
+              "base": "Collado Villalba",
+              "lat": 40.63506,
+              "lng": -4.00486,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "CV Gupane Guía",
+              "base": "Santa María de Guía de Gran Canaria",
+              "lat": 28.1397,
+              "lng": -15.6329,
+              "url": "https://esvoley.es/voleibol/competiciones-masculinas/superliga-masculina-2/grupo-c/equipos/cv-gupane-guia"
+            },
+            {
+              "name": "CV Oviedo",
+              "base": "Oviedo",
+              "lat": 43.36029,
+              "lng": -5.84476,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Universidad de Granada",
+              "base": "Granada",
+              "lat": 37.18817,
+              "lng": -3.60667,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Universidad de Valladolid",
+              "base": "Valladolid",
+              "lat": 41.65541,
+              "lng": -4.72353,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "Voleibol Dumbria",
+              "base": "Dumbría",
+              "lat": 43.00836,
+              "lng": -9.11328,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            },
+            {
+              "name": "VP Madrid",
+              "base": "Madrid",
+              "lat": 40.4165,
+              "lng": -3.70256,
+              "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handball",
+      "label": "Handball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s ASOBAL and División de Honor Plata clubs. Sponsor names can change during a season. Distances use home-base towns, not a guarantee of the venue for every fixture.",
+        "es": "Clubes sénior masculinos de ASOBAL y División de Honor Plata. Los nombres de patrocinadores pueden cambiar durante la temporada. Las distancias usan localidades base y no garantizan la sede de cada partido.",
+        "pt": "Clubes seniores masculinos da ASOBAL e División de Honor Plata. Nomes de patrocinadores podem mudar durante a temporada. As distâncias usam localidades-base e não garantem o local de cada partida."
+      },
+      "competitions": [
+        {
+          "id": "es-asobal",
+          "name": "Liga NEXUS ENERGÍA ASOBAL",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://www.asobal.es/asobal/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Barça",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://www.fcbarcelona.com/en/handball"
+            },
+            {
+              "name": "Dicorpebal Logroño La Rioja",
+              "base": "Logroño",
+              "lat": 42.46615,
+              "lng": -2.45115,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Fraikin BM. Granollers",
+              "base": "Granollers",
+              "lat": 41.60797,
+              "lng": 2.28773,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "IRUDEK Bidasoa Irun",
+              "base": "Irun",
+              "lat": 43.33904,
+              "lng": -1.78938,
+              "url": "https://www.asobal.es/equipos/BID/"
+            },
+            {
+              "name": "Bathco BM. Torrelavega",
+              "base": "Torrelavega",
+              "lat": 43.34943,
+              "lng": -4.04785,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Recoletas Salud Atlético Valladolid",
+              "base": "Valladolid",
+              "lat": 41.65541,
+              "lng": -4.72353,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "ABANCA Ademar León",
+              "base": "León",
+              "lat": 42.60003,
+              "lng": -5.57032,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "BM Caserío Ciudad Real",
+              "base": "Ciudad Real",
+              "lat": 38.98626,
+              "lng": -3.92907,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Horneo BM. Alicante",
+              "base": "Alicante",
+              "lat": 38.34517,
+              "lng": -0.48149,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Tubos Aranda Villa de Aranda",
+              "base": "Aranda de Duero",
+              "lat": 41.67041,
+              "lng": -3.6892,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "REBI Balonmano Cuenca",
+              "base": "Cuenca",
+              "lat": 40.06667,
+              "lng": -2.13333,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Frigoríficos del Morrazo",
+              "base": "Cangas do Morrazo",
+              "lat": 42.2646,
+              "lng": -8.7841,
+              "url": "https://www.asobal.es/equipos/CNG/"
+            },
+            {
+              "name": "Cajasol Ángel Ximénez P. Genil",
+              "base": "Puente Genil",
+              "lat": 37.38943,
+              "lng": -4.76686,
+              "url": "https://www.asobal.es/asobal/"
+            },
+            {
+              "name": "Viveros Herol BM. Nava",
+              "base": "Nava de la Asunción",
+              "lat": 41.15586,
+              "lng": -4.48751,
+              "url": "https://www.asobal.es/equipos/NAV/"
+            },
+            {
+              "name": "Cajasol Sevilla BM. Proin",
+              "base": "Sevilla",
+              "lat": 37.38283,
+              "lng": -5.97317,
+              "url": "https://bmproin.com/"
+            },
+            {
+              "name": "Fertiberia Puerto Sagunto",
+              "base": "Puerto de Sagunto",
+              "lat": 39.6622,
+              "lng": -0.21749,
+              "url": "https://www.asobal.es/asobal/"
+            }
+          ]
+        },
+        {
+          "id": "es-handball-plata",
+          "name": "División de Honor Plata Masculina",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Fundación Agustinos Alicante",
+              "base": "Alicante",
+              "lat": 38.34517,
+              "lng": -0.48149,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Servigroup Hoteles Benidorm",
+              "base": "Benidorm",
+              "lat": 38.53816,
+              "lng": -0.13098,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Blendio Sinfín Santander Ciudad",
+              "base": "Santander",
+              "lat": 43.46589,
+              "lng": -3.80493,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Trasmapi Gobycar Citubo Eivissa",
+              "base": "Ibiza",
+              "lat": 38.90883,
+              "lng": 1.43296,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Amenabar Zarautz ZKE",
+              "base": "Zarautz",
+              "lat": 43.28444,
+              "lng": -2.16992,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "UBU San Pablo Burgos",
+              "base": "Burgos",
+              "lat": 42.34106,
+              "lng": -3.70184,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Contazara Zaragoza",
+              "base": "Zaragoza",
+              "lat": 41.65606,
+              "lng": -0.87734,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Sanicentro BM. Guadalajara",
+              "base": "Guadalajara",
+              "lat": 40.62862,
+              "lng": -3.16185,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Anaitasuna",
+              "base": "Pamplona",
+              "lat": 42.81687,
+              "lng": -1.64323,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Barça Atlètic",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Dólmenes Antequera",
+              "base": "Antequera",
+              "lat": 37.01938,
+              "lng": -4.56123,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Attica 21 Hotels O.A.R. Coruña",
+              "base": "A Coruña",
+              "lat": 43.37135,
+              "lng": -8.396,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Confía Base Oviedo",
+              "base": "Oviedo",
+              "lat": 43.36029,
+              "lng": -5.84476,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Club Cisne Los Sauces",
+              "base": "Pontevedra",
+              "lat": 42.431,
+              "lng": -8.64435,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Caja Rural de Zamora",
+              "base": "Zamora",
+              "lat": 41.50633,
+              "lng": -5.74456,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            },
+            {
+              "name": "Bada Huesca",
+              "base": "Huesca",
+              "lat": 42.13615,
+              "lng": -0.4087,
+              "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "futsal",
+      "label": "Futsal",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s Liga Prime Futsal and Segunda División. Segunda has 15 registered teams after Ribera Navarra’s withdrawal; the RFEF confirmed that the vacancy would remain unfilled on 19 September 2026. Bases use the home-match town where it differs from the club’s origin.",
+        "es": "Liga Prime Futsal y Segunda División sénior masculinas. Segunda tiene 15 equipos inscritos tras la retirada del Ribera Navarra; la RFEF confirmó el 19 de septiembre de 2026 que la vacante no se cubriría. Las bases usan la localidad de los partidos como local cuando difiere del origen del club.",
+        "pt": "Liga Prime Futsal e Segunda División seniores masculinas. A Segunda tem 15 equipes inscritas após a saída do Ribera Navarra; a RFEF confirmou em 19 de setembro de 2026 que a vaga não seria preenchida. As bases usam a cidade dos jogos em casa quando difere da origem do clube."
+      },
+      "competitions": [
+        {
+          "id": "es-liga-prime-futsal",
+          "name": "Liga Prime Futsal",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Barça",
+              "base": "Barcelona",
+              "lat": 41.38879,
+              "lng": 2.15899,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Catgas Energia",
+              "base": "Santa Coloma de Gramenet",
+              "lat": 41.45152,
+              "lng": 2.2081,
+              "url": "https://futsal.rfef.es/equipo/industrias-santa-coloma/24/2027/info"
+            },
+            {
+              "name": "Córdoba Patrimonio Humanidad",
+              "base": "Córdoba",
+              "lat": 37.89155,
+              "lng": -4.77275,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "ElPozo Murcia Costa Cálida",
+              "base": "Murcia",
+              "lat": 37.98704,
+              "lng": -1.13004,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Illes Balears Palma Futsal",
+              "base": "Palma",
+              "lat": 39.56939,
+              "lng": 2.65024,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Inter JP Financial",
+              "base": "Torrejón de Ardoz",
+              "lat": 40.45535,
+              "lng": -3.46973,
+              "url": "https://futsal.rfef.es/equipo/movistar-inter/27/2027/info"
+            },
+            {
+              "name": "Jaén Paraíso Interior",
+              "base": "Jaén",
+              "lat": 37.76922,
+              "lng": -3.79028,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Jimbee Cartagena Costa Cálida",
+              "base": "Cartagena",
+              "lat": 37.60197,
+              "lng": -0.98397,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Magna Xota FS",
+              "base": "Pamplona",
+              "lat": 42.81687,
+              "lng": -1.64323,
+              "url": "https://futsal.rfef.es/equipo/magna-xota-fs/20/2027/info"
+            },
+            {
+              "name": "Noia Portus Apostoli",
+              "base": "Noia",
+              "lat": 42.78583,
+              "lng": -8.88734,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "O Parrulo Ferrol",
+              "base": "Ferrol",
+              "lat": 43.48451,
+              "lng": -8.23293,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Quesos Hidalgo Manzanares FS",
+              "base": "Manzanares",
+              "lat": 38.99915,
+              "lng": -3.36991,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Servigroup Peñíscola FS",
+              "base": "Peñíscola",
+              "lat": 40.3574,
+              "lng": 0.40692,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Sur Seeds El Ejido Futsal",
+              "base": "El Ejido",
+              "lat": 36.77629,
+              "lng": -2.81456,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Viña Albali Valdepeñas",
+              "base": "Valdepeñas",
+              "lat": 38.76211,
+              "lng": -3.38483,
+              "url": "https://futsal.rfef.es/competicion/liga-prime-futsal/2027/equipos/all"
+            },
+            {
+              "name": "Wanapix",
+              "base": "Zaragoza",
+              "lat": 41.65606,
+              "lng": -0.87734,
+              "url": "https://futsal.rfef.es/equipo/wanapix-ad-sala-10/23/2027/info"
+            }
+          ]
+        },
+        {
+          "id": "es-segunda-futsal",
+          "name": "Segunda División Masculina de Fútbol Sala",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://futsal.rfef.es/competicion/segunda/2027/equipos",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Avanza Jaén Paraíso Interior",
+              "base": "Jaén",
+              "lat": 37.76922,
+              "lng": -3.79028,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Barça Atlètic",
+              "base": "Sant Joan Despí",
+              "lat": 41.36718,
+              "lng": 2.0574,
+              "url": "https://futsal.rfef.es/equipo/bar%C3%A7a-atl%C3%A8tic/1/2027/info"
+            },
+            {
+              "name": "Castrez Futsal Suris Mataró",
+              "base": "Mataró",
+              "lat": 41.54211,
+              "lng": 2.4445,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "CD Leganés FS",
+              "base": "Leganés",
+              "lat": 40.32718,
+              "lng": -3.7635,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "ElPozo Ciudad de Murcia",
+              "base": "Murcia",
+              "lat": 37.98704,
+              "lng": -1.13004,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Entrerríos Automatización",
+              "base": "Zaragoza",
+              "lat": 41.65606,
+              "lng": -0.87734,
+              "url": "https://futsal.rfef.es/equipo/entrerr%C3%ADos-automatizaci%C3%B3n/3/2027/info"
+            },
+            {
+              "name": "Family Cash Alzira FS",
+              "base": "Alzira",
+              "lat": 39.15,
+              "lng": -0.43333,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Gasifred Atlético Fútbol Sala",
+              "base": "Ibiza",
+              "lat": 38.90883,
+              "lng": 1.43296,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Melistar FS",
+              "base": "Melilla",
+              "lat": 35.29369,
+              "lng": -2.93833,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "MRB FS Móstoles",
+              "base": "Móstoles",
+              "lat": 40.32234,
+              "lng": -3.86496,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "REYCO Burela FS",
+              "base": "Burela",
+              "lat": 43.662,
+              "lng": -7.367,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Sala 5 Martorell",
+              "base": "Martorell",
+              "lat": 41.47402,
+              "lng": 1.93062,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Unión África Ceutí",
+              "base": "Ceuta",
+              "lat": 35.88919,
+              "lng": -5.32042,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Xerez Toyota Nimauto",
+              "base": "Jerez de la Frontera",
+              "lat": 36.68645,
+              "lng": -6.13606,
+              "url": "https://futsal.rfef.es/competicion/segunda/2027/equipos"
+            },
+            {
+              "name": "Zambú CFS Pinatar Cerramientos Abatibles",
+              "base": "San Pedro del Pinatar",
+              "lat": 37.83568,
+              "lng": -0.79102,
+              "url": "https://futsal.rfef.es/equipo/zamb%C3%BA-cfs-pinatar/2838/2027/info"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

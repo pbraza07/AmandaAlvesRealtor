@@ -1,0 +1,1010 @@
+{
+  "country": "portugal",
+  "updatedAt": "2026-11-02",
+  "sports": [
+    {
+      "id": "soccer",
+      "label": "Soccer",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s 2026/27 leagues, including reserve teams. Locations use club-base towns; Casa Pia and the B teams use their official home-match towns, which can differ from club headquarters. Confirm the venue before traveling.",
+        "es": "Ligas sénior masculinas 2026/27, incluidos equipos filiales. Se usan las localidades base; Casa Pia y los filiales usan sus localidades oficiales de partidos en casa, que pueden diferir de la sede. Confirma el recinto antes de viajar.",
+        "pt": "Ligas seniores masculinas 2026/27, incluindo equipas B. As localizações usam as localidades-base; Casa Pia e as equipas B usam as localidades oficiais dos jogos em casa, que podem diferir da sede. Confirme o recinto antes de viajar."
+      },
+      "competitions": [
+        {
+          "id": "pt-soccer-1",
+          "name": "Liga Portugal Betclic",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "FC Porto",
+              "base": "Porto",
+              "lat": 41.1485,
+              "lng": -8.61097,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "SL Benfica",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Sporting CP",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Santa Clara",
+              "base": "Ponta Delgada",
+              "lat": 37.73952,
+              "lng": -25.66874,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "FC Arouca",
+              "base": "Arouca",
+              "lat": 40.93057,
+              "lng": -8.24488,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Gil Vicente FC",
+              "base": "Barcelos",
+              "lat": 41.53174,
+              "lng": -8.61843,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Académico de Viseu",
+              "base": "Viseu",
+              "lat": 40.66165,
+              "lng": -7.90905,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "SC Braga",
+              "base": "Braga",
+              "lat": 41.5514,
+              "lng": -8.42311,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "FC Alverca",
+              "base": "Alverca do Ribatejo",
+              "lat": 38.89898,
+              "lng": -9.03864,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Estrela Amadora",
+              "base": "Amadora",
+              "lat": 38.75382,
+              "lng": -9.23083,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Moreirense FC",
+              "base": "Moreira de Cónegos",
+              "lat": 41.3868,
+              "lng": -8.3394,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Marítimo",
+              "base": "Funchal",
+              "lat": 32.66568,
+              "lng": -16.92547,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "FC Famalicão",
+              "base": "Vila Nova de Famalicão",
+              "lat": 41.40797,
+              "lng": -8.51978,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Rio Ave FC",
+              "base": "Vila do Conde",
+              "lat": 41.35326,
+              "lng": -8.74516,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Vitória SC",
+              "base": "Guimarães",
+              "lat": 41.44443,
+              "lng": -8.29619,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "CD Nacional",
+              "base": "Funchal",
+              "lat": 32.66568,
+              "lng": -16.92547,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            },
+            {
+              "name": "Casa Pia AC",
+              "base": "Rio Maior (home-match base)",
+              "lat": 39.33732,
+              "lng": -8.93906,
+              "url": "https://www.ligaportugal.pt/team/56/casa-pia-ac"
+            },
+            {
+              "name": "Estoril Praia",
+              "base": "Estoril",
+              "lat": 38.70571,
+              "lng": -9.39773,
+              "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
+            }
+          ]
+        },
+        {
+          "id": "pt-soccer-2",
+          "name": "Liga Portugal 2 Meu Super",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Lusitânia de Lourosa",
+              "base": "Lourosa",
+              "lat": 40.9842,
+              "lng": -8.55142,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "Sporting CP B",
+              "base": "Alcochete (home-match base)",
+              "lat": 38.75534,
+              "lng": -8.96086,
+              "url": "https://www.ligaportugal.pt/team/40/sporting-cp-b"
+            },
+            {
+              "name": "FC Penafiel",
+              "base": "Penafiel",
+              "lat": 41.20835,
+              "lng": -8.28285,
+              "url": "https://www.ligaportugal.pt/team/156/fc-penafiel"
+            },
+            {
+              "name": "Académica",
+              "base": "Coimbra",
+              "lat": 40.20686,
+              "lng": -8.41996,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "SC Farense",
+              "base": "Faro",
+              "lat": 37.01869,
+              "lng": -7.92716,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "SL Benfica B",
+              "base": "Seixal (home-match base)",
+              "lat": 38.64008,
+              "lng": -9.10141,
+              "url": "https://www.ligaportugal.pt/team/37/sl-benfica-b"
+            },
+            {
+              "name": "AFS",
+              "base": "Vila das Aves",
+              "lat": 41.37034,
+              "lng": -8.4101,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "CD Tondela",
+              "base": "Tondela",
+              "lat": 40.51682,
+              "lng": -8.08087,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "FC Vizela",
+              "base": "Vizela",
+              "lat": 41.38242,
+              "lng": -8.24887,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "União de Leiria",
+              "base": "Leiria",
+              "lat": 39.74362,
+              "lng": -8.80705,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "Leixões SC",
+              "base": "Matosinhos",
+              "lat": 41.18207,
+              "lng": -8.68908,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "Portimonense",
+              "base": "Portimão",
+              "lat": 37.13856,
+              "lng": -8.53775,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "SCU Torreense",
+              "base": "Torres Vedras",
+              "lat": 39.09109,
+              "lng": -9.2586,
+              "url": "https://www.torreense.com/futebol-profissional/equipa-principal/classificacao"
+            },
+            {
+              "name": "GD Chaves",
+              "base": "Chaves",
+              "lat": 41.74019,
+              "lng": -7.46879,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "FC Porto B",
+              "base": "Olival (Vila Nova de Gaia)",
+              "lat": 41.05024,
+              "lng": -8.54416,
+              "url": "https://www.ligaportugal.pt/team/424/fc-porto-b"
+            },
+            {
+              "name": "FC Felgueiras",
+              "base": "Felgueiras",
+              "lat": 41.36806,
+              "lng": -8.19396,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            },
+            {
+              "name": "Amarante FC",
+              "base": "Amarante",
+              "lat": 41.27271,
+              "lng": -8.08245,
+              "url": "https://www.ligaportugal.pt/team/11/amarante-fc"
+            },
+            {
+              "name": "CD Feirense",
+              "base": "Santa Maria da Feira",
+              "lat": 40.92726,
+              "lng": -8.54839,
+              "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basketball",
+      "label": "Basketball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s 2026/27 competitions. Liga Betclic is the top tier and Proliga the second tier; the separately named Campeonato Nacional da 1.ª Divisão is below Proliga. Sponsor names may change.",
+        "es": "Competiciones sénior masculinas 2026/27. Liga Betclic es el primer nivel y Proliga el segundo; el campeonato llamado 1.ª Divisão está por debajo de Proliga. Los patrocinadores pueden cambiar.",
+        "pt": "Competições seniores masculinas 2026/27. A Liga Betclic é o primeiro escalão e a Proliga o segundo; o Campeonato Nacional da 1.ª Divisão está abaixo da Proliga. Os patrocinadores podem mudar."
+      },
+      "competitions": [
+        {
+          "id": "pt-basketball-1",
+          "name": "Liga Betclic Masculina",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "CAB Madeira",
+              "base": "Funchal",
+              "lat": 32.66568,
+              "lng": -16.92547,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "CD Póvoa",
+              "base": "Póvoa de Varzim",
+              "lat": 41.38344,
+              "lng": -8.76364,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Esgueira",
+              "base": "Aveiro",
+              "lat": 40.64575,
+              "lng": -8.64643,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "FC Porto",
+              "base": "Porto",
+              "lat": 41.1485,
+              "lng": -8.61097,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Portimonense SC",
+              "base": "Portimão",
+              "lat": 37.13856,
+              "lng": -8.53775,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Ovarense",
+              "base": "Ovar",
+              "lat": 40.85862,
+              "lng": -8.62513,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Queluz O Nosso Prego",
+              "base": "Queluz",
+              "lat": 38.75657,
+              "lng": -9.25451,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "SC Braga",
+              "base": "Braga",
+              "lat": 41.5514,
+              "lng": -8.42311,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "SL Benfica",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Sporting CP",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "UD Oliveirense",
+              "base": "Oliveira de Azeméis",
+              "lat": 40.84101,
+              "lng": -8.47555,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            },
+            {
+              "name": "Vitória SC",
+              "base": "Guimarães",
+              "lat": 41.44443,
+              "lng": -8.29619,
+              "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
+            }
+          ]
+        },
+        {
+          "id": "pt-basketball-2",
+          "name": "Campeonato da Proliga",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://www.fpb.pt/calendario/11441/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Illiabum Clube",
+              "base": "Ílhavo",
+              "lat": 40.60188,
+              "lng": -8.67021,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Académica",
+              "base": "Coimbra",
+              "lat": 40.20686,
+              "lng": -8.41996,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "SL Benfica B",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Clube Basket Queluz",
+              "base": "Queluz",
+              "lat": 38.75657,
+              "lng": -9.25451,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Sangalhos DC",
+              "base": "Sangalhos",
+              "lat": 40.48678,
+              "lng": -8.46968,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Galitos Barreiro",
+              "base": "Barreiro",
+              "lat": 38.66314,
+              "lng": -9.0724,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "SC Vasco da Gama",
+              "base": "Porto",
+              "lat": 41.1485,
+              "lng": -8.61097,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Sampaense",
+              "base": "São Paio de Gramaços",
+              "lat": 40.35126,
+              "lng": -7.84091,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "FC Barreirense",
+              "base": "Barreiro",
+              "lat": 38.66314,
+              "lng": -9.0724,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Galitos Aveiro",
+              "base": "Aveiro",
+              "lat": 40.64575,
+              "lng": -8.64643,
+              "url": "https://www.fpb.pt/equipa/equipa_63076/"
+            },
+            {
+              "name": "SC Lusitânia",
+              "base": "Angra do Heroísmo",
+              "lat": 38.6539,
+              "lng": -27.21839,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Basquete Barcelos",
+              "base": "Barcelos",
+              "lat": 41.53174,
+              "lng": -8.61843,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Maia Basket",
+              "base": "Maia",
+              "lat": 41.23574,
+              "lng": -8.6199,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "Ginásio Clube Olhanense",
+              "base": "Olhão",
+              "lat": 37.0286,
+              "lng": -7.8411,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            },
+            {
+              "name": "BSA Santo André",
+              "base": "Vila Nova de Santo André",
+              "lat": 38.06078,
+              "lng": -8.7822,
+              "url": "https://www.fpb.pt/equipa/equipa_63079/"
+            },
+            {
+              "name": "AD Galomar",
+              "base": "Caniço",
+              "lat": 32.65078,
+              "lng": -16.83749,
+              "url": "https://www.fpb.pt/calendario/11441/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volleyball",
+      "label": "Volleyball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s 2026/27 indoor volleyball. Both rosters come from the federation’s official first-phase calendars. Club-base towns are reference points, not exact arena locations.",
+        "es": "Voleibol de sala sénior masculino 2026/27. Ambas listas proceden de los calendarios oficiales de primera fase de la federación. Las localidades base son referencias, no ubicaciones exactas de pabellones.",
+        "pt": "Voleibol de pavilhão sénior masculino 2026/27. Ambas as listas vêm dos calendários oficiais da primeira fase da federação. As localidades-base são referências, não localizações exatas dos pavilhões."
+      },
+      "competitions": [
+        {
+          "id": "pt-volleyball-1",
+          "name": "Liga Una Seguros",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Leixões SC",
+              "base": "Matosinhos",
+              "lat": 41.18207,
+              "lng": -8.68908,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "CA Madalena",
+              "base": "Madalena (Vila Nova de Gaia)",
+              "lat": 41.10166,
+              "lng": -8.64761,
+              "url": "https://www.avporto.org/camadalena/"
+            },
+            {
+              "name": "Ala de Nun’Álvares de Gondomar",
+              "base": "Gondomar",
+              "lat": 41.14454,
+              "lng": -8.53223,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "AA Espinho",
+              "base": "Espinho",
+              "lat": 41.00763,
+              "lng": -8.64125,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "Sporting CP",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "SC Espinho",
+              "base": "Espinho",
+              "lat": 41.00763,
+              "lng": -8.64125,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "Clube Kairós",
+              "base": "Ponta Delgada",
+              "lat": 37.73952,
+              "lng": -25.66874,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "VC Viana",
+              "base": "Viana do Castelo",
+              "lat": 41.69323,
+              "lng": -8.83287,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "Castêlo da Maia GC",
+              "base": "Castêlo da Maia",
+              "lat": 41.26836,
+              "lng": -8.61353,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "SL Benfica",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "AA São Mamede",
+              "base": "São Mamede de Infesta",
+              "lat": 41.19183,
+              "lng": -8.61105,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            },
+            {
+              "name": "Vitória SC",
+              "base": "Guimarães",
+              "lat": 41.44443,
+              "lng": -8.29619,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
+            }
+          ]
+        },
+        {
+          "id": "pt-volleyball-2",
+          "name": "Campeonato Nacional II Divisão Masculina",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Esmoriz GC",
+              "base": "Esmoriz",
+              "lat": 40.95773,
+              "lng": -8.62753,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "A Ruínas VC",
+              "base": "Condeixa-a-Nova",
+              "lat": 40.11283,
+              "lng": -8.49804,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "GDC Gueifães",
+              "base": "Gueifães",
+              "lat": 41.21667,
+              "lng": -8.6,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "MG Vólei",
+              "base": "Marinha Grande",
+              "lat": 39.74769,
+              "lng": -8.93228,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "CN Ginástica",
+              "base": "Parede",
+              "lat": 38.69282,
+              "lng": -9.35412,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "Sporting CP B",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "GC Santo Tirso",
+              "base": "Santo Tirso",
+              "lat": 41.34257,
+              "lng": -8.47746,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "CV Lisboa",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "CV Oeiras",
+              "base": "Oeiras",
+              "lat": 38.69105,
+              "lng": -9.31085,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            },
+            {
+              "name": "SO Marinhense",
+              "base": "Marinha Grande",
+              "lat": 39.74769,
+              "lng": -8.93228,
+              "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handball",
+      "label": "Handball",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men’s 2026/27 handball. Divisão de Honra is the actual second tier; the competition named 2.ª Divisão sits below it. Reserve teams are included when listed in the official competition.",
+        "es": "Balonmano sénior masculino 2026/27. Divisão de Honra es el segundo nivel real; la competición llamada 2.ª Divisão está por debajo. Se incluyen filiales cuando participan oficialmente.",
+        "pt": "Andebol sénior masculino 2026/27. A Divisão de Honra é o verdadeiro segundo escalão; a competição chamada 2.ª Divisão está abaixo. Incluem-se equipas B quando constam da competição oficial."
+      },
+      "competitions": [
+        {
+          "id": "pt-handball-1",
+          "name": "Campeonato Betclic Masculino",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "ABC de Braga",
+              "base": "Braga",
+              "lat": 41.5514,
+              "lng": -8.42311,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "AD Carvalhos",
+              "base": "Pedroso (Vila Nova de Gaia)",
+              "lat": 41.0639,
+              "lng": -8.55868,
+              "url": "https://adcarvalhos.com/historia-do-clube/"
+            },
+            {
+              "name": "Águas Santas",
+              "base": "Águas Santas",
+              "lat": 41.21017,
+              "lng": -8.57599,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "Avanca",
+              "base": "Avanca",
+              "lat": 40.80771,
+              "lng": -8.5722,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "CF Os Belenenses",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "FC Porto",
+              "base": "Porto",
+              "lat": 41.1485,
+              "lng": -8.61097,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "GC Santo Tirso",
+              "base": "Santo Tirso",
+              "lat": 41.34257,
+              "lng": -8.47746,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "Marítimo Madeira Andebol SAD",
+              "base": "Funchal",
+              "lat": 32.66568,
+              "lng": -16.92547,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "Póvoa AC",
+              "base": "Póvoa de Varzim",
+              "lat": 41.38344,
+              "lng": -8.76364,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "SL Benfica",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "Sporting CP",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            },
+            {
+              "name": "Vitória SC",
+              "base": "Guimarães",
+              "lat": 41.44443,
+              "lng": -8.29619,
+              "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
+            }
+          ]
+        },
+        {
+          "id": "pt-handball-2",
+          "name": "Divisão de Honra Masculina",
+          "level": "second",
+          "season": "2026/27",
+          "sourceUrl": "https://portal.fpa.pt/prova/10017/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Académico CD Funchal",
+              "base": "Funchal",
+              "lat": 32.66568,
+              "lng": -16.92547,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "Almada AC",
+              "base": "Almada",
+              "lat": 38.67902,
+              "lng": -9.1569,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "Arsenal da Devesa",
+              "base": "Braga",
+              "lat": 41.5514,
+              "lng": -8.42311,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "Boa-Hora FC",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "AA São Mamede",
+              "base": "São Mamede de Infesta",
+              "lat": 41.19183,
+              "lng": -8.61105,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "CD São Bernardo",
+              "base": "São Bernardo (Aveiro)",
+              "lat": 40.6238,
+              "lng": -8.6412,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "CD Xico Andebol",
+              "base": "Guimarães",
+              "lat": 41.44443,
+              "lng": -8.29619,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "FC Gaia",
+              "base": "Vila Nova de Gaia",
+              "lat": 41.12401,
+              "lng": -8.61241,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "FC Porto B",
+              "base": "Porto",
+              "lat": 41.1485,
+              "lng": -8.61097,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "SL Benfica B",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "Sporting CP B",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            },
+            {
+              "name": "SC Horta",
+              "base": "Horta",
+              "lat": 38.53737,
+              "lng": -28.62615,
+              "url": "https://portal.fpa.pt/prova/10017/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "futsal",
+      "label": "Futsal",
+      "secondTierStatus": "not-verified",
+      "note": {
+        "en": "Senior men’s 2026/27 Liga Placard: all 12 top-tier clubs verified against an official club calendar. Second-tier membership and locations have not been fully verified and are not shown. Club-base towns are reference points; confirm the match venue.",
+        "es": "Liga Placard sénior masculina 2026/27: los 12 clubes del primer nivel están verificados con un calendario oficial de club. La composición y las localidades del segundo nivel no se han verificado por completo y no se muestran. Las localidades base son referencias; confirma el recinto.",
+        "pt": "Liga Placard sénior masculina 2026/27: os 12 clubes do primeiro escalão foram verificados através de um calendário oficial de clube. A composição e as localidades do segundo escalão não foram totalmente verificadas e não são apresentadas. As localidades-base são referências; confirme o recinto."
+      },
+      "competitions": [
+        {
+          "id": "pt-futsal-1",
+          "name": "Liga Placard de Futsal",
+          "level": "first",
+          "season": "2026/27",
+          "sourceUrl": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "AD Fundão",
+              "base": "Fundão",
+              "lat": 40.14025,
+              "lng": -7.50135,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "SL Benfica",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "Eléctrico FC",
+              "base": "Ponte de Sor",
+              "lat": 39.24964,
+              "lng": -8.01009,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "FC Famalicão",
+              "base": "Vila Nova de Famalicão",
+              "lat": 41.40797,
+              "lng": -8.51978,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "SC Ferreira do Zêzere",
+              "base": "Ferreira do Zêzere",
+              "lat": 39.69406,
+              "lng": -8.29213,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "Leões de Porto Salvo",
+              "base": "Porto Salvo",
+              "lat": 38.72293,
+              "lng": -9.30473,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "Portimonense SC",
+              "base": "Portimão",
+              "lat": 37.13856,
+              "lng": -8.53775,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "Rio Ave FC",
+              "base": "Vila do Conde",
+              "lat": 41.35326,
+              "lng": -8.74516,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "SC Braga",
+              "base": "Braga",
+              "lat": 41.5514,
+              "lng": -8.42311,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "Sporting CP",
+              "base": "Lisboa",
+              "lat": 38.71667,
+              "lng": -9.13333,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "SCU Torreense",
+              "base": "Torres Vedras",
+              "lat": 39.09109,
+              "lng": -9.2586,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            },
+            {
+              "name": "União e Progresso da Venda Nova",
+              "base": "Amadora",
+              "lat": 38.75382,
+              "lng": -9.23083,
+              "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

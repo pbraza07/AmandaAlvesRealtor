@@ -3358,5 +3358,109 @@
   "Condensed Wikipedia introductions are adapted from Wikipedia contributors under CC BY-SA 4.0. Original article and photo attribution remain available inside each city card’s Sources & photo credits section. The researched living guide remains the main city description.": {
     "es": "Las introducciones condensadas de Wikipedia se adaptan de sus colaboradores bajo CC BY-SA 4.0. La atribución del artículo original y de las fotos sigue disponible en Fuentes y créditos de fotos de cada tarjeta. La guía investigada para vivir sigue siendo la descripción principal de la ciudad.",
     "pt": "As introduções condensadas da Wikipédia são adaptadas dos seus colaboradores sob CC BY-SA 4.0. A atribuição do artigo original e das fotos continua disponível em Fontes e créditos das fotos de cada cartão. O guia pesquisado para viver continua sendo a descrição principal da cidade."
+  },
+  "Nearby sports teams": {
+    "es": "Equipos deportivos cercanos",
+    "pt": "Equipes esportivas próximas"
+  },
+  "sports": {
+    "es": "deportes",
+    "pt": "esportes"
+  },
+  "First division / top league": {
+    "es": "Primera división / liga principal",
+    "pt": "Primeira divisão / liga principal"
+  },
+  "Second division": {
+    "es": "Segunda división",
+    "pt": "Segunda divisão"
+  },
+  "No formal second division": {
+    "es": "Sin segunda división formal",
+    "pt": "Sem segunda divisão formal"
+  },
+  "Team reference not verified": {
+    "es": "Referencia del equipo no verificada",
+    "pt": "Referência da equipe não verificada"
+  },
+  "Nearest among verified team references": {
+    "es": "Más cercano entre los equipos verificados",
+    "pt": "Mais próxima entre as equipes verificadas"
+  },
+  "Team / league source": {
+    "es": "Fuente del equipo / liga",
+    "pt": "Fonte da equipe / liga"
+  },
+  "League reference": {
+    "es": "Referencia de la liga",
+    "pt": "Referência da liga"
+  },
+  "League references checked:": {
+    "es": "Referencias de ligas revisadas:",
+    "pt": "Referências das ligas conferidas:"
+  },
+  "League status can change between seasons.": {
+    "es": "La categoría de la liga puede cambiar entre temporadas.",
+    "pt": "A divisão pode mudar entre temporadas."
+  },
+  "Senior men's league teams. Distances are approximate straight lines to club home-base cities, not stadium routes or driving times. Islands and mainland journeys may require sea or air travel.": {
+    "es": "Equipos de ligas masculinas de adultos. Las distancias son aproximadas y en línea recta hasta las localidades base de los clubes, no rutas a estadios ni tiempos de conducción. Los viajes entre islas y el continente pueden requerir transporte marítimo o aéreo.",
+    "pt": "Equipes de ligas masculinas adultas. As distâncias são aproximadas e em linha reta até as cidades-base dos clubes, não rotas aos estádios nem tempos de condução. Viagens entre ilhas e o continente podem exigir transporte marítimo ou aéreo."
+  },
+  "Approx.": {
+    "es": "Aprox.",
+    "pt": "Aprox."
+  },
+  "Soccer": {
+    "es": "Fútbol",
+    "pt": "Futebol"
+  },
+  "Basketball": {
+    "es": "Baloncesto",
+    "pt": "Basquete"
+  },
+  "American football": {
+    "es": "Fútbol americano",
+    "pt": "Futebol americano"
+  },
+  "Baseball": {
+    "es": "Béisbol",
+    "pt": "Beisebol"
+  },
+  "Ice hockey": {
+    "es": "Hockey sobre hielo",
+    "pt": "Hóquei no gelo"
+  },
+  "Volleyball": {
+    "es": "Voleibol",
+    "pt": "Voleibol"
+  },
+  "Handball": {
+    "es": "Balonmano",
+    "pt": "Handebol"
+  },
+  "Futsal": {
+    "es": "Fútbol sala",
+    "pt": "Futsal"
+  },
+  "Roller hockey": {
+    "es": "Hockey sobre patines",
+    "pt": "Hóquei em patins"
+  },
+  "Rugby": {
+    "es": "Rugby",
+    "pt": "Rugby"
+  },
+  "Same city area": {
+    "es": "Misma zona urbana",
+    "pt": "Mesma área urbana"
+  },
+  "Same-distance teams:": {
+    "es": "Equipos a la misma distancia:",
+    "pt": "Equipes à mesma distância:"
+  },
+  "Specialist roster report": {
+    "es": "Informe especializado de equipos",
+    "pt": "Relatório especializado de equipes"
   }
 }

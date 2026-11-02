@@ -1,0 +1,1380 @@
+{
+  "country": "florida",
+  "updatedAt": "2026-11-02",
+  "coordinateSource": "https://download.geonames.org/export/dump/cities15000.zip",
+  "sports": [
+    {
+      "id": "soccer",
+      "label": "Soccer",
+      "secondTierStatus": "available",
+      "note": {
+        "en": "Senior men's soccer: MLS is the first division and USL Championship the second division. The reference pools include all 2026 league clubs, so the nearest option can be outside Florida.",
+        "es": "Fútbol masculino sénior: MLS es la primera división y USL Championship la segunda. Se incluyen todos los clubes de ambas ligas de 2026; el más cercano puede estar fuera de Florida.",
+        "pt": "Futebol masculino sénior: MLS é a primeira divisão e USL Championship a segunda. Incluem-se todos os clubes das duas ligas de 2026; o mais próximo pode ficar fora da Flórida."
+      },
+      "competitions": [
+        {
+          "id": "mls",
+          "name": "Major League Soccer",
+          "level": "first",
+          "season": "2026",
+          "sourceUrl": "https://www.mlssoccer.com/clubs/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Atlanta United",
+              "base": "Atlanta, GA, US",
+              "lat": 33.749,
+              "lng": -84.38798,
+              "url": "https://www.atlutd.com/"
+            },
+            {
+              "name": "Austin FC",
+              "base": "Austin, TX, US",
+              "lat": 30.26715,
+              "lng": -97.74306,
+              "url": "https://www.austinfc.com/"
+            },
+            {
+              "name": "Charlotte FC",
+              "base": "Charlotte, NC, US",
+              "lat": 35.22709,
+              "lng": -80.84313,
+              "url": "https://www.charlottefootballclub.com/"
+            },
+            {
+              "name": "Chicago Fire FC",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.chicagofirefc.com/"
+            },
+            {
+              "name": "FC Cincinnati",
+              "base": "Cincinnati, OH, US",
+              "lat": 39.12711,
+              "lng": -84.51439,
+              "url": "https://www.fccincinnati.com/"
+            },
+            {
+              "name": "Colorado Rapids",
+              "base": "Commerce City, CO, US",
+              "lat": 39.80832,
+              "lng": -104.93387,
+              "url": "https://www.coloradorapids.com/"
+            },
+            {
+              "name": "Columbus Crew",
+              "base": "Columbus, OH, US",
+              "lat": 39.96118,
+              "lng": -82.99879,
+              "url": "https://www.columbuscrew.com/"
+            },
+            {
+              "name": "D.C. United",
+              "base": "Washington, DC, US",
+              "lat": 38.89511,
+              "lng": -77.03637,
+              "url": "https://www.dcunited.com/"
+            },
+            {
+              "name": "FC Dallas",
+              "base": "Frisco, TX, US",
+              "lat": 33.15067,
+              "lng": -96.82361,
+              "url": "https://www.fcdallas.com/"
+            },
+            {
+              "name": "Houston Dynamo FC",
+              "base": "Houston, TX, US",
+              "lat": 29.76328,
+              "lng": -95.36327,
+              "url": "https://www.houstondynamofc.com/"
+            },
+            {
+              "name": "Sporting Kansas City",
+              "base": "Kansas City, KS, US",
+              "lat": 39.11417,
+              "lng": -94.62746,
+              "url": "https://www.sportingkc.com/"
+            },
+            {
+              "name": "LA Galaxy",
+              "base": "Carson, CA, US",
+              "lat": 33.83141,
+              "lng": -118.28202,
+              "url": "https://www.lagalaxy.com/"
+            },
+            {
+              "name": "Los Angeles FC",
+              "base": "Los Angeles, CA, US",
+              "lat": 34.05223,
+              "lng": -118.24368,
+              "url": "https://www.lafc.com/"
+            },
+            {
+              "name": "Inter Miami CF",
+              "base": "Miami, FL, US",
+              "lat": 25.77427,
+              "lng": -80.19366,
+              "url": "https://www.intermiamicf.com/"
+            },
+            {
+              "name": "Minnesota United FC",
+              "base": "Saint Paul, MN, US",
+              "lat": 44.94441,
+              "lng": -93.09327,
+              "url": "https://www.mnufc.com/"
+            },
+            {
+              "name": "CF Montréal",
+              "base": "Montréal, QC, CA",
+              "lat": 45.50884,
+              "lng": -73.58781,
+              "url": "https://www.cfmontreal.com/"
+            },
+            {
+              "name": "Nashville SC",
+              "base": "Nashville, TN, US",
+              "lat": 36.16589,
+              "lng": -86.78444,
+              "url": "https://www.nashvillesc.com/"
+            },
+            {
+              "name": "New England Revolution",
+              "base": "Foxborough, MA, US",
+              "lat": 42.06538,
+              "lng": -71.24783,
+              "url": "https://www.revolutionsoccer.net/"
+            },
+            {
+              "name": "Red Bull New York",
+              "base": "Harrison, NJ, US",
+              "lat": 40.74649,
+              "lng": -74.15626,
+              "url": "https://www.newyorkredbulls.com/"
+            },
+            {
+              "name": "New York City FC",
+              "base": "New York City, NY, US",
+              "lat": 40.71427,
+              "lng": -74.00597,
+              "url": "https://www.newyorkcityfc.com/"
+            },
+            {
+              "name": "Orlando City SC",
+              "base": "Orlando, FL, US",
+              "lat": 28.53834,
+              "lng": -81.37924,
+              "url": "https://www.orlandocitysc.com/"
+            },
+            {
+              "name": "Philadelphia Union",
+              "base": "Chester, PA, US",
+              "lat": 39.84753,
+              "lng": -75.35785,
+              "url": "https://www.philadelphiaunion.com/"
+            },
+            {
+              "name": "Portland Timbers",
+              "base": "Portland, OR, US",
+              "lat": 45.52345,
+              "lng": -122.67621,
+              "url": "https://www.timbers.com/"
+            },
+            {
+              "name": "Real Salt Lake",
+              "base": "Sandy, UT, US",
+              "lat": 40.59161,
+              "lng": -111.8841,
+              "url": "https://www.rsl.com/"
+            },
+            {
+              "name": "San Diego FC",
+              "base": "San Diego, CA, US",
+              "lat": 32.71571,
+              "lng": -117.16472,
+              "url": "https://www.sandiegofc.com/"
+            },
+            {
+              "name": "San Jose Earthquakes",
+              "base": "San Jose, CA, US",
+              "lat": 37.33939,
+              "lng": -121.89496,
+              "url": "https://www.sjearthquakes.com/"
+            },
+            {
+              "name": "Seattle Sounders FC",
+              "base": "Seattle, WA, US",
+              "lat": 47.60621,
+              "lng": -122.33207,
+              "url": "https://www.soundersfc.com/"
+            },
+            {
+              "name": "St. Louis CITY SC",
+              "base": "St. Louis, MO, US",
+              "lat": 38.62727,
+              "lng": -90.19789,
+              "url": "https://www.stlcitysc.com/"
+            },
+            {
+              "name": "Toronto FC",
+              "base": "Toronto, ON, CA",
+              "lat": 43.70643,
+              "lng": -79.39864,
+              "url": "https://www.torontofc.ca/"
+            },
+            {
+              "name": "Vancouver Whitecaps FC",
+              "base": "Vancouver, BC, CA",
+              "lat": 49.24966,
+              "lng": -123.11934,
+              "url": "https://www.whitecapsfc.com/"
+            }
+          ]
+        },
+        {
+          "id": "usl-championship",
+          "name": "USL Championship",
+          "level": "second",
+          "season": "2026",
+          "sourceUrl": "https://www.uslchampionship.com/about",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Birmingham Legion FC",
+              "base": "Birmingham, AL, US",
+              "lat": 33.52066,
+              "lng": -86.80249,
+              "url": "https://www.bhmlegion.com/"
+            },
+            {
+              "name": "Brooklyn FC",
+              "base": "Brooklyn, NY, US",
+              "lat": 40.6501,
+              "lng": -73.94958,
+              "url": "https://www.brooklynfootballclub.com/men/"
+            },
+            {
+              "name": "Charleston Battery",
+              "base": "Charleston, SC, US",
+              "lat": 32.77632,
+              "lng": -79.93275,
+              "url": "https://www.charlestonbattery.com/"
+            },
+            {
+              "name": "Colorado Springs Switchbacks FC",
+              "base": "Colorado Springs, CO, US",
+              "lat": 38.83388,
+              "lng": -104.82136,
+              "url": "https://www.switchbacksfc.com/"
+            },
+            {
+              "name": "Detroit City FC",
+              "base": "Hamtramck, MI, US",
+              "lat": 42.39282,
+              "lng": -83.04964,
+              "url": "https://www.detcityfc.com/"
+            },
+            {
+              "name": "El Paso Locomotive FC",
+              "base": "El Paso, TX, US",
+              "lat": 31.75872,
+              "lng": -106.48693,
+              "url": "https://www.eplocomotivefc.com/"
+            },
+            {
+              "name": "FC Tulsa",
+              "base": "Tulsa, OK, US",
+              "lat": 36.15398,
+              "lng": -95.99277,
+              "url": "https://www.fctulsa.com/"
+            },
+            {
+              "name": "Hartford Athletic",
+              "base": "Hartford, CT, US",
+              "lat": 41.76371,
+              "lng": -72.68509,
+              "url": "https://www.hartfordathletic.com/"
+            },
+            {
+              "name": "Indy Eleven",
+              "base": "Indianapolis, IN, US",
+              "lat": 39.76838,
+              "lng": -86.15804,
+              "url": "https://www.indyeleven.com/"
+            },
+            {
+              "name": "Las Vegas Lights FC",
+              "base": "Las Vegas, NV, US",
+              "lat": 36.17497,
+              "lng": -115.13722,
+              "url": "https://www.lasvegaslightsfc.com/"
+            },
+            {
+              "name": "Lexington SC",
+              "base": "Lexington, KY, US",
+              "lat": 37.98869,
+              "lng": -84.47772,
+              "url": "https://www.lexsporting.com/"
+            },
+            {
+              "name": "Loudoun United FC",
+              "base": "Leesburg, VA, US",
+              "lat": 39.11566,
+              "lng": -77.5636,
+              "url": "https://www.loudoununitedfc.com/"
+            },
+            {
+              "name": "Louisville City FC",
+              "base": "Louisville, KY, US",
+              "lat": 38.25424,
+              "lng": -85.75941,
+              "url": "https://www.louisvillecityfc.com/"
+            },
+            {
+              "name": "Miami FC",
+              "base": "Miami, FL, US",
+              "lat": 25.77427,
+              "lng": -80.19366,
+              "url": "https://www.miamifc.com/"
+            },
+            {
+              "name": "Monterey Bay FC",
+              "base": "Seaside, CA, US",
+              "lat": 36.61107,
+              "lng": -121.85162,
+              "url": "https://www.montereybayfc.com/"
+            },
+            {
+              "name": "New Mexico United",
+              "base": "Albuquerque, NM, US",
+              "lat": 35.08449,
+              "lng": -106.65114,
+              "url": "https://www.newmexicoutd.com/"
+            },
+            {
+              "name": "Oakland Roots SC",
+              "base": "Oakland, CA, US",
+              "lat": 37.80437,
+              "lng": -122.2708,
+              "url": "https://www.oaklandrootssc.com/"
+            },
+            {
+              "name": "Orange County SC",
+              "base": "Irvine, CA, US",
+              "lat": 33.66946,
+              "lng": -117.82311,
+              "url": "https://www.orangecountysoccer.com/"
+            },
+            {
+              "name": "Phoenix Rising FC",
+              "base": "Phoenix, AZ, US",
+              "lat": 33.44838,
+              "lng": -112.07404,
+              "url": "https://www.phxrisingfc.com/"
+            },
+            {
+              "name": "Pittsburgh Riverhounds SC",
+              "base": "Pittsburgh, PA, US",
+              "lat": 40.44062,
+              "lng": -79.99589,
+              "url": "https://www.riverhounds.com/"
+            },
+            {
+              "name": "Rhode Island FC",
+              "base": "Pawtucket, RI, US",
+              "lat": 41.87871,
+              "lng": -71.38256,
+              "url": "https://www.rhodeislandfc.com/"
+            },
+            {
+              "name": "Sacramento Republic FC",
+              "base": "Sacramento, CA, US",
+              "lat": 38.58157,
+              "lng": -121.4944,
+              "url": "https://www.sacrepublicfc.com/"
+            },
+            {
+              "name": "San Antonio FC",
+              "base": "San Antonio, TX, US",
+              "lat": 29.42412,
+              "lng": -98.49363,
+              "url": "https://www.sanantoniofc.com/"
+            },
+            {
+              "name": "Sporting JAX",
+              "base": "Jacksonville, FL, US",
+              "lat": 30.33218,
+              "lng": -81.65565,
+              "url": "https://www.sportingjax.com/"
+            },
+            {
+              "name": "Tampa Bay Rowdies",
+              "base": "St. Petersburg, FL, US",
+              "lat": 27.77086,
+              "lng": -82.67927,
+              "url": "https://www.rowdiessoccer.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basketball",
+      "label": "Basketball",
+      "secondTierStatus": "not-applicable",
+      "note": {
+        "en": "NBA is the top league. It does not use a first/second-division promotion-and-relegation pyramid; affiliate, development or minor leagues are not labeled a second division here.",
+        "es": "NBA es la liga principal. No utiliza una pirámide de primera y segunda división con ascensos y descensos; las ligas afiliadas, de desarrollo o menores no se presentan aquí como segunda división.",
+        "pt": "NBA é a liga principal. Não utiliza uma pirâmide de primeira e segunda divisão com promoção e despromoção; ligas afiliadas, de desenvolvimento ou menores não são apresentadas aqui como segunda divisão."
+      },
+      "competitions": [
+        {
+          "id": "basketball-top",
+          "name": "NBA",
+          "level": "first",
+          "season": "2026–27",
+          "sourceUrl": "https://www.nba.com/teams",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Atlanta Hawks",
+              "base": "Atlanta, GA, US",
+              "lat": 33.749,
+              "lng": -84.38798,
+              "url": "https://www.nba.com/hawks/"
+            },
+            {
+              "name": "Boston Celtics",
+              "base": "Boston, MA, US",
+              "lat": 42.35843,
+              "lng": -71.05977,
+              "url": "https://www.nba.com/celtics/"
+            },
+            {
+              "name": "Brooklyn Nets",
+              "base": "Brooklyn, NY, US",
+              "lat": 40.6501,
+              "lng": -73.94958,
+              "url": "https://www.nba.com/nets/"
+            },
+            {
+              "name": "Charlotte Hornets",
+              "base": "Charlotte, NC, US",
+              "lat": 35.22709,
+              "lng": -80.84313,
+              "url": "https://www.nba.com/hornets/"
+            },
+            {
+              "name": "Chicago Bulls",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.nba.com/bulls/"
+            },
+            {
+              "name": "Cleveland Cavaliers",
+              "base": "Cleveland, OH, US",
+              "lat": 41.4995,
+              "lng": -81.69541,
+              "url": "https://www.nba.com/cavaliers/"
+            },
+            {
+              "name": "Dallas Mavericks",
+              "base": "Dallas, TX, US",
+              "lat": 32.78306,
+              "lng": -96.80667,
+              "url": "https://www.nba.com/mavericks/"
+            },
+            {
+              "name": "Denver Nuggets",
+              "base": "Denver, CO, US",
+              "lat": 39.73915,
+              "lng": -104.9847,
+              "url": "https://www.nba.com/nuggets/"
+            },
+            {
+              "name": "Detroit Pistons",
+              "base": "Detroit, MI, US",
+              "lat": 42.33143,
+              "lng": -83.04575,
+              "url": "https://www.nba.com/pistons/"
+            },
+            {
+              "name": "Golden State Warriors",
+              "base": "San Francisco, CA, US",
+              "lat": 37.77493,
+              "lng": -122.41942,
+              "url": "https://www.nba.com/warriors/"
+            },
+            {
+              "name": "Houston Rockets",
+              "base": "Houston, TX, US",
+              "lat": 29.76328,
+              "lng": -95.36327,
+              "url": "https://www.nba.com/rockets/"
+            },
+            {
+              "name": "Indiana Pacers",
+              "base": "Indianapolis, IN, US",
+              "lat": 39.76838,
+              "lng": -86.15804,
+              "url": "https://www.nba.com/pacers/"
+            },
+            {
+              "name": "LA Clippers",
+              "base": "Inglewood, CA, US",
+              "lat": 33.96168,
+              "lng": -118.35313,
+              "url": "https://www.nba.com/clippers/"
+            },
+            {
+              "name": "Los Angeles Lakers",
+              "base": "Los Angeles, CA, US",
+              "lat": 34.05223,
+              "lng": -118.24368,
+              "url": "https://www.nba.com/lakers/"
+            },
+            {
+              "name": "Memphis Grizzlies",
+              "base": "Memphis, TN, US",
+              "lat": 35.14953,
+              "lng": -90.04898,
+              "url": "https://www.nba.com/grizzlies/"
+            },
+            {
+              "name": "Miami Heat",
+              "base": "Miami, FL, US",
+              "lat": 25.77427,
+              "lng": -80.19366,
+              "url": "https://www.nba.com/heat/"
+            },
+            {
+              "name": "Milwaukee Bucks",
+              "base": "Milwaukee, WI, US",
+              "lat": 43.0389,
+              "lng": -87.90647,
+              "url": "https://www.nba.com/bucks/"
+            },
+            {
+              "name": "Minnesota Timberwolves",
+              "base": "Minneapolis, MN, US",
+              "lat": 44.97997,
+              "lng": -93.26384,
+              "url": "https://www.nba.com/timberwolves/"
+            },
+            {
+              "name": "New Orleans Pelicans",
+              "base": "New Orleans, LA, US",
+              "lat": 29.95465,
+              "lng": -90.07507,
+              "url": "https://www.nba.com/pelicans/"
+            },
+            {
+              "name": "New York Knicks",
+              "base": "New York City, NY, US",
+              "lat": 40.71427,
+              "lng": -74.00597,
+              "url": "https://www.nba.com/knicks/"
+            },
+            {
+              "name": "Oklahoma City Thunder",
+              "base": "Oklahoma City, OK, US",
+              "lat": 35.46756,
+              "lng": -97.51643,
+              "url": "https://www.nba.com/thunder/"
+            },
+            {
+              "name": "Orlando Magic",
+              "base": "Orlando, FL, US",
+              "lat": 28.53834,
+              "lng": -81.37924,
+              "url": "https://www.nba.com/magic/"
+            },
+            {
+              "name": "Philadelphia 76ers",
+              "base": "Philadelphia, PA, US",
+              "lat": 39.95238,
+              "lng": -75.16362,
+              "url": "https://www.nba.com/sixers/"
+            },
+            {
+              "name": "Phoenix Suns",
+              "base": "Phoenix, AZ, US",
+              "lat": 33.44838,
+              "lng": -112.07404,
+              "url": "https://www.nba.com/suns/"
+            },
+            {
+              "name": "Portland Trail Blazers",
+              "base": "Portland, OR, US",
+              "lat": 45.52345,
+              "lng": -122.67621,
+              "url": "https://www.nba.com/blazers/"
+            },
+            {
+              "name": "Sacramento Kings",
+              "base": "Sacramento, CA, US",
+              "lat": 38.58157,
+              "lng": -121.4944,
+              "url": "https://www.nba.com/kings/"
+            },
+            {
+              "name": "San Antonio Spurs",
+              "base": "San Antonio, TX, US",
+              "lat": 29.42412,
+              "lng": -98.49363,
+              "url": "https://www.nba.com/spurs/"
+            },
+            {
+              "name": "Toronto Raptors",
+              "base": "Toronto, ON, CA",
+              "lat": 43.70643,
+              "lng": -79.39864,
+              "url": "https://www.nba.com/raptors/"
+            },
+            {
+              "name": "Utah Jazz",
+              "base": "Salt Lake City, UT, US",
+              "lat": 40.76078,
+              "lng": -111.89105,
+              "url": "https://www.nba.com/jazz/"
+            },
+            {
+              "name": "Washington Wizards",
+              "base": "Washington, DC, US",
+              "lat": 38.89511,
+              "lng": -77.03637,
+              "url": "https://www.nba.com/wizards/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "american-football",
+      "label": "American football",
+      "secondTierStatus": "not-applicable",
+      "note": {
+        "en": "NFL is the top league. It does not use a first/second-division promotion-and-relegation pyramid; affiliate, development or minor leagues are not labeled a second division here.",
+        "es": "NFL es la liga principal. No utiliza una pirámide de primera y segunda división con ascensos y descensos; las ligas afiliadas, de desarrollo o menores no se presentan aquí como segunda división.",
+        "pt": "NFL é a liga principal. Não utiliza uma pirâmide de primeira e segunda divisão com promoção e despromoção; ligas afiliadas, de desenvolvimento ou menores não são apresentadas aqui como segunda divisão."
+      },
+      "competitions": [
+        {
+          "id": "american-football-top",
+          "name": "NFL",
+          "level": "first",
+          "season": "2026",
+          "sourceUrl": "https://www.nfl.com/teams/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Arizona Cardinals",
+              "base": "Glendale, AZ, US",
+              "lat": 33.53865,
+              "lng": -112.18599,
+              "url": "https://www.azcardinals.com/"
+            },
+            {
+              "name": "Atlanta Falcons",
+              "base": "Atlanta, GA, US",
+              "lat": 33.749,
+              "lng": -84.38798,
+              "url": "https://www.atlantafalcons.com/"
+            },
+            {
+              "name": "Baltimore Ravens",
+              "base": "Baltimore, MD, US",
+              "lat": 39.29038,
+              "lng": -76.61219,
+              "url": "https://www.baltimoreravens.com/"
+            },
+            {
+              "name": "Buffalo Bills",
+              "base": "Orchard Park, NY, US",
+              "lat": 42.76756,
+              "lng": -78.74392,
+              "url": "https://www.buffalobills.com/"
+            },
+            {
+              "name": "Carolina Panthers",
+              "base": "Charlotte, NC, US",
+              "lat": 35.22709,
+              "lng": -80.84313,
+              "url": "https://www.panthers.com/"
+            },
+            {
+              "name": "Chicago Bears",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.chicagobears.com/"
+            },
+            {
+              "name": "Cincinnati Bengals",
+              "base": "Cincinnati, OH, US",
+              "lat": 39.12711,
+              "lng": -84.51439,
+              "url": "https://www.bengals.com/"
+            },
+            {
+              "name": "Cleveland Browns",
+              "base": "Cleveland, OH, US",
+              "lat": 41.4995,
+              "lng": -81.69541,
+              "url": "https://www.clevelandbrowns.com/"
+            },
+            {
+              "name": "Dallas Cowboys",
+              "base": "Arlington, TX, US",
+              "lat": 32.73569,
+              "lng": -97.10807,
+              "url": "https://www.dallascowboys.com/"
+            },
+            {
+              "name": "Denver Broncos",
+              "base": "Denver, CO, US",
+              "lat": 39.73915,
+              "lng": -104.9847,
+              "url": "https://www.denverbroncos.com/"
+            },
+            {
+              "name": "Detroit Lions",
+              "base": "Detroit, MI, US",
+              "lat": 42.33143,
+              "lng": -83.04575,
+              "url": "https://www.detroitlions.com/"
+            },
+            {
+              "name": "Green Bay Packers",
+              "base": "Green Bay, WI, US",
+              "lat": 44.51916,
+              "lng": -88.01983,
+              "url": "https://www.packers.com/"
+            },
+            {
+              "name": "Houston Texans",
+              "base": "Houston, TX, US",
+              "lat": 29.76328,
+              "lng": -95.36327,
+              "url": "https://www.houstontexans.com/"
+            },
+            {
+              "name": "Indianapolis Colts",
+              "base": "Indianapolis, IN, US",
+              "lat": 39.76838,
+              "lng": -86.15804,
+              "url": "https://www.colts.com/"
+            },
+            {
+              "name": "Jacksonville Jaguars",
+              "base": "Jacksonville, FL, US",
+              "lat": 30.33218,
+              "lng": -81.65565,
+              "url": "https://www.jaguars.com/"
+            },
+            {
+              "name": "Kansas City Chiefs",
+              "base": "Kansas City, MO, US",
+              "lat": 39.09973,
+              "lng": -94.57857,
+              "url": "https://www.chiefs.com/"
+            },
+            {
+              "name": "Las Vegas Raiders",
+              "base": "Paradise, NV, US",
+              "lat": 36.09719,
+              "lng": -115.14666,
+              "url": "https://www.raiders.com/"
+            },
+            {
+              "name": "Los Angeles Chargers",
+              "base": "Inglewood, CA, US",
+              "lat": 33.96168,
+              "lng": -118.35313,
+              "url": "https://www.chargers.com/"
+            },
+            {
+              "name": "Los Angeles Rams",
+              "base": "Inglewood, CA, US",
+              "lat": 33.96168,
+              "lng": -118.35313,
+              "url": "https://www.therams.com/"
+            },
+            {
+              "name": "Miami Dolphins",
+              "base": "Miami Gardens, FL, US",
+              "lat": 25.94204,
+              "lng": -80.2456,
+              "url": "https://www.miamidolphins.com/"
+            },
+            {
+              "name": "Minnesota Vikings",
+              "base": "Minneapolis, MN, US",
+              "lat": 44.97997,
+              "lng": -93.26384,
+              "url": "https://www.vikings.com/"
+            },
+            {
+              "name": "New England Patriots",
+              "base": "Foxborough, MA, US",
+              "lat": 42.06538,
+              "lng": -71.24783,
+              "url": "https://www.patriots.com/"
+            },
+            {
+              "name": "New Orleans Saints",
+              "base": "New Orleans, LA, US",
+              "lat": 29.95465,
+              "lng": -90.07507,
+              "url": "https://www.neworleanssaints.com/"
+            },
+            {
+              "name": "New York Giants",
+              "base": "East Rutherford, NJ, US",
+              "lat": 40.83399,
+              "lng": -74.09709,
+              "url": "https://www.giants.com/"
+            },
+            {
+              "name": "New York Jets",
+              "base": "East Rutherford, NJ, US",
+              "lat": 40.83399,
+              "lng": -74.09709,
+              "url": "https://www.newyorkjets.com/"
+            },
+            {
+              "name": "Philadelphia Eagles",
+              "base": "Philadelphia, PA, US",
+              "lat": 39.95238,
+              "lng": -75.16362,
+              "url": "https://www.philadelphiaeagles.com/"
+            },
+            {
+              "name": "Pittsburgh Steelers",
+              "base": "Pittsburgh, PA, US",
+              "lat": 40.44062,
+              "lng": -79.99589,
+              "url": "https://www.steelers.com/"
+            },
+            {
+              "name": "San Francisco 49ers",
+              "base": "Santa Clara, CA, US",
+              "lat": 37.35411,
+              "lng": -121.95524,
+              "url": "https://www.49ers.com/"
+            },
+            {
+              "name": "Seattle Seahawks",
+              "base": "Seattle, WA, US",
+              "lat": 47.60621,
+              "lng": -122.33207,
+              "url": "https://www.seahawks.com/"
+            },
+            {
+              "name": "Tampa Bay Buccaneers",
+              "base": "Tampa, FL, US",
+              "lat": 27.94752,
+              "lng": -82.45843,
+              "url": "https://www.buccaneers.com/"
+            },
+            {
+              "name": "Tennessee Titans",
+              "base": "Nashville, TN, US",
+              "lat": 36.16589,
+              "lng": -86.78444,
+              "url": "https://www.tennesseetitans.com/"
+            },
+            {
+              "name": "Washington Commanders",
+              "base": "Landover, MD, US",
+              "lat": 38.934,
+              "lng": -76.89664,
+              "url": "https://www.commanders.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baseball",
+      "label": "Baseball",
+      "secondTierStatus": "not-applicable",
+      "note": {
+        "en": "MLB is the top league. It does not use a first/second-division promotion-and-relegation pyramid; affiliate, development or minor leagues are not labeled a second division here.",
+        "es": "MLB es la liga principal. No utiliza una pirámide de primera y segunda división con ascensos y descensos; las ligas afiliadas, de desarrollo o menores no se presentan aquí como segunda división.",
+        "pt": "MLB é a liga principal. Não utiliza uma pirâmide de primeira e segunda divisão com promoção e despromoção; ligas afiliadas, de desenvolvimento ou menores não são apresentadas aqui como segunda divisão."
+      },
+      "competitions": [
+        {
+          "id": "baseball-top",
+          "name": "MLB",
+          "level": "first",
+          "season": "2026",
+          "sourceUrl": "https://www.mlb.com/team",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Arizona Diamondbacks",
+              "base": "Phoenix, AZ, US",
+              "lat": 33.44838,
+              "lng": -112.07404,
+              "url": "https://www.mlb.com/dbacks"
+            },
+            {
+              "name": "Athletics",
+              "base": "West Sacramento, CA, US",
+              "lat": 38.58046,
+              "lng": -121.53023,
+              "url": "https://www.mlb.com/athletics"
+            },
+            {
+              "name": "Atlanta Braves",
+              "base": "Atlanta, GA, US",
+              "lat": 33.749,
+              "lng": -84.38798,
+              "url": "https://www.mlb.com/braves"
+            },
+            {
+              "name": "Baltimore Orioles",
+              "base": "Baltimore, MD, US",
+              "lat": 39.29038,
+              "lng": -76.61219,
+              "url": "https://www.mlb.com/orioles"
+            },
+            {
+              "name": "Boston Red Sox",
+              "base": "Boston, MA, US",
+              "lat": 42.35843,
+              "lng": -71.05977,
+              "url": "https://www.mlb.com/redsox"
+            },
+            {
+              "name": "Chicago Cubs",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.mlb.com/cubs"
+            },
+            {
+              "name": "Chicago White Sox",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.mlb.com/whitesox"
+            },
+            {
+              "name": "Cincinnati Reds",
+              "base": "Cincinnati, OH, US",
+              "lat": 39.12711,
+              "lng": -84.51439,
+              "url": "https://www.mlb.com/reds"
+            },
+            {
+              "name": "Cleveland Guardians",
+              "base": "Cleveland, OH, US",
+              "lat": 41.4995,
+              "lng": -81.69541,
+              "url": "https://www.mlb.com/guardians"
+            },
+            {
+              "name": "Colorado Rockies",
+              "base": "Denver, CO, US",
+              "lat": 39.73915,
+              "lng": -104.9847,
+              "url": "https://www.mlb.com/rockies"
+            },
+            {
+              "name": "Detroit Tigers",
+              "base": "Detroit, MI, US",
+              "lat": 42.33143,
+              "lng": -83.04575,
+              "url": "https://www.mlb.com/tigers"
+            },
+            {
+              "name": "Houston Astros",
+              "base": "Houston, TX, US",
+              "lat": 29.76328,
+              "lng": -95.36327,
+              "url": "https://www.mlb.com/astros"
+            },
+            {
+              "name": "Kansas City Royals",
+              "base": "Kansas City, MO, US",
+              "lat": 39.09973,
+              "lng": -94.57857,
+              "url": "https://www.mlb.com/royals"
+            },
+            {
+              "name": "Los Angeles Angels",
+              "base": "Anaheim, CA, US",
+              "lat": 33.83529,
+              "lng": -117.9145,
+              "url": "https://www.mlb.com/angels"
+            },
+            {
+              "name": "Los Angeles Dodgers",
+              "base": "Los Angeles, CA, US",
+              "lat": 34.05223,
+              "lng": -118.24368,
+              "url": "https://www.mlb.com/dodgers"
+            },
+            {
+              "name": "Miami Marlins",
+              "base": "Miami, FL, US",
+              "lat": 25.77427,
+              "lng": -80.19366,
+              "url": "https://www.mlb.com/marlins"
+            },
+            {
+              "name": "Milwaukee Brewers",
+              "base": "Milwaukee, WI, US",
+              "lat": 43.0389,
+              "lng": -87.90647,
+              "url": "https://www.mlb.com/brewers"
+            },
+            {
+              "name": "Minnesota Twins",
+              "base": "Minneapolis, MN, US",
+              "lat": 44.97997,
+              "lng": -93.26384,
+              "url": "https://www.mlb.com/twins"
+            },
+            {
+              "name": "New York Mets",
+              "base": "New York City, NY, US",
+              "lat": 40.71427,
+              "lng": -74.00597,
+              "url": "https://www.mlb.com/mets"
+            },
+            {
+              "name": "New York Yankees",
+              "base": "New York City, NY, US",
+              "lat": 40.71427,
+              "lng": -74.00597,
+              "url": "https://www.mlb.com/yankees"
+            },
+            {
+              "name": "Philadelphia Phillies",
+              "base": "Philadelphia, PA, US",
+              "lat": 39.95238,
+              "lng": -75.16362,
+              "url": "https://www.mlb.com/phillies"
+            },
+            {
+              "name": "Pittsburgh Pirates",
+              "base": "Pittsburgh, PA, US",
+              "lat": 40.44062,
+              "lng": -79.99589,
+              "url": "https://www.mlb.com/pirates"
+            },
+            {
+              "name": "San Diego Padres",
+              "base": "San Diego, CA, US",
+              "lat": 32.71571,
+              "lng": -117.16472,
+              "url": "https://www.mlb.com/padres"
+            },
+            {
+              "name": "San Francisco Giants",
+              "base": "San Francisco, CA, US",
+              "lat": 37.77493,
+              "lng": -122.41942,
+              "url": "https://www.mlb.com/giants"
+            },
+            {
+              "name": "Seattle Mariners",
+              "base": "Seattle, WA, US",
+              "lat": 47.60621,
+              "lng": -122.33207,
+              "url": "https://www.mlb.com/mariners"
+            },
+            {
+              "name": "St. Louis Cardinals",
+              "base": "St. Louis, MO, US",
+              "lat": 38.62727,
+              "lng": -90.19789,
+              "url": "https://www.mlb.com/cardinals"
+            },
+            {
+              "name": "Tampa Bay Rays",
+              "base": "St. Petersburg, FL, US",
+              "lat": 27.77086,
+              "lng": -82.67927,
+              "url": "https://www.mlb.com/rays"
+            },
+            {
+              "name": "Texas Rangers",
+              "base": "Arlington, TX, US",
+              "lat": 32.73569,
+              "lng": -97.10807,
+              "url": "https://www.mlb.com/rangers"
+            },
+            {
+              "name": "Toronto Blue Jays",
+              "base": "Toronto, ON, CA",
+              "lat": 43.70643,
+              "lng": -79.39864,
+              "url": "https://www.mlb.com/bluejays"
+            },
+            {
+              "name": "Washington Nationals",
+              "base": "Washington, DC, US",
+              "lat": 38.89511,
+              "lng": -77.03637,
+              "url": "https://www.mlb.com/nationals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ice-hockey",
+      "label": "Ice hockey",
+      "secondTierStatus": "not-applicable",
+      "note": {
+        "en": "NHL is the top league. It does not use a first/second-division promotion-and-relegation pyramid; affiliate, development or minor leagues are not labeled a second division here.",
+        "es": "NHL es la liga principal. No utiliza una pirámide de primera y segunda división con ascensos y descensos; las ligas afiliadas, de desarrollo o menores no se presentan aquí como segunda división.",
+        "pt": "NHL é a liga principal. Não utiliza uma pirâmide de primeira e segunda divisão com promoção e despromoção; ligas afiliadas, de desenvolvimento ou menores não são apresentadas aqui como segunda divisão."
+      },
+      "competitions": [
+        {
+          "id": "ice-hockey-top",
+          "name": "NHL",
+          "level": "first",
+          "season": "2026–27",
+          "sourceUrl": "https://www.nhl.com/info/teams/",
+          "coverage": "complete",
+          "teams": [
+            {
+              "name": "Anaheim Ducks",
+              "base": "Anaheim, CA, US",
+              "lat": 33.83529,
+              "lng": -117.9145,
+              "url": "https://www.nhl.com/ducks/"
+            },
+            {
+              "name": "Boston Bruins",
+              "base": "Boston, MA, US",
+              "lat": 42.35843,
+              "lng": -71.05977,
+              "url": "https://www.nhl.com/bruins/"
+            },
+            {
+              "name": "Buffalo Sabres",
+              "base": "Buffalo, NY, US",
+              "lat": 42.88645,
+              "lng": -78.87837,
+              "url": "https://www.nhl.com/sabres/"
+            },
+            {
+              "name": "Calgary Flames",
+              "base": "Calgary, AB, CA",
+              "lat": 51.05011,
+              "lng": -114.08529,
+              "url": "https://www.nhl.com/flames/"
+            },
+            {
+              "name": "Carolina Hurricanes",
+              "base": "Raleigh, NC, US",
+              "lat": 35.7721,
+              "lng": -78.63861,
+              "url": "https://www.nhl.com/hurricanes/"
+            },
+            {
+              "name": "Chicago Blackhawks",
+              "base": "Chicago, IL, US",
+              "lat": 41.85003,
+              "lng": -87.65005,
+              "url": "https://www.nhl.com/blackhawks/"
+            },
+            {
+              "name": "Colorado Avalanche",
+              "base": "Denver, CO, US",
+              "lat": 39.73915,
+              "lng": -104.9847,
+              "url": "https://www.nhl.com/avalanche/"
+            },
+            {
+              "name": "Columbus Blue Jackets",
+              "base": "Columbus, OH, US",
+              "lat": 39.96118,
+              "lng": -82.99879,
+              "url": "https://www.nhl.com/bluejackets/"
+            },
+            {
+              "name": "Dallas Stars",
+              "base": "Dallas, TX, US",
+              "lat": 32.78306,
+              "lng": -96.80667,
+              "url": "https://www.nhl.com/stars/"
+            },
+            {
+              "name": "Detroit Red Wings",
+              "base": "Detroit, MI, US",
+              "lat": 42.33143,
+              "lng": -83.04575,
+              "url": "https://www.nhl.com/redwings/"
+            },
+            {
+              "name": "Edmonton Oilers",
+              "base": "Edmonton, AB, CA",
+              "lat": 53.55014,
+              "lng": -113.46871,
+              "url": "https://www.nhl.com/oilers/"
+            },
+            {
+              "name": "Florida Panthers",
+              "base": "Sunrise, FL, US",
+              "lat": 26.13397,
+              "lng": -80.1131,
+              "url": "https://www.nhl.com/panthers/"
+            },
+            {
+              "name": "Los Angeles Kings",
+              "base": "Los Angeles, CA, US",
+              "lat": 34.05223,
+              "lng": -118.24368,
+              "url": "https://www.nhl.com/kings/"
+            },
+            {
+              "name": "Minnesota Wild",
+              "base": "Saint Paul, MN, US",
+              "lat": 44.94441,
+              "lng": -93.09327,
+              "url": "https://www.nhl.com/wild/"
+            },
+            {
+              "name": "Montréal Canadiens",
+              "base": "Montréal, QC, CA",
+              "lat": 45.50884,
+              "lng": -73.58781,
+              "url": "https://www.nhl.com/canadiens/"
+            },
+            {
+              "name": "Nashville Predators",
+              "base": "Nashville, TN, US",
+              "lat": 36.16589,
+              "lng": -86.78444,
+              "url": "https://www.nhl.com/predators/"
+            },
+            {
+              "name": "New Jersey Devils",
+              "base": "Newark, NJ, US",
+              "lat": 40.73566,
+              "lng": -74.17237,
+              "url": "https://www.nhl.com/devils/"
+            },
+            {
+              "name": "New York Islanders",
+              "base": "Elmont, NY, US",
+              "lat": 40.70094,
+              "lng": -73.71291,
+              "url": "https://www.nhl.com/islanders/"
+            },
+            {
+              "name": "New York Rangers",
+              "base": "New York City, NY, US",
+              "lat": 40.71427,
+              "lng": -74.00597,
+              "url": "https://www.nhl.com/rangers/"
+            },
+            {
+              "name": "Ottawa Senators",
+              "base": "Ottawa, ON, CA",
+              "lat": 45.41117,
+              "lng": -75.69812,
+              "url": "https://www.nhl.com/senators/"
+            },
+            {
+              "name": "Philadelphia Flyers",
+              "base": "Philadelphia, PA, US",
+              "lat": 39.95238,
+              "lng": -75.16362,
+              "url": "https://www.nhl.com/flyers/"
+            },
+            {
+              "name": "Pittsburgh Penguins",
+              "base": "Pittsburgh, PA, US",
+              "lat": 40.44062,
+              "lng": -79.99589,
+              "url": "https://www.nhl.com/penguins/"
+            },
+            {
+              "name": "San Jose Sharks",
+              "base": "San Jose, CA, US",
+              "lat": 37.33939,
+              "lng": -121.89496,
+              "url": "https://www.nhl.com/sharks/"
+            },
+            {
+              "name": "Seattle Kraken",
+              "base": "Seattle, WA, US",
+              "lat": 47.60621,
+              "lng": -122.33207,
+              "url": "https://www.nhl.com/kraken/"
+            },
+            {
+              "name": "St. Louis Blues",
+              "base": "St. Louis, MO, US",
+              "lat": 38.62727,
+              "lng": -90.19789,
+              "url": "https://www.nhl.com/blues/"
+            },
+            {
+              "name": "Tampa Bay Lightning",
+              "base": "Tampa, FL, US",
+              "lat": 27.94752,
+              "lng": -82.45843,
+              "url": "https://www.nhl.com/lightning/"
+            },
+            {
+              "name": "Toronto Maple Leafs",
+              "base": "Toronto, ON, CA",
+              "lat": 43.70643,
+              "lng": -79.39864,
+              "url": "https://www.nhl.com/mapleleafs/"
+            },
+            {
+              "name": "Utah Mammoth",
+              "base": "Salt Lake City, UT, US",
+              "lat": 40.76078,
+              "lng": -111.89105,
+              "url": "https://www.nhl.com/utah/"
+            },
+            {
+              "name": "Vancouver Canucks",
+              "base": "Vancouver, BC, CA",
+              "lat": 49.24966,
+              "lng": -123.11934,
+              "url": "https://www.nhl.com/canucks/"
+            },
+            {
+              "name": "Vegas Golden Knights",
+              "base": "Paradise, NV, US",
+              "lat": 36.09719,
+              "lng": -115.14666,
+              "url": "https://www.nhl.com/goldenknights/"
+            },
+            {
+              "name": "Washington Capitals",
+              "base": "Washington, DC, US",
+              "lat": 38.89511,
+              "lng": -77.03637,
+              "url": "https://www.nhl.com/capitals/"
+            },
+            {
+              "name": "Winnipeg Jets",
+              "base": "Winnipeg, MB, CA",
+              "lat": 49.8844,
+              "lng": -97.14704,
+              "url": "https://www.nhl.com/jets/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
