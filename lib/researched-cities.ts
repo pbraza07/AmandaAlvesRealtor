@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import type {CountrySlug,FilterId} from './explorer';
 import type {Locale} from './i18n/core';
-export type LivingCopy={intro:string;rhythm:string;idealFor:string;consider:string};
+export type LivingCopy={intro:string;rhythm:string;idealFor:string;consider:string;signature:string;everyday:string;visitPlan:string};
 export type LivingSource={url:string;title:string};
 export type LivingProfile={name:string;geonamesId:number;airportCode:string;rank:number;content:Record<Locale,LivingCopy>;sources:LivingSource[];verifiedTags?:FilterId[]};
 export type LivingResearch={country:CountrySlug;selectionMethod:string;researchedAt:string;places:LivingProfile[]};

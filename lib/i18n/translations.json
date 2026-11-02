@@ -3266,5 +3266,33 @@
   "Your request was saved, but Amanda’s email notification could not be delivered. Please contact Amanda directly.": {
     "es": "Tu solicitud se guardó, pero no se pudo enviar la notificación por correo a Amanda. Contacta directamente con Amanda.",
     "pt": "Sua solicitação foi salva, mas a notificação por e-mail para Amanda não pôde ser enviada. Entre em contato diretamente com Amanda."
+  },
+  "What makes it special": {
+    "es": "Qué lo hace especial",
+    "pt": "O que torna este lugar especial"
+  },
+  "Picture your everyday": {
+    "es": "Imagina tu día a día",
+    "pt": "Imagine seu dia a dia"
+  },
+  "Explore it in person": {
+    "es": "Explóralo en persona",
+    "pt": "Conheça pessoalmente"
+  },
+  "Daily life & scouting visit": {
+    "es": "Vida cotidiana y visita de exploración",
+    "pt": "Dia a dia e visita de exploração"
+  },
+  "Explore 100 researched cities, towns and communities in each destination. This editorial selection balances established urban centers, coastal towns, inland communities and island living. Each guide highlights local character, airport access, lifestyle fit and practical considerations, with a richer local story, everyday home-base comparisons and a suggested scouting visit.": {
+    "es": "Explora 100 ciudades, pueblos y comunidades investigados en cada destino. Esta selección editorial reúne centros urbanos, localidades costeras, comunidades del interior y vida insular. Cada guía destaca el carácter local, el acceso al aeropuerto, el estilo de vida y aspectos prácticos, además de una historia local más completa, comparaciones para elegir tu base cotidiana y una visita de exploración sugerida.",
+    "pt": "Explore 100 cidades, vilas e comunidades pesquisadas em cada destino. Esta seleção editorial reúne centros urbanos, localidades litorâneas, comunidades do interior e vida nas ilhas. Cada guia destaca o caráter local, o acesso ao aeroporto, o estilo de vida e aspectos práticos, além de uma história local mais completa, comparações para escolher sua base cotidiana e uma visita de exploração sugerida."
+  },
+  "Lifestyle fit, daily-life comparisons and scouting visits are editorial suggestions based on the cited local features. Use the lifestyle explorer to rank places by your own preferences.": {
+    "es": "La afinidad de estilo de vida, las comparaciones cotidianas y las visitas de exploración son sugerencias editoriales basadas en los aspectos locales citados. Usa el explorador para ordenar los lugares según tus preferencias.",
+    "pt": "A afinidade de estilo de vida, as comparações do dia a dia e as visitas de exploração são sugestões editoriais baseadas nas características locais citadas. Use o explorador para ordenar os lugares conforme suas preferências."
+  },
+  "These city details are original summaries of the sources below. Lifestyle fit, daily-life comparisons and scouting visits are editorial suggestions based on the cited local features.": {
+    "es": "Estos detalles son resúmenes originales de las fuentes que aparecen abajo. La afinidad de estilo de vida, las comparaciones cotidianas y las visitas de exploración son sugerencias editoriales basadas en los aspectos locales citados.",
+    "pt": "Estes detalhes são resumos originais das fontes abaixo. A afinidade de estilo de vida, as comparações do dia a dia e as visitas de exploração são sugestões editoriais baseadas nas características locais citadas."
   }
 }

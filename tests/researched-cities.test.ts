@@ -18,9 +18,9 @@ test('400 researched guides have distinct real place identities, source evidence
    assert.ok(!['OPF','DSI','CAT','SYQ'].includes(place.airportCode),place.name);
    if(country==='costa-rica')assert.ok(['SJO','LIR'].includes(place.airportCode));
    for(const source of place.sources){assert.ok(new URL(source.url).protocol==='https:');assert.ok(source.title.trim().length>3)}
-   for(const lang of ['en','es','pt'] as const){for(const field of ['intro','rhythm','idealFor','consider'] as const){const text=place.content[lang][field];assert.ok(text.trim().length>=20,`${place.name} ${lang} ${field}`);assert.doesNotMatch(text,/Start with your preferred daily routine|local lifestyle details still need review/i)}assert.notEqual(place.content[lang].rhythm,place.content[lang].idealFor)}
+   for(const lang of ['en','es','pt'] as const){for(const field of ['intro','rhythm','idealFor','consider','signature','everyday','visitPlan'] as const){const text=place.content[lang][field];assert.ok(text.trim().length>=20,`${place.name} ${lang} ${field}`);assert.doesNotMatch(text,/Start with your preferred daily routine|local lifestyle details still need review/i)}assert.notEqual(place.content[lang].rhythm,place.content[lang].idealFor)}
   }
-  for(const lang of ['en','es','pt'] as const)for(const field of ['intro','rhythm','idealFor'] as const)assert.equal(new Set(research.places.map(p=>p.content[lang][field])).size,100,`${country}: duplicate ${lang} ${field}`);
+  for(const lang of ['en','es','pt'] as const)for(const field of ['intro','rhythm','idealFor','signature','everyday','visitPlan'] as const)assert.equal(new Set(research.places.map(p=>p.content[lang][field])).size,100,`${country}: duplicate ${lang} ${field}`);
  }
  assert.equal(total,400);
 });
