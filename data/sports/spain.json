@@ -160,7 +160,9 @@
               "lng": -0.10087,
               "url": "https://www.laliga.com/clubes/villarreal-cf/plantilla"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 20
         },
         {
           "id": "es-laliga2",
@@ -324,7 +326,9 @@
               "lng": -15.41573,
               "url": "https://www.laliga.com/clubes/ud-las-palmas/plantilla"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 22
         }
       ]
     },
@@ -472,7 +476,9 @@
               "lng": -0.37966,
               "url": "https://acb.com/es/liga/equipos/valencia-basket-13"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 18
         },
         {
           "id": "es-primera-feb",
@@ -608,7 +614,9 @@
               "lng": -4.77275,
               "url": "https://beta.competiciones.feb.es/primera-feb/noticias/guia-las-plantillas-datos-analisis-de-la-primera-feb-2026-27-2"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 18
         }
       ]
     },
@@ -714,7 +722,9 @@
               "lng": -8.06667,
               "url": "https://esvoley.es/comunicacion/noticias/definido-el-calendario-de-la-superliga-masculina-para-la-temporada-20262027"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         },
         {
           "id": "es-superliga2-volleyball",
@@ -976,7 +986,9 @@
               "lng": -3.70256,
               "url": "https://esvoley.es/comunicacion/noticias/la-superliga-masculina-2-comienza-con-36-aspirantes-al-ascenso"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 36
         }
       ]
     },
@@ -1110,7 +1122,9 @@
               "lng": -0.21749,
               "url": "https://www.asobal.es/asobal/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 16
         },
         {
           "id": "es-handball-plata",
@@ -1232,7 +1246,9 @@
               "lng": -0.4087,
               "url": "https://www.rfebm.com/division-de-honor-plata-masculina-ya-tiene-calendario/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 16
         }
       ]
     },
@@ -1366,7 +1382,9 @@
               "lng": -0.87734,
               "url": "https://futsal.rfef.es/equipo/wanapix-ad-sala-10/23/2027/info"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 16
         },
         {
           "id": "es-segunda-futsal",
@@ -1481,7 +1499,9 @@
               "lng": -0.79102,
               "url": "https://futsal.rfef.es/equipo/zamb%C3%BA-cfs-pinatar/2838/2027/info"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 15
         }
       ]
     }

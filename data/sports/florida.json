@@ -231,7 +231,9 @@
               "lng": -123.11934,
               "url": "https://www.whitecapsfc.com/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 30
         },
         {
           "id": "usl-championship",
@@ -416,7 +418,9 @@
               "lng": -82.67927,
               "url": "https://www.rowdiessoccer.com/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 25
         }
       ]
     },
@@ -648,7 +652,9 @@
               "lng": -77.03637,
               "url": "https://www.nba.com/wizards/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 30
         }
       ]
     },
@@ -894,7 +900,9 @@
               "lng": -76.89664,
               "url": "https://www.commanders.com/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 32
         }
       ]
     },
@@ -1126,7 +1134,9 @@
               "lng": -77.03637,
               "url": "https://www.mlb.com/nationals"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 30
         }
       ]
     },
@@ -1372,7 +1382,9 @@
               "lng": -97.14704,
               "url": "https://www.nhl.com/jets/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 32
         }
       ]
     }

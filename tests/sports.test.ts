@@ -23,8 +23,7 @@ test('sports catalogs have dated roster references, complete declared rosters an
    }
   }
  }
- const florida=sportsCatalog('florida');
- for(const [id,counts] of Object.entries({soccer:[30,25],basketball:[30],'american-football':[32],baseball:[30],'ice-hockey':[32]}))assert.deepEqual(florida.sports.find(s=>s.id===id)!.competitions.map(c=>c.teams.length),counts);
+ for(const country of countries)for(const sport of sportsCatalog(country).sports)for(const league of sport.competitions)assert.equal(league.teams.length,league.expectedTeamCount);
 });
 test('every one of the 400 city guides selects the geographically nearest club in each listed division',()=>{
  assert.ok(Math.abs(sportsDistanceKm(0,0,0,1)-111.195)<.01);assert.equal(sportsDistanceKm(10,-80,10,-80),0);

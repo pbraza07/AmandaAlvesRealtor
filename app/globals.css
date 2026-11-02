@@ -76,3 +76,5 @@
 @media(max-width:650px){.sports-divisions{grid-template-columns:1fr}.sports-divisions>div+div{border-top:1px solid #e0e4da;padding-top:12px}.city-sports>summary{min-height:44px;padding:12px 0}.city-sports .sports-note,.city-sports .sports-method,.city-sports .sports-checked{font-size:.78rem}.sports-team-name{font-size:.9rem}.sports-league,.sports-distance{font-size:.8rem}.sports-links{font-size:.75rem;gap:12px}.sports-tier{font-size:.68rem}}
 
 .sports-ties{font-size:.68rem;line-height:1.6;color:#53614d}.sports-ties a{text-decoration:underline;text-underline-offset:3px}@media(max-width:650px){.sports-ties{font-size:.76rem}}
+
+.sports-verified{font-size:.65rem;color:#65715d;line-height:1.5}@media(max-width:650px){.sports-verified{font-size:.74rem}}

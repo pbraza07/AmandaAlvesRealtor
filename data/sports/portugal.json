@@ -146,7 +146,9 @@
               "lng": -9.39773,
               "url": "https://www.ligaportugal.pt/competition/618/liga-portugal-betclic/round/20262027?tab=standings"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 18
         },
         {
           "id": "pt-soccer-2",
@@ -282,7 +284,9 @@
               "lng": -8.54839,
               "url": "https://www.ligaportugal.pt/competition/912/liga-portugal-meu-super/round/20262027?tab=standings"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 18
         }
       ]
     },
@@ -388,7 +392,9 @@
               "lng": -8.29619,
               "url": "https://www.fpb.pt/noticia/o-arranque-de-2026-2027-sorteio-das-ligas-betclic-masculina-e-feminina-este-sabado-no-cop/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         },
         {
           "id": "pt-basketball-2",
@@ -510,7 +516,9 @@
               "lng": -16.83749,
               "url": "https://www.fpb.pt/calendario/11441/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 16
         }
       ]
     },
@@ -616,7 +624,9 @@
               "lng": -8.29619,
               "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/ligauna_fase1.pdf"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         },
         {
           "id": "pt-volleyball-2",
@@ -696,7 +706,9 @@
               "lng": -8.93228,
               "url": "https://www.fpvoleibol.pt/nacional/26_27/sorteios/2div_senmasc_1fase.pdf"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 10
         }
       ]
     },
@@ -802,7 +814,9 @@
               "lng": -8.29619,
               "url": "https://portal.fpa.pt/2026/07/campeonatos-betclic-feminino-e-masculino-sorteio-traca-caminho-para-2026-2027/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         },
         {
           "id": "pt-handball-2",
@@ -896,7 +910,9 @@
               "lng": -28.62615,
               "url": "https://portal.fpa.pt/prova/10017/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         }
       ]
     },
@@ -1002,7 +1018,9 @@
               "lng": -9.23083,
               "url": "https://rioavefc.pt/noticias/calendario-liga-placard-2026-2027/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 12
         }
       ]
     }

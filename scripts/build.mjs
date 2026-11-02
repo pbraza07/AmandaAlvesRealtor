@@ -11,5 +11,6 @@ function run(command, args) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
+run("node", ["--import", "tsx", "scripts/refresh-sports.ts", "--validate-only"]);
 run("npx", ["prisma", "generate"]);
 run("npx", ["next", "build"]);

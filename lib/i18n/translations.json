@@ -3462,5 +3462,13 @@
   "Specialist roster report": {
     "es": "Informe especializado de equipos",
     "pt": "Relatório especializado de equipes"
+  },
+  "Verified:": {
+    "es": "Verificado:",
+    "pt": "Verificado:"
+  },
+  "Oldest league verification:": {
+    "es": "Verificación de liga más antigua:",
+    "pt": "Verificação de liga mais antiga:"
   }
 }

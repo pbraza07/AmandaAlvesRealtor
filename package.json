@@ -1,6 +1,6 @@
 {
   "name": "amanda-alves-realtor",
-  "version": "2.24.0",
+  "version": "2.24.1",
   "private": true,
   "scripts": {
     "dev": "node scripts/dev.mjs",
@@ -12,7 +12,9 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
-    "test": "node --import tsx --test tests/*.test.ts"
+    "test": "node --import tsx --test tests/*.test.ts",
+    "sports:validate": "node --import tsx scripts/refresh-sports.ts --validate-only",
+    "sports:refresh": "node --import tsx scripts/refresh-sports.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.16.1",

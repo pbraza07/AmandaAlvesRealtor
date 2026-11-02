@@ -90,7 +90,9 @@
               "lng": -84.13364,
               "url": "https://www.unafut.com/club/14049/sporting-fc"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 10
         },
         {
           "id": "cr-soccer-second",
@@ -205,7 +207,9 @@
               "lng": -84.09266,
               "url": "https://liasce.com/equipos/ad-aserri/"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 15
         }
       ]
     },
@@ -283,7 +287,9 @@
               "lng": -83.03596,
               "url": "https://www.lsbcostarica.com/equipos/jmc-sharks-limon"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 8
         }
       ]
     },
@@ -376,7 +382,9 @@
               "lng": -84.05083,
               "url": "https://www.puntodepartida.cr/post/gu%C3%ADa-del-campeonato-nacional-de-voleibol-de-sala-2026"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 10
         },
         {
           "id": "cr-volleyball-second",
@@ -491,7 +499,9 @@
               "lng": -84.13989,
               "url": "https://sporty2.net/public/?ev=fecovol-ascenso1ra-2026"
             }
-          ]
+          ],
+          "verifiedAt": "2026-11-02",
+          "expectedTeamCount": 15
         }
       ]
     }
