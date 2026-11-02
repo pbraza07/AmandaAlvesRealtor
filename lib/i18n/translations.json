@@ -3294,5 +3294,69 @@
   "These city details are original summaries of the sources below. Lifestyle fit, daily-life comparisons and scouting visits are editorial suggestions based on the cited local features.": {
     "es": "Estos detalles son resúmenes originales de las fuentes que aparecen abajo. La afinidad de estilo de vida, las comparaciones cotidianas y las visitas de exploración son sugerencias editoriales basadas en los aspectos locales citados.",
     "pt": "Estes detalhes são resumos originais das fontes abaixo. A afinidade de estilo de vida, as comparações do dia a dia e as visitas de exploração são sugestões editoriais baseadas nas características locais citadas."
+  },
+  "Explore 100 researched places. Your preferences rank every place by match percentage.": {
+    "es": "Explora 100 lugares investigados. Tus preferencias ordenan todos los lugares por porcentaje de coincidencia.",
+    "pt": "Explore 100 lugares pesquisados. Suas preferências ordenam todos os lugares pelo percentual de compatibilidade."
+  },
+  "Explore 100 researched cities, towns and communities in this destination. Your preferences rank places by match percentage; partial and 0% matches stay available.": {
+    "es": "Explora 100 ciudades, pueblos y comunidades investigados en este destino. Tus preferencias ordenan los lugares por porcentaje de coincidencia; las coincidencias parciales y del 0% siguen disponibles.",
+    "pt": "Explore 100 cidades, vilas e comunidades pesquisadas neste destino. Suas preferências ordenam os lugares pelo percentual de compatibilidade; resultados parciais e de 0% continuam disponíveis."
+  },
+  "researched places": {
+    "es": "lugares investigados",
+    "pt": "lugares pesquisados"
+  },
+  "Search these 100 places": {
+    "es": "Buscar entre estos 100 lugares",
+    "pt": "Buscar entre estes 100 lugares"
+  },
+  "No researched places found for this name.": {
+    "es": "No se encontraron lugares investigados con este nombre.",
+    "pt": "Nenhum lugar pesquisado encontrado com este nome."
+  },
+  "Explore your preferred places with Amanda and plan your next step.": {
+    "es": "Explora tus lugares preferidos con Amanda y planifica tu próximo paso.",
+    "pt": "Explore seus lugares preferidos com Amanda e planeje seu próximo passo."
+  },
+  "Profiles combine sourced local features, editorial lifestyle tags and geographic indicators. Distances are approximate straight lines, not driving times.": {
+    "es": "Los perfiles combinan características locales documentadas, etiquetas editoriales de estilo de vida e indicadores geográficos. Las distancias son aproximadas y en línea recta, no tiempos de conducción.",
+    "pt": "Os perfis combinam características locais documentadas, etiquetas editoriais de estilo de vida e indicadores geográficos. As distâncias são aproximadas e em linha reta, não tempos de condução."
+  },
+  "100 researched cities, towns and communities per destination, with original living guides and source references.": {
+    "es": "100 ciudades, pueblos y comunidades investigados por destino, con guías originales para vivir y referencias.",
+    "pt": "100 cidades, vilas e comunidades pesquisadas por destino, com guias originais para viver e referências."
+  },
+  "City guide sources and coverage ↗": {
+    "es": "Fuentes y cobertura de las guías de ciudades ↗",
+    "pt": "Fontes e cobertura dos guias de cidades ↗"
+  },
+  "City guide sources and coverage": {
+    "es": "Fuentes y cobertura de las guías de ciudades",
+    "pt": "Fontes e cobertura dos guias de cidades"
+  },
+  "Researched places": {
+    "es": "Lugares investigados",
+    "pt": "Lugares pesquisados"
+  },
+  "The explorer features these 100 places per destination. Match percentages count confirmed selected preferences, and partial or 0% matches remain eligible.": {
+    "es": "El explorador presenta estos 100 lugares por destino. Los porcentajes cuentan las preferencias seleccionadas confirmadas; las coincidencias parciales o del 0% siguen siendo elegibles.",
+    "pt": "O explorador apresenta estes 100 lugares por destino. Os percentuais contam as preferências selecionadas confirmadas; resultados parciais ou de 0% continuam elegíveis."
+  },
+  "The explorer features 100 researched cities, towns and communities in each destination: Florida, Spain, Portugal and Costa Rica. These 400 living guides are the complete public collection. GeoNames supplies geographic reference data for these selected places.": {
+    "es": "El explorador presenta 100 ciudades, pueblos y comunidades investigados en cada destino: Florida, España, Portugal y Costa Rica. Estas 400 guías para vivir forman la colección pública completa. GeoNames proporciona datos geográficos de referencia de los lugares seleccionados.",
+    "pt": "O explorador apresenta 100 cidades, vilas e comunidades pesquisadas em cada destino: Flórida, Espanha, Portugal e Costa Rica. Estes 400 guias para viver formam a coleção pública completa. O GeoNames fornece dados geográficos de referência dos lugares selecionados."
+  },
+  "All 100 researched places remain eligible. Match percentage determines their order; editorial guide order breaks equal-score ties.": {
+    "es": "Los 100 lugares investigados siguen siendo elegibles. El porcentaje de coincidencia determina el orden; el orden editorial de la guía desempata las puntuaciones iguales.",
+    "pt": "Os 100 lugares pesquisados continuam elegíveis. O percentual de compatibilidade determina a ordem; a ordem editorial do guia desempata pontuações iguais."
+  },
+  "City summaries stay on this site. Each researched profile includes local character, lifestyle fit, a practical home-base comparison and a suggested scouting visit in English, Spanish and Portuguese.": {
+    "es": "Los resúmenes permanecen en este sitio. Cada perfil investigado incluye carácter local, afinidad de estilo de vida, una comparación práctica para elegir una base y una visita de exploración sugerida en inglés, español y portugués.",
+    "pt": "Os resumos permanecem neste site. Cada perfil pesquisado inclui caráter local, afinidade de estilo de vida, uma comparação prática para escolher uma base e uma visita de exploração sugerida em inglês, espanhol e português."
+  },
+  "Condensed Wikipedia introductions are adapted from Wikipedia contributors under CC BY-SA 4.0. Original article and photo attribution remain available inside each city card’s Sources & photo credits section. The researched living guide remains the main city description.": {
+    "es": "Las introducciones condensadas de Wikipedia se adaptan de sus colaboradores bajo CC BY-SA 4.0. La atribución del artículo original y de las fotos sigue disponible en Fuentes y créditos de fotos de cada tarjeta. La guía investigada para vivir sigue siendo la descripción principal de la ciudad.",
+    "pt": "As introduções condensadas da Wikipédia são adaptadas dos seus colaboradores sob CC BY-SA 4.0. A atribuição do artigo original e das fotos continua disponível em Fontes e créditos das fotos de cada cartão. O guia pesquisado para viver continua sendo a descrição principal da cidade."
   }
 }

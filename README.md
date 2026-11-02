@@ -1,5 +1,7 @@
 # Amanda Alves Realtor Website
 
+Version 2.23.1 limits the public explorer, map, search and place API to the 100 researched places in each destination. The broader-index toggle is removed; old `researched=0` links cannot expose additional candidates. Preferences still rank all 100, including partial and zero matches.
+
 Version 2.23 expands the 400 researched living guides (100 per destination) with original English, Spanish and Portuguese local stories, everyday home-base comparisons and suggested scouting visits. Directory cards and ranked explorer results show the local story immediately and reveal practical detail on demand; selected city guides show all three sections. Cited local features ground the writing; suggested routines and scouting plans are editorial interpretations. Match percentages, candidate coverage and stored lead data are unchanged.
 
 Version 2.14: Open Admin → Bio page (or Website → Bio page section) to edit the intro label, heading, subtitle, full biography, photo, caption, accessible photo description, both button labels, and Bio SEO fields. Separate paragraphs with a blank line. New Bio photos compress automatically and save with your content in PostgreSQL, without Cloudinary. Click Save website changes after editing/uploading, then refresh `/bio`. Shared contact, navigation CTA, and footer settings remain in the existing Website editor. Existing database records automatically receive Bio defaults; no migration or reseeding is required.

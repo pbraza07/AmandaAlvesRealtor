@@ -68,6 +68,6 @@ export function queryCities({country,filters=[],search='',locale='en',page=0,sav
  if(rankings.size>=8)rankings.delete(rankings.keys().next().value!);rankings.set(key,scored);
  }
  const pageSize=24;const validPage=Math.max(0,Math.floor(page));
- return {country,total:scored.length,countryTotal:all.length,researchedTotal:livingResearch(country).places.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<scored.length,places:scored.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected,locale)),map:mapData(scored,bounds,zoom),updatedAt:manifest.updatedAt};
+ return {country,total:scored.length,countryTotal:researchedOnly?livingResearch(country).places.length:all.length,researchedTotal:livingResearch(country).places.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<scored.length,places:scored.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected,locale)),map:mapData(scored,bounds,zoom),updatedAt:manifest.updatedAt};
 }
 export function cityById(country:CountrySlug,id:string,filters:readonly FilterId[]=[],locale:Locale='en'){const entry=getEntries(country).find(e=>e.id===id||`gn-${e.row[0]}`===id);return entry?detail(entry,filters,locale):undefined}
