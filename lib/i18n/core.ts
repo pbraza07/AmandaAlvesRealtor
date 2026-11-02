@@ -12,6 +12,7 @@ export function translate(text:string,locale:Locale):string {
  if(entry)return leading+entry[locale]+trailing;
  // Dynamic display fragments retain canonical data and numbers.
  const rules:[RegExp,(...parts:string[])=>string][]=[
+ [/^Indexed city or community in (.+)\.$/,p=>`${locale==='es'?'Ciudad o comunidad registrada en':'Cidade ou comunidade registrada em'} ${translate(p,locale)}.`],
  [/^(\d+)% match$/,n=>locale==='es'?`${n}% de coincidencia`:`${n}% de compatibilidade`],
  [/^(\d+) of (\d+) preferences$/,(a,b)=>locale==='es'?`${a} de ${b} ${b==='1'?'preferencia':'preferencias'}`:`${a} de ${b} ${b==='1'?'preferência':'preferências'}`],
  [/^· (\d+) (preference|preferences)$/,n=>locale==='es'?`· ${n} ${n==='1'?'preferencia':'preferencias'}`:`· ${n} ${n==='1'?'preferência':'preferências'}`],

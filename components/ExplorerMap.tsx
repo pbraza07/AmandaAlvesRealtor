@@ -1,76 +1,21 @@
 "use client";
-import { useSiteLanguage, Localized } from "@/components/SiteLanguage";
-
-import { useEffect, useRef, useState } from 'react';
+import {useEffect,useRef,useState} from 'react';
 import type * as Leaflet from 'leaflet';
-import { countryViews, type Area, type CountrySlug } from '@/lib/explorer';
-
-type Props={country:CountrySlug;places:Area[];selectedId:string;onSelect:(id:string)=>void;fitKey:string};
-export function ExplorerMap({country,places,selectedId,onSelect,fitKey}:Props){
- const {locale,t}=useSiteLanguage();
- const container=useRef<HTMLDivElement>(null);
- const map=useRef<Leaflet.Map|null>(null);
- const layer=useRef<Leaflet.LayerGroup|null>(null);
- const library=useRef<typeof Leaflet|null>(null);
- const markers=useRef(new Map<string,Leaflet.Marker>());
- const selectRef=useRef(onSelect);selectRef.current=onSelect;
- const [ready,setReady]=useState(false),[error,setError]=useState(false),[tileError,setTileError]=useState(false);
- const view=countryViews[country];
- useEffect(()=>{
-  let disposed=false;let observer:ResizeObserver|undefined;
-  import('leaflet').then(L=>{
-   if(disposed||!container.current)return;
-   library.current=L;
-   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-   const m=L.map(container.current,{scrollWheelZoom:false,zoomControl:true,zoomAnimation:!reduce,fadeAnimation:!reduce}).setView(view.center,view.zoom);
-   map.current=m;layer.current=L.layerGroup().addTo(m);
-   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors'}).on('tileerror',()=>{if(!disposed)setTileError(true)}).on('tileload',()=>{if(!disposed)setTileError(false)}).addTo(m);
-   observer=new ResizeObserver(()=>m.invalidateSize({pan:false}));observer.observe(container.current);
-   setReady(true);
-  }).catch(()=>{if(!disposed)setError(true)});
-  return()=>{disposed=true;observer?.disconnect();map.current?.remove();map.current=null;layer.current=null;markers.current.clear()};
- // The explorer is keyed by country; each map has one lifetime.
- // eslint-disable-next-line react-hooks/exhaustive-deps
- },[]);
- useEffect(()=>{
-  if(!ready||!library.current||!map.current||!layer.current)return;
-  const L=library.current;layer.current.clearLayers();markers.current.clear();
-  places.forEach((place,index)=>{
-   const pin=document.createElement('span');pin.className='explorer-pin-number';const label=document.createElement('b');label.textContent=String(index+1);pin.append(label);
-   const icon=L.divIcon({html:pin,className:'explorer-pin',iconSize:[34,42],iconAnchor:[17,42],tooltipAnchor:[0,-38]});
-   const marker=L.marker([place.lat,place.lng],{icon,title:t(`Explore ${place.name}`),alt:`${index+1}. ${place.name}`,keyboard:true,riseOnHover:true});
-   const tooltip=document.createElement('span');tooltip.textContent=t(place.name);marker.bindTooltip(tooltip,{direction:'top'});
-   marker.on('click',()=>selectRef.current(place.id));marker.addTo(layer.current!);markers.current.set(place.id,marker);
-  });
- },[places,ready,locale]);
- useEffect(()=>{
-  const m=map.current,L=library.current;if(!m||!L||!ready)return;
-  if(places.length)m.fitBounds(L.latLngBounds(places.map(p=>[p.lat,p.lng] as [number,number])),{padding:[40,40],maxZoom:11,animate:false});
-  else m.setView(view.center,view.zoom,{animate:false});
- // Fit only when country, filters, or result ordering changes, not marker selection.
- // eslint-disable-next-line react-hooks/exhaustive-deps
- },[fitKey,ready]);
- useEffect(()=>{
-  if(!ready)return;
-  markers.current.forEach((marker,id)=>{
-   const element=marker.getElement();element?.classList.toggle('is-selected',id===selectedId);element?.setAttribute('aria-pressed',String(id===selectedId));
-   if(id===selectedId){marker.setZIndexOffset(1000);map.current?.panTo(marker.getLatLng(),{animate:false})}else marker.setZIndexOffset(0);
-  });
- },[selectedId,places,ready,locale]);
- useEffect(()=>{
- const root=map.current?.getContainer();if(!root)return;
- for(const [selector,label] of [['.leaflet-control-zoom-in','Zoom in'],['.leaflet-control-zoom-out','Zoom out']]){
-  const button=root.querySelector(selector);button?.setAttribute('title',t(label));button?.setAttribute('aria-label',t(label));
- }
- const attribution=root.querySelector('.leaflet-control-attribution');
- attribution?.childNodes.forEach(node=>{if(node.nodeType===3&&node.textContent)node.textContent=node.textContent.replace(/contributors|colaboradores/g,t('contributors'))});
- },[locale,ready]);
- const resetView=()=>{const m=map.current,L=library.current;if(!m||!L)return;if(places.length)m.fitBounds(L.latLngBounds(places.map(p=>[p.lat,p.lng] as [number,number])),{padding:[40,40],maxZoom:11});else m.setView(view.center,view.zoom)};
- return <Localized><div className="explorer-map-wrap">
-  <div className="explorer-map-top"><span><i aria-hidden/> {places.length} {places.length===1?'place':'places'} on this map</span><button type="button" onClick={resetView} disabled={!ready}>Show all matches</button></div>
-  <div ref={container} className="explorer-map" role="region" aria-label={`Interactive map of matching places in ${country.replace('-',' ')}`} />
-  {!ready&&<div className="explorer-map-loading" role="status">{error?'The map couldn’t load. You can explore every place in the list.':'Opening your map…'}</div>}
-  {tileError&&<p className="explorer-map-notice" role="status">Map imagery is temporarily unavailable. Location pins and the area list are still available.</p>}
-  <p className="explorer-map-caption">Select a numbered pin or an area card. Drag to explore; use + / − to zoom. Pins mark approximate area centers.</p>
- </div></Localized>;
+import {useSiteLanguage,Localized} from './SiteLanguage';
+import {countryViews,type CountrySlug} from '@/lib/explorer';
+import type {CityMapData,CityResult,MapBounds} from '@/lib/city-types';
+type Props={country:CountrySlug;data:CityMapData|null;selected:CityResult|null;onSelect:(id:string)=>void;onViewChange:(bounds:MapBounds,zoom:number)=>void;fitKey:string};
+export function ExplorerMap({country,data,selected,onSelect,onViewChange,fitKey}:Props){
+ const {locale,t}=useSiteLanguage();const container=useRef<HTMLDivElement>(null),map=useRef<Leaflet.Map|null>(null),layer=useRef<Leaflet.LayerGroup|null>(null),lib=useRef<typeof Leaflet|null>(null);
+ const latest=useRef({onSelect,onViewChange,data});latest.current={onSelect,onViewChange,data};const fitted=useRef<string|null>(null);const [ready,setReady]=useState(false),[error,setError]=useState(false);
+ useEffect(()=>{let disposed=false;let observer:ResizeObserver|undefined;import('leaflet').then(L=>{if(disposed||!container.current)return;lib.current=L;const v=countryViews[country];const m=L.map(container.current,{scrollWheelZoom:false,zoomAnimation:false,fadeAnimation:false}).setView(v.center,v.zoom);map.current=m;layer.current=L.layerGroup().addTo(m);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors'}).addTo(m);m.on('moveend',()=>{const b=m.getBounds();latest.current.onViewChange([b.getSouth(),b.getWest(),b.getNorth(),b.getEast()],m.getZoom())});observer=new ResizeObserver(()=>m.invalidateSize({pan:false}));observer.observe(container.current);setReady(true)}).catch(()=>setError(true));return()=>{disposed=true;observer?.disconnect();map.current?.remove();map.current=null;layer.current=null}},[country]);
+ useEffect(()=>{if(!ready||!data||!map.current||!lib.current||fitted.current===fitKey)return;const [s,w,n,e]=data.bounds;if(data.total){fitted.current=fitKey;map.current.fitBounds([[s,w],[n,e]],{padding:[30,30],maxZoom:11,animate:false})}},[ready,data,fitKey]);
+ useEffect(()=>{const L=lib.current,m=map.current,g=layer.current;if(!L||!m||!g||!ready||!data)return;g.clearLayers();
+  for(const point of data.points){const pin=document.createElement('span');pin.className='city-map-score';pin.textContent=point.score===null?'•':`${point.score}%`;const marker=L.marker([point.lat,point.lng],{icon:L.divIcon({html:pin,className:`explorer-pin ${point.id===selected?.id?'is-selected':''}`,iconSize:[46,38],iconAnchor:[23,38]}),title:t(`Explore ${point.name}`),keyboard:true});const label=document.createElement('span');label.textContent=point.name;marker.bindTooltip(label).on('click',()=>latest.current.onSelect(point.id)).addTo(g)}
+  for(const cluster of data.clusters){const pin=document.createElement('span');pin.className='city-map-cluster';pin.textContent=cluster.count>=1000?`${(cluster.count/1000).toFixed(1)}k`:String(cluster.count);const marker=L.marker([cluster.lat,cluster.lng],{icon:L.divIcon({html:pin,className:'city-cluster-marker',iconSize:[48,48],iconAnchor:[24,24]}),title:t('Zoom to explore these places'),keyboard:true});const popup=document.createElement('div');popup.className='city-cluster-popup';for(const city of cluster.members){const button=document.createElement('button');button.type='button';button.textContent=city.name+(city.score===null?'':` · ${city.score}%`);button.onclick=()=>latest.current.onSelect(city.id);popup.append(button)}marker.bindPopup(popup);marker.on('click',()=>{if(m.getZoom()<15){const [s,w,n,e]=cluster.bounds;m.fitBounds([[s,w],[n,e]],{padding:[35,35],maxZoom:Math.min(18,m.getZoom()+3)});marker.closePopup()}});marker.addTo(g)}
+ },[ready,data,locale,selected?.id]);
+ useEffect(()=>{if(!ready||!selected||!map.current)return;map.current.setView([selected.lat,selected.lng],Math.max(map.current.getZoom(),11),{animate:false})},[ready,selected?.id,selected?.lat,selected?.lng]);
+ useEffect(()=>{const root=map.current?.getContainer();if(!root)return;for(const [selector,label]of [['.leaflet-control-zoom-in','Zoom in'],['.leaflet-control-zoom-out','Zoom out']]){const button=root.querySelector(selector);button?.setAttribute('title',t(label));button?.setAttribute('aria-label',t(label))}root.querySelector('.leaflet-control-attribution')?.childNodes.forEach(n=>{if(n.nodeType===3&&n.textContent)n.textContent=n.textContent.replace(/contributors|colaboradores/g,t('contributors'))})},[locale,ready]);
+ const showAll=()=>{const d=latest.current.data;if(map.current&&d?.total){const [s,w,n,e]=d.bounds;map.current.fitBounds([[s,w],[n,e]],{padding:[30,30],maxZoom:11})}};
+ return <Localized><div className="explorer-map-wrap"><div className="explorer-map-top"><span>{data?.total.toLocaleString(locale)||'…'} <span>candidates on this map</span></span><button type="button" onClick={showAll} disabled={!ready}>Show all candidates</button></div><div ref={container} className="explorer-map" role="region" aria-label={`Interactive map of matching places in ${country.replace('-',' ')}`}/>{!ready&&<div className="explorer-map-loading" role="status">{error?'The map couldn’t load. You can explore every place in the list.':'Opening your map…'}</div>}<p className="explorer-map-caption">Numbered circles group nearby places. Zoom in to explore every city; individual pins show match percentages. Partial and 0% matches stay on the map.</p></div></Localized>;
 }

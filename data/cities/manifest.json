@@ -1,0 +1,139 @@
+{
+  "updatedAt": "2026-11-02T00:15:57.527904+00:00",
+  "counts": {
+    "florida": 8874,
+    "spain": 30674,
+    "portugal": 16610,
+    "costa-rica": 5781
+  },
+  "curatedGeonames": {
+    "lutz": 4163033,
+    "odessa": 4166787,
+    "dade-city": 4152695,
+    "san-antonio": 4171771,
+    "wesley-chapel": 4177727,
+    "brooksville": 4148986,
+    "ocala": 4166673,
+    "dunedin": 4153759,
+    "st-petersburg": 4171563,
+    "sarasota": 4172131,
+    "stuart": 4174201,
+    "deland": 4152890,
+    "alicante": 2521978,
+    "valencia": 2509954,
+    "malaga": 2514256,
+    "murcia": 2513416,
+    "granada": 2517117,
+    "cadiz": 2520600,
+    "girona": 3121456,
+    "santander": 3109718,
+    "oviedo": 3114711,
+    "almeria": 2521886,
+    "denia": 2518878,
+    "castellon": 2519752,
+    "ronda": 2511730,
+    "orgiva": 2513073,
+    "lisbon": 2267057,
+    "porto": 2735943,
+    "cascais": 2269594,
+    "foz-do-arelho": 2267937,
+    "caldas-da-rainha": 2270437,
+    "nazare": 2265552,
+    "tavira": 2262744,
+    "lagos": 2267226,
+    "setubal": 2262963,
+    "braga": 2742032,
+    "viana-do-castelo": 2732773,
+    "coimbra": 2740637,
+    "covilha": 2740313,
+    "ponte-de-lima": 2736041,
+    "tamarindo": 6619864,
+    "nosara": 3622706,
+    "samara": 3621990,
+    "santa-teresa": 3621530,
+    "manuel-antonio": 6943120,
+    "uvita": 3621138,
+    "ojochal": 3622674,
+    "atenas": 3624842,
+    "grecia": 3623620,
+    "escazu": 3623787,
+    "la-fortuna": 3623716,
+    "puerto-viejo": 7870493
+  },
+  "featureCodes": {
+    "florida": {
+      "PPL": 8680,
+      "PPLX": 104,
+      "PPLA2": 66,
+      "PPLL": 23,
+      "PPLA": 1
+    },
+    "spain": {
+      "PPLA3": 6034,
+      "PPL": 23031,
+      "PPLX": 1384,
+      "PPLA": 19,
+      "PPLL": 136,
+      "PPLA2": 32,
+      "PPLC": 1,
+      "PPLR": 3,
+      "PPLS": 6,
+      "PPLF": 25,
+      "PPLA4": 3
+    },
+    "portugal": {
+      "PPL": 16246,
+      "PPLA3": 12,
+      "PPLA2": 228,
+      "PPLX": 42,
+      "PPLL": 56,
+      "PPLA": 19,
+      "PPLR": 1,
+      "PPLC": 1,
+      "PPLF": 3,
+      "PPLS": 2
+    },
+    "costa-rica": {
+      "PPL": 4485,
+      "PPLA3": 12,
+      "PPLX": 1258,
+      "PPLA2": 8,
+      "PPLA4": 3,
+      "PPLC": 1,
+      "PPLA": 6,
+      "PPLL": 8
+    }
+  },
+  "missingPopulation": {
+    "florida": 7908,
+    "spain": 22530,
+    "portugal": 15206,
+    "costa-rica": 5652
+  },
+  "excludedDuplicateCount": 1,
+  "sourceArchiveSha256": {
+    "US": "7af7c224772e66226bbf493b83ea51071d6a88c49563811c15ccb029e05cf875",
+    "ES": "6cafd09739d45b21c0062e24c2a03c87f7660e59acadb55090eb785a63e0babe",
+    "PT": "790d846ebb3dcef76cb23226d9a92843e2f00955a6e4406c2c25785ff00602d3",
+    "CR": "61450bc18d1c275e4cd1a531d88c1cdbbd13894564122f6a5b77a7a3c505780a"
+  },
+  "sources": [
+    {
+      "name": "GeoNames",
+      "url": "https://download.geonames.org/export/dump/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "name": "Natural Earth 1:10m coastline",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-coastline/",
+      "license": "Public domain"
+    },
+    {
+      "name": "OurAirports",
+      "url": "https://ourairports.com/data/",
+      "license": "Public domain"
+    }
+  ],
+  "method": "All current GeoNames populated-place feature codes, including named neighborhoods and communities. Excludes historical, abandoned, destroyed places and former capitals. Florida is restricted to US admin1=FL. Duplicate name/coordinate rows are merged. Population zero is treated as unknown. Coast distance uses interpolated Natural Earth coastline vertices; it is approximate and not property-level exposure. New-place scores use coast proximity <=20km, elevation >=600m outside Florida, population >=50000 or administrative capital for city energy, and scheduled-service airport <=50km for connections; other preferences remain unassessed until editorial review."
+}

@@ -2882,5 +2882,205 @@
   "Meet Amanda Alves, a Tampa Bay Realtor and investor passionate about lifestyle properties, and helping families build a life they love.": {
     "es": "Conoce a Amanda Alves, Realtor e inversionista de Tampa Bay apasionada por ayudar a las familias a encontrar propiedades y construir una vida que amen.",
     "pt": "Conheça Amanda Alves, Realtor e investidora de Tampa Bay apaixonada por ajudar famílias a encontrar imóveis e construir uma vida que amem."
+  },
+  "Explore cities, towns and communities across the whole destination. Your preferences rank places by match percentage; partial and 0% matches stay available.": {
+    "es": "Explora ciudades, pueblos y comunidades de todo el destino. Tus preferencias ordenan los lugares por porcentaje de coincidencia; las coincidencias parciales y del 0% siguen disponibles.",
+    "pt": "Explore cidades, vilas e comunidades de todo o destino. Suas preferências ordenam os lugares pela porcentagem de compatibilidade; resultados parciais e de 0% continuam disponíveis."
+  },
+  "The city index could not load. Please try again.": {
+    "es": "No se pudo cargar el índice de ciudades. Inténtalo de nuevo.",
+    "pt": "Não foi possível carregar o índice de cidades. Tente novamente."
+  },
+  "Regional inspiration": {
+    "es": "Inspiración regional",
+    "pt": "Inspiração regional"
+  },
+  "indexed places": {
+    "es": "lugares indexados",
+    "pt": "lugares indexados"
+  },
+  "Find any indexed city or town": {
+    "es": "Busca cualquier ciudad o pueblo del índice",
+    "pt": "Busque qualquer cidade ou vila do índice"
+  },
+  "Preferences rank every candidate. They never hide a city.": {
+    "es": "Las preferencias ordenan todos los candidatos. Nunca ocultan una ciudad.",
+    "pt": "As preferências ordenam todos os candidatos. Nunca ocultam uma cidade."
+  },
+  "Match percentage is the number of confirmed selected preferences divided by all selected preferences. All cities stay eligible, including partial and 0% matches.": {
+    "es": "El porcentaje de coincidencia es el número de preferencias seleccionadas confirmadas dividido por el total seleccionado. Todas las ciudades siguen siendo candidatas, incluso con coincidencias parciales o del 0%.",
+    "pt": "A porcentagem de compatibilidade corresponde às preferências selecionadas confirmadas divididas pelo total selecionado. Todas as cidades continuam como candidatas, inclusive com compatibilidade parcial ou de 0%."
+  },
+  "Detailed profiles use editorial lifestyle tags. Additional places use available geographic indicators: coast within 20 km, upland elevation of at least 600 m, urban population or regional-capital status, and a scheduled-service airport within 50 km. Distances are approximate straight lines, not driving times.": {
+    "es": "Los perfiles detallados usan etiquetas editoriales de estilo de vida. Los lugares adicionales usan indicadores geográficos disponibles: costa a menos de 20 km, elevación de al menos 600 m, población urbana o condición de capital regional y un aeropuerto de referencia con vuelos regulares a menos de 50 km dentro del destino. Las distancias son aproximadas y en línea recta, no tiempos de conducción.",
+    "pt": "Os perfis detalhados usam etiquetas editoriais de estilo de vida. Os lugares adicionais usam indicadores geográficos disponíveis: litoral a até 20 km, altitude de pelo menos 600 m, população urbana ou condição de capital regional e um aeroporto de referência com voos regulares a até 50 km dentro do destino. As distâncias são aproximadas e em linha reta, não tempos de carro."
+  },
+  "Unassessed preferences are marked for review. A low score does not mean a place is unsuitable. Affordability, family amenities and other qualitative features require local research.": {
+    "es": "Las preferencias no evaluadas se indican para su revisión. Una puntuación baja no significa que el lugar no sea adecuado. La asequibilidad, los servicios para familias y otras características cualitativas requieren investigación local.",
+    "pt": "As preferências não avaliadas são indicadas para revisão. Uma pontuação baixa não significa que o lugar seja inadequado. Preços acessíveis, serviços para famílias e outras características qualitativas exigem pesquisa local."
+  },
+  "Search and your saved-place view narrow what is displayed. Lifestyle preferences only change ranking.": {
+    "es": "La búsqueda y la vista de lugares guardados limitan lo que se muestra. Las preferencias de estilo de vida solo cambian el orden.",
+    "pt": "A busca e a visualização de lugares salvos limitam o que é exibido. As preferências de estilo de vida apenas alteram a ordem."
+  },
+  "City index sources and coverage ↗": {
+    "es": "Fuentes y cobertura del índice de ciudades ↗",
+    "pt": "Fontes e cobertura do índice de cidades ↗"
+  },
+  "Loading city index…": {
+    "es": "Cargando el índice de ciudades…",
+    "pt": "Carregando o índice de cidades…"
+  },
+  "· Ranked by lifestyle match": {
+    "es": "· Ordenados por coincidencia de estilo de vida",
+    "pt": "· Ordenados por compatibilidade de estilo de vida"
+  },
+  "No indexed places found for this name.": {
+    "es": "No se encontraron lugares en el índice con este nombre.",
+    "pt": "Nenhum lugar encontrado no índice com este nome."
+  },
+  "Try another spelling, reset your search, or ask Amanda about any other city or area. It can still be considered.": {
+    "es": "Prueba otra escritura, restablece la búsqueda o consulta a Amanda sobre cualquier otra ciudad o zona. También puede considerarse.",
+    "pt": "Tente outra grafia, redefina a busca ou consulte Amanda sobre qualquer outra cidade ou região. Ela também pode ser considerada."
+  },
+  "Ask Amanda about this place": {
+    "es": "Consulta a Amanda sobre este lugar",
+    "pt": "Consulte Amanda sobre este lugar"
+  },
+  "Some selected preferences still need local review.": {
+    "es": "Algunas preferencias seleccionadas aún necesitan revisión local.",
+    "pt": "Algumas preferências selecionadas ainda precisam de avaliação local."
+  },
+  "Detailed profile": {
+    "es": "Perfil detallado",
+    "pt": "Perfil detalhado"
+  },
+  "Indexed place": {
+    "es": "Lugar del índice",
+    "pt": "Lugar do índice"
+  },
+  "Loading more places…": {
+    "es": "Cargando más lugares…",
+    "pt": "Carregando mais lugares…"
+  },
+  "Show more places": {
+    "es": "Mostrar más lugares",
+    "pt": "Mostrar mais lugares"
+  },
+  "Recorded population:": {
+    "es": "Población registrada:",
+    "pt": "População registrada:"
+  },
+  "Not available": {
+    "es": "No disponible",
+    "pt": "Não disponível"
+  },
+  "Approximate elevation:": {
+    "es": "Elevación aproximada:",
+    "pt": "Altitude aproximada:"
+  },
+  "Coast distance:": {
+    "es": "Distancia a la costa:",
+    "pt": "Distância do litoral:"
+  },
+  "Photo:": {
+    "es": "Foto:",
+    "pt": "Foto:"
+  },
+  "Select a city or zoom into a numbered cluster to explore more places.": {
+    "es": "Selecciona una ciudad o acerca un grupo numerado para explorar más lugares.",
+    "pt": "Selecione uma cidade ou amplie um grupo numerado para explorar mais lugares."
+  },
+  "Every city can be considered, even if it has no detailed profile yet.": {
+    "es": "Todas las ciudades pueden considerarse, aunque aún no tengan un perfil detallado.",
+    "pt": "Todas as cidades podem ser consideradas, mesmo que ainda não tenham um perfil detalhado."
+  },
+  "Cities, towns, neighborhoods and named communities from GeoNames. Coverage is based on the published index, not a guarantee that every locality is recorded.": {
+    "es": "Ciudades, pueblos, barrios y comunidades de GeoNames. La cobertura se basa en el índice publicado y no garantiza que todas las localidades estén registradas.",
+    "pt": "Cidades, vilas, bairros e comunidades do GeoNames. A cobertura se baseia no índice publicado e não garante que todas as localidades estejam registradas."
+  },
+  "Sources and match methodology ↗": {
+    "es": "Fuentes y metodología de coincidencia ↗",
+    "pt": "Fontes e metodologia de compatibilidade ↗"
+  },
+  "Zoom to explore these places": {
+    "es": "Acerca para explorar estos lugares",
+    "pt": "Amplie para explorar estes lugares"
+  },
+  "candidates on this map": {
+    "es": "candidatos en este mapa",
+    "pt": "candidatos neste mapa"
+  },
+  "Show all candidates": {
+    "es": "Mostrar todos los candidatos",
+    "pt": "Mostrar todos os candidatos"
+  },
+  "Numbered circles group nearby places. Zoom in to explore every city; individual pins show match percentages. Partial and 0% matches stay on the map.": {
+    "es": "Los círculos numerados agrupan lugares cercanos. Acerca el mapa para explorar cada ciudad; los marcadores individuales muestran porcentajes de coincidencia. Las coincidencias parciales y del 0% permanecen en el mapa.",
+    "pt": "Os círculos numerados agrupam lugares próximos. Amplie o mapa para explorar cada cidade; os marcadores individuais mostram porcentagens de compatibilidade. Resultados parciais e de 0% permanecem no mapa."
+  },
+  "City index sources and coverage": {
+    "es": "Fuentes y cobertura del índice de ciudades",
+    "pt": "Fontes e cobertura do índice de cidades"
+  },
+  "The explorer includes the published GeoNames populated-place index for Florida, Spain, Portugal and Costa Rica. Cities, towns, villages, neighborhoods and named communities are included. Historical, abandoned and destroyed entries are excluded. This is broad indexed coverage, not a claim that every locality is recorded.": {
+    "es": "El explorador incluye el índice publicado de lugares poblados de GeoNames para Florida, España, Portugal y Costa Rica. Incluye ciudades, pueblos, aldeas, barrios y comunidades. Se excluyen los registros históricos, abandonados o destruidos. Es una cobertura amplia del índice, no una afirmación de que todas las localidades estén registradas.",
+    "pt": "O explorador inclui o índice publicado de lugares povoados do GeoNames para a Flórida, a Espanha, Portugal e a Costa Rica. Inclui cidades, vilas, aldeias, bairros e comunidades. Registros históricos, abandonados ou destruídos são excluídos. É uma cobertura ampla do índice, não uma afirmação de que todas as localidades estejam registradas."
+  },
+  "Indexed places": {
+    "es": "Lugares indexados",
+    "pt": "Lugares indexados"
+  },
+  "Source snapshot:": {
+    "es": "Fecha de los datos:",
+    "pt": "Data dos dados:"
+  },
+  "Preferences rank; they do not exclude": {
+    "es": "Las preferencias ordenan, no excluyen",
+    "pt": "As preferências ordenam, não excluem"
+  },
+  "Population figures are source estimates of varying dates. Zero population values are treated as unavailable. Regional photographs are labeled as inspiration; city photographs are shown only when identified and attributed.": {
+    "es": "Las cifras de población son estimaciones de la fuente con fechas variables. Los valores de población cero se consideran no disponibles. Las fotos regionales se indican como inspiración; las fotos de ciudades solo se muestran si están identificadas y atribuidas.",
+    "pt": "Os números de população são estimativas da fonte com datas variadas. Valores de população zero são tratados como indisponíveis. Fotos regionais são identificadas como inspiração; fotos de cidades só são exibidas quando identificadas e atribuídas."
+  },
+  "Attribution": {
+    "es": "Atribución",
+    "pt": "Atribuição"
+  },
+  "GeoNames is licensed under": {
+    "es": "GeoNames se ofrece bajo la licencia",
+    "pt": "O GeoNames é disponibilizado sob a licença"
+  },
+  ". Coast and airport indicators are derived from public-domain Natural Earth and OurAirports data. Photographs retain their own source licenses.": {
+    "es": ". Los indicadores costeros y de aeropuertos se derivan de datos de dominio público de Natural Earth y OurAirports. Las fotografías mantienen las licencias de sus fuentes.",
+    "pt": ". Os indicadores do litoral e de aeroportos são derivados de dados de domínio público do Natural Earth e OurAirports. As fotografias mantêm as licenças de suas fontes."
+  },
+  "GeoNames place record": {
+    "es": "Registro del lugar en GeoNames",
+    "pt": "Registro do lugar no GeoNames"
+  },
+  "Start with your preferred daily routine, then review local services and neighborhoods.": {
+    "es": "Empieza por la rutina cotidiana que prefieres y luego revisa los servicios locales y los barrios.",
+    "pt": "Comece pela rotina cotidiana que prefere e depois avalie os serviços locais e os bairros."
+  },
+  "Local prices, schools, services and property availability have not been assessed for this indexed place.": {
+    "es": "Los precios locales, las escuelas, los servicios y la disponibilidad de propiedades aún no se han evaluado para este lugar del índice.",
+    "pt": "Os preços locais, as escolas, os serviços e a disponibilidade de imóveis ainda não foram avaliados para este lugar do índice."
+  },
+  "A place to discuss if its setting fits your plans; local lifestyle details still need review.": {
+    "es": "Un lugar para conversar si su entorno encaja con tus planes; los detalles del estilo de vida local aún necesitan revisión.",
+    "pt": "Um lugar para conversar se o ambiente combinar com seus planos; os detalhes do estilo de vida local ainda precisam de avaliação."
+  },
+  "Azores": {
+    "es": "Azores",
+    "pt": "Açores"
+  },
+  "Canary Islands": {
+    "es": "Islas Canarias",
+    "pt": "Ilhas Canárias"
+  },
+  "Public domain": {
+    "es": "Dominio público",
+    "pt": "Domínio público"
   }
 }

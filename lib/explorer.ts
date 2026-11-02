@@ -95,9 +95,9 @@ export const areas:Area[]=[
 export const countryViews:Record<CountrySlug,{center:[number,number];zoom:number;accent:string}>={florida:{center:[28.25,-82.2],zoom:7,accent:'#476d4c'},spain:{center:[40,-3.5],zoom:6,accent:'#a45335'},portugal:{center:[39.7,-8.3],zoom:7,accent:'#326c7a'},'costa-rica':{center:[9.8,-84.2],zoom:7,accent:'#37694f'}};
 export type ExplorerQuery={country:CountrySlug;filters:readonly FilterId[];search?:string;mode?:'all'|'any';locale?:Locale};
 const normalize=(text:string)=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
-export function filterAreas({country,filters,search='',mode='all',locale='en'}:ExplorerQuery):Area[]{
+export function filterAreas({country,filters,search='',locale='en'}:ExplorerQuery):Area[]{
  const q=normalize(search);
- return areas.filter(a=>a.country===country&&(!q||normalize(`${a.name} ${a.region} ${translate(a.name,locale)} ${translate(a.region,locale)}`).includes(q))&&(!filters.length||(mode==='all'?filters.every(f=>a.tags.includes(f)):filters.some(f=>a.tags.includes(f))))).sort((a,b)=>{
+ return areas.filter(a=>a.country===country&&(!q||normalize(`${a.name} ${a.region} ${translate(a.name,locale)} ${translate(a.region,locale)}`).includes(q))).sort((a,b)=>{
   const matches=(x:Area)=>filters.filter(f=>x.tags.includes(f)).length;
   return matches(b)-matches(a)||a.name.localeCompare(b.name);
  });
