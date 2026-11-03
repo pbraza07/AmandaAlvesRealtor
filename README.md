@@ -182,3 +182,7 @@ Gmail sends address the configured user's mailbox explicitly, so an OAuth token 
 ## Weekly sports maintenance (v2.24.1)
 
 The enabled Amanda Sports Refresh task checks team rosters and divisions weekly on Monday mornings (America/New_York), researching current-season sources before preparing changes. City sports sections display each league's last verification date. Source failures preserve previous data and dates. Validated updates retain evidence and a bounded audit history; production builds validate all sports catalogs. See [the maintenance runbook](docs/sports-maintenance.md) for candidate, evidence, dry-run, apply and publishing instructions. Scheduled execution remains dependent on source and connector availability.
+
+## Filtered top-ten results (v2.24.2)
+
+The public destination explorer ranks the full researched candidate set before showing up to ten results whenever preferences, search or a saved-place filter is active. Cards and map share that same ranked subset; later pages cannot expose additional filtered results. Partial and zero scores remain eligible. Resetting filters restores browsing of all 100 researched places. Ranking, city guides and saved IDs remain unchanged. The limit is enforced server-side, including shared and legacy links.

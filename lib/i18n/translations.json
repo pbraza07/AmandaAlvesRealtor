@@ -3470,5 +3470,29 @@
   "Oldest league verification:": {
     "es": "Verificación de liga más antigua:",
     "pt": "Verificação de liga mais antiga:"
+  },
+  "Explore 100 researched cities, towns and communities in this destination. Choose your preferences to see your top 10 ranked matches.": {
+    "es": "Explora 100 ciudades, pueblos y comunidades investigados en este destino. Elige tus preferencias para ver tus 10 mejores coincidencias.",
+    "pt": "Explore 100 cidades, vilas e comunidades pesquisadas neste destino. Escolha suas preferências para ver os 10 lugares mais compatíveis."
+  },
+  "All 100 places are considered. Filters show your top 10 ranked matches.": {
+    "es": "Se consideran los 100 lugares. Los filtros muestran tus 10 mejores coincidencias.",
+    "pt": "Todos os 100 lugares são considerados. Os filtros mostram os 10 mais compatíveis."
+  },
+  "Search and saved places narrow the candidates. Filtered results show up to 10 places, ranked by match percentage. Reset all to browse every place.": {
+    "es": "La búsqueda y los lugares guardados reducen los candidatos. Los resultados filtrados muestran hasta 10 lugares, ordenados por porcentaje de coincidencia. Restablece todo para explorar todos los lugares.",
+    "pt": "A busca e os lugares salvos limitam os candidatos. Os resultados filtrados mostram até 10 lugares, ordenados pela porcentagem de compatibilidade. Redefina tudo para explorar todos os lugares."
+  },
+  "Your top 10 matches, ranked by percentage. Reset all to explore all 100 places.": {
+    "es": "Tus 10 mejores coincidencias, ordenadas por porcentaje. Restablece todo para explorar los 100 lugares.",
+    "pt": "Seus 10 lugares mais compatíveis, ordenados por porcentagem. Redefina tudo para explorar os 100 lugares."
+  },
+  "Explore all 100 researched places, or choose your preferences to see your top 10 matches.": {
+    "es": "Explora los 100 lugares investigados o elige tus preferencias para ver tus 10 mejores coincidencias.",
+    "pt": "Explore os 100 lugares pesquisados ou escolha suas preferências para ver os 10 mais compatíveis."
+  },
+  "top ranked matches": {
+    "es": "mejores coincidencias",
+    "pt": "lugares mais compatíveis"
   }
 }

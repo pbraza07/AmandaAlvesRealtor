@@ -58,8 +58,8 @@ function mapData(scored:{entry:Entry;score:number|null}[],bounds:MapBounds|undef
  for(const [key,members]of buckets){if(members.length===1)points.push(point(members[0]));else{const b=boundsOf(members.map(m=>m.entry));clusters.push({id:key,lat:(b[0]+b[2])/2,lng:(b[1]+b[3])/2,count:members.length,bounds:b,members:members.slice(0,8).map(point),maxScore:members[0].score})}}
  return {points,clusters,total:scored.length,visible:visible.length,bounds:boundsOf(scored.map(s=>s.entry))};
 }
-export type CityQuery={country:CountrySlug;filters?:readonly FilterId[];search?:string;locale?:Locale;page?:number;savedIds?:string[];bounds?:MapBounds;zoom?:number;researchedOnly?:boolean};
-export function queryCities({country,filters=[],search='',locale='en',page=0,savedIds,bounds,zoom=7,researchedOnly=false}:CityQuery):CityResults{
+export type CityQuery={country:CountrySlug;filters?:readonly FilterId[];search?:string;locale?:Locale;page?:number;savedIds?:string[];bounds?:MapBounds;zoom?:number;researchedOnly?:boolean;topMatchesOnly?:boolean};
+export function queryCities({country,filters=[],search='',locale='en',page=0,savedIds,bounds,zoom=7,researchedOnly=false,topMatchesOnly=false}:CityQuery):CityResults{
  const selected=[...new Set(filters)];const q=normalize(search).slice(0,100);const all=getEntries(country);const saved=savedIds?new Set(savedIds):undefined;
  const key=JSON.stringify([country,[...selected].sort(),q,locale,researchedOnly,savedIds?[...savedIds].sort():null]);
  let scored=rankings.get(key);
@@ -68,7 +68,10 @@ export function queryCities({country,filters=[],search='',locale='en',page=0,sav
  scored=rows.map(entry=>({entry,score:matchPercentage({tags:entry.tags},selected)})).sort((a,b)=>(b.score??0)-(a.score??0)||((normalize(a.entry.row[1])===q?0:1)-(normalize(b.entry.row[1])===q?0:1))||(a.entry.research?.rank??1000)-(b.entry.research?.rank??1000)||(b.entry.row[7]||0)-(a.entry.row[7]||0)||(a.entry.curated?0:1)-(b.entry.curated?0:1)||a.entry.row[1].localeCompare(b.entry.row[1])||a.entry.id.localeCompare(b.entry.id));
  if(rankings.size>=8)rankings.delete(rankings.keys().next().value!);rankings.set(key,scored);
  }
- const pageSize=24;const validPage=Math.max(0,Math.floor(page));
- return {country,total:scored.length,countryTotal:researchedOnly?livingResearch(country).places.length:all.length,researchedTotal:livingResearch(country).places.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<scored.length,places:scored.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected,locale)),map:mapData(scored,bounds,zoom),updatedAt:manifest.updatedAt};
+ // Rank the full candidate pool before limiting the public filtered view.
+ const limited=topMatchesOnly&&(selected.length>0||!!q||!!saved);
+ const displayed=limited?scored.slice(0,10):scored;
+ const pageSize=limited?10:24;const validPage=Math.max(0,Math.floor(page));
+ return {country,total:displayed.length,countryTotal:researchedOnly?livingResearch(country).places.length:all.length,researchedTotal:livingResearch(country).places.length,page:validPage,pageSize,hasMore:(validPage+1)*pageSize<displayed.length,places:displayed.slice(validPage*pageSize,(validPage+1)*pageSize).map(s=>detail(s.entry,selected,locale)),map:mapData(displayed,bounds,zoom),updatedAt:manifest.updatedAt};
 }
 export function cityById(country:CountrySlug,id:string,filters:readonly FilterId[]=[],locale:Locale='en'){const entry=getEntries(country).find(e=>e.id===id||`gn-${e.row[0]}`===id);return entry?detail(entry,filters,locale):undefined}
