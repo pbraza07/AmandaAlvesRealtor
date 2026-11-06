@@ -25,6 +25,7 @@ model AdminUser {
   twoFactorKey String?
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
+  pushSubscriptions AdminPushSubscription[]
   sessions     Session[]
   resets       PasswordResetToken[]
 }
@@ -72,6 +73,7 @@ model Lead {
   archivedAt        DateTime?
   createdAt         DateTime       @default(now())
   updatedAt         DateTime       @updatedAt
+  pushEvent         LeadPushEvent?
   activities        LeadActivity[]
   notes             LeadNote[]
   tasks             FollowUpTask[]
@@ -150,4 +152,26 @@ model Testimonial {
   sortOrder Int      @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model AdminPushSubscription {
+  id           String   @id @default(cuid())
+  userId       String
+  endpointHash String   @unique
+  endpoint     String
+  p256dh       String
+  auth         String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         AdminUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+}
+
+model LeadPushEvent {
+  leadId      String   @id
+  sent        Int      @default(0)
+  failed      Int      @default(0)
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  lead        Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
 }

@@ -1,0 +1,14 @@
+{
+  "id": "/admin",
+  "name": "Amanda Alves Lead Studio",
+  "short_name": "Amanda Leads",
+  "start_url": "/admin",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f3f4f1",
+  "theme_color": "#18352b",
+  "icons": [
+    {"src": "/admin-icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/admin-icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}

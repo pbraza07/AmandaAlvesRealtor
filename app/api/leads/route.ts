@@ -3,6 +3,7 @@ import { z } from "zod";
 import { clean,rateLimit } from "@/lib/security";
 import { sendLeadEmails } from "@/lib/email";
 import sharp from "sharp";
+import { sendLeadPushNotifications } from "@/lib/push";
 import { hasDatabase } from "@/lib/database";
 
 const schema=z.object({
@@ -85,6 +86,8 @@ export async function POST(req:NextRequest){
         activities:{create:{action:"Lead submitted",detail:needed?"Seller inquiry with a linked buyer need":"Public website form"}}
       }
     });
+    // Push alerts are independent of email delivery and never turn a saved request into a failure.
+    await sendLeadPushNotifications(lead).catch(()=>console.warn("Device notification delivery failed; request remains saved."));
     // Keep compressed photos with the private lead record; no local disk or
     // additional image-storage account is needed. Retries do not duplicate files.
     if(attachments.length){
