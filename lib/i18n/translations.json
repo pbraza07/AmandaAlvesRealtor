@@ -1,4 +1,10 @@
 {
+  "Travel": {"es": "Viajes", "pt": "Viagens"},
+  "Menu": {"es": "Menú", "pt": "Menu"},
+  "Open menu": {"es": "Abrir menú", "pt": "Abrir menu"},
+  "Close menu": {"es": "Cerrar menú", "pt": "Fechar menu"},
+  "Amanda Alves Realtor home": {"es": "Amanda Alves Realtor: inicio", "pt": "Amanda Alves Realtor: início"},
+
   "Website language": {
     "es": "Idioma del sitio web",
     "pt": "Idioma do site"
