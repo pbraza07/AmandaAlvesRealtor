@@ -4,7 +4,7 @@ import {NextResponse} from 'next/server';
 import {getAdmin,verifyOrigin,rateLimit} from '@/lib/security';
 import {prisma} from '@/lib/prisma';
 import {AUDIO_TTL_MS,MAX_AUDIO_BYTES,digest,mediaType,readBounded} from '@/lib/fireflies-core';
-import {fireflies,firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
+import {submitRecording,firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
 export const runtime='nodejs';
 export async function GET(){const admin=await getAdmin();if(!admin)return NextResponse.json({error:'Unauthorized'},{status:401});await purgeExpiredAudio();return NextResponse.json({meetings:await prisma.meetingReport.findMany({where:{userId:admin.id},select:reportSelect,orderBy:{createdAt:'desc'},take:100})},{headers:{'Cache-Control':'private, no-store'}})}
 export async function POST(req:Request){
@@ -29,8 +29,7 @@ export async function POST(req:Request){
   }, {maxWait:15000, timeout:90000});
   id=report.id;
   const base=process.env.NEXT_PUBLIC_SITE_URL||new URL(req.url).origin;const origin=new URL(base).origin;if(!origin.startsWith('https://'))throw new Error('Configure the production HTTPS site URL first.');
-  const input={url:`${origin}/api/fireflies/audio/${id}`,title:`${title} [AA:${id}]`,client_reference_id:id,webhook:`${origin}/api/fireflies/callback/${id}?token=${token}`,download_auth:{type:'bearer_token',bearer:{token}},bypass_size_check:true,...(language?{custom_language:language}:{})};
-  const data=await fireflies<{uploadAudio:{success:boolean}}>(key,'mutation($input: AudioUploadInput) { uploadAudio(input: $input) { success message } }',{input});
+  const data=await submitRecording(key,origin,id,title,token,language);
   if(!data.uploadAudio?.success)throw new Error('Fireflies did not accept the recording.');
   // A fast callback may have completed before the upload mutation returned.
   await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'PROCESSING'}});

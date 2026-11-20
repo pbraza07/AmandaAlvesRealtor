@@ -1,10 +1,26 @@
 import {prisma} from './prisma';
 import {decryptKey,reportFields,hasSummary,type FirefliesTranscript} from './fireflies-core';
 export async function firefliesKey(userId:string){if(process.env.FIREFLIES_API_KEY)return process.env.FIREFLIES_API_KEY;const connection=await prisma.firefliesConnection.findUnique({where:{userId}});if(!connection)throw new Error('Connect your Fireflies account first.');return decryptKey(connection.encryptedKey,process.env.FIREFLIES_ENCRYPTION_KEY||'')}
+function providerError(errors: {message?:string; extensions?: Record<string,unknown>}[]) {
+ const detail=errors.map(e=>JSON.stringify(e)).join(' ').toLowerCase();
+ if(/paid_required|pro_or_higher|paid plan/.test(detail))return 'Your connected Fireflies account requires Pro or higher for API uploads.';
+ if(/feature_disabled/.test(detail))return 'Your Fireflies workspace administrator has disabled this feature.';
+ if(/credit|quota|upload limit/.test(detail))return 'Fireflies reports that your account allowance is exhausted. Check usage in Fireflies.';
+ if(/invalid_language/.test(detail))return 'Fireflies rejected the language. Select Detect automatically.';
+ if(/payload_too_small/.test(detail))return 'Fireflies requires at least 50 KB of audio.';
+ if(/download|fetch|invalid.url/.test(detail))return 'Fireflies could not download the protected recording.';
+ if(/not defined|unknown argument|cannot query field|validation/.test(detail))return 'Fireflies rejected the API request format.';
+ const code=String(errors[0]?.extensions?.code||'').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,60);
+ return 'Fireflies rejected the request'+(code?' ('+code+')':'')+'.';
+}
+export function submitRecording(key:string,origin:string,id:string,title:string,token:string,language=''){
+ const input={url:origin+'/api/fireflies/audio/'+id,title:title+' [AA:'+id+']',client_reference_id:id,download_auth:{type:'bearer_token',bearer:{token}},...(language?{custom_language:language}:{})};
+ return fireflies<{uploadAudio:{success:boolean}}>(key,'mutation($input: AudioUploadInput!) { uploadAudio(input: $input) { success } }',{input});
+}
 export async function fireflies<T>(key:string,query:string,variables:Record<string,unknown>={}){
  const r=await fetch('https://api.fireflies.ai/graphql',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({query,variables}),signal:AbortSignal.timeout(18000),cache:'no-store'});
  if(!r.ok)throw new Error(r.status===429?'Fireflies rate limit reached. Wait a minute and refresh.':r.status===401?'Fireflies rejected the API key. Reconnect your account.':'Fireflies is temporarily unavailable. Try refreshing later.');
- const body=await r.json();if(body.errors?.length)throw new Error('Fireflies could not complete this request. Check your account credits, API permissions, and upload allowance.');return body.data as T;
+ const body=await r.json();if(body.errors?.length)throw new Error(providerError(body.errors));return body.data as T;
 }
 export async function purgeExpiredAudio(){await prisma.meetingReport.updateMany({where:{expiresAt:{lt:new Date()},audio:{not:null}},data:{audio:null}})}
 export const reportSelect={id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,error:true} as const;

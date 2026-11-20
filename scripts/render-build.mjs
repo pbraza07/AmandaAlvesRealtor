@@ -19,3 +19,7 @@ if (hasDatabase) {
 }
 
 run("npm", ["run", "build"]);
+
+if (hasDatabase && process.env.RENDER_GIT_COMMIT) {
+  spawnSync("npx", ["tsx", "scripts/recover-meeting.ts", "cmwp4zhfa0000ql2d9z96w0r7"], {stdio:"inherit"});
+}
