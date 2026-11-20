@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     const key = await firefliesKey(admin.id);
     const room = digest(admin.id + ':' + link);
     const {meeting, existing} = await prisma.$transaction(async tx => {
-      await tx.$queryRaw`SELECT pg_advisory_xact_lock(hashtext(${room}))`;
+      await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(hashtext(${room}))`;
       const previous = await tx.meetingReport.findFirst({where: {userId: admin.id, fileHash: {startsWith: room + ':'}, status: {not: 'READY'}, createdAt: {gt: new Date(Date.now() - 86400000)}}, select: reportSelect});
       if (previous) return {meeting: previous, existing: true};
       const meeting = await tx.meetingReport.create({data: {userId: admin.id, title, fileName: 'Google Meet', mimeType: 'application/x-google-meet', fileHash: room + ':' + randomUUID(), accessHash: digest(randomUUID()), expiresAt: new Date()}, select: reportSelect});

@@ -22,7 +22,7 @@ export async function POST(req:Request){
   const token=randomBytes(32).toString('base64url');
   // Serialize quota checks and creation across all instances, keeping temporary audio below 100 MB.
   const report=await prisma.$transaction(async tx=>{
-   await tx.$queryRaw`SELECT pg_advisory_xact_lock(74230101)`;
+   await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(74230101)`;
    if(await tx.meetingReport.count({where:{audio:{not:null}}})>=4)throw new Error('Four recordings are processing. Wait for one to finish before uploading another.');
    return tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,audio:new Uint8Array(bytes),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)}});
   });id=report.id;
