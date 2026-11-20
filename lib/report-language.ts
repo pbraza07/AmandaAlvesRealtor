@@ -1,0 +1,22 @@
+export type ReportLanguage = 'pt'|'es'|'en';
+const vocabulary = {
+  pt:'não uma com para isso gente você vocês então também reunião sobre imóveis orçamento são está tem foi fazer dos das pela pelo mais muito essa esse aqui vamos',
+  es:'una con para pero los las del por se hay está reunión sobre también nosotros tiene hacer eso esos más esta este aquí vamos',
+  en:'the with and for this that have has are will we you meeting from was were which would should they their about budget send'
+};
+export function textLanguage(text:string):ReportLanguage|undefined {
+ const tokens=text.toLowerCase().match(/\p{L}+/gu)||[];
+ const scores=Object.entries(vocabulary).map(([code,list])=>{
+   const words=new Set(list.split(' '));
+   return {code:code as ReportLanguage,score:tokens.reduce((n,w)=>n+Number(words.has(w)),0)};
+ }).sort((a,b)=>b.score-a.score);
+ return scores[0].score>=3 && scores[0].score>=scores[1].score*1.35 ? scores[0].code : undefined;
+}
+export const copy = {
+ pt:{
+  locale:'pt-BR', private:'CONFIDENCIAL · RELATÓRIO DE REUNIÃO',title:'Relatório estratégico',details:'Dados da sessão', participants:'Participantes',duration:'Duração',date:'Data do registro',prepared:'Preparado por Amanda Alves Realtor',draft:'Minuta para revisão',reviewed:'Revisado pela responsável',footer:'Notas confidenciais',empty:'Não registrado nesta reunião.',pending:'A confirmar',subject:'Tema',finding:'Situação discutida',action:'Ação acordada',owner:'Responsável',due:'Prazo',goal:'Meta',indicator:'Indicador de sucesso',week:'Semana',speaker:'Participante',transcript:'Transcrição original',agenda:'Pauta da reunião',insights:'Principais conclusões',other:'Responsabilidade a confirmar',teams:['Forças','Fraquezas','Oportunidades','Ameaças'],sections:['Resumo executivo','Diagnóstico inicial','Recomendações','Compromissos do cliente e participantes','Acompanhamento de Amanda Alves','Próximos passos e próxima reunião','Análise SWOT','Síntese estratégica','Plano de 30 dias','Metas e indicadores'],categories:['Visão geral da sessão','Situação atual','Direcionamento','Compromissos','Acompanhamento','Próxima sessão','Diagnóstico','Síntese','Execução','Metas']},
+ en:{
+  locale:'en-US',private:'CONFIDENTIAL · MEETING REPORT',title:'Strategic meeting report',details:'Session details',participants:'Participants',duration:'Duration',date:'Recording entry date',prepared:'Prepared by Amanda Alves Realtor',draft:'Draft for review',reviewed:'Owner reviewed',footer:'Private meeting notes',empty:'None recorded in this meeting.',pending:'To confirm',subject:'Topic',finding:'Current situation',action:'Agreed action',owner:'Owner',due:'Due date',goal:'Goal',indicator:'Success measure',week:'Week',speaker:'Speaker',transcript:'Original transcript',agenda:'Meeting agenda',insights:'Key insights',other:'Owner to confirm',teams:['Strengths','Weaknesses','Opportunities','Threats'],sections:['Executive summary','Initial assessment','Recommendations','Client and participant commitments','Amanda Alves follow-up','Next steps and next meeting','SWOT analysis','Strategic synthesis','30-day action plan','Goals and success measures'],categories:['Session overview','Current situation','Direction','Commitments','Follow-up','Next session','Assessment','Synthesis','Execution','Goals']},
+ es:{
+  locale:'es',private:'CONFIDENCIAL · INFORME DE REUNIÓN',title:'Informe estratégico',details:'Datos de la sesión',participants:'Participantes',duration:'Duración',date:'Fecha del registro',prepared:'Preparado por Amanda Alves Realtor',draft:'Borrador para revisión',reviewed:'Revisado por la responsable',footer:'Notas confidenciales',empty:'No consta en esta reunión.',pending:'Por confirmar',subject:'Tema',finding:'Situación actual',action:'Acción acordada',owner:'Responsable',due:'Plazo',goal:'Meta',indicator:'Indicador de éxito',week:'Semana',speaker:'Participante',transcript:'Transcripción original',agenda:'Agenda de la reunión',insights:'Conclusiones principales',other:'Responsable por confirmar',teams:['Fortalezas','Debilidades','Oportunidades','Amenazas'],sections:['Resumen ejecutivo','Diagnóstico inicial','Recomendaciones','Compromisos del cliente y participantes','Seguimiento de Amanda Alves','Próximos pasos y próxima reunión','Análisis FODA','Síntesis estratégica','Plan de 30 días','Metas e indicadores'],categories:['Visión general','Situación actual','Orientación','Compromisos','Seguimiento','Próxima sesión','Diagnóstico','Síntesis','Ejecución','Metas']}
+};

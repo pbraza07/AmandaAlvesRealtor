@@ -1,3 +1,4 @@
+import {detectRecordingLanguage,isMeetingLanguage} from '@/lib/spoken-language';
 import {createHash,randomBytes} from 'node:crypto';
 import {Prisma} from '@prisma/client';
 import {NextResponse} from 'next/server';
@@ -22,10 +23,11 @@ export async function POST(req:Request){
    controller.enqueue(chunk);
   }}));
   const form=await new Response(body,{headers:{'Content-Type':req.headers.get('content-type')||''}}).formData();
-  const file=form.get('file'),title=String(form.get('title')||'').trim().slice(0,180),language=String(form.get('language')||'');
+  const file=form.get('file'),title=String(form.get('title')||'').trim().slice(0,180);
+  const requestedLanguage=String(form.get('language')||'');
   if(!(file instanceof File)||!file.size||file.size>MAX_AUDIO_BYTES)throw new Error('Choose an MP3, M4A, MP4, WAV, or OGG file up to 60 MB.');
   if(form.get('consent')!=='yes')throw new Error('Confirm you have permission to upload this recording.');
-  if(!title)throw new Error('Add a meeting title.');if(!['','en','es','pt'].includes(language))throw new Error('Choose a supported language.');
+  if(!title)throw new Error('Add a meeting title.');if(requestedLanguage && !isMeetingLanguage(requestedLanguage))throw new Error('Choose a supported language.');
   const mime=mediaType(file.name,new Uint8Array(await file.slice(0,12).arrayBuffer()));
   if(!mime)throw new Error('This file is not a supported audio recording.');
   const hasher=createHash('sha256');
@@ -34,6 +36,9 @@ export async function POST(req:Request){
    hasher.update(new Uint8Array(await file.slice(offset,offset+partSize).arrayBuffer()));
   }
   const hash=hasher.digest('hex');
+  const previous=await prisma.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});
+  if(previous && previous.status!=='SAVING')return NextResponse.json({meeting:previous,duplicate:true});
+  const language=requestedLanguage || await detectRecordingLanguage(file,mime);
   const token=randomBytes(32).toString('base64url');
   // Reserve one slot atomically. Binary transfers run after this short transaction commits.
   const reservation=await prisma.$transaction(async tx=>{

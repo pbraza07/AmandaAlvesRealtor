@@ -1,3 +1,5 @@
+import {topics} from './strategic-report';
+import {textLanguage,type ReportLanguage} from './report-language';
 import {structuredNotes} from './meeting-notes';
 import {createCipheriv,createDecipheriv,createHash,createHmac,randomBytes,timingSafeEqual} from 'node:crypto';
 export const MAX_AUDIO_BYTES=60*1024*1024;
@@ -18,6 +20,16 @@ export function mediaType(name:string,bytes:Uint8Array):string|null{
 }
 export async function readBounded(req:Request,max:number){if(Number(req.headers.get('content-length'))>max)throw new Error('File exceeds the 60 MB upload limit.');const reader=req.body?.getReader();if(!reader)throw new Error('Choose an audio file.');let size=0;const chunks:Uint8Array[]=[];while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>max){await reader.cancel();throw new Error('File exceeds the 60 MB upload limit.')}chunks.push(value)}return Buffer.concat(chunks)}
 export type FirefliesTranscript={id:string;title:string;date?:number;duration?:number;speakers?:{id:number;name:string}[];sentences?:{text:string;start_time:number;speaker_name?:string}[];summary?:{bullet_gist?:string;overview?:string;outline?:string;notes?:string;action_items?:string;topics_discussed?:string[]}|null};
-export function reportFields(t:FirefliesTranscript){return {overview:t.summary?.overview||'',agenda:t.summary?.outline||t.summary?.topics_discussed?.join('\n')||'',notes:structuredNotes(t.summary?.notes||''),actionItems:t.summary?.action_items||''}}
+export function reportFields(t:FirefliesTranscript,expected?:ReportLanguage){
+ const spoken=(t.sentences||[]).map(s=>s.text);
+ const lang=expected||textLanguage(spoken.slice(0,100).join(' '));
+ const sameLanguage=(text:string)=>{const detected=textLanguage(text);return lang&&detected&&lang!==detected?'':text};
+ const notes=structuredNotes(sameLanguage(t.summary?.notes||''));
+ const overview=sameLanguage(t.summary?.overview||'');
+ const needsSource=Boolean(t.summary?.overview && !overview);
+ const extracts=needsSource?spoken.filter(s=>s.split(/\s+/).length>=6).slice(0,4):[];
+ const agenda=sameLanguage(t.summary?.outline||t.summary?.topics_discussed?.join('\n')||'')||topics(notes).map(g=>g.title).filter(Boolean).join('\n');
+ return {overview:overview||extracts.join('\n'),agenda,notes,actionItems:sameLanguage(t.summary?.action_items||'')};
+}
 export function hasSummary(t:FirefliesTranscript){const f=reportFields(t);return Object.values(f).some(x=>x.trim().length>0)}
 export function callbackSignature(id:string,key:string){return createHmac('sha256',key).update(`fireflies-callback:${id}`).digest('base64url')}

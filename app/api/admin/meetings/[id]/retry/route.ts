@@ -7,7 +7,8 @@ export async function POST(req:Request,c:{params:Promise<{id:string}>}){
  try{
   await verifyOrigin();
   const {id}=await c.params;
-  await retrySavedRecording(id,admin.id,new URL(process.env.RENDER_EXTERNAL_URL||process.env.NEXT_PUBLIC_SITE_URL||req.url).origin);
+  const language=new URL(req.url).searchParams.get('language');
+  await retrySavedRecording(id,admin.id,new URL(process.env.RENDER_EXTERNAL_URL||process.env.NEXT_PUBLIC_SITE_URL||req.url).origin,language);
   return NextResponse.json({ok:true});
  }catch(error){return NextResponse.json({error:error instanceof Error?error.message:'Unable to retry this recording.'},{status:409})}
 }

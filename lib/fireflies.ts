@@ -1,3 +1,5 @@
+import {isMeetingLanguage} from './spoken-language';
+import {textLanguage} from './report-language';
 import {prisma} from './prisma';
 import {decryptKey,reportFields,hasSummary,type FirefliesTranscript} from './fireflies-core';
 export async function firefliesKey(userId:string){if(process.env.FIREFLIES_API_KEY)return process.env.FIREFLIES_API_KEY;const connection=await prisma.firefliesConnection.findUnique({where:{userId}});if(!connection)throw new Error('Connect your Fireflies account first.');return decryptKey(connection.encryptedKey,process.env.FIREFLIES_ENCRYPTION_KEY||'')}
@@ -13,8 +15,9 @@ function providerError(errors: {message?:string; extensions?: Record<string,unkn
  const code=String(errors[0]?.extensions?.code||'').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,60);
  return 'Fireflies rejected the request'+(code?' ('+code+')':'')+'.';
 }
-export function submitRecording(key:string,origin:string,id:string,title:string,token:string,language=''){
- const input={url:origin+'/api/fireflies/audio/'+id,title:title+' [AA:'+id+']',client_reference_id:id,download_auth:{type:'bearer_token',bearer:{token}},...(language?{custom_language:language}:{})};
+export function submitRecording(key:string,origin:string,id:string,title:string,token:string,language:string){
+ if(!isMeetingLanguage(language))throw new Error('Choose the spoken language before sending this recording.');
+ const input={url:origin+'/api/fireflies/audio/'+id,title:title+' [AA:'+id+']',client_reference_id:id,download_auth:{type:'bearer_token',bearer:{token}},custom_language:language};
  return fireflies<{uploadAudio:{success:boolean}}>(key,'mutation($input: AudioUploadInput!) { uploadAudio(input: $input) { success } }',{input},120000);
 }
 export async function fireflies<T>(key:string,query:string,variables:Record<string,unknown>={},timeoutMs=18000){
@@ -28,9 +31,9 @@ export function submissionMessage(error:unknown){
  return 'Fireflies did not confirm receipt. Meeting Studio will check for an existing transcript.';
 }
 export async function purgeExpiredAudio(){await prisma.meetingReport.updateMany({where:{expiresAt:{lt:new Date()},audio:{not:null}},data:{audio:null}})}
-export const reportSelect={id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,expiresAt:true,error:true} as const;
+export const reportSelect={uploadLanguage:true,id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,expiresAt:true,error:true} as const;
 export async function refreshMeeting(id:string,userId:string,force=false){
- const report=await prisma.meetingReport.findFirst({where:{id,userId},select:{id:true,title:true,status:true,reviewedAt:true,lastCheckedAt:true,lastRetriedAt:true,transcriptId:true,createdAt:true}});if(!report)throw new Error('Meeting not found.');
+ const report=await prisma.meetingReport.findFirst({where:{id,userId},select:{id:true,title:true,status:true,uploadLanguage:true,reviewedAt:true,lastCheckedAt:true,lastRetriedAt:true,transcriptId:true,createdAt:true}});if(!report)throw new Error('Meeting not found.');
  if(report.reviewedAt||report.status==='SAVING'||report.status==='READY'||(report.status==='UPLOADING'&&Date.now()-(report.lastRetriedAt??report.createdAt).getTime()<180000))return;
  if(!force&&report.lastCheckedAt&&Date.now()-report.lastCheckedAt.getTime()<45000)return;
  // A conditional claim prevents simultaneous browser refreshes from spending extra API requests.
@@ -74,6 +77,12 @@ export async function refreshMeeting(id:string,userId:string,force=false){
  const data=await fireflies<{transcript:FirefliesTranscript|null}>(key,'query($id: String!) { transcript(id: $id) { id title date duration speakers { id name } sentences { text start_time speaker_name } summary { bullet_gist overview outline notes action_items topics_discussed } } }',{id:tid});
  const t=data.transcript;if(!t)return;
  if(t.id!==tid || !(marked(t.title)||(normalized(t.title)===normalized(report.title)&&nearSubmission(t.date))))throw new Error('The transcript does not match this upload.');
+ const expected=isMeetingLanguage(report.uploadLanguage)?report.uploadLanguage:undefined;
+ const detected=textLanguage((t.sentences||[]).slice(0,120).map(s=>s.text).join(' '));
+ if(expected && detected && expected!==detected && (t.sentences?.length||0)>=5){
+  await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{status:'LANGUAGE_REVIEW',error:'The transcript language differs from the recording language. Reprocess the meeting in Fireflies in the original language, then check progress here.'}});
+  return;
+ }
  // Never overwrite owner edits if a callback arrives during review.
- await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t),status:hasSummary(t)?'READY':'SUMMARIZING',audio:null,error:null}});
+ await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t,expected),status:hasSummary(t)?'READY':'SUMMARIZING',audio:null,error:null}});
 }

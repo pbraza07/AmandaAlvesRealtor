@@ -1,3 +1,4 @@
+import {isMeetingLanguage} from '@/lib/spoken-language';
 import {randomUUID} from 'node:crypto';
 import {NextResponse} from 'next/server';
 import {getAdmin, verifyOrigin, rateLimit} from '@/lib/security';
@@ -15,6 +16,7 @@ export async function POST(req: Request) {
       return NextResponse.json({error: 'Please wait a minute before inviting again.'}, {status: 429});
     }
     const input = JSON.parse((await readBounded(req, 8192)).toString('utf8'));
+    if (!isMeetingLanguage(input.language)) throw new Error('Choose the spoken language for this meeting.');
     const url = new URL(input.link);
     if (url.origin !== 'https://meet.google.com' || url.username || url.password || !/^\/[a-z]{3}-[a-z]{4}-[a-z]{3}\/?$/.test(url.pathname)) {
       throw new Error('Paste the Google Meet joining link from the meeting.');
@@ -28,14 +30,14 @@ export async function POST(req: Request) {
       await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(hashtext(${room}))`;
       const previous = await tx.meetingReport.findFirst({where: {userId: admin.id, fileHash: {startsWith: room + ':'}, status: {not: 'READY'}, createdAt: {gt: new Date(Date.now() - 86400000)}}, select: reportSelect});
       if (previous) return {meeting: previous, existing: true};
-      const meeting = await tx.meetingReport.create({data: {userId: admin.id, title, fileName: 'Google Meet', mimeType: 'application/x-google-meet', fileHash: room + ':' + randomUUID(), accessHash: digest(randomUUID()), expiresAt: new Date()}, select: reportSelect});
+      const meeting = await tx.meetingReport.create({data: {userId: admin.id, title, uploadLanguage:input.language, fileName: 'Google Meet', mimeType: 'application/x-google-meet', fileHash: room + ':' + randomUUID(), accessHash: digest(randomUUID()), expiresAt: new Date()}, select: reportSelect});
       return {meeting, existing: false};
     });
     if (existing) return NextResponse.json({meeting, existing});
     reportId = meeting.id;
     const result = await fireflies<{addToLiveMeeting: {success: boolean}}>(key,
-      'mutation($link: String!, $title: String!) { addToLiveMeeting(meeting_link: $link, title: $title) { success } }',
-      {link, title: title + ' [AA:' + meeting.id + ']'});
+      'mutation($link: String!, $title: String!, $language: String!) { addToLiveMeeting(meeting_link: $link, title: $title, language: $language) { success } }',
+      {link, language:input.language, title: title + ' [AA:' + meeting.id + ']'});
     if (!result.addToLiveMeeting?.success) throw new Error('Fireflies did not confirm the invitation.');
     await prisma.meetingReport.updateMany({where: {id: reportId, status: 'UPLOADING'}, data: {status: 'PROCESSING'}});
     return NextResponse.json({meeting: {...meeting, status: 'PROCESSING'}});
