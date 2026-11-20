@@ -196,6 +196,7 @@ model MeetingReport {
   uploadLanguage String?
   lastRetriedAt DateTime?
   deliveryAttempts Int @default(0)
+  compilationVersion Int @default(0)
   nextDeliveryAt DateTime?
   @@index([status,nextDeliveryAt])
   id             String   @id @default(cuid())

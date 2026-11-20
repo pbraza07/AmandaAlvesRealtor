@@ -1,3 +1,4 @@
+import {readMeetingSource} from '../lib/meeting-source';
 import {prisma} from '../lib/prisma';
 import {fireflies,firefliesKey} from '../lib/fireflies';
 import {type FirefliesTranscript,reportFields,hasSummary} from '../lib/fireflies-core';
@@ -29,12 +30,12 @@ async function correct(id:string,language:string) {
  for(let i=0;i<24;i++){
   replacement??=await findReplacement();
   if(replacement){
-   const {transcript:t}=await fireflies<{transcript:FirefliesTranscript}>(key,'query($id:String!){transcript(id:$id){ id title date duration speakers{id name} sentences{text start_time speaker_name} summary{overview bullet_gist outline topics_discussed notes action_items}}}',{id:replacement.id});
+   const t=await readMeetingSource(key,replacement.id,fireflies);
    if(t?.id===replacement.id && t.title.includes(tag) && t.sentences?.length && hasSummary(t)){
     const words=t.sentences.map(s=>s.text).join(' ').toLowerCase();
     const terms=language==='pt'?/\b(que|uma|para|com|isso|gente|não|você|então)\b/g:language==='es'?/\b(que|una|para|con|pero|esto)\b/g:/\b(the|and|you|that)\b/g;
     if((words.match(terms)||[]).length<4)throw new Error('Replacement requires a manual language check. Original report preserved.');
-    const updated=await prisma.meetingReport.updateMany({where:{id,reviewedAt:null,transcriptId:report.transcriptId},data:{transcriptId:t.id,uploadLanguage:language,transcript:JSON.parse(JSON.stringify(t)),...reportFields(t),error:null}});
+    const updated=await prisma.meetingReport.updateMany({where:{id,reviewedAt:null,transcriptId:report.transcriptId},data:{transcriptId:t.id,uploadLanguage:language,transcript:JSON.parse(JSON.stringify(t)),...reportFields(t),compilationVersion:1,error:null}});
     console.log('Completed source language correction:',updated.count);return;
    }
   }

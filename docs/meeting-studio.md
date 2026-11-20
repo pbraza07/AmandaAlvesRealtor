@@ -2,6 +2,10 @@
 
 Owner workflow: Admin → Meeting Studio → Connect Fireflies → Upload and transcribe → Review → Save reviewed report → Download branded PDF. The PDF includes the site's Amanda Alves Realtor wordmark, existing brokerage logo, forest green/gold palette, meeting overview, agenda/topics, notes, action items and optional transcript. No separate LLM or Zapier account is used.
 
+## Standing requirement for meeting minutes
+
+Compile each meeting in its spoken language with enough context for a reader who was absent to understand what participants discussed, why a decision mattered, and what they agreed to do. Use complete, constructive sentences. Consider the full conversation from opening through closing, including later corrections and conditions. Keep proposals, confirmed commitments and unresolved questions distinct. Attribute responsibilities, amounts and deadlines only when the meeting supplies them. Preserve the speaker-attributed, timestamped transcript and owner-reviewed edits. Apply the same compiled text in the review screen and the Amanda Alves branded PDF.
+
 ## Connection
 
 Set `FIREFLIES_ENCRYPTION_KEY` to a randomly generated secret of at least 32 characters. Keep it stable: rotating it requires owners to reconnect Fireflies. Each signed-in admin can enter an API key in Meeting Studio. Keys are verified against Fireflies' `user` query and AES-256-GCM encrypted in PostgreSQL. Keys are never returned to the browser. Alternatively set `FIREFLIES_API_KEY` server-side for a shared account. That takes precedence over individual connections.

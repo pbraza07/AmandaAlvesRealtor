@@ -1,7 +1,8 @@
+import {readMeetingSource} from './meeting-source';
 import {isMeetingLanguage} from './spoken-language';
 import {textLanguage} from './report-language';
 import {prisma} from './prisma';
-import {decryptKey,reportFields,hasSummary,type FirefliesTranscript} from './fireflies-core';
+import {decryptKey,reportFields,hasSummary} from './fireflies-core';
 export async function firefliesKey(userId:string){if(process.env.FIREFLIES_API_KEY)return process.env.FIREFLIES_API_KEY;const connection=await prisma.firefliesConnection.findUnique({where:{userId}});if(!connection)throw new Error('Connect your Fireflies account first.');return decryptKey(connection.encryptedKey,process.env.FIREFLIES_ENCRYPTION_KEY||'')}
 export class RetryableDeliveryError extends Error {}
 function providerError(errors: {message?:string; extensions?: Record<string,unknown>}[]) {
@@ -80,15 +81,14 @@ export async function refreshMeeting(id:string,userId:string,force=false){
   tid=match.id;
   await prisma.meetingReport.update({where:{id},data:{transcriptId:tid},select:{id:true}});
  }
- const data=await fireflies<{transcript:FirefliesTranscript|null}>(key,'query($id: String!) { transcript(id: $id) { id title date duration speakers { id name } sentences { text start_time speaker_name } summary { bullet_gist overview outline notes action_items topics_discussed } } }',{id:tid});
- const t=data.transcript;if(!t)return;
+ const t=await readMeetingSource(key,tid,fireflies);if(!t)return;
  if(t.id!==tid || !(marked(t.title)||(normalized(t.title)===normalized(report.title)&&nearSubmission(t.date))))throw new Error('The transcript does not match this upload.');
  const expected=isMeetingLanguage(report.uploadLanguage)?report.uploadLanguage:undefined;
- const detected=textLanguage((t.sentences||[]).slice(0,120).map(s=>s.text).join(' '));
+ const detected=textLanguage((t.sentences||[]).map(s=>s.text).join(' '));
  if(expected && detected && expected!==detected && (t.sentences?.length||0)>=5){
   await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{status:'LANGUAGE_REVIEW',error:'The transcript language differs from the recording language. Reprocess the meeting in Fireflies in the original language, then check progress here.'}});
   return;
  }
  // Never overwrite owner edits if a callback arrives during review.
- await prisma.meetingReport.updateMany({where:{id,transcriptId:tid,reviewedAt:null,status:{not:'READY'}},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t,expected),status:hasSummary(t)?'READY':report.status==='PROVIDER_DELAYED'?'PROVIDER_DELAYED':'SUMMARIZING',audio:null,error:!hasSummary(t)&&report.status==='PROVIDER_DELAYED'?'The transcript has arrived. Fireflies is still preparing the summary.':null}});
+ await prisma.meetingReport.updateMany({where:{id,transcriptId:tid,reviewedAt:null,status:{not:'READY'}},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t,expected),compilationVersion:1,status:hasSummary(t)?'READY':report.status==='PROVIDER_DELAYED'?'PROVIDER_DELAYED':'SUMMARIZING',audio:null,error:!hasSummary(t)&&report.status==='PROVIDER_DELAYED'?'The transcript has arrived. Fireflies is still preparing the summary.':null}});
 }

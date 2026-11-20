@@ -20,3 +20,4 @@ if (hasDatabase) {
 
 if (process.env.RENDER) run("bash", ["scripts/install-language-detector.sh"]);
 run("npm", ["run", "build"]);
+if (hasDatabase && process.env.RENDER) run(process.execPath, ["--import", "tsx", "scripts/compile-meeting-drafts.ts"]);
