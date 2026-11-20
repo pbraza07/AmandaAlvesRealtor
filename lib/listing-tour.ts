@@ -1,4 +1,4 @@
-export type ListingTour={id:string;title:string;description:string;url:string};
+export type ListingTour={id:string;title:string;description:string;url:string;autoplayUrl?:string};
 export type ListingSettings={enabled:boolean;tours:ListingTour[]};
 export const emptyListings:ListingSettings={enabled:false,tours:[]};
 
@@ -25,4 +25,9 @@ export function videoSource(value:string,autoplay=true){
  }
  if(/\.(mp4|webm|ogv|m4v)$/i.test(url.pathname))return {kind:'file',src:url.href};
  return {kind:'link',src:url.href};
+}
+
+export function autoplaySource(url:string,autoplay=true){
+ const video=videoSource(url,autoplay);
+ return video && ['file','youtube','vimeo'].includes(video.kind)?video:null;
 }
