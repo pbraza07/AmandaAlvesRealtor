@@ -11,7 +11,7 @@ trap 'rm -rf "$work"' EXIT
 if [[ ! -x "$cache/detect" ]]; then
   git clone -q --depth 1 --branch v1.5.4 https://github.com/ggml-org/whisper.cpp.git "$work/engine"
   [[ $(git -C "$work/engine" rev-parse HEAD) == "$revision" ]]
-  make -s -C "$work/engine" -j2 main AVX2_M=1 FMA_M= F16C_M= CPUINFO_CMD=true
+  make -s -C "$work/engine" -j2 main CPUINFO_CMD=true
   install -m 755 "$work/engine/main" "$cache/detect"
   cp "$work/engine/LICENSE" "$cache/LICENSE"
 fi
