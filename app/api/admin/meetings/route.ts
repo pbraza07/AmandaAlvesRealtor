@@ -5,15 +5,15 @@ import {NextResponse} from 'next/server';
 import {getAdmin,verifyOrigin,rateLimit} from '@/lib/security';
 import {prisma} from '@/lib/prisma';
 import {AUDIO_TTL_MS,MAX_AUDIO_BYTES,digest,mediaType} from '@/lib/fireflies-core';
-import {submissionMessage,submitRecording,firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
+import {firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
 export const runtime='nodejs';
 export async function GET(){const admin=await getAdmin();if(!admin)return NextResponse.json({error:'Unauthorized'},{status:401});await purgeExpiredAudio();return NextResponse.json({meetings:await prisma.meetingReport.findMany({where:{userId:admin.id},select:reportSelect,orderBy:{createdAt:'desc'},take:100})},{headers:{'Cache-Control':'private, no-store'}})}
 export async function POST(req:Request){
  const admin=await getAdmin();if(!admin)return NextResponse.json({error:'Unauthorized'},{status:401});
- let id:string|undefined;
+
  try{
   await verifyOrigin();if(!rateLimit(`ff-upload:${admin.id}`,5,60000))return NextResponse.json({error:'Please wait before uploading another recording.'},{status:429});
-  const key=await firefliesKey(admin.id);await purgeExpiredAudio();
+  await firefliesKey(admin.id);await purgeExpiredAudio();
   const limit=MAX_AUDIO_BYTES+65536;
   if(!req.body || Number(req.headers.get('content-length'))>limit)throw new Error('Choose an audio file up to 60 MB.');
   let received=0;
@@ -37,13 +37,13 @@ export async function POST(req:Request){
   }
   const hash=hasher.digest('hex');
   const previous=await prisma.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});
-  if(previous && previous.status!=='SAVING')return NextResponse.json({meeting:previous,duplicate:true});
+  if(previous && !['SAVING','INCOMPLETE'].includes(previous.status))return NextResponse.json({meeting:previous,duplicate:true});
   const language=requestedLanguage || await detectRecordingLanguage(file,mime);
   const token=randomBytes(32).toString('base64url');
   // Reserve one slot atomically. Binary transfers run after this short transaction commits.
   const reservation=await prisma.$transaction(async tx=>{
    await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(74230101)`;
-   await tx.meetingReport.deleteMany({where:{status:'SAVING',createdAt:{lt:new Date(Date.now()-30*60000)}}});
+   await tx.meetingReport.deleteMany({where:{userId:admin.id,fileHash:hash,status:'INCOMPLETE'}});
    const existing=await tx.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});
    if(existing)return {existing,id:existing.id};
    if(await tx.meetingReport.count({where:{audio:{not:null}}})>=4)throw new Error('Four recordings are processing. Wait for one to finish before uploading another.');
@@ -58,20 +58,18 @@ export async function POST(req:Request){
   try{
    for(let offset=0;offset<file.size;offset+=partSize){
     const bytes=new Uint8Array(await file.slice(offset,offset+partSize).arrayBuffer());
-    await prisma.recordingPart.create({data:{reportId,position:offset,bytes},select:{position:true}});
+    const part=prisma.recordingPart.create({data:{reportId,position:offset,bytes},select:{position:true}});
+    if(offset+bytes.length===file.size){
+     // Commit the final bytes and the delivery job together, before acknowledging the browser.
+     await prisma.$transaction([part,prisma.meetingReport.update({where:{id:reportId,status:'SAVING'},data:{status:'QUEUED',nextDeliveryAt:new Date()},select:{id:true}})]);
+    }else await part;
    }
-   await prisma.meetingReport.update({where:{id:reportId,status:'SAVING'},data:{status:'UPLOADING'},select:{id:true}});
   }catch(error){
    await prisma.meetingReport.deleteMany({where:{id:reportId,status:'SAVING'}});
    throw error;
   }
-  id=reportId;
-  const base=process.env.NEXT_PUBLIC_SITE_URL||new URL(req.url).origin;const origin=new URL(base).origin;if(!origin.startsWith('https://'))throw new Error('Configure the production HTTPS site URL first.');
-  const data=await submitRecording(key,origin,id,title,token,language);
-  if(!data.uploadAudio?.success)throw new Error('Fireflies did not accept the recording.');
-  // A fast callback may have completed before the upload mutation returned.
-  await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'PROCESSING'}});
-  return NextResponse.json({meeting:await prisma.meetingReport.findUnique({where:{id},select:reportSelect})},{status:201});
+  return NextResponse.json({meeting:await prisma.meetingReport.findUniqueOrThrow({where:{id:reportId},select:reportSelect})},{status:202});
  }catch(e){if(e instanceof Prisma.PrismaClientKnownRequestError)console.error('Meeting recording storage failure',{code:e.code,sqlState:e.meta?.code});
- const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:submissionMessage(e)}});return NextResponse.json({error:message,meetingId:id},{status:400})}
+ const message=e instanceof Prisma.PrismaClientKnownRequestError?'Could not confirm the save. Open recording history or submit the same file to check it.':e instanceof Error?e.message:'Upload failed';
+ return NextResponse.json({error:message},{status:400})}
 }

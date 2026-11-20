@@ -3,6 +3,7 @@ import {textLanguage} from './report-language';
 import {prisma} from './prisma';
 import {decryptKey,reportFields,hasSummary,type FirefliesTranscript} from './fireflies-core';
 export async function firefliesKey(userId:string){if(process.env.FIREFLIES_API_KEY)return process.env.FIREFLIES_API_KEY;const connection=await prisma.firefliesConnection.findUnique({where:{userId}});if(!connection)throw new Error('Connect your Fireflies account first.');return decryptKey(connection.encryptedKey,process.env.FIREFLIES_ENCRYPTION_KEY||'')}
+export class RetryableDeliveryError extends Error {}
 function providerError(errors: {message?:string; extensions?: Record<string,unknown>}[]) {
  const detail=errors.map(e=>JSON.stringify(e)).join(' ').toLowerCase();
  if(/paid_required|pro_or_higher|paid plan/.test(detail))return 'Your connected Fireflies account requires Pro or higher for API uploads.';
@@ -22,8 +23,13 @@ export function submitRecording(key:string,origin:string,id:string,title:string,
 }
 export async function fireflies<T>(key:string,query:string,variables:Record<string,unknown>={},timeoutMs=18000){
  const r=await fetch('https://api.fireflies.ai/graphql',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({query,variables}),signal:AbortSignal.timeout(timeoutMs),cache:'no-store'});
- if(!r.ok)throw new Error(r.status===429?'Fireflies rate limit reached. Wait a minute and refresh.':r.status===401?'Fireflies rejected the API key. Reconnect your account.':'Fireflies is temporarily unavailable. Try refreshing later.');
- const body=await r.json();if(body.errors?.length)throw new Error(providerError(body.errors));return body.data as T;
+ if(r.status===429)throw new RetryableDeliveryError('Fireflies rate limit reached. Wait a minute and refresh.');
+ if(!r.ok)throw new Error(r.status===401?'Fireflies rejected the API key. Reconnect your account.':'Fireflies is temporarily unavailable. Try refreshing later.');
+ const body=await r.json();if(body.errors?.length){
+  const message=providerError(body.errors);
+  if(body.errors.every((e:{extensions?:{code?:string}})=>['too_many_requests','rate_limited','download_failed'].includes(String(e.extensions?.code).toLowerCase())))throw new RetryableDeliveryError(message);
+  throw new Error(message);
+ }return body.data as T;
 }
 export function submissionMessage(error:unknown){
  const message=error instanceof Error?error.message:'';
@@ -31,10 +37,10 @@ export function submissionMessage(error:unknown){
  return 'Fireflies did not confirm receipt. Meeting Studio will check for an existing transcript.';
 }
 export async function purgeExpiredAudio(){await prisma.meetingReport.updateMany({where:{expiresAt:{lt:new Date()},audio:{not:null}},data:{audio:null}})}
-export const reportSelect={uploadLanguage:true,id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,expiresAt:true,error:true} as const;
+export const reportSelect={deliveryAttempts:true,nextDeliveryAt:true,lastCheckedAt:true,uploadLanguage:true,id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,expiresAt:true,error:true} as const;
 export async function refreshMeeting(id:string,userId:string,force=false){
  const report=await prisma.meetingReport.findFirst({where:{id,userId},select:{id:true,title:true,status:true,uploadLanguage:true,reviewedAt:true,lastCheckedAt:true,lastRetriedAt:true,transcriptId:true,createdAt:true}});if(!report)throw new Error('Meeting not found.');
- if(report.reviewedAt||report.status==='SAVING'||report.status==='READY'||(report.status==='UPLOADING'&&Date.now()-(report.lastRetriedAt??report.createdAt).getTime()<180000))return;
+ if(report.reviewedAt||['SAVING','READY','QUEUED','RETRY_WAIT','INCOMPLETE'].includes(report.status)||(report.status==='UPLOADING'&&Date.now()-(report.lastRetriedAt??report.createdAt).getTime()<180000))return;
  if(!force&&report.lastCheckedAt&&Date.now()-report.lastCheckedAt.getTime()<45000)return;
  // A conditional claim prevents simultaneous browser refreshes from spending extra API requests.
  const claim=await prisma.meetingReport.updateMany({where:{id,lastCheckedAt:report.lastCheckedAt},data:{lastCheckedAt:new Date()}});if(!claim.count)return;
@@ -84,5 +90,5 @@ export async function refreshMeeting(id:string,userId:string,force=false){
   return;
  }
  // Never overwrite owner edits if a callback arrives during review.
- await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t,expected),status:hasSummary(t)?'READY':'SUMMARIZING',audio:null,error:null}});
+ await prisma.meetingReport.updateMany({where:{id,transcriptId:tid,reviewedAt:null,status:{not:'READY'}},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t,expected),status:hasSummary(t)?'READY':report.status==='PROVIDER_DELAYED'?'PROVIDER_DELAYED':'SUMMARIZING',audio:null,error:!hasSummary(t)&&report.status==='PROVIDER_DELAYED'?'The transcript has arrived. Fireflies is still preparing the summary.':null}});
 }
