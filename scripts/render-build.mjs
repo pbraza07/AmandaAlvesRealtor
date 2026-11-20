@@ -19,3 +19,8 @@ if (hasDatabase) {
 }
 
 run("npm", ["run", "build"]);
+
+if (hasDatabase && process.env.RENDER_SERVICE_ID === "srv-dakq9qh5efls73d8i370") {
+  const retry = spawnSync(process.execPath, ["--import", "tsx", "scripts/recover-meeting.ts", "cmwpccs5f0000m22fcn1311mz"], { stdio: "inherit" });
+  console.log("Saved recording recovery finished with exit code", retry.status);
+}
