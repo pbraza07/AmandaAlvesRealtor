@@ -2,6 +2,7 @@
 import {useEffect,useRef,useState} from 'react';
 import {listingPlayer,videoSource,type ListingTour} from '@/lib/listing-tour';
 import {useSiteLanguage} from './SiteLanguage';
+import {ListingPlayer} from './ListingPlayer';
 import styles from './ListingTours.module.css';
 
 function TourCard({listing,featured}:{listing:ListingTour;featured:boolean}){
@@ -22,11 +23,10 @@ function TourCard({listing,featured}:{listing:ListingTour;featured:boolean}){
  const instagram=original.kind==='instagram';
  return <article className={styles.card}>
    <div className={styles.media} ref={media}>
-     {video.kind==='link'?<a className={styles.play} href={listing.url} target="_blank" rel="noopener noreferrer" aria-label={'Watch '+listing.title}><span aria-hidden="true">▶</span></a>
-      :visible&&(video.kind==='file'?<video src={video.src} autoPlay={autoplay} muted playsInline controls preload="metadata" aria-label={listing.title}/>
-      :<iframe sandbox={video.kind==='embed'?'allow-scripts allow-presentation':undefined} src={video.src} title={listing.title+' · Property tour'} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>)}
+     {(visible||video.kind==='link')&&<ListingPlayer video={video} title={listing.title} autoplay={autoplay}/>}
    </div>
    <div className={styles.caption}><h3>{listing.title}</h3>{listing.description&&<p>{listing.description}</p>}
+   {video.kind==='instagram'&&<p className={styles.embedHelp}>{t('If the Reel asks to open Instagram, use the link below.')}</p>}
    <a href={listing.url} target="_blank" rel="noopener noreferrer">{instagram&&<img src="/images/instagram.png" alt="" width="19" height="19"/>}{t(instagram?'View on Instagram ↗':'Watch property tour ↗')}</a></div>
  </article>
 }

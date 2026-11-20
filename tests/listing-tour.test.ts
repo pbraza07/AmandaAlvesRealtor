@@ -27,3 +27,12 @@ test('explicit embed mode plays a custom player inline without changing ordinary
  assert.equal(listingPlayer({...tour,embed:true,url:'javascript:alert(1)'}),null);
  assert.equal(listingPlayer({...tour,embed:true,url:'https://youtu.be/abcdefghijk'})?.kind,'youtube');
 });
+
+test('an on-page source takes precedence while the original platform link is preserved',async()=>{
+ const {listingPlayer}=await import('../lib/listing-tour');
+ for(const url of ['https://www.instagram.com/reel/Df8IGrABTKb/', 'https://tours.example/ocala']){
+   const tour={id:'ocala',title:'Property in Ocala, FL',description:'',url,embed:true,autoplayUrl:'https://cdn.example/ocala.mp4'};
+   assert.deepEqual(listingPlayer(tour,false),{kind:'file',src:tour.autoplayUrl});
+   assert.equal(tour.url,url);
+ }
+});

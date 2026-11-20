@@ -34,7 +34,9 @@ export function autoplaySource(url:string,autoplay=true){
 
 export function listingPlayer(listing:ListingTour,autoplay=true){
  const source=videoSource(listing.url,autoplay);
- if(source?.kind==='instagram' && listing.autoplayUrl)return autoplaySource(listing.autoplayUrl,autoplay)||source;
+ if(!source)return null;
+ const companion=listing.autoplayUrl&&autoplaySource(listing.autoplayUrl,autoplay);
+ if(companion)return companion;
  if(source?.kind==='link' && listing.embed)return {kind:'embed',src:source.src};
  return source;
 }
