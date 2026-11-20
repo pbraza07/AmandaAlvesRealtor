@@ -32,4 +32,4 @@ async function upgradeDrafts(){
   }
  }
 }
-upgradeDrafts().catch(()=>{console.error('Unable to upgrade existing meeting drafts.');process.exitCode=1}).finally(()=>prisma.$disconnect());
+upgradeDrafts().catch(error=>{console.error('Unable to upgrade existing meeting drafts.',{name:error?.name,code:error?.code,location:String(error?.stack||'').split('\n').find(line=>line.trimStart().startsWith('at '))});process.exitCode=1}).finally(()=>prisma.$disconnect());

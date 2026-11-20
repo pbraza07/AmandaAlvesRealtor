@@ -113,7 +113,7 @@ function commitments(value:string,notes:string,lang:ReportLanguage,turns:Turn[])
 export function compileMeeting(t:FirefliesTranscript,expected?:ReportLanguage){
  const source=t.sentences||[];
  const lang=expected||textLanguage(source.map(s=>s.text).join(' '))||textLanguage(t.summary?.notes||'')||'en';
- const localized=(s='')=>{const detected=textLanguage(s);return detected&&detected!==lang?'':s.trim()};
+ const localized=(s:unknown)=>{if(typeof s!=='string')return '';const detected=textLanguage(s);return detected&&detected!==lang?'':s.trim()};
  const summary=t.summary;
  const highlights=evidence(source,4);
  const originalNotes=localized(summary?.notes);
@@ -126,7 +126,7 @@ export function compileMeeting(t:FirefliesTranscript,expected?:ReportLanguage){
   overview+='\n\n'+labels[lang].later+' ('+clock(correction.start_time)+') · “'+finish(correction.text.trim())+'”';
  }
  // Chapters are the provider's condensed transcript. Some accounts return just chapter titles.
- const chapters=(summary?.transcript_chapters||[]).map(s=>localized(s)).filter(s=>substantive(s)&&/[.!?…](?:\s|$)/u.test(s));
+ const chapters=(Array.isArray(summary?.transcript_chapters)?summary.transcript_chapters:[]).map(s=>localized(s)).filter(s=>substantive(s)&&/[.!?…](?:\s|$)/u.test(s));
  const notes:string[]=[];
  if(originalNotes)notes.push(source.length?narrativeNotes(originalNotes,lang):structuredNotes(originalNotes));
  const existing=key([overview,...notes].join(' '));

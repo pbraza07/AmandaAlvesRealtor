@@ -43,3 +43,7 @@ test('a timestamped earlier action that explicitly changes is flagged with the l
  assert.match(r.actionItems,/Earlier proposal to verify/);assert.match(r.actionItems,/2:35/);
  assert.doesNotMatch(r.actionItems,/Amanda will schedule/);
 });
+test('nullable Fireflies narrative fields preserve the available meeting overview',()=>{
+ const t=JSON.parse('{"id":"one","title":"Meeting","summary":{"short_summary":null,"outline":null,"notes":null,"action_items":null,"transcript_chapters":[null],"overview":"Meeting overview"}}');
+ assert.equal(reportFields(t).overview,'Meeting overview');
+});
