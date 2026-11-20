@@ -14,7 +14,6 @@
 .caption{padding:.8rem .15rem 0;overflow-wrap:anywhere}
 .caption h3{margin:0;font-size:1.25rem;line-height:1.22}
 .caption p{white-space:pre-line;margin:.4rem 0;font-size:.95rem;line-height:1.45}
-.caption .embedHelp{font-size:.85rem;line-height:1.4;color:#4e5a53}
 .caption a{display:inline-flex;align-items:center;gap:.35rem;margin-top:.45rem;font-size:.84rem;text-decoration:underline;text-underline-offset:.2em}
 .caption img{border-radius:5px}
 @media(max-width:600px){.track{grid-auto-columns:min(76%,320px)}}

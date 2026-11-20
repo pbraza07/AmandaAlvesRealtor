@@ -26,7 +26,6 @@ function TourCard({listing,featured}:{listing:ListingTour;featured:boolean}){
      {(visible||video.kind==='link')&&<ListingPlayer video={video} title={listing.title} autoplay={autoplay}/>}
    </div>
    <div className={styles.caption}><h3>{listing.title}</h3>{listing.description&&<p>{listing.description}</p>}
-   {video.kind==='instagram'&&<p className={styles.embedHelp}>{t('If the Reel asks to open Instagram, use the link below.')}</p>}
    <a href={listing.url} target="_blank" rel="noopener noreferrer">{instagram&&<img src="/images/instagram.png" alt="" width="19" height="19"/>}{t(instagram?'View on Instagram ↗':'Watch property tour ↗')}</a></div>
  </article>
 }
