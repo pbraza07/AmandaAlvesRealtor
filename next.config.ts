@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: {"/api/admin/meetings/*/pdf": ["./public/fonts/*", "./public/images/agile-group-logo-dark.webp"]},
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "res.cloudinary.com" },

@@ -175,3 +175,37 @@ model LeadPushEvent {
   createdAt   DateTime @default(now())
   lead        Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
 }
+
+model FirefliesConnection {
+  userId       String   @id
+  encryptedKey String
+  accountEmail String
+  updatedAt    DateTime @updatedAt
+}
+
+model MeetingReport {
+  id             String   @id @default(cuid())
+  userId         String
+  title          String
+  fileName       String
+  fileHash       String
+  mimeType       String
+  audio          Bytes?
+  accessHash     String
+  expiresAt      DateTime
+  status         String   @default("UPLOADING")
+  transcriptId   String?
+  transcript     Json?
+  overview       String   @default("")
+  agenda         String   @default("")
+  notes          String   @default("")
+  actionItems    String   @default("")
+  reviewedAt     DateTime?
+  lastCheckedAt  DateTime?
+  error          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  @@unique([userId, fileHash])
+  @@index([userId, createdAt])
+  @@index([expiresAt])
+}
