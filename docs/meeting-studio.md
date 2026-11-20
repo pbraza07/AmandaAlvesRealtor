@@ -10,8 +10,8 @@ Use a single Fireflies seat for the owner. Free supports API access and a limite
 
 ## Data and processing
 
-- MP3, M4A, WAV and OGG, maximum 25 MB per file; bounded body reads and extension/signature checks. Compressed MP3/M4A is preferable for long recordings.
-- PostgreSQL temporarily holds original audio, avoiding another storage service. A transaction-scoped advisory lock limits concurrent stored recordings to four (maximum 100 MB).
+- MP3, M4A, WAV and OGG, maximum 60 MB per file; bounded body reads and extension/signature checks. Compressed MP3/M4A is preferable for long recordings.
+- PostgreSQL temporarily holds original audio, avoiding another storage service. A transaction-scoped advisory lock limits concurrent stored recordings to four (maximum 240 MB).
 - Fireflies downloads via a separate, random 256-bit bearer token and `download_auth`. The private URL requires that token and expires after 48 hours. No client-supplied remote URL is fetched by the application.
 - Per-upload Fireflies callback uses a unique secret token. Its legacy `meetingId` payload is intentional: Fireflies documents that uploadAudio's per-request callback still uses V1 independently of saved V2 webhooks. No account-wide webhook configuration is required.
 - Transcript results are verified against a unique upload marker in Fireflies' title. Keep this marker until the report is ready.

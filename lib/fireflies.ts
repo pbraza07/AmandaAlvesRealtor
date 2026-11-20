@@ -56,7 +56,7 @@ export async function refreshMeeting(id:string,userId:string,force=false){
   tid=match.id;
   await prisma.meetingReport.update({where:{id},data:{transcriptId:tid}});
  }
- const data=await fireflies<{transcript:FirefliesTranscript|null}>(key,'query($id: String!) { transcript(id: $id) { id title date duration speakers { id name } sentences { text start_time speaker_name } summary { overview outline notes action_items topics_discussed } } }',{id:tid});
+ const data=await fireflies<{transcript:FirefliesTranscript|null}>(key,'query($id: String!) { transcript(id: $id) { id title date duration speakers { id name } sentences { text start_time speaker_name } summary { bullet_gist overview outline notes action_items topics_discussed } } }',{id:tid});
  const t=data.transcript;if(!t)return;
  if(t.id!==tid || !(marked(t.title)||(normalized(t.title)===normalized(report.title)&&nearSubmission(t.date))))throw new Error('The transcript does not match this upload.');
  // Never overwrite owner edits if a callback arrives during review.

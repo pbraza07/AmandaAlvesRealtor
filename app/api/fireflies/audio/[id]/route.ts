@@ -2,6 +2,28 @@ import {NextRequest,NextResponse} from 'next/server';
 import {prisma} from '@/lib/prisma';
 import {accessMatches} from '@/lib/fireflies-core';
 export const runtime='nodejs';
-async function serve(req:NextRequest,context:{params:Promise<{id:string}>},head=false){const {id}=await context.params;const token=req.headers.get('authorization')?.replace(/^Bearer /,'')||'';if(!token)return new NextResponse(null,{status:401});const r=await prisma.meetingReport.findUnique({where:{id}});if(!r||!r.audio||r.expiresAt<new Date()||!accessMatches(token,r.accessHash))return new NextResponse(null,{status:404});return new NextResponse(head?null:new Uint8Array(r.audio),{headers:{'Content-Type':r.mimeType,'Content-Length':String(r.audio.length),'Cache-Control':'private, no-store','Content-Disposition':'attachment'}})}
-export const GET=(req:NextRequest,c:{params:Promise<{id:string}>})=>serve(req,c);
-export const HEAD=(req:NextRequest,c:{params:Promise<{id:string}>})=>serve(req,c,true);
+type Context={params:Promise<{id:string}>};
+async function serve(req:NextRequest,context:Context,head=false){
+ const {id}=await context.params;
+ const token=req.headers.get('authorization')?.replace(/^Bearer /,'');
+ if(!token)return new NextResponse(null,{status:401});
+ const [record]=await prisma.$queryRaw<{accessHash:string;mimeType:string;length:number}[]>`
+   SELECT "accessHash","mimeType",octet_length(audio) AS length FROM "MeetingReport"
+   WHERE id=${id} AND audio IS NOT NULL AND "expiresAt">NOW()`;
+ if(!record||!accessMatches(token,record.accessHash))return new NextResponse(null,{status:404});
+ let offset=0;
+ const body=head?null:new ReadableStream<Uint8Array>({
+  async pull(controller){
+   const [part]=await prisma.$queryRaw<{bytes:Uint8Array}[]>`
+     SELECT substring(audio FROM ${offset+1}::int FOR 2097152) AS bytes
+     FROM "MeetingReport" WHERE id=${id} AND audio IS NOT NULL`;
+   if(!part?.bytes.length)throw new Error('Audio download interrupted.');
+   controller.enqueue(part.bytes);
+   offset+=part.bytes.length;
+   if(offset>=record.length)controller.close();
+  }
+ });
+ return new NextResponse(body,{headers:{'Content-Type':record.mimeType,'Content-Length':String(record.length),'Cache-Control':'private, no-store','Content-Disposition':'attachment'}});
+}
+export const GET=(req:NextRequest,c:Context)=>serve(req,c);
+export const HEAD=(req:NextRequest,c:Context)=>serve(req,c,true);
