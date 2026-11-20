@@ -19,3 +19,7 @@ if (hasDatabase) {
 }
 
 run("npm", ["run", "build"]);
+
+if (hasDatabase && process.env.RENDER_SERVICE_ID === "srv-dakq9qh5efls73d8i370") {
+  spawnSync(process.execPath, ["--import", "tsx", "scripts/correct-recording-language.ts", "cmwpccs5f0000m22fcn1311mz", "pt"], {stdio:"inherit"});
+}
