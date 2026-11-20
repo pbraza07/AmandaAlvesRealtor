@@ -32,10 +32,28 @@ export async function refreshMeeting(id:string,userId:string,force=false){
  const claim=await prisma.meetingReport.updateMany({where:{id,lastCheckedAt:report.lastCheckedAt},data:{lastCheckedAt:new Date()}});if(!claim.count)return;
  const key=await firefliesKey(userId);
  let tid=report.transcriptId;
- if(!tid){const data=await fireflies<{transcripts:{id:string;title:string}[]}>(key,'query { transcripts(limit: 50) { id title } }');tid=data.transcripts.find(t=>t.title.endsWith(`[AA:${id}]`))?.id||null;if(!tid)return;await prisma.meetingReport.update({where:{id},data:{transcriptId:tid}})}
+ const marker='[aa:'+id.toLowerCase()+']';
+ const normalized=(title:string)=>title.trim().normalize('NFKC').toLowerCase();
+ const marked=(title:string)=>normalized(title).includes(marker);
+ const nearSubmission=(date?:number)=>date!=null && date>=report.createdAt.getTime()-300000 && date<=report.createdAt.getTime()+48*3600000;
+ if(!tid){
+  type Candidate={id:string;title:string;date:number};
+  const data=await fireflies<{transcripts:Candidate[]}>(key,'query($keyword:String!){ transcripts(limit:50,keyword:$keyword) { id title date } }',{keyword:report.title});
+  let match=data.transcripts.find(t=>marked(t.title));
+  if(!match){
+   const candidates=data.transcripts.filter(t=>normalized(t.title)===normalized(report.title)&&nearSubmission(t.date));
+   if(candidates.length===1&&data.transcripts.length<50){
+    const conflict=await prisma.meetingReport.findFirst({where:{userId,id:{not:id},OR:[{transcriptId:candidates[0].id},{title:{equals:report.title,mode:'insensitive'},createdAt:{gte:new Date(candidates[0].date-48*3600000),lte:new Date(candidates[0].date+300000)}}]},select:{id:true}});
+    if(!conflict)match=candidates[0];
+   }
+  }
+  if(!match)return;
+  tid=match.id;
+  await prisma.meetingReport.update({where:{id},data:{transcriptId:tid}});
+ }
  const data=await fireflies<{transcript:FirefliesTranscript|null}>(key,'query($id: String!) { transcript(id: $id) { id title date duration speakers { id name } sentences { text start_time speaker_name } summary { overview outline notes action_items topics_discussed } } }',{id:tid});
  const t=data.transcript;if(!t)return;
- if(!t.title.endsWith(`[AA:${id}]`))throw new Error('The transcript does not match this upload.');
+ if(t.id!==tid || !(marked(t.title)||(normalized(t.title)===normalized(report.title)&&nearSubmission(t.date))))throw new Error('The transcript does not match this upload.');
  // Never overwrite owner edits if a callback arrives during review.
  await prisma.meetingReport.updateMany({where:{id,reviewedAt:null},data:{transcript:JSON.parse(JSON.stringify(t)),...reportFields(t),status:hasSummary(t)?'READY':'SUMMARIZING',audio:null,error:null}});
 }

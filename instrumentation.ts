@@ -7,11 +7,16 @@ export async function register() {
     try {
       const reports = await prisma.meetingReport.findMany({
         where: {status: {in: ['PROCESSING','SUMMARIZING']}, reviewedAt: null,
-          expiresAt: {gt: new Date()}, OR: [{lastCheckedAt:null},{lastCheckedAt:{lt:new Date(Date.now()-120000)}}]},
+          OR: [{lastCheckedAt:null},{lastCheckedAt:{lt:new Date(Date.now()-120000)}}]},
         orderBy: {lastCheckedAt:{sort:'asc',nulls:'first'}}, take: 4, select: {id:true,userId:true}
       });
       for (const row of reports) {
-        await refreshMeeting(row.id,row.userId).catch(()=>{});
+        try {
+          await refreshMeeting(row.id,row.userId);
+        } catch(error) {
+          const message=error instanceof Error && error.message.startsWith('Fireflies') ? error.message : 'Meeting synchronization will retry.';
+          await prisma.meetingReport.updateMany({where:{id:row.id,status:{in:['PROCESSING','SUMMARIZING']}},data:{error:message}});
+        }
       }
     } finally {
       setTimeout(()=>void check().catch(()=>{}),120000).unref();
