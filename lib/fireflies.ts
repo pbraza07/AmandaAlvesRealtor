@@ -34,7 +34,7 @@ export async function refreshMeeting(id:string,userId:string,force=false){
  let tid=report.transcriptId;
  const reportToken=id.toLowerCase();
  const normalized=(title:string)=>title.trim().normalize('NFKC').toLowerCase();
- const marked=(title:string)=>normalized(title).split(/[^a-z0-9]+/).includes(reportToken) || normalized(title).includes('[aa:'+reportToken+']');
+ const marked=(title:string)=>normalized(title).includes('[aa:'+reportToken+']') || (/^c[a-z0-9]{24}$/.test(reportToken) && normalized(title).includes(reportToken));
  const nearSubmission=(date?:number)=>date!=null && date>=report.createdAt.getTime()-300000 && date<=report.createdAt.getTime()+48*3600000;
  if(!tid){
   type Candidate={id:string;title:string;date:number};
