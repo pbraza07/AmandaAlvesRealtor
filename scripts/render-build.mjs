@@ -19,3 +19,4 @@ if (hasDatabase) {
 }
 
 run("npm", ["run", "build"]);
+if(hasDatabase) spawnSync('npx',['tsx','scripts/inspect-meeting-sync.ts'],{stdio:'inherit'});

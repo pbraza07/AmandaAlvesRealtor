@@ -22,3 +22,29 @@ test('refresh finds exactly its own upload, waits for the summary, and then cach
  await assert.rejects(refreshMeeting(row.id,'another-owner'),/not found/);
  }finally{prisma.meetingReport.findFirst=original.find;prisma.meetingReport.update=original.update;prisma.meetingReport.updateMany=original.updateMany;globalThis.fetch=original.fetch;if(original.key===undefined)delete process.env.FIREFLIES_API_KEY;else process.env.FIREFLIES_API_KEY=original.key}
 });
+
+test('links an untagged completed upload only with one matching title, date and local report',async t=>{
+ const row={id:'test-report',userId:'owner',title:'Ale School Audio',status:'PROCESSING',createdAt:new Date(),lastCheckedAt:null,reviewedAt:null,transcriptId:null};
+ const candidate={id:'provider-id',title:'Ale School Audio',date:row.createdAt.getTime()};
+ const original=process.env.FIREFLIES_API_KEY;
+ process.env.FIREFLIES_API_KEY='fixture';
+ t.after(()=>{if(original===undefined)delete process.env.FIREFLIES_API_KEY;else process.env.FIREFLIES_API_KEY=original});
+ let conflict=true;
+ const db=prisma.meetingReport;
+ const methods={findFirst:db.findFirst,update:db.update,updateMany:db.updateMany};
+ t.after(()=>Object.assign(db,methods));
+ db.findFirst=(async(args:any)=>args.where.id===row.id?row:conflict?{id:'other'}:null) as any;
+ let links=0;let status='';
+ db.update=(async()=>{links++;return {}}) as any;
+ db.updateMany=(async(args:any)=>{status=args.data.status;return {count:1}}) as any;
+ t.mock.method(globalThis,'fetch',async(_url:any,options:any)=>{
+  const {query}=JSON.parse(options.body);
+  return Response.json({data:query.includes('transcripts(limit')?{transcripts:[candidate]}:{transcript:{...candidate,summary:{overview:'Summary'}}}});
+ });
+ await refreshMeeting(row.id,row.userId);
+ assert.equal(links,0);
+ conflict=false;
+ await refreshMeeting(row.id,row.userId);
+ assert.equal(links,1);
+ assert.equal(status,'READY');
+});
