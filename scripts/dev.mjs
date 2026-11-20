@@ -1,3 +1,4 @@
+import './prepare-pdf-reader.mjs';
 import { spawn } from 'node:child_process';
 // Accept the preview runner's standard host/port flags alongside Next's flags.
 const args=process.argv.slice(2).flatMap(arg=>arg==='--strictPort'?[]:[arg==='--host'?'--hostname':arg]);

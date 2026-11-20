@@ -1,3 +1,4 @@
+import './prepare-pdf-reader.mjs';
 import { spawnSync } from "node:child_process";
 
 const buildEnv = { ...process.env };

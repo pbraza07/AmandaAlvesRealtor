@@ -7,3 +7,4 @@ coverage
 public/uploads
 
 .meeting-language/
+/public/pdf-reader/
