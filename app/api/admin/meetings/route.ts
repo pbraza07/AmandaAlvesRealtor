@@ -1,4 +1,5 @@
 import {randomBytes} from 'node:crypto';
+import {Prisma} from '@prisma/client';
 import {NextResponse} from 'next/server';
 import {getAdmin,verifyOrigin,rateLimit} from '@/lib/security';
 import {prisma} from '@/lib/prisma';
@@ -24,8 +25,9 @@ export async function POST(req:Request){
   const report=await prisma.$transaction(async tx=>{
    await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(74230101)`;
    if(await tx.meetingReport.count({where:{audio:{not:null}}})>=4)throw new Error('Four recordings are processing. Wait for one to finish before uploading another.');
-   return tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,audio:new Uint8Array(bytes),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)}});
-  });id=report.id;
+   return tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,audio:bytes,accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)},select:{id:true}});
+  }, {maxWait:15000, timeout:90000});
+  id=report.id;
   const base=process.env.NEXT_PUBLIC_SITE_URL||new URL(req.url).origin;const origin=new URL(base).origin;if(!origin.startsWith('https://'))throw new Error('Configure the production HTTPS site URL first.');
   const input={url:`${origin}/api/fireflies/audio/${id}`,title:`${title} [AA:${id}]`,client_reference_id:id,webhook:`${origin}/api/fireflies/callback/${id}?token=${token}`,download_auth:{type:'bearer_token',bearer:{token}},bypass_size_check:true,...(language?{custom_language:language}:{})};
   const data=await fireflies<{uploadAudio:{success:boolean}}>(key,'mutation($input: AudioUploadInput) { uploadAudio(input: $input) { success message } }',{input});
@@ -33,5 +35,5 @@ export async function POST(req:Request){
   // A fast callback may have completed before the upload mutation returned.
   await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'PROCESSING'}});
   return NextResponse.json({meeting:await prisma.meetingReport.findUnique({where:{id},select:reportSelect})},{status:201});
- }catch(e){const message=e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:'Submission could not be confirmed. Refresh this recording before uploading it again to avoid another transcription charge.'}});return NextResponse.json({error:message,meetingId:id},{status:400})}
+ }catch(e){const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:'Submission could not be confirmed. Refresh this recording before uploading it again to avoid another transcription charge.'}});return NextResponse.json({error:message,meetingId:id},{status:400})}
 }
