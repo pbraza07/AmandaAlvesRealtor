@@ -23,7 +23,7 @@ export async function POST(req:Request){
   }}));
   const form=await new Response(body,{headers:{'Content-Type':req.headers.get('content-type')||''}}).formData();
   const file=form.get('file'),title=String(form.get('title')||'').trim().slice(0,180),language=String(form.get('language')||'');
-  if(!(file instanceof File)||!file.size||file.size>MAX_AUDIO_BYTES)throw new Error('Choose an MP3, M4A, WAV, or OGG file up to 60 MB.');
+  if(!(file instanceof File)||!file.size||file.size>MAX_AUDIO_BYTES)throw new Error('Choose an MP3, M4A, MP4, WAV, or OGG file up to 60 MB.');
   if(form.get('consent')!=='yes')throw new Error('Confirm you have permission to upload this recording.');
   if(!title)throw new Error('Add a meeting title.');if(!['','en','es','pt'].includes(language))throw new Error('Choose a supported language.');
   const bytes=Buffer.from(await file.arrayBuffer()),mime=mediaType(file.name,bytes);if(!mime)throw new Error('This file is not a supported audio recording.');

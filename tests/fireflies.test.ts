@@ -18,3 +18,17 @@ test('bounded uploads reject large bodies including absent content-length',async
 test('missing summaries stay pending and owners/deadlines are never invented',()=>{assert.equal(hasSummary({id:'1',title:'test',summary:null}),false);assert.deepEqual(reportFields({id:'1',title:'test',summary:{overview:'Budget discussion',action_items:'Amanda: send options'}}),{overview:'Budget discussion',agenda:'',notes:'',actionItems:'Amanda: send options'});assert.equal(hasSummary({id:'1',title:'test',summary:{notes:'Completed'}}),true)});
 test('all owner endpoints reject anonymous access before touching private data',async()=>{const old=process.env.DATABASE_MODE;process.env.DATABASE_MODE='disabled';try{const req=new Request('https://example.com/api/admin/meetings',{method:'POST'});const c={params:Promise.resolve({id:'private-id'})};for(const r of [await listMeetings(),await uploadMeeting(req),await getConnection(),await connect(req),await getReport(req,c),await editReport(req,c),await deleteReport(req,c),await refreshReport(req,c),await download(req,c)])assert.equal(r.status,401);assert.equal((await getAudio(new NextRequest('https://example.com/api/fireflies/audio/id'),c)).status,401)}finally{if(old===undefined)delete process.env.DATABASE_MODE;else process.env.DATABASE_MODE=old}});
 test('branded PDFs paginate long multilingual notes and support optional transcript',async()=>{const notes='Amanda: Confirmar preferências e orçamento. João: Revisar opções em Portugal y España.\n'.repeat(90);const r={title:'Consulta de imóveis · João e Amanda',createdAt:new Date('2026-11-19T15:00:00Z'),overview:'Buyer consultation',agenda:'Budget\nPreferred communities',notes,actionItems:'Amanda: send verified options. Deadline not specified.',reviewedAt:null,transcript:{sentences:[{text:'Transcript appendix '.repeat(100),start_time:61,speaker_name:'Amanda'}]}};const pdf=await meetingPdf(r),withTranscript=await meetingPdf(r,true);assert.ok((await PDFDocument.load(pdf)).getPageCount()>2);assert.ok(withTranscript.length>pdf.length);assert.equal((await PDFDocument.load(pdf)).getAuthor(),'Amanda Alves Realtor')});
+
+test('MP4 recordings use the final extension and MP4 signature',()=>{
+ const audio=Buffer.from('0000ftypM4A ');
+ assert.equal(mediaType('Conversa Victor WRA.m4a.mp4',audio),'audio/mp4');
+ assert.equal(mediaType('meeting.MP4',Buffer.from('0000ftypisom')),'video/mp4');
+ assert.equal(mediaType('meeting.m4a.mp4',Buffer.from('<!DOCTYPE html>')),null);
+});
+test('admin API errors handle HTML gateway and expired-session responses',async()=>{
+ const {adminResponse}=await import('../lib/admin-response');
+ for(const [status,message] of [[502,/confirm/],[401,/Sign in/],[413,/60 MB/]] as const){
+  await assert.rejects(adminResponse(new Response('<!DOCTYPE html>',{status})),message);
+ }
+ assert.deepEqual(await adminResponse(Response.json({ok:true})),{ok:true});
+});

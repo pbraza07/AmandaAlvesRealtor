@@ -12,6 +12,7 @@ export function mediaType(name:string,bytes:Uint8Array):string|null{
  if(ext==='mp3'&&(b.subarray(0,3).toString()==='ID3'||(b[0]===255&&(b[1]&224)===224)))return 'audio/mpeg';
  if(ext==='wav'&&b.subarray(0,4).toString()==='RIFF'&&b.subarray(8,12).toString()==='WAVE')return 'audio/wav';
  if(ext==='m4a'&&b.subarray(4,8).toString()==='ftyp')return 'audio/mp4';
+ if(ext==='mp4'&&b.subarray(4,8).toString()==='ftyp')return b.subarray(8,12).toString()==='M4A '?'audio/mp4':'video/mp4';
  if(ext==='ogg'&&b.subarray(0,4).toString()==='OggS')return 'audio/ogg';
  return null;
 }
