@@ -26,7 +26,7 @@ export async function purgeExpiredAudio(){await prisma.meetingReport.updateMany(
 export const reportSelect={id:true,title:true,fileName:true,status:true,transcriptId:true,overview:true,agenda:true,notes:true,actionItems:true,reviewedAt:true,createdAt:true,updatedAt:true,error:true} as const;
 export async function refreshMeeting(id:string,userId:string,force=false){
  const report=await prisma.meetingReport.findFirst({where:{id,userId},select:{id:true,title:true,status:true,reviewedAt:true,lastCheckedAt:true,transcriptId:true,createdAt:true}});if(!report)throw new Error('Meeting not found.');
- if(report.reviewedAt||report.status==='READY'||(report.status==='UPLOADING'&&Date.now()-report.createdAt.getTime()<60000))return;
+ if(report.reviewedAt||report.status==='SAVING'||report.status==='READY'||(report.status==='UPLOADING'&&Date.now()-report.createdAt.getTime()<60000))return;
  if(!force&&report.lastCheckedAt&&Date.now()-report.lastCheckedAt.getTime()<45000)return;
  // A conditional claim prevents simultaneous browser refreshes from spending extra API requests.
  const claim=await prisma.meetingReport.updateMany({where:{id,lastCheckedAt:report.lastCheckedAt},data:{lastCheckedAt:new Date()}});if(!claim.count)return;

@@ -4,7 +4,7 @@ import {FirefliesUsage} from './FirefliesUsage';
 import {useEffect,useRef,useState,type FormEvent} from 'react';
 type Meeting={id:string;title:string;fileName:string;status:string;overview:string;agenda:string;notes:string;actionItems:string;reviewedAt:string|null;createdAt:string;error:string|null;transcript?:{sentences?:{text:string;start_time:number;speaker_name?:string}[]}};
 type Connection={connected:boolean;email:string;canConnect:boolean;environmentKey:boolean};
-const labels:Record<string,string>={UPLOADING:'Submitting',PROCESSING:'Transcribing',SUMMARIZING:'Preparing summary',READY:'PDF ready',CHECK_REQUIRED:'Check submission'};
+const labels:Record<string,string>={SAVING:'Saving recording',UPLOADING:'Submitting',PROCESSING:'Transcribing',SUMMARIZING:'Preparing summary',READY:'PDF ready',CHECK_REQUIRED:'Check submission'};
 async function api(url:string,options?:RequestInit){return adminResponse(await fetch(url,options))}
 export function MeetingStudio(){
  const [connection,setConnection]=useState<Connection|null>(null),[meetings,setMeetings]=useState<Meeting[]>([]),[selected,setSelected]=useState<Meeting|null>(null),[key,setKey]=useState(''),[busy,setBusy]=useState(false),[notice,setNotice]=useState(''),[error,setError]=useState(''),[includeTranscript,setIncludeTranscript]=useState(false),[dirty,setDirty]=useState(false),[deleteId,setDeleteId]=useState<string|null>(null);

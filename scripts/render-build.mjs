@@ -19,3 +19,4 @@ if (hasDatabase) {
 }
 
 run("npm", ["run", "build"]);
+if(hasDatabase) run('node',['scripts/check-recording-storage.cjs']);

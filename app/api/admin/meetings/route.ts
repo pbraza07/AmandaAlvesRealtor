@@ -1,4 +1,4 @@
-import {randomBytes} from 'node:crypto';
+import {createHash,randomBytes} from 'node:crypto';
 import {Prisma} from '@prisma/client';
 import {NextResponse} from 'next/server';
 import {getAdmin,verifyOrigin,rateLimit} from '@/lib/security';
@@ -26,27 +26,47 @@ export async function POST(req:Request){
   if(!(file instanceof File)||!file.size||file.size>MAX_AUDIO_BYTES)throw new Error('Choose an MP3, M4A, MP4, WAV, or OGG file up to 60 MB.');
   if(form.get('consent')!=='yes')throw new Error('Confirm you have permission to upload this recording.');
   if(!title)throw new Error('Add a meeting title.');if(!['','en','es','pt'].includes(language))throw new Error('Choose a supported language.');
-  const bytes=Buffer.from(await file.arrayBuffer()),mime=mediaType(file.name,bytes);if(!mime)throw new Error('This file is not a supported audio recording.');
-  const hash=digest(bytes);const duplicate=await prisma.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});if(duplicate)return NextResponse.json({meeting:duplicate,duplicate:true});
+  const mime=mediaType(file.name,new Uint8Array(await file.slice(0,12).arrayBuffer()));
+  if(!mime)throw new Error('This file is not a supported audio recording.');
+  const hasher=createHash('sha256');
+  const partSize=512*1024;
+  for(let offset=0;offset<file.size;offset+=partSize){
+   hasher.update(new Uint8Array(await file.slice(offset,offset+partSize).arrayBuffer()));
+  }
+  const hash=hasher.digest('hex');
   const token=randomBytes(32).toString('base64url');
-  // Serialize quota checks and creation across all instances, keeping temporary audio below 240 MB.
-  const report=await prisma.$transaction(async tx=>{
+  // Reserve one slot atomically. Binary transfers run after this short transaction commits.
+  const reservation=await prisma.$transaction(async tx=>{
    await tx.$queryRaw`SELECT 1 AS locked FROM pg_advisory_xact_lock(74230101)`;
+   await tx.meetingReport.deleteMany({where:{status:'SAVING',createdAt:{lt:new Date(Date.now()-30*60000)}}});
+   const existing=await tx.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});
+   if(existing)return {existing,id:existing.id};
    if(await tx.meetingReport.count({where:{audio:{not:null}}})>=4)throw new Error('Four recordings are processing. Wait for one to finish before uploading another.');
-   const saved=await tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,audio:Buffer.alloc(0),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)},select:{id:true}});
-   // Keep each Prisma binary parameter small, including on memory-limited hosting.
-   const chunkSize=4*1024*1024;
-   for(let offset=0;offset<bytes.length;offset+=chunkSize){
-    await tx.$executeRaw`UPDATE "MeetingReport" SET audio = audio || ${bytes.subarray(offset,offset+chunkSize)}::bytea WHERE id = ${saved.id}`;
+   const row=await tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,status:'SAVING',audio:Buffer.alloc(0),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)},select:{id:true}});
+   return {existing:null,id:row.id};
+  },{maxWait:15000,timeout:30000});
+  if(reservation.existing){
+   if(reservation.existing.status==='SAVING')throw new Error('This recording is already being saved. Keep the first upload open.');
+   return NextResponse.json({meeting:reservation.existing,duplicate:true});
+  }
+  const reportId=reservation.id;
+  try{
+   for(let offset=0;offset<file.size;offset+=partSize){
+    const bytes=new Uint8Array(await file.slice(offset,offset+partSize).arrayBuffer());
+    await prisma.recordingPart.create({data:{reportId,position:offset,bytes},select:{position:true}});
    }
-   return saved;
-  }, {maxWait:15000, timeout:180000});
-  id=report.id;
+   await prisma.meetingReport.update({where:{id:reportId,status:'SAVING'},data:{status:'UPLOADING'},select:{id:true}});
+  }catch(error){
+   await prisma.meetingReport.deleteMany({where:{id:reportId,status:'SAVING'}});
+   throw error;
+  }
+  id=reportId;
   const base=process.env.NEXT_PUBLIC_SITE_URL||new URL(req.url).origin;const origin=new URL(base).origin;if(!origin.startsWith('https://'))throw new Error('Configure the production HTTPS site URL first.');
   const data=await submitRecording(key,origin,id,title,token,language);
   if(!data.uploadAudio?.success)throw new Error('Fireflies did not accept the recording.');
   // A fast callback may have completed before the upload mutation returned.
   await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'PROCESSING'}});
   return NextResponse.json({meeting:await prisma.meetingReport.findUnique({where:{id},select:reportSelect})},{status:201});
- }catch(e){const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:'Submission could not be confirmed. Refresh this recording before uploading it again to avoid another transcription charge.'}});return NextResponse.json({error:message,meetingId:id},{status:400})}
+ }catch(e){if(e instanceof Prisma.PrismaClientKnownRequestError)console.error('Meeting recording storage failure',{code:e.code,sqlState:e.meta?.code});
+ const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:'Submission could not be confirmed. Refresh this recording before uploading it again to avoid another transcription charge.'}});return NextResponse.json({error:message,meetingId:id},{status:400})}
 }

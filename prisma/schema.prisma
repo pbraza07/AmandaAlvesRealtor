@@ -183,7 +183,16 @@ model FirefliesConnection {
   updatedAt    DateTime @updatedAt
 }
 
+model RecordingPart {
+  reportId String
+  position Int
+  bytes Bytes
+  report MeetingReport @relation(fields:[reportId], references:[id], onDelete:Cascade)
+  @@id([reportId,position])
+}
+
 model MeetingReport {
+  parts RecordingPart[]
   id             String   @id @default(cuid())
   userId         String
   title          String
