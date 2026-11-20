@@ -32,15 +32,20 @@ export async function refreshMeeting(id:string,userId:string,force=false){
  const claim=await prisma.meetingReport.updateMany({where:{id,lastCheckedAt:report.lastCheckedAt},data:{lastCheckedAt:new Date()}});if(!claim.count)return;
  const key=await firefliesKey(userId);
  let tid=report.transcriptId;
- const marker='[aa:'+id.toLowerCase()+']';
+ const reportToken=id.toLowerCase();
  const normalized=(title:string)=>title.trim().normalize('NFKC').toLowerCase();
- const marked=(title:string)=>normalized(title).includes(marker);
+ const marked=(title:string)=>normalized(title).split(/[^a-z0-9]+/).includes(reportToken) || normalized(title).includes('[aa:'+reportToken+']');
  const nearSubmission=(date?:number)=>date!=null && date>=report.createdAt.getTime()-300000 && date<=report.createdAt.getTime()+48*3600000;
  if(!tid){
   type Candidate={id:string;title:string;date:number};
-  const data=await fireflies<{transcripts:Candidate[]}>(key,'query($keyword:String!){ transcripts(limit:50,keyword:$keyword) { id title date } }',{keyword:report.title});
-  let match=data.transcripts.find(t=>marked(t.title));
+  const recent=await fireflies<{transcripts:Candidate[]}>(key,'query { transcripts(limit:50) { id title date } }');
+  let match=recent.transcripts.find(t=>marked(t.title));
   if(!match){
+   const byToken=await fireflies<{transcripts:Candidate[]}>(key,'query($keyword:String!){ transcripts(limit:50,keyword:$keyword) { id title date } }',{keyword:id});
+   match=byToken.transcripts.find(t=>marked(t.title));
+  }
+  if(!match){
+   const data=await fireflies<{transcripts:Candidate[]}>(key,'query($keyword:String!){ transcripts(limit:50,keyword:$keyword) { id title date } }',{keyword:report.title});
    const candidates=data.transcripts.filter(t=>normalized(t.title)===normalized(report.title)&&nearSubmission(t.date));
    if(candidates.length===1&&data.transcripts.length<50){
     const conflict=await prisma.meetingReport.findFirst({where:{userId,id:{not:id},OR:[{transcriptId:candidates[0].id},{title:{equals:report.title,mode:'insensitive'},createdAt:{gte:new Date(candidates[0].date-48*3600000),lte:new Date(candidates[0].date+300000)}}]},select:{id:true}});
