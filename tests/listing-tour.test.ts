@@ -18,3 +18,12 @@ test('Instagram companion requires a playable URL and honors reduced motion',()=
  assert.equal(autoplaySource('https://cdn.example/tour.mp4')?.kind,'file');
  assert.match(autoplaySource('https://youtu.be/abcdefghijk',false)!.src,/autoplay=0/);
 });
+
+test('explicit embed mode plays a custom player inline without changing ordinary links',async()=>{
+ const {listingPlayer}=await import('../lib/listing-tour');
+ const tour={id:'1',title:'Home',description:'',url:'https://tours.example.com/embed/123'};
+ assert.equal(listingPlayer(tour)?.kind,'link');
+ assert.deepEqual(listingPlayer({...tour,embed:true}),{kind:'embed',src:tour.url});
+ assert.equal(listingPlayer({...tour,embed:true,url:'javascript:alert(1)'}),null);
+ assert.equal(listingPlayer({...tour,embed:true,url:'https://youtu.be/abcdefghijk'})?.kind,'youtube');
+});
