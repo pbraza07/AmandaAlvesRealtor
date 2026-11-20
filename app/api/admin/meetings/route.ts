@@ -4,7 +4,7 @@ import {NextResponse} from 'next/server';
 import {getAdmin,verifyOrigin,rateLimit} from '@/lib/security';
 import {prisma} from '@/lib/prisma';
 import {AUDIO_TTL_MS,MAX_AUDIO_BYTES,digest,mediaType} from '@/lib/fireflies-core';
-import {submitRecording,firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
+import {submissionMessage,submitRecording,firefliesKey,purgeExpiredAudio,reportSelect} from '@/lib/fireflies';
 export const runtime='nodejs';
 export async function GET(){const admin=await getAdmin();if(!admin)return NextResponse.json({error:'Unauthorized'},{status:401});await purgeExpiredAudio();return NextResponse.json({meetings:await prisma.meetingReport.findMany({where:{userId:admin.id},select:reportSelect,orderBy:{createdAt:'desc'},take:100})},{headers:{'Cache-Control':'private, no-store'}})}
 export async function POST(req:Request){
@@ -42,7 +42,7 @@ export async function POST(req:Request){
    const existing=await tx.meetingReport.findUnique({where:{userId_fileHash:{userId:admin.id,fileHash:hash}},select:reportSelect});
    if(existing)return {existing,id:existing.id};
    if(await tx.meetingReport.count({where:{audio:{not:null}}})>=4)throw new Error('Four recordings are processing. Wait for one to finish before uploading another.');
-   const row=await tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,status:'SAVING',audio:Buffer.alloc(0),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)},select:{id:true}});
+   const row=await tx.meetingReport.create({data:{userId:admin.id,title,fileName:file.name.slice(0,240),fileHash:hash,mimeType:mime,uploadLanguage:language,status:'SAVING',audio:Buffer.alloc(0),accessHash:digest(token),expiresAt:new Date(Date.now()+AUDIO_TTL_MS)},select:{id:true}});
    return {existing:null,id:row.id};
   },{maxWait:15000,timeout:30000});
   if(reservation.existing){
@@ -68,5 +68,5 @@ export async function POST(req:Request){
   await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'PROCESSING'}});
   return NextResponse.json({meeting:await prisma.meetingReport.findUnique({where:{id},select:reportSelect})},{status:201});
  }catch(e){if(e instanceof Prisma.PrismaClientKnownRequestError)console.error('Meeting recording storage failure',{code:e.code,sqlState:e.meta?.code});
- const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:'Submission could not be confirmed. Refresh this recording before uploading it again to avoid another transcription charge.'}});return NextResponse.json({error:message,meetingId:id},{status:400})}
+ const message=e instanceof Prisma.PrismaClientKnownRequestError ? (id?'Check this recording in Meeting Studio before submitting again.':'The recording could not be saved. Please retry the upload.') : e instanceof Error?e.message:'Upload failed';if(id)await prisma.meetingReport.updateMany({where:{id,status:'UPLOADING'},data:{status:'CHECK_REQUIRED',error:submissionMessage(e)}});return NextResponse.json({error:message,meetingId:id},{status:400})}
 }

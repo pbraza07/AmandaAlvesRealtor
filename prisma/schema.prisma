@@ -193,6 +193,8 @@ model RecordingPart {
 
 model MeetingReport {
   parts RecordingPart[]
+  uploadLanguage String?
+  lastRetriedAt DateTime?
   id             String   @id @default(cuid())
   userId         String
   title          String

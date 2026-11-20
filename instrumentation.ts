@@ -4,10 +4,13 @@ export async function register() {
   const {prisma} = await import('./lib/prisma');
   const {refreshMeeting} = await import('./lib/fireflies');
   async function check() {
+    const checkedBefore=(ms:number)=>({OR:[{lastCheckedAt:null},{lastCheckedAt:{lt:new Date(Date.now()-ms)}}]});
     try {
       const reports = await prisma.meetingReport.findMany({
-        where: {status: {in: ['PROCESSING','SUMMARIZING']}, reviewedAt: null,
-          OR: [{lastCheckedAt:null},{lastCheckedAt:{lt:new Date(Date.now()-120000)}}]},
+        where: {reviewedAt:null, OR:[
+          {status:{in:['PROCESSING','SUMMARIZING']},...checkedBefore(120000)},
+          {status:{in:['CHECK_REQUIRED','UPLOADING']},createdAt:{gt:new Date(Date.now()-7*86400000),lt:new Date(Date.now()-180000)},...checkedBefore(600000)}
+        ]},
         orderBy: {lastCheckedAt:{sort:'asc',nulls:'first'}}, take: 4, select: {id:true,userId:true}
       });
       for (const row of reports) {

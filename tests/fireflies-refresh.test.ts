@@ -48,3 +48,33 @@ test('links an untagged completed upload only with one matching title, date and 
  assert.equal(links,1);
  assert.equal(status,'READY');
 });
+
+test('checks an unconfirmed upload without submitting audio or searching a short account listing repeatedly',async t=>{
+ const db=prisma.meetingReport;
+ const row={id:'c123456789012345678901234',userId:'owner',title:'WRA meeting',status:'CHECK_REQUIRED',createdAt:new Date(0),lastCheckedAt:null,reviewedAt:null,transcriptId:null};
+ const oldKey=process.env.FIREFLIES_API_KEY;
+ process.env.FIREFLIES_API_KEY='fixture';
+ t.after(()=>{if(oldKey===undefined)delete process.env.FIREFLIES_API_KEY;else process.env.FIREFLIES_API_KEY=oldKey});
+ const methods={findFirst:db.findFirst,updateMany:db.updateMany};t.after(()=>Object.assign(db,methods));
+ db.findFirst=(async()=>row) as any;
+ db.updateMany=(async()=>({count:1})) as any;
+ const calls=t.mock.method(globalThis,'fetch',async(_url:unknown,options:any)=>{
+  assert.match(JSON.parse(options.body).query,/^query/);
+  return Response.json({data:{transcripts:[]}});
+ });
+ assert.equal(await refreshMeeting(row.id,row.userId,true),'no-match');
+ assert.equal(calls.mock.callCount(),1);
+});
+
+test('a lost refresh claim cannot trigger a second submission during saved-audio recovery',async t=>{
+ const {retrySavedRecording}=await import('../lib/retry-recording');
+ const db=prisma.meetingReport;
+ const oldKey=process.env.FIREFLIES_API_KEY;process.env.FIREFLIES_API_KEY='fixture';
+ t.after(()=>{if(oldKey===undefined)delete process.env.FIREFLIES_API_KEY;else process.env.FIREFLIES_API_KEY=oldKey});
+ const methods={findFirst:db.findFirst,updateMany:db.updateMany};t.after(()=>Object.assign(db,methods));
+ db.findFirst=(async()=>({id:'report',status:'CHECK_REQUIRED',createdAt:new Date(),lastRetriedAt:null,reviewedAt:null,lastCheckedAt:null,transcriptId:null})) as any;
+ db.updateMany=(async()=>({count:0})) as any;
+ const calls=t.mock.method(globalThis,'fetch',async()=>{throw new Error('Unexpected upload')});
+ await retrySavedRecording('report','owner','https://example.com');
+ assert.equal(calls.mock.callCount(),0);
+});
