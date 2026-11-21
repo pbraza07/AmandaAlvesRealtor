@@ -28,7 +28,7 @@ function TourCard({listing,featured}:{listing:ListingTour;featured:boolean}){
    </div>
    <div className={styles.caption}><h3>{listing.title}</h3>{listing.description&&<p>{listing.description}</p>}
    <a href={listing.url} target="_blank" rel="noopener noreferrer">{instagram&&<img src="/images/instagram.png" alt="" width="19" height="19"/>}{t(instagram?'View on Instagram ↗':'Watch property tour ↗')}</a>
-   {zillow&&<div><a className={styles.zillow} href={zillow} target="_blank" rel="noopener noreferrer" aria-label={t('See on Zillow')+' — '+listing.title}>{t('See on')} <span className={styles.wordmark}><img src="/images/zillow-wordmark.webp" alt="Zillow" width="82" height="24"/></span><span aria-hidden="true">↗</span></a></div>}</div>
+   {zillow&&<div><a className={styles.zillow} href={zillow} target="_blank" rel="noopener noreferrer" aria-label={t('See on Zillow')+' — '+listing.title}>{t('See on')} <span className={styles.wordmark}><img src="/images/zillow-blue.webp" alt="Zillow" width="73" height="15"/></span><span aria-hidden="true">↗</span></a></div>}</div>
  </article>
 }
 

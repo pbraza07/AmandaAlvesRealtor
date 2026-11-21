@@ -18,7 +18,7 @@
 .caption img{border-radius:5px}
 @media(max-width:600px){.track{grid-auto-columns:min(76%,320px)}}
 
-.caption .zillow{min-height:44px;padding:0 .7rem;gap:.4rem;border:1px solid #d1d6d2;border-radius:7px;background:white;text-decoration:none}
-.zillow:hover,.zillow:focus-visible{border-color:#526f62;text-decoration:underline}
-.wordmark{display:inline-block;position:relative;width:73px;height:17px;overflow:hidden}
-.wordmark img{position:absolute;width:82px;height:auto;max-width:none;left:-4.5px;top:-4px;border-radius:0;filter:brightness(1.1) contrast(1.2)}
+.caption .zillow{min-height:44px;gap:.4rem;color:#0055bf;text-decoration:none}
+.caption .zillow:hover,.caption .zillow:focus-visible{text-decoration:underline}
+.wordmark{display:inline-flex;align-items:center}
+.wordmark img{display:block;width:73px;height:auto;border-radius:0}
