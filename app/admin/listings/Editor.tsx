@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {ListingPlayer} from '@/components/ListingPlayer';
 import styles from '@/components/ListingTours.module.css';
 import {saveListings} from './actions';
-import {type ListingSettings,type ListingTour,autoplaySource,videoSource,listingPlayer} from '@/lib/listing-tour';
+import {type ListingSettings,type ListingTour,autoplaySource,videoSource,zillowListingUrl,listingPlayer} from '@/lib/listing-tour';
 function playerUrl(value:string){
  const text=value.trim();
  if(!text.startsWith('<'))return text;
@@ -19,6 +19,7 @@ export function Editor({settings,revision}:{settings:ListingSettings;revision:st
  return <form className="admin-form" onSubmit={async event=>{
    event.preventDefault();
    if(tours.some(t=>t.autoplayUrl?.trim()&&!autoplaySource(t.autoplayUrl))){setMessage('Use a direct video file, YouTube video or Vimeo video for homepage autoplay.');return}
+   if(tours.some(t=>t.zillowUrl?.trim()&&!zillowListingUrl(t.zillowUrl))){setMessage('Paste the Zillow home details link for this property. Open the home on Zillow and copy its full address from your browser.');return}
    const normalized=tours.map(t=>({...t,url:t.embed?playerUrl(t.url):t.url}));
    if(normalized.some(t=>!videoSource(t.url))){setMessage('Enter an HTTPS player URL or paste the embed code supplied by the video site.');return}
    setBusy(true);setMessage('');
@@ -42,6 +43,7 @@ export function Editor({settings,revision}:{settings:ListingSettings;revision:st
  }}>Preview on-page playback</button>
  {preview?.id===t.id&&<div className={styles.media+' '+styles.preview}><ListingPlayer video={preview} title={t.title||'Listing preview'}/></div>}
  </div>
+ <label className="full">Zillow listing URL<input type="url" maxLength={4096} placeholder="https://www.zillow.com/homedetails/…" value={t.zillowUrl||''} onChange={e=>update(t.id,{zillowUrl:e.target.value})}/><small>Paste this home's Zillow property page to show “See on Zillow” beneath the tour.</small></label>
  <label className="full">Property highlights<textarea maxLength={1000} value={t.description} onChange={e=>update(t.id,{description:e.target.value})}/></label>
  {!t.embed&&videoSource(t.url)?.kind==='link'&&!t.autoplayUrl&&<small className="full">Add an on-page video URL or choose Embed player to enable playback in the carousel.</small>}
  <div className="actions">{i>0&&<button type="button" className="button outline" onClick={()=>{setTours([t,...tours.filter(x=>x.id!==t.id)]);setMessage('')}}>Feature first</button>}<button type="button" className="button outline" onClick={()=>{setTours(tours.filter(x=>x.id!==t.id));if(tours.length===1)toggle(false);setMessage('')}}>Remove listing</button></div>

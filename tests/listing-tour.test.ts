@@ -36,3 +36,11 @@ test('an on-page source takes precedence while the original platform link is pre
    assert.equal(tour.url,url);
  }
 });
+
+test('Zillow links preserve property identity and discard share tracking',async()=>{
+ const {zillowListingUrl}=await import('../lib/listing-tour');
+ const home='https://www.zillow.com/homedetails/3304-Ashmonte-Dr-Land-O-Lakes-FL-34638/55805130_zpid/';
+ assert.equal(zillowListingUrl(home+'?utm_source=share#details'),home);
+ assert.equal(zillowListingUrl('https://zillow.com/homedetails/55805130_zpid'),'https://www.zillow.com/homedetails/55805130_zpid/');
+ for(const value of [undefined,'','https://www.zillow.com/ocala-fl/','https://www.zillow.com.evil.example/homedetails/123_zpid/','https://example.com@zillow.com/homedetails/123_zpid/','http://zillow.com/homedetails/123_zpid/'])assert.equal(zillowListingUrl(value),null);
+});

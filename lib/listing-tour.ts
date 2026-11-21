@@ -1,6 +1,15 @@
-export type ListingTour={id:string;title:string;description:string;url:string;autoplayUrl?:string;embed?:boolean};
+export type ListingTour={id:string;title:string;description:string;url:string;autoplayUrl?:string;zillowUrl?:string;embed?:boolean};
 export type ListingSettings={enabled:boolean;tours:ListingTour[]};
 export const emptyListings:ListingSettings={enabled:false,tours:[]};
+
+export function zillowListingUrl(value?:string){
+ if(!value)return null;
+ let url:URL;
+ try{url=new URL(value.trim())}catch{return null}
+ if(url.protocol!=='https:'||!['www.zillow.com','zillow.com'].includes(url.hostname)||url.port||url.username||url.password)return null;
+ if(!/^\/homedetails\/(?:[^/]+\/)?[1-9]\d*_zpid\/?$/i.test(url.pathname))return null;
+ return 'https://www.zillow.com'+url.pathname.replace(/\/?$/,'/');
+}
 
 export function videoSource(value:string,autoplay=true){
  let url:URL;

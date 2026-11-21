@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {listingPlayer,videoSource,type ListingTour} from '@/lib/listing-tour';
+import {listingPlayer,videoSource,zillowListingUrl,type ListingTour} from '@/lib/listing-tour';
 import {useSiteLanguage} from './SiteLanguage';
 import {ListingPlayer} from './ListingPlayer';
 import styles from './ListingTours.module.css';
@@ -20,13 +20,15 @@ function TourCard({listing,featured}:{listing:ListingTour;featured:boolean}){
  const original=videoSource(listing.url);
  const video=listingPlayer(listing,autoplay);
  if(!original||!video)return null;
+ const zillow=zillowListingUrl(listing.zillowUrl);
  const instagram=original.kind==='instagram';
  return <article className={styles.card}>
    <div className={styles.media} ref={media}>
      {(visible||video.kind==='link')&&<ListingPlayer video={video} title={listing.title} autoplay={autoplay}/>}
    </div>
    <div className={styles.caption}><h3>{listing.title}</h3>{listing.description&&<p>{listing.description}</p>}
-   <a href={listing.url} target="_blank" rel="noopener noreferrer">{instagram&&<img src="/images/instagram.png" alt="" width="19" height="19"/>}{t(instagram?'View on Instagram ↗':'Watch property tour ↗')}</a></div>
+   <a href={listing.url} target="_blank" rel="noopener noreferrer">{instagram&&<img src="/images/instagram.png" alt="" width="19" height="19"/>}{t(instagram?'View on Instagram ↗':'Watch property tour ↗')}</a>
+   {zillow&&<div><a className={styles.zillow} href={zillow} target="_blank" rel="noopener noreferrer" aria-label={t('See on Zillow')+' — '+listing.title}>{t('See on')} <span className={styles.wordmark}><img src="/images/zillow-wordmark.webp" alt="Zillow" width="82" height="24"/></span><span aria-hidden="true">↗</span></a></div>}</div>
  </article>
 }
 

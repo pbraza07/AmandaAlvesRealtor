@@ -5,9 +5,9 @@ import {Prisma} from '@prisma/client';
 import {getAdmin,verifyOrigin} from '@/lib/security';
 import {prisma} from '@/lib/prisma';
 import {listingKey} from '@/lib/listing-settings';
-import {autoplaySource,videoSource,type ListingSettings} from '@/lib/listing-tour';
+import {autoplaySource,videoSource,zillowListingUrl,type ListingSettings} from '@/lib/listing-tour';
 
-const tour=z.object({id:z.string().uuid(),title:z.string().trim().min(1).max(160),description:z.string().trim().max(1000),url:z.string().trim().max(4096).refine(v=>!!videoSource(v)),embed:z.boolean().optional(),autoplayUrl:z.string().trim().max(4096).refine(v=>!v||!!autoplaySource(v)).optional()});
+const tour=z.object({id:z.string().uuid(),title:z.string().trim().min(1).max(160),description:z.string().trim().max(1000),url:z.string().trim().max(4096).refine(v=>!!videoSource(v)),zillowUrl:z.string().trim().max(4096).refine(v=>!v||!!zillowListingUrl(v)).transform(v=>zillowListingUrl(v)||'').optional(),embed:z.boolean().optional(),autoplayUrl:z.string().trim().max(4096).refine(v=>!v||!!autoplaySource(v)).optional()});
 export async function saveListings(input:ListingSettings,revision:string){
  if(!await getAdmin())throw new Error('Sign in to save listings.');
  await verifyOrigin();
