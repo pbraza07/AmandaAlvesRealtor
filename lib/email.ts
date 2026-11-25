@@ -1,3 +1,4 @@
+import {senderToken} from "./gmail-connection";
 import { getContent } from "./content";
 import { hasDatabase } from "./database";
 
@@ -10,11 +11,11 @@ const esc = (s: unknown) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&am
 const validEmail = (value: string | undefined) => Boolean(value && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
 const rows = (obj: Record<string, unknown>) => Object.entries(obj).map(([k,v]) => `<tr><th style="text-align:left;padding:7px;border-bottom:1px solid #ddd">${esc(k.replace(/([A-Z])/g," $1"))}</th><td style="padding:7px;border-bottom:1px solid #ddd">${esc(Array.isArray(v) ? v.join(", ") : v)}</td></tr>`).join("");
 
-function gmailConfiguration():GmailConfiguration {
+async function gmailConfiguration():Promise<GmailConfiguration> {
   const configuration={
     clientId:String(process.env.GMAIL_CLIENT_ID||"").trim(),
     clientSecret:String(process.env.GMAIL_CLIENT_SECRET||"").trim(),
-    refreshToken:String(process.env.GMAIL_REFRESH_TOKEN||"").trim(),
+    refreshToken:String(await senderToken()).trim(),
     senderEmail:String(process.env.GMAIL_SENDER_EMAIL||"").trim().toLowerCase()
   };
   if(!configuration.clientId||!configuration.clientSecret||!configuration.refreshToken||!validEmail(configuration.senderEmail))throw new Error("GMAIL_API_NOT_CONFIGURED");
@@ -43,7 +44,7 @@ function wrappedBase64(value:string) {
 
 async function deliver(message:MailMessage) {
   if(!validEmail(message.to)||message.replyTo&&!validEmail(message.replyTo))throw new Error("INVALID_EMAIL_ADDRESS");
-  const configuration=gmailConfiguration();
+  const configuration=await gmailConfiguration();
   const accessToken=await gmailAccessToken(configuration);
   const displayFrom=`Amanda Alves <${configuration.senderEmail}>`;
   const boundary="amanda-photos-"+crypto.randomUUID();
@@ -85,7 +86,7 @@ export async function sendPasswordReset(email:string, url:string) {
 }
 
 export async function sendLeadEmails(lead: { id:string; type:"BUYER"|"SELLER"; firstName:string; lastName:string; email:string; phone:string; preferredContact:string; bestTime:string|null; language:string; source:string|null; details:unknown }, attachments:PhotoAttachment[] = [],previous:{adminSent?:boolean;clientSent?:boolean} = {}) {
-  const configuration=gmailConfiguration();
+  const configuration=await gmailConfiguration();
   const content = await getContent();
   const details = lead.details as Record<string, unknown>;
   const travel = details.inquiryPurpose === "Travel opportunities";
